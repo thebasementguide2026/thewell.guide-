@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8LFRQKH7F9"
