@@ -23,7 +23,7 @@ const sidebarArticles = [
   { title: 'Well Water Pressure Low: 6 Causes and Fixes', href: '/problems/well-water-pressure-low', category: 'PROBLEM', image: '/well pressure.jpg' },
   { title: 'Well Pump Replacement Cost 2026', href: '/cost-guides/well-pump-replacement-cost', category: 'COST GUIDE', image: '/well cost.jpg' },
   { title: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water', category: 'GUIDE', image: '/watertest.jpg' },
-  { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE', image: '/wellguidehero.jpg' },
+  { title: 'How a Well Pump Works: The Complete System Explained', href: '/guides/how-well-pump-works', category: 'GUIDE', image: '/howwellworks.jpg' },
 ]
 
 const getArticleHref = (slug: string) => `/${slug}`
