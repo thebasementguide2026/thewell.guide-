@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navigationTiles = [
   { label: 'Well Guides', href: '/guides', emoji: '💧', description: 'Maintenance, testing, and care' },
@@ -6,11 +7,10 @@ const navigationTiles = [
   { label: 'Reviews', href: '/reviews', emoji: '⭐', description: 'Best filters, pumps & treatments' },
   { label: 'Problems', href: '/problems', emoji: '⚠️', description: 'Diagnose and fix common issues' },
   { label: 'Water Testing', href: '/guides/well-water-testing', emoji: '🧪', description: "Know what's in your water" },
-  { label: 'Start Here', href: '/guides/private-well-complete-guide', emoji: '📖', description: 'New to private wells?' },
+  { label: 'Start Here', href: '/guides/complete-well-guide', emoji: '📖', description: 'New to private wells?' },
 ]
 
 const popularGuides = [
-  { title: 'Complete Guide to Private Well Ownership', description: 'Everything you need to know about owning and maintaining a private well.', href: '/guides/private-well-complete-guide', badge: 'GUIDE' },
   { title: 'Well Water Testing: What to Test For and When', description: 'How often to test, which contaminants matter, and what to do if results are bad.', href: '/guides/well-water-testing', badge: 'GUIDE' },
   { title: 'Well Pump Maintenance Guide', description: 'Keep your pump running for decades with these maintenance steps.', href: '/guides/well-pump-maintenance', badge: 'GUIDE' },
   { title: 'How to Shock Chlorinate Your Well', description: 'Step-by-step disinfection guide after contamination or flooding.', href: '/guides/how-to-shock-chlorinate-well', badge: 'GUIDE' },
@@ -38,38 +38,75 @@ const badgeColors: Record<string, { bg: string; text: string }> = {
   REVIEW: { bg: '#E8F5E9', text: '#1B5E20' },
 }
 
+const sidebarArticles = [
+  { title: 'Well Water Testing: What to Test For and When', href: '/guides/well-water-testing', category: 'GUIDE' },
+  { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE' },
+  { title: 'How to Shock Chlorinate Your Well', href: '/guides/how-to-shock-chlorinate-well', category: 'GUIDE' },
+  { title: 'Buying a Home with a Private Well', href: '/guides/buying-home-with-private-well', category: 'GUIDE' },
+  { title: 'Well Water Pressure Problems', href: '/problems/well-water-pressure-problems', category: 'PROBLEM' },
+]
+
 export default function HomePage() {
   return (
     <>
-      <section style={{ backgroundColor: '#0D3D30' }} className="text-white py-20">
-        <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-            Your Private Well,{' '}
-            <span style={{ color: '#5DCAA5' }}>Explained.</span>
-          </h1>
-          <p className="text-xl text-white/70 max-w-2xl mx-auto mb-8">
-            Water quality and health guidance written for the 13 million US homeowners on private wells. No contractors, no sales pitches — just honest answers.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/guides/private-well-complete-guide" className="inline-block font-bold py-3 px-8 rounded-lg transition-colors text-white" style={{ backgroundColor: '#1D9E75' }}>
-              Start Here →
-            </Link>
-            <Link href="/get-quote" className="inline-block font-bold py-3 px-8 rounded-lg transition-colors border-2 border-white/30 text-white hover:bg-white/10">
-              Get Free Quotes
-            </Link>
+      {/* Publisher-style Hero: Featured + Sidebar */}
+      <section className="container-custom py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Main featured story */}
+          <Link href="/guides/complete-well-guide" className="lg:col-span-2 group relative rounded-xl overflow-hidden block" style={{ minHeight: '400px' }}>
+            <Image
+              src="/wellguidehero.jpg"
+              alt="The Complete Guide to Private Well Water Systems 2026"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full mb-3" style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}>
+                GUIDE
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 group-hover:underline decoration-2 underline-offset-4">
+                The Complete Guide to Private Well Water Systems — 2026 Edition
+              </h2>
+              <p className="text-sm text-gray-200 line-clamp-2">
+                Everything a well owner needs to know: how wells work, types of wells and pumps, water quality testing, common contaminants including PFAS and bacteria, maintenance schedules, and when to call a pro.
+              </p>
+            </div>
+          </Link>
+
+          {/* Sidebar stories */}
+          <div className="space-y-4">
+            {sidebarArticles.map((article) => (
+              <Link key={article.href} href={article.href} className="flex gap-4 group">
+                <div className="flex-1 min-w-0">
+                  <span className="text-xs font-semibold uppercase" style={{ color: '#1D9E75' }}>
+                    {article.category}
+                  </span>
+                  <h3 className="text-sm font-bold text-gray-900 group-hover:text-[#1D9E75] line-clamp-2 mt-0.5">
+                    {article.title}
+                  </h3>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="container-custom py-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {navigationTiles.map((tile) => (
-            <Link key={tile.href} href={tile.href} className="group flex flex-col items-center text-center p-4 rounded-xl border border-[#C8DDD7] bg-white hover:border-[#1D9E75] hover:shadow-md transition-all">
-              <span className="text-2xl mb-2">{tile.emoji}</span>
-              <span className="font-semibold text-sm text-[#0D1F1A]">{tile.label}</span>
-              <span className="text-xs text-[#7A9E96] mt-1">{tile.description}</span>
-            </Link>
-          ))}
+      {/* Quick Navigation Bar */}
+      <section className="border-y border-[#C8DDD7] bg-[#F4FAF7]">
+        <div className="container-custom py-4">
+          <div className="flex flex-wrap justify-center gap-3">
+            {navigationTiles.map((tile) => (
+              <Link
+                key={tile.href}
+                href={tile.href}
+                className="px-4 py-2 text-sm font-medium text-[#3D5A52] bg-white rounded-full border border-[#C8DDD7] hover:border-[#1D9E75] hover:text-[#1D9E75] transition-colors shadow-sm"
+              >
+                {tile.emoji} {tile.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
