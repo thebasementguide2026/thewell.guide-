@@ -15,6 +15,7 @@ const footerSections = [
     href: '/problems',
     links: [
       { label: 'Well Water Smells Like Sulfur', href: '/problems/well-water-smells-like-sulfur' },
+      { label: 'Well Water Pressure Low', href: '/problems/well-water-pressure-low' },
     ],
   },
 ]
