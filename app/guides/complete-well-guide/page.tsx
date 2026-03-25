@@ -163,7 +163,6 @@ export default function CompleteWellGuide() {
       </section>
 
       <Breadcrumbs items={[
-        { label: 'Home', href: '/' },
         { label: 'Guides', href: '/guides' },
         { label: 'Complete Well Guide' }
       ]} />
