@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { articles } from '@/lib/articles'
 
 const navigationTiles = [
   { label: 'Well Guides', href: '/guides', emoji: '💧', description: 'Maintenance, testing, and care' },
@@ -10,32 +11,11 @@ const navigationTiles = [
   { label: 'Start Here', href: '/guides/complete-well-guide', emoji: '📖', description: 'New to private wells?' },
 ]
 
-const popularGuides = [
-  { title: 'Well Water Testing: What to Test For and When', description: 'How often to test, which contaminants matter, and what to do if results are bad.', href: '/guides/how-to-test-well-water', badge: 'GUIDE' },
-  { title: 'Well Pump Maintenance Guide', description: 'Keep your pump running for decades with these maintenance steps.', href: '/guides/well-pump-maintenance', badge: 'GUIDE' },
-  { title: 'How to Shock Chlorinate Your Well', description: 'Step-by-step disinfection guide after contamination or flooding.', href: '/guides/how-to-shock-chlorinate-well', badge: 'GUIDE' },
-  { title: 'Buying a Home with a Private Well', description: 'What to inspect, test, and negotiate before closing on a well property.', href: '/guides/buying-home-with-private-well', badge: 'GUIDE' },
-  { title: 'Well Water Pressure Problems', description: "Low pressure, no water, or pressure surges — here's what causes them.", href: '/problems/well-water-pressure-problems', badge: 'PROBLEM' },
-]
-
-const latestArticles = [
-  { title: 'Brown or Rusty Well Water: 6 Causes and Fixes', href: '/problems/brown-rusty-well-water', badge: 'PROBLEM' },
-  { title: 'How Much Does Well Water Treatment Cost?', href: '/cost-guides/well-water-treatment-cost', badge: 'COST' },
-  { title: 'Best Well Water Filters Reviewed', href: '/reviews/best-well-water-filters', badge: 'REVIEW' },
-  { title: 'Signs Your Well Pump Is Failing', href: '/problems/well-pump-failing', badge: 'PROBLEM' },
-]
-
-const reviewPreviews = [
-  { title: 'Best Whole House Well Water Filters', href: '/reviews/best-well-water-filters' },
-  { title: 'Best Well Water Test Kits', href: '/reviews/best-well-water-test-kits' },
-  { title: 'Best Pressure Tanks for Wells', href: '/reviews/best-pressure-tanks' },
-]
-
 const badgeColors: Record<string, { bg: string; text: string }> = {
-  GUIDE: { bg: '#E0F0EA', text: '#0D3D30' },
-  COST: { bg: '#FFF3E0', text: '#7A4500' },
-  PROBLEM: { bg: '#FDECEA', text: '#8B1A1A' },
-  REVIEW: { bg: '#E8F5E9', text: '#1B5E20' },
+  Guide: { bg: '#E1F5EE', text: '#0F6E56' },
+  Problem: { bg: '#FCEBEB', text: '#A32D2D' },
+  'Cost Guide': { bg: '#FAEEDA', text: '#854F0B' },
+  Review: { bg: '#E8F5E9', text: '#1B5E20' },
 }
 
 const sidebarArticles = [
@@ -45,6 +25,8 @@ const sidebarArticles = [
   { title: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water', category: 'GUIDE', image: '/watertest.jpg' },
   { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE', image: '/wellguidehero.jpg' },
 ]
+
+const getArticleHref = (slug: string) => `/${slug}`
 
 export default function HomePage() {
   return (
@@ -120,55 +102,47 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#F4FAF7] py-12">
-        <div className="container-custom">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold text-[#0D1F1A]">Popular Guides</h2>
-            <Link href="/guides" className="text-sm font-medium text-[#1D9E75] hover:underline">View All →</Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {popularGuides.map((guide) => (
-              <Link key={guide.href} href={guide.href} className="group rounded-xl overflow-hidden border border-[#C8DDD7] bg-white hover:shadow-lg transition-shadow p-6">
-                <span className="inline-block px-2.5 py-1 text-xs font-semibold rounded-md mb-3" style={{ backgroundColor: badgeColors[guide.badge]?.bg, color: badgeColors[guide.badge]?.text }}>{guide.badge}</span>
-                <h3 className="font-bold text-[#0D1F1A] group-hover:text-[#1D9E75] mb-2">{guide.title}</h3>
-                <p className="text-sm text-[#3D5A52] line-clamp-2">{guide.description}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Popular Guides — image card grid like theseptic.guide */}
       <section className="container-custom py-12">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-[#0D1F1A]">Latest Articles</h2>
+          <h2 className="text-2xl font-bold text-[#0D1F1A]">Popular Guides</h2>
+          <Link href="/guides" className="text-sm font-medium text-[#1D9E75] hover:underline">View All →</Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {latestArticles.map((article) => (
-            <Link key={article.href} href={article.href} className="flex items-center gap-4 bg-white p-4 rounded-lg border border-[#C8DDD7] hover:shadow-md transition-shadow group">
-              <span className="inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0" style={{ backgroundColor: badgeColors[article.badge]?.bg, color: badgeColors[article.badge]?.text }}>{article.badge}</span>
-              <h3 className="font-bold text-sm text-[#0D1F1A] group-hover:text-[#1D9E75]">{article.title}</h3>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-[#F4FAF7] py-12">
-        <div className="container-custom">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold text-[#0D1F1A]">Top Reviews</h2>
-            <Link href="/reviews" className="text-sm font-medium text-[#1D9E75] hover:underline">View All →</Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {reviewPreviews.map((review) => (
-              <Link key={review.href} href={review.href} className="flex items-center gap-3 bg-white p-5 rounded-lg border border-[#C8DDD7] hover:shadow-md transition-shadow group">
-                <span className="text-2xl">⭐</span>
-                <h3 className="font-semibold text-sm text-[#0D1F1A] group-hover:text-[#1D9E75]">{review.title}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {articles
+            .filter((a) => a.image)
+            .map((article) => (
+              <Link key={article.slug} href={getArticleHref(article.slug)} className="group rounded-xl overflow-hidden border border-[#C8DDD7] hover:shadow-lg transition-shadow">
+                {article.image && (
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={article.image}
+                      alt={article.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <span
+                      className="absolute top-3 left-3 px-2.5 py-1 text-xs font-semibold rounded-md"
+                      style={{ backgroundColor: badgeColors[article.category]?.bg ?? '#E1F5EE', color: badgeColors[article.category]?.text ?? '#0F6E56' }}
+                    >
+                      {article.category.toUpperCase()}
+                    </span>
+                  </div>
+                )}
+                <div className="p-4">
+                  <h3 className="font-bold text-[#0D1F1A] group-hover:text-[#1D9E75] mb-2">
+                    {article.title}
+                  </h3>
+                  <p className="text-sm text-[#3D5A52] line-clamp-2">
+                    {article.description}
+                  </p>
+                </div>
               </Link>
             ))}
-          </div>
         </div>
       </section>
 
+      {/* Need a Well Professional CTA */}
       <section className="py-16" style={{ backgroundColor: '#0D3D30' }}>
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Need a Well Professional?</h2>
