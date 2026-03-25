@@ -405,7 +405,7 @@ export default function HowToTestWellWater() {
               </tbody>
             </table>
           </div>
-          <p className='text-slate-700 leading-relaxed text-sm'>Some states offer free or subsidized comprehensive testing for private well owners — check with your state department of health before spending money. Many county health departments offer basic annual testing at no charge. The <span className='text-slate-500'>well water testing cost guide</span> covers pricing in detail, including how to find free testing programs in your state.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'>Some states offer free or subsidized comprehensive testing for private well owners — check with your state department of health before spending money. Many county health departments offer basic annual testing at no charge. The <Link href='/cost-guides/well-water-testing-cost' className='underline' style={{ color: '#1D9E75' }}>well water testing cost guide</Link> covers pricing in detail, including how to find free testing programs in your state.</p>
         </div>
 
         {/* How to Collect a Water Sample Correctly */}
@@ -869,10 +869,10 @@ export default function HowToTestWellWater() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FCEBEB', color: '#A32D2D' }}>PROBLEM</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Brown or Rusty Well Water</span>
             </Link>
-            <span className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 opacity-60 cursor-default'>
+            <Link href='/cost-guides/well-water-testing-cost' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FAEEDA', color: '#854F0B' }}>COST GUIDE</span>
-              <span className='text-sm font-bold text-slate-900'>Well Water Testing Cost</span>
-            </span>
+              <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Well Water Testing Cost</span>
+            </Link>
             <Link href='/reviews/best-well-water-test-kits' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E8F5E9', color: '#1B5E20' }}>REVIEW</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Best Well Water Test Kits</span>
