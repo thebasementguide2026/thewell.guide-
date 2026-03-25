@@ -167,6 +167,14 @@ export const articles: Article[] = [
     category: 'Guide',
     readTime: '16 min read',
   },
+  {
+    title: 'Well Water Testing Cost: What You\'ll Pay in 2026',
+    description: 'Well water testing costs range from free to $500 depending on what you test for and where you get it done. Most homeowners spend $50 to $200 for annual testing. This guide breaks down every cost by contaminant type and explains free testing programs by state.',
+    slug: 'cost-guides/well-water-testing-cost',
+    category: 'Cost Guide',
+    readTime: '13 min read',
+    image: '/watertestingcost.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
