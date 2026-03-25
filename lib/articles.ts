@@ -25,6 +25,14 @@ export const articles: Article[] = [
     image: '/glassofwater.jpg',
   },
   {
+    title: 'Well Water Pressure Low: 6 Causes and How to Fix Each One',
+    description: 'Low well water pressure has six distinct causes — waterlogged pressure tank, failing pump, dropping water table, clogged well screen, faulty pressure switch, or clogged filters — and each requires a different fix.',
+    slug: 'problems/well-water-pressure-low',
+    category: 'Problem',
+    readTime: '15 min read',
+    image: '/well pressure.jpg',
+  },
+  {
     title: 'Well Water Testing: What to Test For and When',
     description: 'How often to test, which contaminants matter, and what to do if results are bad.',
     slug: 'guides/well-water-testing',
