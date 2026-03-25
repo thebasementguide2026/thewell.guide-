@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
+import SearchBar from '@/components/SearchBar'
 
 const navItems = [
   { label: 'Guides', href: '/guides' },
@@ -21,6 +22,7 @@ function DropletLogo({ color = '#5DCAA5' }: { color?: string }) {
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
 
   return (
     <header style={{ backgroundColor: '#0D3D30' }} className="border-b border-[#1A5C48] sticky top-0 z-50">
@@ -47,7 +49,18 @@ export default function Header() {
             ))}
           </nav>
 
+          {/* Right side: Search + CTA */}
           <div className="hidden lg:flex items-center gap-3">
+            <button
+              onClick={() => setSearchOpen(!searchOpen)}
+              className="flex items-center gap-1.5 text-white/60 hover:text-white transition-colors p-2 rounded-lg hover:bg-white/10"
+              aria-label="Search"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <span className="text-sm">Search</span>
+            </button>
             <Link
               href="/get-quote"
               className="text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
@@ -59,6 +72,7 @@ export default function Header() {
             </Link>
           </div>
 
+          {/* Mobile hamburger */}
           <button
             className="lg:hidden p-2 text-white/80 hover:text-white"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -76,8 +90,20 @@ export default function Header() {
           </button>
         </div>
 
+        {/* Search bar dropdown */}
+        {searchOpen && (
+          <div className="border-t border-white/10 py-3">
+            <SearchBar onClose={() => setSearchOpen(false)} />
+          </div>
+        )}
+
+        {/* Mobile menu */}
         {menuOpen && (
           <div className="lg:hidden border-t border-white/10 py-4 space-y-1">
+            {/* Mobile search */}
+            <div className="px-4 mb-3">
+              <SearchBar onClose={() => setMenuOpen(false)} />
+            </div>
             {navItems.map((item) => (
               <Link
                 key={item.label}
