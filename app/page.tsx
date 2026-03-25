@@ -44,8 +44,6 @@ const sidebarArticles = [
   { title: 'Well Pump Replacement Cost 2026', href: '/cost-guides/well-pump-replacement-cost', category: 'COST GUIDE', image: '/well cost.jpg' },
   { title: 'Well Water Testing: What to Test For and When', href: '/guides/well-water-testing', category: 'GUIDE', image: '/wellguidehero.jpg' },
   { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE', image: '/wellguidehero.jpg' },
-  { title: 'How to Shock Chlorinate Your Well', href: '/guides/how-to-shock-chlorinate-well', category: 'GUIDE', image: '/wellguidehero.jpg' },
-  { title: 'Well Water Pressure Problems', href: '/problems/well-water-pressure-problems', category: 'PROBLEM', image: '/wellguidehero.jpg' },
 ]
 
 export default function HomePage() {
