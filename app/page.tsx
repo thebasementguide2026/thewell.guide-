@@ -39,11 +39,11 @@ const badgeColors: Record<string, { bg: string; text: string }> = {
 }
 
 const sidebarArticles = [
-  { title: 'Well Water Smells Like Sulfur or Rotten Eggs', href: '/problems/well-water-smells-like-sulfur', category: 'PROBLEM' },
-  { title: 'Well Water Testing: What to Test For and When', href: '/guides/well-water-testing', category: 'GUIDE' },
-  { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE' },
-  { title: 'How to Shock Chlorinate Your Well', href: '/guides/how-to-shock-chlorinate-well', category: 'GUIDE' },
-  { title: 'Well Water Pressure Problems', href: '/problems/well-water-pressure-problems', category: 'PROBLEM' },
+  { title: 'Well Water Smells Like Sulfur or Rotten Eggs', href: '/problems/well-water-smells-like-sulfur', category: 'PROBLEM', image: '/glassofwater.jpg' },
+  { title: 'Well Water Testing: What to Test For and When', href: '/guides/well-water-testing', category: 'GUIDE', image: '/wellguidehero.jpg' },
+  { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE', image: '/wellguidehero.jpg' },
+  { title: 'How to Shock Chlorinate Your Well', href: '/guides/how-to-shock-chlorinate-well', category: 'GUIDE', image: '/wellguidehero.jpg' },
+  { title: 'Well Water Pressure Problems', href: '/problems/well-water-pressure-problems', category: 'PROBLEM', image: '/wellguidehero.jpg' },
 ]
 
 export default function HomePage() {
@@ -79,6 +79,16 @@ export default function HomePage() {
           <div className="space-y-4">
             {sidebarArticles.map((article) => (
               <Link key={article.href} href={article.href} className="flex gap-4 group">
+                {article.image && (
+                  <div className="relative w-24 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <Image
+                      src={article.image}
+                      alt={article.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 <div className="flex-1 min-w-0">
                   <span className="text-xs font-semibold uppercase" style={{ color: '#1D9E75' }}>
                     {article.category}
