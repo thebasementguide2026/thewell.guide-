@@ -14,6 +14,7 @@ const footerSections = [
     href: '/cost-guides',
     links: [
       { label: 'Well Pump Replacement Cost', href: '/cost-guides/well-pump-replacement-cost' },
+      { label: 'Well Water Testing Cost', href: '/cost-guides/well-water-testing-cost' },
     ],
   },
   { title: 'REVIEWS', href: '/reviews', links: [] },
