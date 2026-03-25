@@ -7,6 +7,7 @@ const footerSections = [
     links: [
       { label: 'Complete Well Guide', href: '/guides/complete-well-guide' },
       { label: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water' },
+      { label: 'How a Well Pump Works', href: '/guides/how-well-pump-works' },
     ],
   },
   {
