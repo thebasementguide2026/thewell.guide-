@@ -6,12 +6,12 @@ const navigationTiles = [
   { label: 'Cost Guides', href: '/cost-guides', emoji: '💰', description: 'What well work actually costs' },
   { label: 'Reviews', href: '/reviews', emoji: '⭐', description: 'Best filters, pumps & treatments' },
   { label: 'Problems', href: '/problems', emoji: '⚠️', description: 'Diagnose and fix common issues' },
-  { label: 'Water Testing', href: '/guides/well-water-testing', emoji: '🧪', description: "Know what's in your water" },
+  { label: 'Water Testing', href: '/guides/how-to-test-well-water', emoji: '🧪', description: "Know what's in your water" },
   { label: 'Start Here', href: '/guides/complete-well-guide', emoji: '📖', description: 'New to private wells?' },
 ]
 
 const popularGuides = [
-  { title: 'Well Water Testing: What to Test For and When', description: 'How often to test, which contaminants matter, and what to do if results are bad.', href: '/guides/well-water-testing', badge: 'GUIDE' },
+  { title: 'Well Water Testing: What to Test For and When', description: 'How often to test, which contaminants matter, and what to do if results are bad.', href: '/guides/how-to-test-well-water', badge: 'GUIDE' },
   { title: 'Well Pump Maintenance Guide', description: 'Keep your pump running for decades with these maintenance steps.', href: '/guides/well-pump-maintenance', badge: 'GUIDE' },
   { title: 'How to Shock Chlorinate Your Well', description: 'Step-by-step disinfection guide after contamination or flooding.', href: '/guides/how-to-shock-chlorinate-well', badge: 'GUIDE' },
   { title: 'Buying a Home with a Private Well', description: 'What to inspect, test, and negotiate before closing on a well property.', href: '/guides/buying-home-with-private-well', badge: 'GUIDE' },
@@ -42,7 +42,7 @@ const sidebarArticles = [
   { title: 'Well Water Smells Like Sulfur or Rotten Eggs', href: '/problems/well-water-smells-like-sulfur', category: 'PROBLEM', image: '/glassofwater.jpg' },
   { title: 'Well Water Pressure Low: 6 Causes and Fixes', href: '/problems/well-water-pressure-low', category: 'PROBLEM', image: '/well pressure.jpg' },
   { title: 'Well Pump Replacement Cost 2026', href: '/cost-guides/well-pump-replacement-cost', category: 'COST GUIDE', image: '/well cost.jpg' },
-  { title: 'Well Water Testing: What to Test For and When', href: '/guides/well-water-testing', category: 'GUIDE', image: '/wellguidehero.jpg' },
+  { title: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water', category: 'GUIDE', image: '/watertest.jpg' },
   { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE', image: '/wellguidehero.jpg' },
 ]
 
