@@ -1,10 +1,16 @@
 import Link from 'next/link'
 
 const footerSections = [
-  { title: 'GUIDES', href: '/guides' },
-  { title: 'COST GUIDES', href: '/cost-guides' },
-  { title: 'REVIEWS', href: '/reviews' },
-  { title: 'PROBLEMS', href: '/problems' },
+  {
+    title: 'GUIDES',
+    href: '/guides',
+    links: [
+      { label: 'Complete Well Guide', href: '/guides/complete-well-guide' },
+    ],
+  },
+  { title: 'COST GUIDES', href: '/cost-guides', links: [] },
+  { title: 'REVIEWS', href: '/reviews', links: [] },
+  { title: 'PROBLEMS', href: '/problems', links: [] },
 ]
 
 const networkLinks = [
@@ -34,6 +40,20 @@ export default function Footer() {
                   {section.title}
                 </Link>
               </h4>
+              {section.links && section.links.length > 0 && (
+                <ul className="space-y-2">
+                  {section.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-sm text-white/60 hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
 
