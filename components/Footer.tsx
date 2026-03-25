@@ -10,7 +10,13 @@ const footerSections = [
   },
   { title: 'COST GUIDES', href: '/cost-guides', links: [] },
   { title: 'REVIEWS', href: '/reviews', links: [] },
-  { title: 'PROBLEMS', href: '/problems', links: [] },
+  {
+    title: 'PROBLEMS',
+    href: '/problems',
+    links: [
+      { label: 'Well Water Smells Like Sulfur', href: '/problems/well-water-smells-like-sulfur' },
+    ],
+  },
 ]
 
 const networkLinks = [
