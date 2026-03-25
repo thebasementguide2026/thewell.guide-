@@ -8,7 +8,13 @@ const footerSections = [
       { label: 'Complete Well Guide', href: '/guides/complete-well-guide' },
     ],
   },
-  { title: 'COST GUIDES', href: '/cost-guides', links: [] },
+  {
+    title: 'COST GUIDES',
+    href: '/cost-guides',
+    links: [
+      { label: 'Well Pump Replacement Cost', href: '/cost-guides/well-pump-replacement-cost' },
+    ],
+  },
   { title: 'REVIEWS', href: '/reviews', links: [] },
   {
     title: 'PROBLEMS',
