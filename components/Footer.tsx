@@ -8,6 +8,7 @@ const footerSections = [
       { label: 'Complete Well Guide', href: '/guides/complete-well-guide' },
       { label: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water' },
       { label: 'How a Well Pump Works', href: '/guides/how-well-pump-works' },
+      { label: 'Annual Well Maintenance Checklist', href: '/guides/well-maintenance-checklist' },
     ],
   },
   {
