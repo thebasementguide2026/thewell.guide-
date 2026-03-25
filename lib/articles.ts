@@ -175,6 +175,14 @@ export const articles: Article[] = [
     readTime: '13 min read',
     image: '/watertestingcost.jpg',
   },
+  {
+    title: 'How a Well Pump Works: The Complete System Explained',
+    description: 'Understanding how a well pump works is the foundation for diagnosing every well problem. This guide explains the full pressure cycle, how submersible and jet pumps differ, what the pressure tank actually does, and what two-wire vs three-wire means for repairs.',
+    slug: 'guides/how-well-pump-works',
+    category: 'Guide',
+    readTime: '14 min read',
+    image: '/howwellworks.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
