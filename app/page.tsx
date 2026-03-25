@@ -39,10 +39,10 @@ const badgeColors: Record<string, { bg: string; text: string }> = {
 }
 
 const sidebarArticles = [
+  { title: 'Well Water Smells Like Sulfur or Rotten Eggs', href: '/problems/well-water-smells-like-sulfur', category: 'PROBLEM' },
   { title: 'Well Water Testing: What to Test For and When', href: '/guides/well-water-testing', category: 'GUIDE' },
   { title: 'Well Pump Maintenance Guide', href: '/guides/well-pump-maintenance', category: 'GUIDE' },
   { title: 'How to Shock Chlorinate Your Well', href: '/guides/how-to-shock-chlorinate-well', category: 'GUIDE' },
-  { title: 'Buying a Home with a Private Well', href: '/guides/buying-home-with-private-well', category: 'GUIDE' },
   { title: 'Well Water Pressure Problems', href: '/problems/well-water-pressure-problems', category: 'PROBLEM' },
 ]
 
