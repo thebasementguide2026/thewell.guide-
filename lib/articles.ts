@@ -161,10 +161,10 @@ export const articles: Article[] = [
   },
   {
     title: 'How to Test Your Well Water',
-    description: 'Step-by-step guide to testing your private well water properly.',
+    description: '43 million Americans on private wells are solely responsible for testing their own water. This guide covers what to test for, when to test, how to collect a sample correctly, and what to do when something comes back wrong.',
     slug: 'guides/how-to-test-well-water',
     category: 'Guide',
-    readTime: '10 min read',
+    readTime: '16 min read',
   },
 ]
 
