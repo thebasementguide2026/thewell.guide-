@@ -19,9 +19,9 @@ const popularGuides = [
 ]
 
 const latestArticles = [
+  { title: 'Brown or Rusty Well Water: 6 Causes and Fixes', href: '/problems/brown-rusty-well-water', badge: 'PROBLEM' },
   { title: 'How Much Does Well Water Treatment Cost?', href: '/cost-guides/well-water-treatment-cost', badge: 'COST' },
   { title: 'Best Well Water Filters Reviewed', href: '/reviews/best-well-water-filters', badge: 'REVIEW' },
-  { title: 'Well Pump Replacement Cost', href: '/cost-guides/well-pump-replacement-cost', badge: 'COST' },
   { title: 'Signs Your Well Pump Is Failing', href: '/problems/well-pump-failing', badge: 'PROBLEM' },
 ]
 
