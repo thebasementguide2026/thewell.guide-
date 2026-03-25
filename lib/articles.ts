@@ -140,10 +140,11 @@ export const articles: Article[] = [
   },
   {
     title: 'Annual Well Maintenance Checklist',
-    description: 'The complete yearly maintenance schedule every well owner should follow.',
+    description: 'The complete seasonal and annual maintenance schedule every well owner needs. Covers spring startup, summer monitoring, fall winterization, and professional inspections — with a printable at-a-glance table, DIY vs. hire-a-pro breakdown, and typical costs.',
     slug: 'guides/well-maintenance-checklist',
     category: 'Guide',
-    readTime: '8 min read',
+    readTime: '14 min read',
+    image: '/well maintance.jpg',
   },
   {
     title: 'Brown or Rusty Well Water: 6 Causes and How to Fix Each One',
