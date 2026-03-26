@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Image from 'next/image'
 import type { Metadata } from 'next'
+import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'How to Test Your Well Water: The Complete Guide | The Well Guide',
@@ -891,6 +892,15 @@ export default function HowToTestWellWater() {
             </Link>
           </div>
         </div>
+
+        {/* Lead Form */}
+        <section className='py-12 bg-[#E1F5EE] rounded-2xl mt-12'>
+          <div className='max-w-2xl mx-auto px-4'>
+            <h2 className='text-2xl md:text-3xl font-bold text-[#0F6E56] text-center mb-3'>Get Expert Well Help</h2>
+            <p className='text-gray-600 text-center mb-8'>Connect with qualified well professionals in your area. Free quotes, no obligation.</p>
+            <LeadForm />
+          </div>
+        </section>
 
       </article>
     </>
