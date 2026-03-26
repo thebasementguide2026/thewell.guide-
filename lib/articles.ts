@@ -219,6 +219,14 @@ export const articles: Article[] = [
     readTime: '16 min read',
     image: '/pressureguide.jpg',
   },
+  {
+    title: 'Pressure Tank Replacement Cost: What to Expect in 2026',
+    description: 'The complete cost breakdown for well pressure tank replacement: tank prices by size and brand, labor rates, what add-ons are worth it, regional price differences, DIY vs professional, and how to avoid overpaying. Real numbers from 2026 contractor data.',
+    slug: 'cost-guides/pressure-tank-replacement-cost',
+    category: 'Cost Guide',
+    readTime: '11 min read',
+    image: '/pressurecost.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
