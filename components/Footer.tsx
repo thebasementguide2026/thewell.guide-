@@ -20,7 +20,7 @@ const footerSections = [
       { label: 'Well Water Testing Cost', href: '/cost-guides/well-water-testing-cost' },
     ],
   },
-  { title: 'REVIEWS', href: '/reviews', links: [] },
+  { title: 'REVIEWS', href: '/reviews', links: [{ label: 'Best Well Water Test Kits', href: '/reviews/best-well-water-test-kits' }] },
   {
     title: 'PROBLEMS',
     href: '/problems',
