@@ -211,6 +211,14 @@ export const articles: Article[] = [
     readTime: '12 min read',
     image: '/cycling.jpg',
   },
+  {
+    title: 'Well Pressure Tank: The Complete Guide for Private Well Owners',
+    description: 'Everything a private well owner needs to know about pressure tanks: how they work, the three types, how to size one correctly with the actual formula, the best brands, maintenance schedule, failure signs, and when to replace. The only pressure tank reference you need.',
+    slug: 'guides/well-pressure-tank-guide',
+    category: 'Guide',
+    readTime: '16 min read',
+    image: '/pressureguide.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
