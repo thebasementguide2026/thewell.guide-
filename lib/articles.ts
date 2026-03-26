@@ -111,11 +111,12 @@ export const articles: Article[] = [
     readTime: '14 min read',
   },
   {
-    title: 'Best Well Water Test Kits',
-    description: 'The best at-home and mail-in test kits for private well water.',
+    title: 'Best Well Water Test Kits (2026): Lab and DIY Options Reviewed',
+    description: 'The four best well water test kits for private well owners, reviewed and compared. Includes certified lab tests for annual baseline testing and DIY strips for monitoring between lab tests. All four are available on Amazon with free shipping.',
     slug: 'reviews/best-well-water-test-kits',
     category: 'Review',
-    readTime: '10 min read',
+    readTime: '14 min read',
+    image: '/welltestkits.jpg',
   },
   {
     title: 'Best Pressure Tanks for Wells',
