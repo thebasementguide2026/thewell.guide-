@@ -203,6 +203,14 @@ export const articles: Article[] = [
     readTime: '18 min read',
     image: '/wellguidecontaminants.jpg',
   },
+  {
+    title: 'Well Pump Short Cycling: Causes, Diagnosis, and How to Fix It',
+    description: 'A well pump that turns on and off every few seconds is short cycling. The cause is almost always a waterlogged pressure tank. This guide shows you how to diagnose every cause, what to check yourself, and when to call a contractor.',
+    slug: 'problems/well-pump-short-cycling',
+    category: 'Problem',
+    readTime: '12 min read',
+    image: '/cycling.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
