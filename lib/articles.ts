@@ -192,6 +192,14 @@ export const articles: Article[] = [
     readTime: '14 min read',
     image: '/nowaterinwell.jpg',
   },
+  {
+    title: 'Well Pump Running Constantly: 6 Causes and How to Diagnose Each One',
+    description: 'A well pump that won\'t shut off is an emergency. Continuous operation overheats the motor and can destroy a $2,000 pump within hours. This guide shows you how to diagnose every cause in order of likelihood and what to do right now to protect the pump.',
+    slug: 'problems/well-pump-running-constantly',
+    category: 'Problem',
+    readTime: '13 min read',
+    image: '/constantlyrunning.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
