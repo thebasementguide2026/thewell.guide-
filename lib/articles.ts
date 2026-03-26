@@ -124,13 +124,7 @@ export const articles: Article[] = [
     category: 'Review',
     readTime: '10 min read',
   },
-  {
-    title: 'Well Water Contaminants Guide',
-    description: 'Every contaminant that affects private wells: what they are, where they come from, and how to treat them.',
-    slug: 'guides/well-water-contaminants',
-    category: 'Guide',
-    readTime: '15 min read',
-  },
+
   {
     title: 'Well Water Treatment Options',
     description: 'Every treatment method for private well water explained and compared.',
