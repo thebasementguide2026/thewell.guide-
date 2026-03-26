@@ -237,6 +237,17 @@ export default function HowWellPumpWorks() {
           <p className='text-slate-700 leading-relaxed text-sm'>The check valve is sometimes listed as a fifth component because its failure mimics pressure tank failure exactly. Both cause short-cycling. The Schrader valve test on the tank tells them apart: if the tank test is normal but you still have short-cycling, the check valve is the next suspect.</p>
         </div>
 
+        {/* Pressure Cycle Image */}
+        <div className='mb-12 rounded-xl overflow-hidden'>
+          <Image
+            src='/howwellworks.jpg'
+            alt='Diagram showing how a well pump system works'
+            width={1200}
+            height={630}
+            className='w-full h-auto'
+          />
+        </div>
+
         {/* The Pressure Cycle */}
         <div className='mb-16'>
           <div className='flex items-center space-x-3 mb-4'>
