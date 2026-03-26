@@ -19,6 +19,7 @@ const footerSections = [
     links: [
       { label: 'Well Pump Replacement Cost', href: '/cost-guides/well-pump-replacement-cost' },
       { label: 'Well Water Testing Cost', href: '/cost-guides/well-water-testing-cost' },
+      { label: 'Pressure Tank Replacement Cost', href: '/cost-guides/pressure-tank-replacement-cost' },
     ],
   },
   { title: 'REVIEWS', href: '/reviews', links: [{ label: 'Best Well Water Test Kits', href: '/reviews/best-well-water-test-kits' }] },
