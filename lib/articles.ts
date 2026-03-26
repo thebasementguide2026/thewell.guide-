@@ -150,11 +150,12 @@ export const articles: Article[] = [
     image: '/Well guide brown water.jpg',
   },
   {
-    title: 'Well Water Tastes Bad',
-    description: 'Common causes of bad-tasting well water and what to do about each one.',
+    title: 'Well Water Tastes Bad: What Each Taste Tells You and How to Fix It',
+    description: 'A complete taste-to-cause diagnostic guide for private well water. Every bad taste (metallic, sulfur, earthy, salty, bitter, chemical, sweet) mapped to its specific cause, health risk level, required test, and treatment.',
     slug: 'problems/well-water-tastes-bad',
     category: 'Problem',
-    readTime: '10 min read',
+    readTime: '12 min read',
+    image: '/well tastebad.jpg',
   },
   {
     title: 'How to Test Your Well Water',
