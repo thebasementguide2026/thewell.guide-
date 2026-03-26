@@ -200,6 +200,14 @@ export const articles: Article[] = [
     readTime: '13 min read',
     image: '/constantlyrunning.jpg',
   },
+  {
+    title: 'Well Water Contaminants: The Complete Guide for Private Well Owners',
+    description: 'A complete reference guide to every contaminant found in private well water. For each contaminant: where it comes from, what it does to health, the EPA limit, which regions are most affected, how to test, and how to treat.',
+    slug: 'guides/well-water-contaminants',
+    category: 'Guide',
+    readTime: '18 min read',
+    image: '/wellguidecontaminants.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
