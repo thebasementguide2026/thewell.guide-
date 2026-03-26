@@ -228,6 +228,14 @@ export const articles: Article[] = [
     readTime: '11 min read',
     image: '/pressurecost.jpg',
   },
+  {
+    title: 'Well Running Dry: Diagnose the Cause and Know Exactly What to Do',
+    description: 'The complete guide to a well running dry. Learn the four distinct scenarios - temporary drawdown, seasonal water table drop, pump set wrong, and true aquifer depletion - and the specific diagnosis and fix for each.',
+    slug: 'problems/well-running-dry',
+    category: 'Problem',
+    readTime: '13 min read',
+    image: '/well-running-dry.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
