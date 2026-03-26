@@ -184,6 +184,14 @@ export const articles: Article[] = [
     readTime: '14 min read',
     image: '/howwellworks.jpg',
   },
+  {
+    title: 'No Water from Well: A Step-by-Step Diagnosis Guide',
+    description: 'Turned on the tap and got nothing? This guide walks you through every cause of no water from a well in order of likelihood, from a tripped breaker you can fix in 30 seconds to a failed pump that needs a contractor. Do these checks before you call anyone.',
+    slug: 'problems/no-water-from-well',
+    category: 'Problem',
+    readTime: '14 min read',
+    image: '/nowaterinwell.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
