@@ -30,6 +30,7 @@ const footerSections = [
       { label: 'Brown or Rusty Well Water', href: '/problems/brown-rusty-well-water' },
       { label: 'No Water from Well', href: '/problems/no-water-from-well' },
       { label: 'Well Pump Running Constantly', href: '/problems/well-pump-running-constantly' },
+      { label: 'Well Pump Short Cycling', href: '/problems/well-pump-short-cycling' },
     ],
   },
 ]
