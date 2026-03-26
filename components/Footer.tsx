@@ -28,6 +28,7 @@ const footerSections = [
       { label: 'Well Water Pressure Low', href: '/problems/well-water-pressure-low' },
       { label: 'Brown or Rusty Well Water', href: '/problems/brown-rusty-well-water' },
       { label: 'No Water from Well', href: '/problems/no-water-from-well' },
+      { label: 'Well Pump Running Constantly', href: '/problems/well-pump-running-constantly' },
     ],
   },
 ]
