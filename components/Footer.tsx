@@ -27,6 +27,7 @@ const footerSections = [
       { label: 'Well Water Smells Like Sulfur', href: '/problems/well-water-smells-like-sulfur' },
       { label: 'Well Water Pressure Low', href: '/problems/well-water-pressure-low' },
       { label: 'Brown or Rusty Well Water', href: '/problems/brown-rusty-well-water' },
+      { label: 'No Water from Well', href: '/problems/no-water-from-well' },
     ],
   },
 ]
