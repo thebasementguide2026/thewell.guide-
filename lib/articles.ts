@@ -78,6 +78,14 @@ export const articles: Article[] = [
     image: '/buying a home on well.jpg',
   },
   {
+    title: 'Well Water vs. City Water: An Honest Comparison for Homeowners',
+    description: 'A complete comparison of well water and city water covering cost, quality, taste, health risk, maintenance, reliability, and which is better for your specific situation. Includes side-by-side comparison table, annual cost breakdown, and the honest answer to which is actually safer.',
+    slug: 'guides/well-water-vs-city-water',
+    category: 'Guide',
+    readTime: '14 min read',
+    image: '/_well-water-vs-city-water.jpg',
+  },
+  {
     title: 'Well Water Pressure Problems',
     description: "Low pressure, no water, or pressure surges — here's what causes them.",
     slug: 'problems/well-water-pressure-problems',
