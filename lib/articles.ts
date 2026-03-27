@@ -104,11 +104,12 @@ export const articles: Article[] = [
     readTime: '8 min read',
   },
   {
-    title: 'Best Whole House Well Water Filters',
-    description: 'Complete reviews of the best whole house filtration systems for well water.',
+    title: 'Best Whole House Water Filters for Well Water: 2026 Picks by Contaminant',
+    description: 'The best whole house water filters for well water reviewed by contaminant type - iron, sulfur, bacteria, sediment, and comprehensive systems. Real specs, verified Amazon availability, honest limitations, and a complete buying guide so you buy the right system for your actual water test results.',
     slug: 'reviews/best-whole-house-water-filters',
     category: 'Review',
     readTime: '14 min read',
+    image: '/waterfilters.jpg',
   },
   {
     title: 'Best Well Water Test Kits (2026): Lab and DIY Options Reviewed',
