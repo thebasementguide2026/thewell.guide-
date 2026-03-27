@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: 'https://well.guide/problems/well-running-dry',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well-running-dry.jpg', width: 1200, height: 630, alt: 'Person at a kitchen sink turning on the faucet with a concerned expression, no water coming out' }],
+    images: [{ url: 'https://well.guide/well dry.png', width: 1200, height: 630, alt: 'Person at a kitchen sink turning on the faucet with a concerned expression, no water coming out' }],
   },
   alternates: { canonical: 'https://well.guide/problems/well-running-dry' },
 }
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Running Dry: Diagnose the Cause and Know Exactly What to Do',
   description: 'Complete guide to a well running dry. Learn the four distinct scenarios and their specific fixes. Includes what to do right now, how to get interim water, static water level measurement, and when deepening vs. drilling new is the right call.',
-  image: 'https://well.guide/well-running-dry.jpg',
+  image: 'https://well.guide/well dry.png',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -125,7 +125,7 @@ export default function WellRunningDry() {
       {/* Hero */}
       <section className='relative h-[70vh] min-h-[500px] overflow-hidden' style={{ backgroundColor: '#0D3D30' }}>
         <Image
-          src='/well-running-dry.jpg'
+          src='/well dry.png'
           alt='Person at a kitchen sink turning on the faucet with a concerned expression, no water coming out'
           fill
           className='object-cover opacity-45 scale-105 transition-transform duration-700 hover:scale-100'
