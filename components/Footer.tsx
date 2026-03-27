@@ -23,7 +23,8 @@ const footerSections = [
       { label: 'Pressure Tank Replacement Cost', href: '/cost-guides/pressure-tank-replacement-cost' },
     ],
   },
-  { title: 'REVIEWS', href: '/reviews', links: [{ label: 'Best Well Water Test Kits', href: '/reviews/best-well-water-test-kits' }] },
+  { title: 'REVIEWS', href: '/reviews', links: [{ label: 'Best Well Water Test Kits', href: '/reviews/best-well-water-test-kits' },
+      { label: 'Best Whole House Water Filters', href: '/reviews/best-whole-house-water-filters' }] },
   {
     title: 'PROBLEMS',
     href: '/problems',
