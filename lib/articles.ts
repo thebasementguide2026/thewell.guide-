@@ -234,7 +234,7 @@ export const articles: Article[] = [
     slug: 'problems/well-running-dry',
     category: 'Problem',
     readTime: '13 min read',
-    image: '/well-running-dry.jpg',
+    image: '/well dry.png',
   },
 ]
 
