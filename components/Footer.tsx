@@ -12,6 +12,7 @@ const footerSections = [
       { label: 'Well Water Contaminants', href: '/guides/well-water-contaminants' },
       { label: 'Well Pressure Tank Guide', href: '/guides/well-pressure-tank-guide' },
       { label: 'Well Water Treatment Options', href: '/guides/well-water-treatment-options' },
+      { label: 'Buying a House With a Well', href: '/guides/buying-house-with-well' },
     ],
   },
   {
