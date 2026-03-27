@@ -127,11 +127,12 @@ export const articles: Article[] = [
   },
 
   {
-    title: 'Well Water Treatment Options',
-    description: 'Every treatment method for private well water explained and compared.',
+    title: 'Well Water Treatment Options: Match the Right System to Your Contaminant',
+    description: 'The complete neutral guide to well water treatment. Every treatment technology explained - sediment filters, carbon filters, UV disinfection, water softeners, reverse osmosis, oxidizing filters, and more - with the specific contaminants each removes, what each cannot do, costs, and the treatment sequence that works for well water.',
     slug: 'guides/well-water-treatment-options',
     category: 'Guide',
-    readTime: '12 min read',
+    readTime: '14 min read',
+    image: '/well treatmentoptions.jpg',
   },
   {
     title: 'Annual Well Maintenance Checklist',
