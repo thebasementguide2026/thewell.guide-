@@ -41,6 +41,14 @@ export const articles: Article[] = [
     image: '/well cost.jpg',
   },
   {
+    title: 'Well Drilling Cost: What Homeowners Actually Pay in 2026',
+    description: 'The complete well drilling cost guide for 2026. Per-foot drilling rates, all-in system costs by depth, regional price differences, what every contractor quote should include, the hidden costs most homeowners miss, and exactly what questions to ask before you sign.',
+    slug: 'cost-guides/well-drilling-cost',
+    category: 'Cost Guide',
+    readTime: '14 min read',
+    image: '/well-drilling-cost.jpg',
+  },
+  {
     title: 'Well Water Testing: What to Test For and When',
     description: 'How often to test, which contaminants matter, and what to do if results are bad.',
     slug: 'guides/well-water-testing',
