@@ -37,8 +37,8 @@ export default function HomePage() {
           {/* Main featured story */}
           <Link href="/guides/complete-well-guide" className="lg:col-span-2 group relative rounded-xl overflow-hidden block" style={{ minHeight: '400px' }}>
             <Image
-              src="/wellguidehero.jpg"
-              alt="The Complete Guide to Private Well Water Systems 2026"
+              src="/complete-well-guide.jpg"
+              alt="The Complete Guide to Private Well Water Systems (2026)"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
               priority
@@ -52,7 +52,7 @@ export default function HomePage() {
                 The Complete Guide to Private Well Water Systems — 2026 Edition
               </h2>
               <p className="text-sm text-gray-200 line-clamp-2">
-                Everything a well owner needs to know: how wells work, types of wells and pumps, water quality testing, common contaminants including PFAS and bacteria, maintenance schedules, and when to call a pro.
+                The complete reference guide to private well water systems — how they work, what to maintain, what it costs, and everything in between.
               </p>
             </div>
           </Link>
