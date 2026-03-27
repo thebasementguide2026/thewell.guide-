@@ -62,11 +62,12 @@ export const articles: Article[] = [
     readTime: '8 min read',
   },
   {
-    title: 'Buying a Home with a Private Well',
-    description: 'What to inspect, test, and negotiate before closing on a well property.',
-    slug: 'guides/buying-home-with-private-well',
+    title: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide',
+    description: 'Everything a homebuyer needs to know before purchasing a house with a private well. Well inspection checklist with pass/fail criteria, required water tests by contaminant, loan requirements for FHA/VA/USDA/conventional, negotiating well problems with specific dollar amounts, seller disclosure laws, walk-away conditions, and a 30-day post-closing checklist.',
+    slug: 'guides/buying-house-with-well',
     category: 'Guide',
-    readTime: '12 min read',
+    readTime: '18 min read',
+    image: '/buying a home on well.jpg',
   },
   {
     title: 'Well Water Pressure Problems',
