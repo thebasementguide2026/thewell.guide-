@@ -9,12 +9,12 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: 'The Complete Guide to Private Well Water Systems 2026',
-    description: 'Everything a well owner needs to know: how wells work, types of wells and pumps, water quality testing, common contaminants including PFAS and bacteria, maintenance schedules, and when to call a pro.',
+    title: 'The Complete Guide to Private Well Water Systems (2026)',
+    description: 'The definitive guide to private well water systems for homeowners. How wells work, the full system from aquifer to faucet, all 12 components explained, water quality by region, annual maintenance schedule, 10-year cost table, seasonal care, what fails when, and links to every deep-dive guide on well.guide.',
     slug: 'guides/complete-well-guide',
     category: 'Guide',
-    readTime: '18 min read',
-    image: '/wellguidehero.jpg',
+    readTime: '22 min read',
+    image: '/complete-well-guide.jpg',
   },
   {
     title: 'Well Water Smells Like Sulfur or Rotten Eggs: Causes and Fixes',
