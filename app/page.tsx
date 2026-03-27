@@ -102,10 +102,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Cornerstone Guides */}
+      <section className="container-custom py-12">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-2xl font-bold text-[#0D1F1A]">Essential Well Owner Guides</h2>
+          <Link href="/guides" className="text-sm font-medium text-[#1D9E75] hover:underline">View All →</Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            { title: 'Buying a House With a Well: The Complete Homebuyer\u2019s Due Diligence Guide', href: '/guides/buying-house-with-well', description: 'Inspection checklist, water tests, loan requirements, negotiation dollar amounts, walk-away conditions, and a 30-day post-closing checklist.', image: '/buying a home on well.jpg' },
+            { title: 'Well Water Treatment Options: Match the Right System to Your Contaminant', href: '/guides/well-water-treatment-options', description: 'Every treatment technology explained with specific contaminants each removes, what each cannot do, costs, and correct treatment sequences.', image: '/well treatmentoptions.jpg' },
+            { title: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water', description: '43 million Americans on private wells are solely responsible for testing their own water. What to test for, when to test, and what to do when results are bad.', image: '/watertest.jpg' },
+            { title: 'Well Pressure Tank: The Complete Guide', href: '/guides/well-pressure-tank-guide', description: 'How pressure tanks work, the three types, how to size one correctly, the best brands, maintenance schedule, failure signs, and when to replace.', image: '/pressureguide.jpg' },
+          ].map((guide) => (
+            <Link key={guide.href} href={guide.href} className="group relative rounded-xl overflow-hidden block" style={{ minHeight: '260px' }}>
+              <Image src={guide.image} alt={guide.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                <span className="inline-block px-2.5 py-1 text-xs font-semibold rounded-md mb-2" style={{ backgroundColor: '#E8F4FD', color: '#0D3D30' }}>GUIDE</span>
+                <h3 className="text-lg font-bold mb-1 group-hover:underline decoration-2 underline-offset-4">{guide.title}</h3>
+                <p className="text-sm text-gray-300 line-clamp-2">{guide.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Popular Guides — image card grid like theseptic.guide */}
       <section className="container-custom py-12">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-[#0D1F1A]">Popular Guides</h2>
+          <h2 className="text-2xl font-bold text-[#0D1F1A]">All Guides</h2>
           <Link href="/guides" className="text-sm font-medium text-[#1D9E75] hover:underline">View All →</Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
