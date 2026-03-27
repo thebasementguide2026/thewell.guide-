@@ -94,6 +94,14 @@ export const articles: Article[] = [
     image: '/hard-water-well.jpg',
   },
   {
+    title: 'Whole House Water Filter Cost: What Well Owners Actually Pay in 2026',
+    description: 'The complete cost guide to whole house water filtration for well water. Equipment costs by system type, installation costs, annual maintenance costs, cost by contaminant problem, the 10-year ownership picture, and exactly what a quote should include.',
+    slug: 'cost-guides/whole-house-water-filter-cost',
+    category: 'Cost Guide',
+    readTime: '13 min read',
+    image: '/whole-house-water-filter-cost.jpg',
+  },
+  {
     title: 'Well Water Pressure Problems',
     description: "Low pressure, no water, or pressure surges — here's what causes them.",
     slug: 'problems/well-water-pressure-problems',
