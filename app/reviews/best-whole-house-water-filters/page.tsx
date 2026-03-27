@@ -373,7 +373,7 @@ export default function BestWholeHouseWaterFilters() {
               <strong>The honest limitation no product page mentions:</strong> This system is not appropriate for wells with iron bacteria. If you see reddish-brown slime inside toilet tanks or notice a viscous reddish film on fixtures, you have iron bacteria. Install this system into an iron bacteria problem and the bacteria will colonize the filter media within months, defeating the iron removal capability. Shock chlorinate the well first, address iron bacteria, then install the Home Master. See the <a href='/guides/shock-chlorination-well' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>shock chlorination guide</a> for the procedure.
             </p>
 
-            <a href='#affiliate-hmf3sdgfec' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://amzn.to/4s1qVLY' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
@@ -435,7 +435,7 @@ export default function BestWholeHouseWaterFilters() {
               <strong>Why the 7 GPM flow rate is often misunderstood:</strong> The 7 GPM rating reflects the UV disinfection contact time requirement &mdash; water must move slowly enough through the UV chamber to receive the minimum 40 mJ/cm&sup2; dose required for Class A disinfection. At higher flow rates, contact time is insufficient and bacteria survive. If your household peak demand exceeds 7 GPM, you need a UV system with a higher-rated lamp or supplemental storage, or you accept that peak demand moments may receive lower UV doses.
             </p>
 
-            <a href='#affiliate-eq-well-uv-pro-ast' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://amzn.to/48da8OK' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
@@ -484,7 +484,7 @@ export default function BestWholeHouseWaterFilters() {
               <strong>Installation:</strong> The most DIY-friendly system on this list. Pre-assembled housing, push-in connection fittings, standard 1-inch NPT. iSpring provides YouTube installation guides. Most homeowners with basic plumbing tools complete installation in 2 to 3 hours.
             </p>
 
-            <a href='#affiliate-wgb32b' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://amzn.to/4uRVTbQ' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
@@ -529,7 +529,7 @@ export default function BestWholeHouseWaterFilters() {
               <strong>Annual ownership cost:</strong> Replacement filter set approximately $80 to $130 per year &mdash; slightly higher than the standard WGB32B due to iron/manganese cartridge cost.
             </p>
 
-            <a href='#affiliate-wgb32bm' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://amzn.to/4uVTDQZ' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
