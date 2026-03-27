@@ -5,17 +5,28 @@ import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
-  title: 'The Complete Guide to Private Well Water Systems 2026 | The Well Guide',
-  description: 'Everything a well owner needs to know: how wells work, types of wells and pumps, water quality testing, common contaminants including PFAS and bacteria, maintenance schedules, and when to call a pro. Written for the 43 million Americans on private wells.',
+  title: 'The Complete Guide to Private Well Water Systems (2026) | The Well Guide',
+  description: 'The definitive guide to private well water systems for homeowners. How wells work, the full system from aquifer to faucet, all 12 components explained, water quality by region, annual maintenance schedule, 10-year cost table, seasonal care, what fails when, and links to every deep-dive guide on well.guide.',
   openGraph: {
-    title: 'The Complete Guide to Private Well Water Systems 2026',
-    description: 'Everything a well owner needs to know: how wells work, types of wells and pumps, water quality testing, common contaminants including PFAS and bacteria, maintenance schedules, and when to call a pro.',
+    title: 'The Complete Guide to Private Well Water Systems (2026)',
+    description: 'The definitive guide to private well water systems for homeowners. How wells work, all 12 components, water quality by region, annual maintenance schedule, 20-year cost table, seasonal care, and links to every deep-dive guide on well.guide.',
     url: 'https://well.guide/guides/complete-well-guide',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/wellguidehero.jpg', width: 1200, height: 630, alt: 'Complete guide to private well water systems' }],
+    images: [{ url: 'https://well.guide/complete-well-guide.jpg', width: 1200, height: 630, alt: 'Diagram of a residential private well water system showing the outdoor wellhead and underground cross-section with submersible pump and aquifer on the left, and the basement pressure tank, pressure switch, pressure gauge, sediment filter, and UV system on the right, with teal flow arrows tracing the water path from aquifer to faucet.' }],
   },
   alternates: { canonical: 'https://well.guide/guides/complete-well-guide' },
+}
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The Complete Guide to Private Well Water Systems (2026)',
+  description: 'The definitive guide to private well water systems for homeowners. How wells work, all 12 components, water quality by region, annual maintenance schedule, 20-year cost table, seasonal care, and links to every deep-dive guide on well.guide.',
+  author: { '@type': 'Organization', name: 'The Well Guide' },
+  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
+  mainEntityOfPage: 'https://well.guide/guides/complete-well-guide',
+  dateModified: '2026-03-25',
 }
 
 const faqSchema = {
@@ -24,10 +35,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'How do I know if my well water is safe to drink?',
+      name: 'How does a private well work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You cannot know without testing. Arsenic, nitrates, bacteria, and PFAS are all completely undetectable by taste, smell, or appearance. Test annually for total coliform bacteria, nitrates, pH, and total dissolved solids through a state-certified laboratory. Do baseline testing for arsenic, lead, and PFAS if you have never done it. A clean annual test plus baseline testing for the major threats gives you the most complete picture of safety available to a private well owner.',
+        text: 'A private well is a drilled hole that extends from the surface down to an underground aquifer. A submersible pump positioned inside the well pushes water up through a pipe to the surface. The water flows into a pressure tank, which stores it under pressure so water is available without the pump running on every use. A pressure switch cycles the pump on when pressure drops and off when it builds back up. Water then passes through any treatment equipment and distributes through the home\'s plumbing to every fixture.',
       },
     },
     {
@@ -35,15 +46,15 @@ const faqSchema = {
       name: 'How often should I test my well water?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Test for total coliform bacteria, nitrates, pH, and total dissolved solids at minimum once per year. Spring is the recommended timing. Test immediately any time your water changes in taste, color, or smell, after any well repair, or after flooding. Every 3 to 5 years, do more comprehensive testing including a metals panel.',
+        text: 'At minimum, once per year for coliform bacteria, E. coli, nitrates, and pH. Spring is recommended \u2014 snowmelt and spring rain represent the highest contamination risk period. Test more frequently after any flooding event, after any work on the well, after nearby land use changes, or any time you notice a change in taste, odor, or appearance. Annual testing is the only way to catch contamination that has no detectable taste, color, or odor.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What are the most dangerous well water contaminants?',
+      name: 'What contaminants are most common in private well water?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For acute illness, coliform bacteria and E. coli pose the most immediate risk. For long-term health effects, arsenic, nitrates above 10 mg/L (especially dangerous to infants), PFAS, and radon in certain geological areas are the primary concerns. None of these can be detected by taste, smell, or appearance — testing is the only way to know they are present.',
+        text: 'The most common contaminants vary by region. Bacteria (coliform and E. coli) can affect any well at any time. Nitrates are the most common health contaminant in agricultural areas. Iron and manganese are widespread aesthetic contaminants. Arsenic occurs naturally in New England, the Mountain West, and parts of the Midwest and Southwest. Hard water affects the majority of wells east of the Rocky Mountains. PFAS contamination is emerging near military bases, airports, and industrial sites. Regional geology is the strongest predictor of what your well is likely to contain.',
       },
     },
     {
@@ -51,726 +62,949 @@ const faqSchema = {
       name: 'How long does a well pump last?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The average lifespan of a submersible well pump is 8 to 15 years. Pumps in clean, low-sediment water with a properly sized pressure tank regularly last 15 to 20 years. Pumps in high-iron or high-sediment water conditions may need replacement sooner. Begin budgeting for replacement when the pump reaches 10 years.',
+        text: 'A quality submersible pump typically lasts 8 to 15 years. Factors that shorten pump life include high iron or sediment content, a waterlogged pressure tank forcing the pump to short-cycle continuously, and the well drawing down allowing the pump to run dry. Keeping the pressure tank properly pre-charged and replacing treatment media on schedule are the most effective ways to extend pump life. Replacement cost is $1,000 to $2,500 installed.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What does it mean when my well pump keeps cycling on and off rapidly?',
+      name: 'What is the difference between a pressure tank and a water storage tank?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rapid pump cycling — turning on and off every few seconds — almost always indicates a failed pressure tank bladder. The tank is waterlogged, having lost the air cushion that buffers the system. This causes constant cycling that will burn out the pump motor if not addressed quickly. Replace the pressure tank immediately.',
+        text: 'A pressure tank contains a pre-charged air chamber separated from the water by a rubber bladder. The air acts as a spring providing pressurized storage \u2014 it allows water to flow without the pump running on every use event. A plain water storage tank (cistern) contains only water with no pressurization and requires a separate booster pump to deliver water under pressure. Pressure tanks are the standard configuration in residential well systems. Cisterns are used in low-yield well situations where the well cannot match household demand in real time.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Is well water safe to drink without treatment?',
+      name: 'How do I know if my well water is safe to drink?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "It depends on your specific well and local geology. Many private wells produce clean, safe water that needs no treatment beyond annual testing. Others have naturally occurring contaminants including arsenic, iron, or radon that require treatment. The only way to know is to test. Start with the annual core test and expand based on results and your region's known groundwater concerns.",
+        text: 'You cannot determine this without testing. Many serious well water contaminants \u2014 arsenic, nitrates, PFAS, lead \u2014 have no taste, odor, or visible color at harmful concentrations. Annual laboratory testing from a state-certified lab is the only reliable method. If you have never tested your well, that is the single most important action you can take as a well owner.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Can a septic system contaminate a well?',
+      name: 'What are the signs of well pump failure?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. A failing or improperly located septic system is one of the most common sources of bacterial and nitrate contamination in private wells. Minimum setback requirements between a well and a septic system typically range from 50 to 100 feet depending on state and county rules. If your well and septic system are on the same property, annual bacterial testing is especially important.',
+        text: 'The clearest signs are no water at any fixture, progressively worsening water pressure over days or weeks, the pump running continuously without building pressure to the cut-out setting, and air sputtering from faucets before water flows. A sudden complete loss of water with no recent freezing weather is almost always pump failure or loss of power to the pump circuit. Do not run the pump if the well may have drawn dry \u2014 running a pump dry destroys it rapidly.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What should I do if my well water test comes back positive for bacteria?',
+      name: 'How much does it cost to maintain a well per year?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Stop drinking the water and switch to bottled water immediately. Shock chlorinate the well, wait 12 to 24 hours, flush the system thoroughly, and retest. If the test comes back positive again after chlorination, there is a structural problem with the well requiring a licensed contractor to diagnose and repair. Do not return to using the well until a test confirms it is clear.',
+        text: 'Annual maintenance for a residential well system with basic treatment equipment runs $200 to $500 per year: a certified lab water test ($100 to $300), filter cartridge replacements ($20 to $80), UV lamp replacement ($50 to $150 if applicable), and softener salt ($100 to $200 if applicable). Building a sinking fund of $100 to $200 per year for pump and pressure tank replacement makes those larger costs manageable. Total 20-year ownership cost is typically $6,300 to $13,500 \u2014 generally less than the equivalent cost of municipal water service.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What is the difference between a dug well and a drilled well?',
+      name: 'Is well water better than city water?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A dug well is shallow (under 30 feet), hand-excavated, and highly vulnerable to surface contamination and seasonal drying. A drilled well goes 100 to 400 feet or more, reaches a deeper aquifer, and is sealed with grouted casing that provides significantly better protection against surface contamination. Almost all new wells installed today are drilled wells.',
+        text: 'They have different characteristics. Private well water does not contain chlorine, chloramines, or disinfection byproducts. Many well owners prefer the taste. Well water is independent from utility rate increases and distribution failures. However, private well water has no guaranteed safety unless the owner tests regularly and treats appropriately. Municipal water meets enforceable EPA standards before reaching your tap. A properly tested and treated well can exceed municipal water quality. An untested and untreated well may contain harmful contaminants without the owner\'s knowledge.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is short cycling and why is it bad for my well pump?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Short cycling is when a well pump turns on and off in rapid succession every few seconds instead of running for 1 to 2 minutes per cycle as designed. It is almost always caused by a waterlogged pressure tank that has lost its air charge. Every start puts stress on the pump motor \u2014 a pump that short-cycles continuously will fail in a fraction of its normal service life. The fix is replacing the pressure tank, not the pump.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What should I do if my water test comes back positive for bacteria?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Stop using the water for drinking or cooking. Confirm the result with a second properly collected sample to rule out sampling error. If confirmed positive, contact a licensed well contractor to perform shock chlorination. After chlorination and flushing, retest. If a third test returns positive, the contamination has a structural source that shock chlorination cannot fix \u2014 a failed grout seal, cracked casing, or inadequate separation from a septic system. Source investigation by a licensed contractor is required.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the water table and how does it affect my well?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The water table is the upper boundary of the saturated zone underground \u2014 the depth at which soil and rock are completely filled with water. Your well extends below the water table so the pump can draw from the saturated zone. The water table rises in wet seasons and falls in drought. In the northern United States it is typically highest in March and April and lowest in August and September. If the water table drops below the pump intake, the well goes dry. Shallow wells in unconfined aquifers are more vulnerable to seasonal water table variation than deep bedrock wells.',
       },
     },
   ],
 }
 
-const articleSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'The Complete Guide to Private Well Water Systems 2026',
-  description: 'Everything a well owner needs to know: how wells work, types of wells and pumps, water quality testing, common contaminants including PFAS and bacteria, maintenance schedules, and when to call a pro.',
-  image: 'https://well.guide/wellguidehero.jpg',
-  datePublished: '2026-03-25',
-  dateModified: '2026-03-25',
-  author: {
-    '@type': 'Organization',
-    name: 'The Well Guide',
-    url: 'https://well.guide',
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'The Well Guide',
-    url: 'https://well.guide',
-  },
-  mainEntityOfPage: 'https://well.guide/guides/complete-well-guide',
-}
-
 export default function CompleteWellGuide() {
   return (
     <>
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type='application/ld+json'
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
-      <section className='relative h-[70vh] min-h-[500px] overflow-hidden' style={{ backgroundColor: '#0D3D30' }}>
+      <div className='relative w-full' style={{ height: '70vh', minHeight: '500px' }}>
         <Image
-          src='/wellguidehero.jpg'
-          alt='Complete guide to private well water systems'
+          src='/complete-well-guide.jpg'
+          alt='Diagram of a residential private well water system showing the outdoor wellhead and underground cross-section with submersible pump and aquifer on the left, and the basement pressure tank, pressure switch, pressure gauge, sediment filter, and UV system on the right, with teal flow arrows tracing the water path from aquifer to faucet.'
           fill
-          className='object-cover opacity-45 scale-105 transition-transform duration-700 hover:scale-100'
+          className='object-cover'
           priority
         />
-        <div className='absolute inset-0 bg-gradient-to-t from-[#0D3D30] via-[#0D3D30]/40 to-transparent' />
-        <div className='relative h-full max-w-7xl mx-auto px-6 flex flex-col justify-end pb-20'>
-          <div className='flex items-center space-x-3 mb-8'>
-            <div className='w-12 h-px' style={{ backgroundColor: '#1D9E75' }}></div>
-            <span className='font-bold tracking-[0.3em] text-sm uppercase' style={{ color: '#5DCAA5' }}>Guide</span>
+        <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30' />
+        <div className='absolute inset-0 flex items-end'>
+          <div className='max-w-4xl mx-auto px-6 pb-12 w-full'>
+            <span className='inline-block px-3 py-1 text-xs font-bold rounded-md mb-4 tracking-wide' style={{ backgroundColor: '#E8F4FD', color: '#0D3D30' }}>GUIDE</span>
+            <h1 className='text-4xl md:text-5xl font-black text-white leading-tight mb-3'>The Complete Guide to Private Well Water Systems (2026)</h1>
+            <p className='text-white/70 text-base'>20 min read &middot; Updated March 2026</p>
           </div>
-          <h1 className='text-4xl md:text-6xl font-black text-white mb-6 leading-[0.9] tracking-tighter'>
-            The Complete Guide to<br />
-            Private Well Water<br />
-            <span style={{ color: '#5DCAA5' }}>Systems 2026</span>
-          </h1>
-          <p className='text-lg text-white/70 max-w-2xl mb-10 font-medium leading-relaxed'>
-            Everything a well owner needs to know. Written for the 43 million Americans on private wells.
+        </div>
+      </div>
+
+      {/* Breadcrumbs */}
+      <div className='max-w-4xl mx-auto px-6 mt-6 mb-2'>
+        <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: 'Complete Well Guide' }]} />
+      </div>
+
+      <article className='max-w-4xl mx-auto px-6 py-8'>
+
+        {/* Citation Block */}
+        <div className='bg-gray-50 rounded-xl p-5 mb-8 text-sm italic text-slate-500 border border-gray-200'>
+          About this guide: The Complete Guide to Private Well Water Systems is the central reference article for well.guide, written for the approximately 43 million Americans who rely on private wells for their drinking water. It covers how a well system works from aquifer to faucet, all 12 system components, water quality by region, annual maintenance, the 20-year cost of well ownership, seasonal care, and links to every in-depth guide on this site. All technical content follows EPA guidance and USGS groundwater research. Last reviewed March 2026.
+        </div>
+
+        {/* TL;DR */}
+        <div className='rounded-xl p-6 mb-10' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
+          <p className='font-bold text-slate-900 mb-2'>Quick answer:</p>
+          <p className='text-slate-700 leading-relaxed'>
+            A private well is a controlled access point into groundwater stored in an underground aquifer. Your well system moves that water from below ground into your home through five connected stages: the well itself (the hole and casing), the pump (which lifts the water), the pressure tank (which stores water under pressure), the water treatment equipment (which removes contaminants specific to your water), and your home plumbing (which distributes water to every fixture). Understanding how these stages connect and interact is what separates a well owner who catches problems early from one who faces expensive emergencies. This guide covers all of it &mdash; how the system works, what every component does, what your water quality is likely to contain based on where you live, what to maintain and when, what the full 20-year cost of well ownership looks like, and where to go deeper on every topic.
           </p>
-          <div className='flex items-center space-x-4'>
-            <div className='w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm' style={{ backgroundColor: '#1D9E75' }}>WG</div>
-            <div>
-              <p className='text-white font-semibold'>The Well Guide</p>
-              <p className='text-white/50 text-sm'>Updated Mar 2026 &middot; 18 min read</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Breadcrumbs items={[
-        { label: 'Guides', href: '/guides' },
-        { label: 'Complete Well Guide' }
-      ]} />
-
-      {/* Main Content */}
-      <article className='max-w-4xl mx-auto px-4 py-12'>
-
-        {/* TL;DR Box */}
-        <div className='mb-12 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
-          <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>More than 43 million Americans rely on private wells with zero government oversight of their water quality &mdash; the EPA does not regulate private wells and never tests yours. Test annually at minimum for coliform bacteria and nitrates. The single most important fact: most dangerous contaminants are completely invisible, tasteless, and odorless. Your water can look and taste perfect while harboring bacteria, arsenic, or PFAS at levels that cause serious harm.</p>
         </div>
 
-        {/* Intro */}
-        <div className='mb-12'>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>More than 43 million Americans &mdash; roughly 15 percent of the US population &mdash; rely on a private well as their only source of drinking water, according to the US Geological Survey. Every one of them is entirely responsible for their own water quality. The EPA does not regulate private wells. No government agency tests the water or tells you when something is wrong. When your water becomes contaminated, the only person who will find out &mdash; if anyone does &mdash; is you.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>Well water, properly understood and maintained, is clean, reliable, and independent. But it requires a different kind of attention than city water. The households that run into problems are almost always the ones who assumed their water was fine because it looked and tasted fine. The ones who stay ahead of problems test annually, know their system, and act early when something changes.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'>This guide covers everything: how water gets from the ground to your tap, the five types of wells, every system component and what it does, the contaminants that matter and how to test for them, what your pump and pressure tank cost to maintain and replace, and the maintenance schedule that prevents emergencies.</p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Approximately 43 million Americans rely on private wells for their drinking water, according to the U.S. Geological Survey. Unlike municipal water, private wells are not regulated by the EPA, not monitored by any government agency, and entirely the responsibility of the owner. This is both the greatest advantage and the greatest responsibility of well ownership.
+        </p>
+
+        {/* How a Private Well System Works */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>How a Private Well System Works: The Full Flow Path</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Most well problems make immediate sense once you understand the complete path water takes from the aquifer to your faucet. Every problem in the system interrupts or degrades some part of this flow.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>The Flow Path: Aquifer to Faucet</h3>
+
+        {/* Flow Path Diagram */}
+        <div className='flex flex-wrap justify-center gap-0 items-center mb-6'>
+          {[
+            { name: 'Aquifer', desc: 'Underground water-bearing layer' },
+            { name: 'Well', desc: 'Drilled hole with casing & screen' },
+            { name: 'Pump', desc: 'Submersible pump lifts water' },
+            { name: 'Pitless Adapter', desc: 'Sealed frost-proof exit fitting' },
+            { name: 'Underground Water Line', desc: 'Buried below frost depth' },
+            { name: 'Pressure Tank', desc: 'Stores pressurized water' },
+            { name: 'Pressure Switch', desc: 'Cycles pump on/off by PSI' },
+            { name: 'Water Treatment', desc: 'Filters, UV, softener if needed' },
+            { name: 'Home Plumbing', desc: 'Distributes to all fixtures' },
+            { name: 'Faucet', desc: 'Safe water at every tap' },
+          ].map((step, index, arr) => (
+            <div key={step.name} className='flex items-center'>
+              <div className='bg-white border-2 border-[#1D9E75] rounded-xl px-4 py-3 text-center' style={{ minWidth: '110px' }}>
+                <p className='font-bold text-slate-900 text-sm leading-tight'>{step.name}</p>
+                <p className='text-xs text-slate-500 mt-1 leading-tight'>{step.desc}</p>
+              </div>
+              {index < arr.length - 1 && (
+                <span className='text-2xl font-bold mx-1' style={{ color: '#1D9E75' }}>&rarr;</span>
+              )}
+            </div>
+          ))}
         </div>
 
-        {/* How a Private Well Works */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Basics</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>How a Private Well Works: Water from Ground to Tap</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>Rain falls. Some of it runs off into streams and rivers. The rest filters down through layers of soil, sand, gravel, and rock, moving slowly through permeable materials until it reaches a saturated zone called an aquifer. An aquifer is not an underground lake &mdash; it is a geological formation where water fills the spaces between rock, sand, or gravel particles. The water table is the upper boundary of this saturated zone, and it fluctuates seasonally with rainfall and drought.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>A well is a vertical opening drilled or dug down into the aquifer. The casing &mdash; a tube of steel or PVC pipe &mdash; lines this opening to keep dirt and surface water out and to maintain structural integrity. The pump, installed inside the casing, pulls water up through a drop pipe to a pitless adapter, which channels the water horizontally through the casing wall below the frost line and into the home. From there, water travels to the pressure tank, which stores a reserve volume and maintains the system pressure that makes water flow when you open a tap.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>The pressure tank works through a simple mechanical principle. Inside the tank, a rubber bladder separates air from water. When the pump fills the tank, water pressure compresses the air above the bladder. When you open a faucet, the compressed air pushes water out without the pump needing to run. A pressure switch monitors system pressure and tells the pump to turn on when pressure drops to its lower threshold &mdash; typically 30 PSI &mdash; and off when it reaches the upper threshold &mdash; typically 50 or 60 PSI.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'>This cycling behavior is important. Every time the pump turns on and off, it accumulates wear on its motor and bearings. A properly sized pressure tank reduces the number of cycles per day and directly extends pump life.</p>
+        <p className='text-slate-700 leading-relaxed mb-6'>
+          The complete flow in sequence: aquifer &rarr; well screen &rarr; pump &rarr; check valve &rarr; drop pipe &rarr; pitless adapter &rarr; underground water line &rarr; pressure tank &rarr; pressure switch cycle &rarr; water treatment (if installed) &rarr; home plumbing &rarr; faucet.
+        </p>
+
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Aquifer:</strong> Groundwater stored in underground layers of sand, gravel, or fractured rock. Rain and snowmelt seep through the soil and slowly recharge the aquifer. Your well is a controlled access point into this stored water. The water table &mdash; the upper boundary of the saturated zone &mdash; rises and falls with precipitation, drought, and nearby pumping activity.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Well:</strong> A drilled hole that extends from the surface down through soil and rock to the water-bearing zone. The well has a steel or PVC casing that lines the borehole, preventing soil and surface water from collapsing into the well or contaminating the water. At the bottom, a well screen or open intake section allows groundwater to enter while excluding sediment.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Pump:</strong> Positioned below the water level inside the well casing, the submersible pump pushes water upward through the drop pipe &mdash; the pipe running from the pump to the surface. The pump operates on electricity and is the only moving part of the system located underground.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Pitless adapter:</strong> The fitting that allows the water line to exit the well casing below frost depth and travel horizontally underground to the house. It creates a watertight, sanitary connection through the well casing wall.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Underground water line:</strong> Buried below frost depth, this carries water from the well to the house. The depth varies by region &mdash; 4 to 8 feet in the northern United States, shallower in southern states.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Pressure tank:</strong> Located in the basement, utility room, or well house, the pressure tank stores water under pressure. A rubber bladder or diaphragm inside the tank separates a pre-charged air pocket from the water. When you open a faucet, water flows from the tank without the pump needing to run. When tank pressure drops to the cut-in setting (typically 30 or 40 PSI), the pressure switch signals the pump to run. The pump runs until pressure reaches the cut-out setting (typically 50 or 60 PSI), then shuts off. This cycle repeats hundreds of times per day in a typical household.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Pressure switch:</strong> The electrical switch that monitors system pressure and controls the pump. Set with two pressure points: the cut-in (pump turns on) and cut-out (pump turns off). A typical setting is 40 PSI cut-in / 60 PSI cut-out. The pressure switch is the most frequently replaced component in any well system &mdash; they last approximately 10 years and cost $30 to $75 to replace.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Water treatment equipment:</strong> Positioned after the pressure tank, treatment equipment addresses contaminants specific to your well water. This may include a sediment filter, iron filter, water softener, UV disinfection system, carbon filter, or reverse osmosis unit. Not every well needs treatment. Treatment needs are determined by water quality testing, not by assumption. The treatment stage is optional but common &mdash; the majority of private wells have at least one piece of treatment equipment installed.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Home plumbing:</strong> Distributes treated water from the pressure tank to every fixture, appliance, and water heater in the house. On a private well, your home plumbing is the last stage of the system and the stage you interact with every day.
+        </p>
+
+        {/* 12 Components */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>The 12 Components of a Well Water System</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Understanding what each component does tells you what it means when something goes wrong.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>1. Well Casing</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Steel or PVC tube lining the borehole from the surface to below the water-bearing zone. Structural and protective &mdash; it prevents the borehole from collapsing and blocks surface contaminants from reaching the water. Modern drilled well casings are 4 to 6 inches in diameter. The casing is grouted (sealed with cement or bentonite) on its exterior from the surface down to prevent surface water from running down the outside of the casing into the water.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>2. Well Cap</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The sealed cover on top of the casing at ground level. A properly installed well cap is watertight and vermin-proof &mdash; it prevents insects, rodents, rainwater, and surface contamination from entering the well. The cap should be 12 inches or more above grade. A loose, cracked, or missing cap is one of the most common causes of bacterial contamination in residential wells.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>3. Wellhead</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The portion of the casing that extends above ground, including the cap and any electrical conduit. The wellhead should be inspected annually. It should be in a location that drains away from the casing on all sides.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>4. Grout Seal</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The cement or bentonite material filling the space between the outside of the well casing and the borehole wall. The grout seal prevents surface water from channeling down the outside of the casing and contaminating the aquifer. A failed grout seal is invisible from the surface but allows surface contamination to bypass the protective value of the casing depth entirely.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>5. Submersible Pump</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The pump is set inside the well casing, typically 10 to 20 feet below the static water level to ensure it remains submerged during drawdown. It operates on 230 volts and pushes water upward. Submersible pumps are sized by horsepower (1/2 HP for shallow low-demand wells, up to 1.5 HP for deep high-demand systems) and gallons per minute output. A pump sized incorrectly for the well&apos;s yield will either short-cycle (oversized) or fail to meet demand (undersized).
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Service life: 8 to 15 years for a quality submersible pump in normal operating conditions. High iron or sediment content in the water accelerates wear. Replacement cost: $1,000 to $2,500 installed.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          See the <Link href='/guides/well-pressure-tank-guide' className='underline' style={{ color: '#1D9E75' }}>well pressure tank guide</Link> for detail on the relationship between pump sizing and pressure tank performance.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>6. Check Valve</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          A one-way valve installed above the pump that prevents water from draining back down into the well when the pump shuts off. Without a functional check valve, the pump must re-prime on every cycle &mdash; increasing wear and causing sputtering at faucets when the system restarts.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>7. Pitless Adapter</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The sanitary fitting that allows the water line to exit the well casing through a sealed, frost-proof connection below grade. Without a pitless adapter, the water line would have to exit above ground, where it would freeze in cold climates and create a contamination pathway.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>8. Pressure Tank</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The pressure tank is the most misunderstood component in most residential well systems. Its primary job is not storage &mdash; it is cycle control. By maintaining a reservoir of pressurized water, the tank allows a household to draw water without the pump starting on every single water use event. Without a properly functioning pressure tank, the pump would short-cycle (start and stop every few seconds), dramatically reducing pump life.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          A bladder tank has a pre-charged air chamber separated from the water by a rubber bladder. The pre-charge pressure should be set to 2 PSI below the pump&apos;s cut-in pressure. When the bladder fails, the tank becomes waterlogged &mdash; it fills entirely with water, the air cushion is lost, and the pump begins short-cycling. A waterlogged pressure tank is the single most common cause of premature pump failure.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Service life: 10 to 15 years for a quality bladder tank. Replacement cost: $600 to $1,500 installed.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the complete guide to pressure tank types, sizing, and replacement, see the <Link href='/guides/well-pressure-tank-guide' className='underline' style={{ color: '#1D9E75' }}>well pressure tank guide</Link>. For replacement costs broken down by tank size, region, and labor, see the <Link href='/cost-guides/pressure-tank-replacement-cost' className='underline' style={{ color: '#1D9E75' }}>pressure tank replacement cost guide</Link>.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>9. Pressure Switch</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The electrical brain of the system. Monitors pressure continuously and closes the circuit to the pump when pressure drops to the cut-in setting. A correctly set pressure switch for a 40/60 system closes the circuit at 40 PSI and opens it at 60 PSI. The pre-charge pressure in the tank must be set 2 PSI below the cut-in pressure &mdash; this is the most important single calibration in the well system and the one most often set incorrectly.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Common failures: contacts corrode and the switch fails to close (pump won&apos;t run), or contacts weld and the switch fails to open (pump runs continuously and burns out). Replacement: $100 to $200 including labor, and a common DIY repair for comfortable homeowners.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>10. Pressure Gauge</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          A mechanical gauge showing current system pressure in PSI. Located at the tank tee near the pressure switch. Should read between cut-in and cut-out pressure during normal operation. A gauge that reads zero when water is running normally indicates a failed gauge or a severed connection. A gauge that reads below cut-in with the pump running indicates the pump is failing to build pressure. Gauges are inexpensive ($10 to $30) and often the first diagnostic indicator of a deeper problem.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>11. Water Treatment Equipment</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Treatment equipment varies based on what the water test shows. Common configurations:
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          A sediment pre-filter protects all downstream equipment from physical damage by sand, silt, and rust particles.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          An iron oxidizing filter removes ferrous iron, manganese, and hydrogen sulfide before they reach the softener, appliances, or fixtures.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          A water softener removes hardness minerals (calcium and magnesium) that cause scale in pipes, water heaters, and appliances.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          A UV disinfection system inactivates bacteria and viruses without chemicals. Requires clear water upstream &mdash; turbidity and iron above 0.3 mg/L reduce UV effectiveness.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          An under-sink reverse osmosis system addresses dissolved health contaminants (arsenic, nitrates, PFAS, lead) at the point of use for drinking and cooking water.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Treatment equipment is not required for every well. The correct approach is test first, treat second. Buying treatment equipment before testing produces systems that may be treating the wrong contaminants or nothing at all.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the full treatment decision framework including which system addresses which contaminant, see the <Link href='/guides/well-water-treatment-options' className='underline' style={{ color: '#1D9E75' }}>well water treatment options guide</Link>. For specific product recommendations, see the <Link href='/reviews/best-whole-house-water-filters' className='underline' style={{ color: '#1D9E75' }}>best whole house water filters review</Link>.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>12. Well Log</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Not a physical component, but the most important document associated with any well. The well log (drilling report) records the well&apos;s depth, casing specifications, static water level at construction, original yield in GPM, and the geological formations encountered while drilling. State licensing requirements mean most well logs are filed with the state environmental agency and are retrievable online. Your well log tells you what the well was designed to do &mdash; comparing it to current performance reveals any deterioration.
+        </p>
+
+        {/* Water Quality by Region */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Water Quality by Region: What Your Well Is Likely to Contain</h2>
+        <p className='text-slate-700 leading-relaxed mb-6'>
+          Where your well is located is one of the strongest predictors of what contaminants may be present. This is not deterministic &mdash; two neighboring wells can produce completely different water chemistry &mdash; but it gives you a starting framework before testing. Testing is always required for certainty.
+        </p>
+
+        {/* New England */}
+        <div className='border-l-4 border-gray-300 pl-6 mb-8'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>New England (Maine, Vermont, New Hampshire, Massachusetts, Connecticut, Rhode Island)</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            Bedrock geology in New England is particularly associated with naturally occurring arsenic, radon, uranium, and manganese. Arsenic from granite and schist formations is the most significant health concern &mdash; the USGS has found arsenic above the EPA limit of 10 ppb in a significant percentage of New England bedrock wells. Radon in water is also common and aerosolizes during showering, contributing to inhalation exposure. Iron and hardness are widespread aesthetic issues. pH tends to be low in shallow wells drawing from acidic glacial soils.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-2'>
+            <strong className='text-slate-900'>Priority tests for New England:</strong> <span style={{ color: '#1D9E75' }}>Arsenic, radon, uranium, manganese, iron, pH, coliform bacteria, nitrates.</span>
+          </p>
         </div>
 
-        {/* Five Types of Wells */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Well Types</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>The Five Types of Wells</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>Not all wells are the same. The type you have determines how vulnerable your water is to contamination, how deep you go to find reliable water, and what maintenance issues are most likely over time.</p>
-          <div className='space-y-4'>
-            <div className='bg-white border border-slate-200 rounded-lg p-5'>
-              <h3 className='font-bold text-slate-900 text-sm mb-2'>Drilled Wells</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>The most common type for modern residential use and the standard for any new well installed today. A rotary drill rig bores a hole from 100 to over 400 feet deep, through rock and soil, until it reaches a reliable aquifer. The hole is lined with steel or PVC casing and sealed with grout to prevent surface water from traveling down the outside of the casing and contaminating the groundwater. Drilled wells provide the best protection against surface contamination because of their depth and sealed construction. A submersible pump sits inside the casing below the water level.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-5'>
-              <h3 className='font-bold text-slate-900 text-sm mb-2'>Dug Wells</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Shallow hand-excavated pits, typically 3 to 10 feet in diameter and rarely more than 30 feet deep, often lined with stone, brick, or concrete tile. They draw from the uppermost groundwater layer, which is directly influenced by surface conditions &mdash; rainfall, runoff, nearby septic systems, and agricultural activity. Dug wells are highly vulnerable to bacterial contamination and seasonal drying. Most are in older properties, and many have been decommissioned or replaced. If you have a dug well, annual bacterial testing is non-negotiable.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-5'>
-              <h3 className='font-bold text-slate-900 text-sm mb-2'>Driven Wells</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Small-diameter pipes driven into the ground by impact, reaching depths of 30 to 50 feet into sandy or gravelly soils. They are inexpensive to install but limited to areas where shallow groundwater is available and the soil permits the installation method. Like dug wells, they draw from shallow aquifers and face higher contamination risk than drilled wells.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-5'>
-              <h3 className='font-bold text-slate-900 text-sm mb-2'>Bored Wells</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Similar to dug wells in depth and vulnerability, created with an auger rather than hand tools, typically lined with concrete tile or casing. Common in earlier construction periods, less common in new installations today.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-5'>
-              <h3 className='font-bold text-slate-900 text-sm mb-2'>Bedrock or Rock Wells</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Drilled directly into fractured rock formations. The water source is fractures and fissures in the bedrock rather than a porous sandy aquifer. Bedrock wells can be very deep and are common in New England and other areas with granitic geology. Yield can vary significantly depending on how many fractures the well intersects. These wells sometimes have naturally occurring contaminants related to local geology &mdash; arsenic is a concern in certain bedrock formations in New England and the upper Midwest, and radon can be elevated in granite-rich areas.</p>
-            </div>
-          </div>
+        {/* Mid-Atlantic */}
+        <div className='border-l-4 border-gray-300 pl-6 mb-8'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Mid-Atlantic (New York, New Jersey, Pennsylvania, Maryland, Delaware, Virginia, West Virginia)</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The glacial geology of the northern mid-Atlantic produces iron, manganese, and hardness as common issues. New Jersey has mandatory water testing at property transfer due to the prevalence of contaminants. Agricultural areas of Pennsylvania and Maryland have elevated nitrate risk from fertilizer and animal waste. Parts of this region have documented PFAS contamination near military bases and industrial sites. Road salt contamination of shallow wells is an emerging issue in heavily salted northern corridors.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-2'>
+            <strong className='text-slate-900'>Priority tests for Mid-Atlantic:</strong> <span style={{ color: '#1D9E75' }}>Bacteria, nitrates, iron, manganese, hardness, PFAS (if near industrial or military sites), lead (older homes).</span>
+          </p>
         </div>
 
-        {/* Every Component */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Components</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Every Component of Your Well System</h2>
-          <div className='grid md:grid-cols-2 gap-4'>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Well Casing</h3>
-              <p className='text-slate-600 text-xs'>The tube that lines the borehole from ground level down to and through the aquifer. Modern casings are typically steel or PVC pipe, 4 to 6 inches in diameter. State codes typically require the casing to extend at least 12 inches above the ground surface. The space between casing and borehole wall should be sealed with grout &mdash; one of the most important protective barriers against contamination.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Well Cap</h3>
-              <p className='text-slate-600 text-xs'>Sits at the top of the casing at ground level. A properly sealed sanitary well cap prevents insects, small animals, surface water, and debris from entering the well. Caps have a screened vent to allow pressure equalization during pumping. Broken, loose, or missing caps are a common route for bacterial contamination. Check yours every spring.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Well Screen</h3>
-              <p className='text-slate-600 text-xs'>Attaches to the bottom of the casing where it enters the water-bearing zone. It filters out sand, gravel, and sediment while allowing water to enter. Screen slot size is matched to the aquifer material. A clogged screen can reduce well yield over time.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Submersible Pump</h3>
-              <p className='text-slate-600 text-xs'>The workhorse of the system. Sits inside the casing below the water level &mdash; sometimes 100 feet or more below ground &mdash; and pushes water up through the drop pipe to the surface. Average lifespan is 8 to 15 years. Pumps in clean, low-sediment water with a properly sized pressure tank regularly reach 15 to 20 years.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Jet Pump</h3>
-              <p className='text-slate-600 text-xs'>An alternative pump type used primarily for shallow wells or low-budget installations. Sits above ground and uses suction to pull water up. Limited to wells less than about 25 feet deep for shallow-well configuration, or up to 80 feet with a two-pipe deep-well configuration. Noisier and less efficient than submersible pumps. Lifespan of 8 to 12 years.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Pressure Tank</h3>
-              <p className='text-slate-600 text-xs'>Stores water and maintains system pressure. Modern tanks contain a rubber bladder separating water from a pre-charged air cushion. Standard size for a 3-bedroom home is 32 to 50 gallons. Lifespan is 10 to 15 years. Most common failure: bladder rupture, causing rapid pump cycling.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Pressure Switch</h3>
-              <p className='text-slate-600 text-xs'>A small spring-loaded device that reads system pressure and signals the pump to turn on and off at the set cut-in and cut-off pressures. Standard residential settings are 30/50 PSI or 40/60 PSI. Relatively inexpensive and occasionally fails on its own.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Pitless Adapter</h3>
-              <p className='text-slate-600 text-xs'>The fitting where the drop pipe exits the casing horizontally below the frost line to connect to the home&apos;s water supply. Allows the pump to be pulled from the well without excavating.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Electrical Control Box</h3>
-              <p className='text-slate-600 text-xs'>Sits above ground near the pressure tank and controls the pump motor. Contains the starting capacitor and relay. If the pump hums but does not start, the capacitor is often the cause. Capacitors typically last 3 to 5 years and are inexpensive to replace.</p>
-            </div>
-          </div>
+        {/* Southeast */}
+        <div className='border-l-4 border-gray-300 pl-6 mb-8'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Southeast (North Carolina through Florida, plus Arkansas, Tennessee, Kentucky)</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            Karst limestone geology in portions of the Southeast &mdash; particularly Florida, Georgia, and Tennessee &mdash; creates aquifer systems that are highly vulnerable to surface contamination because water moves quickly through the rock with limited natural filtration. Bacterial contamination from failing septic systems travels farther in karst aquifers than in granular aquifers. Agricultural chemicals including nitrates, atrazine, and other pesticides are common in farming regions. Coastal areas face saltwater intrusion as aquifers are depleted.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-2'>
+            <strong className='text-slate-900'>Priority tests for Southeast:</strong> <span style={{ color: '#1D9E75' }}>Bacteria, nitrates, pesticides, conductivity (saltwater intrusion indicator in coastal areas), pH.</span>
+          </p>
         </div>
 
-        {/* Water Quality */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Water Quality</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Your Water Quality: What Is Actually in Your Well</h2>
-          <div className='rounded-lg p-4 mb-6' style={{ backgroundColor: '#FFF3E0', borderLeft: '4px solid #E8A020' }}>
-            <p className='text-slate-900 font-semibold text-sm'>This is the section most well owners skip until something goes wrong. Do not skip it.</p>
-          </div>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>The EPA does not regulate private wells. The Safe Drinking Water Act, which sets standards for public water systems, does not apply to homes on private wells. Your county health department may have some construction and siting rules, but in most states, testing your water &mdash; and acting on the results &mdash; is entirely your responsibility.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>The critical fact that changes how you think about this: most dangerous well water contaminants have no taste, smell, or color. Your water can look completely clear, taste normal, and smell fine while containing bacteria, arsenic, nitrates, or PFAS at concentrations that pose serious health risks. You cannot evaluate your water safety by looking at it or drinking it. Testing is the only way to know.</p>
-
-          <h3 className='text-lg font-bold text-slate-900 mb-2'>Bacterial Contamination</h3>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>Coliform bacteria are the primary indicator contaminants in well water testing. Total coliform bacteria themselves are not always harmful, but their presence indicates that surface water has reached your well &mdash; and wherever surface water goes, harmful pathogens including E. coli, giardia, Cryptosporidium, and viruses can follow. Studies of private wells across multiple states have found coliform contamination rates ranging from 26 percent in Maryland to 45 percent in Ohio. These are not rare events.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>E. coli &mdash; specifically, E. coli detected in a water test &mdash; means fecal contamination has reached your well. This requires immediate action: stop drinking the water, use bottled or boiled water, and shock-chlorinate the well. E. coli in well water causes severe gastrointestinal illness and can be life-threatening for infants, elderly people, and immunocompromised individuals.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>Common entry routes for bacteria include a cracked or loose well cap, a compromised casing seal, a nearby failing septic system, flooding, and surface runoff after heavy rain. Even a well that has tested clean for years can develop a bacterial problem. The CDC recommends annual testing for coliform bacteria as the minimum standard for every private well.</p>
-
-          <h3 className='text-lg font-bold text-slate-900 mb-2'>Nitrates</h3>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>Nitrates in well water come primarily from agricultural fertilizers, animal waste, and failing septic systems. Nitrate contamination is especially common in rural areas with intensive agriculture, shallow wells, and sandy soils that allow rapid downward movement of water. The EPA maximum contaminant level for nitrate in public water is 10 mg/L &mdash; a threshold that exists because nitrate at or above this level can cause methemoglobinemia, commonly called blue baby syndrome, in infants under six months. Blue baby syndrome occurs when nitrate converts hemoglobin to a form that cannot carry oxygen, causing an infant&apos;s blood to fail to oxygenate properly. The condition can be fatal. If you have or are expecting an infant in the household, test specifically for nitrates and test more frequently than once per year.</p>
-
-          <h3 className='text-lg font-bold text-slate-900 mb-2'>Arsenic</h3>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>Arsenic occurs naturally in the geology of certain regions &mdash; it leaches from rock formations into groundwater without any human contribution. It is colorless, odorless, and tasteless in water. The EPA maximum contaminant level for arsenic is 10 parts per billion (ppb). Long-term exposure at levels above this threshold is associated with increased risk of bladder, lung, and skin cancers, as well as cardiovascular disease and diabetes. Minnesota&apos;s Department of Health estimates that approximately 40 percent of wells in the state have detectable arsenic. High-risk areas include New England, the upper Midwest, and parts of the Southwest. Arsenic testing is recommended at least once for any private well, and periodically thereafter depending on initial results.</p>
-
-          <h3 className='text-lg font-bold text-slate-900 mb-2'>PFAS &mdash; Forever Chemicals</h3>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>PFAS (per- and polyfluoroalkyl substances) are a class of synthetic chemicals that have been used in firefighting foam, non-stick coatings, water-repellent fabrics, food packaging, and many other industrial and consumer applications since the 1940s. They are called forever chemicals because they do not break down in the environment or in the human body. A USGS study found that at least one PFAS compound could be detected in approximately 45 percent of US drinking water samples, including samples from private wells. Research published in Science in 2024 estimated that about 80 million people in the contiguous US rely on groundwater with detectable amounts of PFAS before treatment.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>The EPA set new maximum contaminant levels for PFOA and PFOS &mdash; the two most studied PFAS compounds &mdash; at 4 parts per trillion in April 2024. These apply to public water systems, not private wells. Well owners must test voluntarily. Human health effects associated with PFAS exposure include immune system suppression, thyroid disruption, liver damage, and increased risk of kidney and testicular cancer. PFAS testing is not cheap, but if your property is near a military base, airport, landfill, manufacturing site, or agricultural land that received PFAS-containing biosolids, the test is worth doing. Contact your state environmental agency to find out if known PFAS contamination has been identified in your area.</p>
-
-          <h3 className='text-lg font-bold text-slate-900 mb-2'>Hardness, Iron, and Manganese</h3>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>These are water quality issues that affect your household systems and comfort rather than posing acute health risks, but they cause significant damage over time. Hard water &mdash; high calcium and magnesium content &mdash; leaves scale deposits inside water heaters, pipes, dishwashers, and washing machines. It reduces soap lather, leaves spots on dishes and fixtures, and can reduce appliance lifespan significantly.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>Iron in well water causes red, orange, or brown staining on fixtures, laundry, and any surface water contacts. It gives water a metallic taste at higher concentrations and can support the growth of iron bacteria &mdash; not harmful themselves, but they clog pipes and equipment and create a foul odor. Manganese, similarly, causes black or dark brown staining and at elevated levels is a health concern, particularly for children. The USGS has flagged elevated manganese as a potential human health risk at drinking water depths in significant portions of the glacial aquifer system serving parts of the northern US.</p>
-
-          <h3 className='text-lg font-bold text-slate-900 mb-2'>pH and Corrosivity</h3>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>Well water with low pH is corrosive to pipes, fixtures, and the well casing itself. Acidic water leaches lead and copper from plumbing, which then enters your drinking water. Lead exposure at any level is harmful to children&apos;s brain development and has no safe threshold. If your home was built before 1986 and you have a private well, test for lead in addition to routine parameters &mdash; especially if your water has a low pH.</p>
-
-          <h3 className='text-lg font-bold text-slate-900 mb-2'>Radon</h3>
-          <p className='text-slate-700 leading-relaxed text-sm'>Radon is a naturally occurring radioactive gas that forms from the decay of uranium in rock and soil. It dissolves into groundwater and can be released into indoor air when water from a drilled well is used for showering, dishwashing, and other activities. Radon in well water is most common in areas with granite or other uranium-bearing bedrock, including New England, the Appalachians, and parts of the Mountain West. It is odorless, colorless, and tasteless. The primary health risk is lung cancer from inhaling radon gas released from the water into indoor air. Testing for radon in well water is recommended for homes in high-radon geological areas.</p>
+        {/* Midwest */}
+        <div className='border-l-4 border-gray-300 pl-6 mb-8'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Midwest (Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota, Iowa, Missouri)</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The Midwest is the most agriculturally intensive well water region in the United States. Nitrate contamination from corn and soybean fertilization is the most prevalent health contaminant in the region. Atrazine, the most commonly detected pesticide in US groundwater, is pervasive in the corn belt. Iron and hardness from glacial drift aquifers are nearly universal. Manganese levels are elevated in many areas. Some areas of the upper Midwest have elevated arsenic in sandstone aquifers.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-2'>
+            <strong className='text-slate-900'>Priority tests for Midwest:</strong> <span style={{ color: '#1D9E75' }}>Nitrates, atrazine and pesticides, iron, manganese, hardness, bacteria, arsenic (Minnesota and Wisconsin in particular).</span>
+          </p>
         </div>
 
-        {/* How to Know If Safe */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Safety</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>How to Know If Your Well Water Is Safe to Drink</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>This is the question most well owners ask first, and the answer is almost always the same: you cannot know without testing. There is no visual indicator, no taste test, and no smell that reliably tells you whether your water is safe. This is not a theoretical concern. Arsenic has no taste. Nitrates have no smell. Bacteria produce no visible change in clear water. PFAS are completely undetectable by any human sense. The water that looks the cleanest and tastes the freshest can be carrying contaminants that accumulate in your body over years.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>The only exception is an obvious physical change &mdash; water that suddenly runs brown, smells of rotten eggs, or produces visible sediment. Those changes tell you something is wrong and testing is urgently needed. But the absence of those changes tells you nothing about chemical contamination or bacterial load.</p>
-          <div className='space-y-3'>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Annual testing is the baseline.</strong> Test for total coliform bacteria, nitrates, pH, and total dissolved solids every year through a state-certified laboratory. If those four parameters are clear and you have no known contamination risks in your area, your water is likely safe for the current year. It does not guarantee safety next year &mdash; water quality changes.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>One-time baseline testing for the big threats.</strong> If you have never tested for arsenic, lead, and PFAS, do it once. These contaminants come from geology and legacy industrial activity, not from current events, so they are unlikely to appear suddenly &mdash; but you need to know whether they are present at your baseline.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Know your regional risks.</strong> Your state health department or county extension office can tell you which contaminants are commonly found in groundwater in your area. In parts of New England, arsenic in bedrock aquifers is a known risk. In agricultural areas, nitrates from fertilizer runoff are a consistent concern. Near military bases or industrial sites, PFAS testing is worth prioritizing. Local context tells you what to add to the annual core test.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Test after any change.</strong> Any change in your water&apos;s appearance, taste, or smell is a signal to test immediately, not at the next annual interval. Any well repair or opening of the system warrants testing and shock chlorination before returning to normal use.</p>
-            </div>
-          </div>
-          <p className='text-slate-700 leading-relaxed text-sm mt-4'>If your most recent annual test came back clean on all four core parameters and you have done baseline testing for arsenic, lead, and PFAS, you have the most complete picture of safety available to a private well owner. That is what knowing your water is safe looks like.</p>
+        {/* Great Plains / Mountain West */}
+        <div className='border-l-4 border-gray-300 pl-6 mb-8'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Great Plains and Mountain West (Kansas, Nebraska, Oklahoma, Colorado, Wyoming, Montana, Idaho)</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The High Plains Aquifer (also called the Ogallala Aquifer) underlies much of this region and has seen significant water level declines from decades of intensive agricultural irrigation. The USGS has documented water level declines of more than 150 feet in parts of Kansas, Texas, and Oklahoma. Private domestic wells in this region face increasing risk of going dry as the aquifer is depleted. Naturally occurring arsenic, uranium, and selenium are present in aquifers derived from sedimentary rock. Agricultural nitrates and pesticides are widespread.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-2'>
+            <strong className='text-slate-900'>Priority tests for Great Plains / Mountain West:</strong> <span style={{ color: '#1D9E75' }}>Arsenic, uranium, selenium, nitrates, pesticides, and current static water level measurement to assess aquifer decline.</span>
+          </p>
         </div>
 
-        {/* What and When to Test */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Testing</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>What and When to Test</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>The CDC and EPA both recommend annual testing of private well water for, at minimum: total coliform bacteria, nitrates, total dissolved solids, and pH. These four tests form the non-negotiable core. Spring testing, after snowmelt and the first rains of the season, is the recommended timing because contamination risk is highest when soil is saturated.</p>
-          <div className='overflow-x-auto mb-6'>
-            <table className='w-full text-sm border-collapse'>
-              <thead>
-                <tr style={{ backgroundColor: '#E1F5EE' }}>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Test</th>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Frequency</th>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Triggered By</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Total coliform / E. coli</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Annually</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Always</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Nitrates</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Annually</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Always; more often with infant in home</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>pH and total dissolved solids</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Annually</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Always</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Arsenic</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>At least once; every 5 years in high-risk areas</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Baseline; regional geology</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Lead</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>At least once</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Older home with pre-1986 plumbing</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Iron and manganese</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>At least once; periodically</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Staining, metallic taste</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Hardness</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>At least once</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Scale, soap problems</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>PFAS</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>At least once</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Near military, industrial, or agricultural land</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Radon</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>At least once</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Bedrock well in high-radon geology</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>VOCs</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>As needed</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Near industrial sites, fuel storage</td>
-                </tr>
-                <tr className='hover:bg-slate-50'>
-                  <td className='p-3 border border-slate-200 font-semibold text-slate-900'>Pesticides and herbicides</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>As needed</td>
-                  <td className='p-3 border border-slate-200 text-slate-600'>Near agricultural land</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className='rounded-lg p-4 mb-4' style={{ backgroundColor: '#FDECEA', borderLeft: '4px solid #D32F2F' }}>
-            <p className='text-slate-900 font-semibold text-sm mb-2'>Test immediately &mdash; do not wait for the annual schedule &mdash; if:</p>
-            <ul className='text-slate-700 text-sm space-y-1 list-disc list-inside'>
-              <li>Your water changes in taste, color, smell, or clarity</li>
-              <li>Your well has been flooded or submerged</li>
-              <li>Any well component has been opened, repaired, or replaced</li>
-              <li>A new potential contaminant source appears nearby (new development, fuel spill, new agricultural activity)</li>
-              <li>Anyone in your household becomes ill with gastrointestinal symptoms of unknown cause</li>
-            </ul>
-          </div>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>Always use a state-certified laboratory for testing. At-home test strips are inadequate for bacteria, PFAS, arsenic, and heavy metals. Your county health department can provide a list of certified labs in your state, and some offer free or subsidized basic testing. Testing costs range from $70 to $110 for the annual core panel and $200 to $500 for comprehensive testing including metals and PFAS.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'>The <a href='https://www.epa.gov/privatewells' target='_blank' rel='noopener noreferrer' className='underline hover:opacity-80' style={{ color: '#1D9E75' }}>EPA&apos;s private well protection resources page</a> includes a searchable list of state programs, certified labs, and local health department contacts.</p>
+        {/* Southwest */}
+        <div className='border-l-4 border-gray-300 pl-6 mb-8'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Southwest (Arizona, New Mexico, Nevada, southern California)</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            Arid aquifers with little recharge produce water with very high total dissolved solids (TDS), extreme hardness, and naturally elevated arsenic and fluoride. The combination of high TDS and high hardness is nearly universal &mdash; a water softener or whole-house RO is the norm rather than the exception. Arsenic from volcanic and sedimentary geology is one of the most common contaminants exceeding the EPA limit. Uranium is elevated in some New Mexico and Arizona aquifers. Water tables in the Southwest are declining in many areas.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-2'>
+            <strong className='text-slate-900'>Priority tests for Southwest:</strong> <span style={{ color: '#1D9E75' }}>Arsenic, uranium, fluoride, TDS, hardness, nitrates (agriculture areas), bacteria.</span>
+          </p>
         </div>
 
-        {/* Treatment Options */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Treatment</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Well Water Treatment Options</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>If testing identifies a problem, treatment options exist for virtually every contaminant. The key is matching the treatment technology to the specific contaminant &mdash; no single system removes everything.</p>
-          <div className='space-y-4'>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Activated Carbon Filters</h3>
-              <p className='text-slate-700 text-sm'>Remove chlorine, VOCs, certain pesticides, and some heavy metals. They do not remove bacteria, nitrates, fluoride, or most PFAS compounds. Point-of-use carbon filters under the kitchen sink are appropriate for VOC removal and taste improvement.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Reverse Osmosis (RO) Systems</h3>
-              <p className='text-slate-700 text-sm'>Force water through a semi-permeable membrane that removes a very wide range of contaminants including nitrates, arsenic, PFAS, heavy metals, fluoride, and most dissolved solids. Point-of-use RO systems under the kitchen sink are the most common configuration for well homes concerned about nitrates or PFAS. They waste a significant volume of water in the process &mdash; typically 3 to 5 gallons rejected for every gallon of treated water.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>UV Ultraviolet Systems</h3>
-              <p className='text-slate-700 text-sm'>Use ultraviolet light to disinfect water by destroying the DNA of bacteria, viruses, and protozoa. They do not remove chemical contaminants or change the taste of water. They require clear, low-turbidity water to work effectively.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Water Softeners</h3>
-              <p className='text-slate-700 text-sm'>Remove calcium and magnesium through an ion-exchange process, replacing them with sodium. They solve hard water problems effectively but add sodium to the water. Should be installed on the cold supply only, leaving unsoftened water at the kitchen tap for drinking. Softeners do not remove bacteria, nitrates, arsenic, PFAS, or heavy metals.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Iron Filters</h3>
-              <p className='text-slate-700 text-sm'>Use oxidation and filtration to remove dissolved iron and manganese. Several technologies exist including air injection, birm filtration, and greensand filtration. Testing that quantifies iron type is needed before selecting a filter.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Shock Chlorination</h3>
-              <p className='text-slate-700 text-sm'>A disinfection procedure &mdash; not ongoing treatment &mdash; used to address bacterial contamination. Chlorine bleach is introduced to the well casing, circulated through the system, and flushed out over 12 to 24 hours. Appropriate as a first response to a positive coliform test and after any well repair.</p>
-            </div>
-          </div>
-          <p className='text-slate-700 leading-relaxed text-sm mt-4'>If you have a septic system and a private well on the same property, keeping both properly maintained is critical &mdash; a failing septic system is one of the most common sources of bacterial and nitrate contamination in private wells. See our network&apos;s <a href='https://theseptic.guide/guides/maintenance-guide' target='_blank' rel='noopener noreferrer' className='underline hover:opacity-80' style={{ color: '#1D9E75' }}>septic system maintenance guide at theseptic.guide</a> for a full guide to protecting both systems.</p>
+        {/* Pacific Northwest */}
+        <div className='border-l-4 border-gray-300 pl-6 mb-8'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Pacific Northwest (Washington, Oregon, northern California)</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            Volcanic geology in the Pacific Northwest produces water with naturally elevated arsenic in some areas. Iron and manganese are common in basalt aquifers. Agricultural chemicals including nitrates and pesticides are relevant in the Willamette Valley and eastern portions of the region. Radon is elevated in some granitic geology areas. Generally, water quality is better in the Pacific Northwest than in many other regions, but local variation is significant.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-2'>
+            <strong className='text-slate-900'>Priority tests for Pacific Northwest:</strong> <span style={{ color: '#1D9E75' }}>Arsenic, iron, manganese, bacteria, nitrates, radon (granite areas).</span>
+          </p>
         </div>
 
-        {/* Maintenance Schedule */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Maintenance</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Maintenance Schedule: What to Do and When</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>The majority of well problems develop slowly from deferred maintenance rather than sudden failure. A consistent annual schedule catches issues at the minor stage.</p>
-          <div className='space-y-4'>
-            <div className='rounded-lg p-4' style={{ backgroundColor: '#E1F5EE' }}>
-              <h3 className='font-bold text-sm mb-2' style={{ color: '#0F6E56' }}>Every Month</h3>
-              <ul className='text-slate-700 text-sm space-y-1 list-disc list-inside'>
-                <li>Visually inspect the well cap to confirm it is secure and undamaged</li>
-                <li>Check around the wellhead for pooling water, which can indicate drainage problems</li>
-                <li>Check your pressure tank for leaks or moisture around fittings</li>
-              </ul>
-            </div>
-            <div className='rounded-lg p-4' style={{ backgroundColor: '#E1F5EE' }}>
-              <h3 className='font-bold text-sm mb-2' style={{ color: '#0F6E56' }}>Every Spring</h3>
-              <ul className='text-slate-700 text-sm space-y-1 list-disc list-inside'>
-                <li>Conduct the annual water test (bacteria, nitrates, pH, TDS)</li>
-                <li>Inspect the wellhead area for damage from winter frost heave or equipment</li>
-                <li>Check well cap bolts &mdash; tighten or replace if loose</li>
-                <li>Inspect the area around the well for new potential contamination sources</li>
-              </ul>
-            </div>
-            <div className='rounded-lg p-4' style={{ backgroundColor: '#E1F5EE' }}>
-              <h3 className='font-bold text-sm mb-2' style={{ color: '#0F6E56' }}>Every Year (Fall)</h3>
-              <ul className='text-slate-700 text-sm space-y-1 list-disc list-inside'>
-                <li>Check the pressure tank air charge using a tire gauge on the Schrader valve</li>
-                <li>Inspect all visible plumbing connections for drips or corrosion</li>
-                <li>Test your water heater anode rod &mdash; well water accelerates anode corrosion</li>
-              </ul>
-            </div>
-            <div className='rounded-lg p-4' style={{ backgroundColor: '#E1F5EE' }}>
-              <h3 className='font-bold text-sm mb-2' style={{ color: '#0F6E56' }}>Every 3 to 5 Years</h3>
-              <ul className='text-slate-700 text-sm space-y-1 list-disc list-inside'>
-                <li>Comprehensive water testing including metals panel, hardness, and regional contaminants</li>
-                <li>Professional inspection of the well system by a licensed water well contractor</li>
-              </ul>
-            </div>
-          </div>
-          <div className='rounded-lg p-4 mt-4' style={{ backgroundColor: '#FFF3E0', borderLeft: '4px solid #E8A020' }}>
-            <p className='text-slate-900 font-semibold text-sm mb-2'>When the pump is 10 or more years old:</p>
-            <p className='text-slate-700 text-sm'>Begin budgeting for pump replacement. Have the pump inspected at the next professional service visit. Replacing a pump proactively before it fails costs no more than emergency replacement and avoids the disruption of losing water without notice.</p>
-          </div>
-          <div className='rounded-lg p-4 mt-4' style={{ backgroundColor: '#FDECEA', borderLeft: '4px solid #D32F2F' }}>
-            <p className='text-slate-900 font-semibold text-sm mb-2'>Call a licensed well contractor immediately if you experience:</p>
-            <ul className='text-slate-700 text-sm space-y-1 list-disc list-inside'>
-              <li>No water or dramatically reduced pressure</li>
-              <li>Pump running continuously without building pressure</li>
-              <li>Air spitting from faucets</li>
-              <li>Sudden change in water taste, color, or smell</li>
-              <li>Sediment or grit in water</li>
-              <li>Rapid pump cycling (turning on and off every few seconds)</li>
-            </ul>
-          </div>
+        {/* Annual Maintenance Schedule */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>The Annual Well Maintenance Schedule</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Annual maintenance prevents the problems that become expensive emergencies. This is the minimum schedule for a responsible well owner.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Every Spring (March to April)</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Water quality test:</strong> Collect a sample at a state-certified laboratory. Test at minimum for total coliform bacteria, E. coli, nitrates, and pH. Spring is the highest-risk time for bacterial contamination &mdash; snowmelt and heavy spring rain mobilize surface contaminants and can push them toward well casings. Compare results to previous years. See the <Link href='/guides/how-to-test-well-water' className='underline' style={{ color: '#1D9E75' }}>how to test your well water guide</Link> for the complete sampling protocol.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Wellhead visual inspection:</strong> Walk to the well. Confirm the cap is secure and intact. Check for any soil settling, frost heave, or erosion around the casing. Look for evidence of surface water pooling near the wellhead. Any pooling within 10 feet of the casing is a contamination risk.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Pressure tank pre-charge check:</strong> With the pump off and the pressure tank drained, check the pre-charge pressure using a standard tire gauge at the Schrader valve on top of the tank. It should read 2 PSI below the cut-in pressure. A reading of zero indicates a failed bladder &mdash; the tank is waterlogged and should be replaced.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Treatment equipment filters:</strong> Replace sediment pre-filter cartridges. Check carbon filter service hours against the manufacturer&apos;s recommendation. Check softener salt level and brine tank condition.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Every Fall (September to October)</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Winterization check:</strong> Confirm all exposed water lines in unheated spaces (crawl space, detached well house, garage) are insulated before the first freeze. Check heat tape on any exposed sections if used. Confirm the pressure tank is located above the frost line.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>UV lamp status:</strong> If a UV disinfection system is installed, verify the lamp age. UV lamps must be replaced annually regardless of whether they still emit visible light &mdash; UV output degrades before visible output fails. A UV lamp that is more than 12 months old is not providing reliable disinfection even if it appears to be working. Annual replacement is the only protection against this silent failure mode.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Flow rate observation:</strong> Run water at multiple fixtures simultaneously for 15 minutes and note whether pressure holds or drops. Late summer and fall are the lowest groundwater periods of the year in most of the United States &mdash; this is when a marginal well is most likely to show low-yield symptoms. Catching a yield problem in fall allows time to address it before winter.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Every 3 to 5 Years</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Professional well inspection:</strong> Have a licensed well contractor conduct a full system inspection including a visual of the wellhead, pump amperage draw, pressure switch calibration, pressure tank condition, and a review of your most recent water quality results. This is separate from the DIY annual checks above. A professional can identify deteriorating components before they fail catastrophically.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          <strong className='text-slate-900'>Extended water quality panel:</strong> In addition to the annual bacteria and nitrate test, run an extended panel every 3 to 5 years or after any significant event (flooding, new agricultural activity nearby, changes in taste or odor). Extended panels typically include arsenic, lead, iron, manganese, hardness, TDS, and any contaminants of local concern.
+        </p>
+
+        {/* 20-Year Ownership */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>What Fails, When, and What It Costs: The 20-Year Ownership Picture</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          One of the biggest surprises for new well owners is that the system has predictable failure timelines. Understanding these timelines allows you to plan and budget rather than react to emergencies.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Component Lifespan and Replacement Cost Table</h3>
+        <div className='overflow-x-auto mb-10'>
+          <table className='w-full text-sm border-collapse'>
+            <thead>
+              <tr style={{ backgroundColor: '#E1F5EE' }}>
+                <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Component</th>
+                <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Typical Lifespan</th>
+                <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Replacement Cost (Installed)</th>
+                <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Signs of Failure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Submersible pump</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>8 to 15 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$1,000 to $2,500</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>No water, low pressure, pump runs constantly</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f8f9fa' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Jet pump (shallow well)</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>5 to 10 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$400 to $1,200</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Low pressure, loud operation, failure to prime</td>
+              </tr>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pressure tank (bladder)</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>10 to 15 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$600 to $1,500</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Short cycling, waterlogged sound, pressure fluctuation</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f8f9fa' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pressure switch</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>8 to 12 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$100 to $200</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Pump won&apos;t start or won&apos;t stop</td>
+              </tr>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pressure gauge</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>5 to 15 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$30 to $80</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Reads zero or reads incorrectly</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f8f9fa' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Well cap</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>15 to 25 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$50 to $200</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Cracked, loose, or missing</td>
+              </tr>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Check valve</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>5 to 15 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$100 to $300 installed</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Pump primes slowly, pressure drops immediately after pump stops</td>
+              </tr>
+              {/* UV lamp - lifespan < 5 years → amber */}
+              <tr style={{ backgroundColor: '#FAEEDA' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>UV lamp (annual)</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>1 year (mandatory)</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$50 to $150</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>No visible failure &mdash; output degrades silently</td>
+              </tr>
+              {/* Sediment filter - lifespan < 5 years → amber */}
+              <tr style={{ backgroundColor: '#FAEEDA' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Sediment filter cartridge</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>3 to 6 months</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$10 to $40 per cartridge</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Pressure drop across filter</td>
+              </tr>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Carbon filter media</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>3 to 5 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$200 to $500</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Taste and odor return to water</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f8f9fa' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Iron filter catalytic media</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>5 to 7 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$300 to $800</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Iron or sulfur breaks through</td>
+              </tr>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Water softener resin</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>15 to 25 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$200 to $500</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Hardness returns despite regeneration</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f8f9fa' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pitless adapter</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>20 to 40 years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$300 to $800</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Leaking at well casing; rare failure</td>
+              </tr>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Well casing (grout seal)</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>30 to 50+ years</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Variable &mdash; may require new well</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Bacteria contamination that persists after shock chlorination</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        {/* Costs */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Costs</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Well System Costs: What to Budget</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>Understanding the major costs helps you plan rather than react. Well system expenses are infrequent but significant.</p>
-          <div className='grid md:grid-cols-2 gap-4'>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Pump Replacement</h3>
-              <p className='text-slate-600 text-xs'>$800 to $2,500 depending on well depth and pump size. If electrical control box and wiring need updating, add $200 to $500. See our <Link href='/cost-guides/well-pump-replacement-cost' className='underline hover:opacity-80' style={{ color: '#1D9E75' }}>well pump replacement cost guide</Link>.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Pressure Tank Replacement</h3>
-              <p className='text-slate-600 text-xs'>$300 to $700 with installation. See our <Link href='/cost-guides/pressure-tank-replacement-cost' className='underline hover:opacity-80' style={{ color: '#1D9E75' }}>pressure tank replacement cost guide</Link>.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Water Testing</h3>
-              <p className='text-slate-600 text-xs'>$50 to $110 for annual core test. $150 to $300 for comprehensive metals panel. $250 to $500 for full testing including PFAS. See our <Link href='/cost-guides/well-water-testing-cost' className='underline hover:opacity-80' style={{ color: '#1D9E75' }}>well water testing cost guide</Link>.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Treatment Systems</h3>
-              <p className='text-slate-600 text-xs'>Whole-house filter: $500 to $2,000. RO system: $200 to $600. UV system: $400 to $900. Water softener: $800 to $2,500. See our <Link href='/cost-guides/whole-house-water-filter-cost' className='underline hover:opacity-80' style={{ color: '#1D9E75' }}>whole house water filter cost guide</Link>.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Well Drilling (New Well)</h3>
-              <p className='text-slate-600 text-xs'>$5,000 to $15,000 depending on depth, geology, and regional labor rates. See our <Link href='/cost-guides/well-drilling-cost' className='underline hover:opacity-80' style={{ color: '#1D9E75' }}>well drilling cost guide</Link>.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <h3 className='font-bold text-slate-900 text-sm mb-1'>Annual Maintenance Budget</h3>
-              <p className='text-slate-600 text-xs'>$200 to $400 per year for testing, minor maintenance, and a growing replacement reserve. Increase the reserve when the pump approaches 10 to 12 years.</p>
-            </div>
-          </div>
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>The Realistic 20-Year Cost of Well Ownership</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          This table models the expected costs for a standard residential well system in the Northeast or Midwest with moderate iron, average hardness, and no bacterial contamination. Treatment costs vary significantly by water chemistry. The table does not include the initial well drilling cost.
+        </p>
+        <div className='overflow-x-auto mb-6'>
+          <table className='w-full text-sm border-collapse'>
+            <thead>
+              <tr style={{ backgroundColor: '#E1F5EE' }}>
+                <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Year Range</th>
+                <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Expected Events</th>
+                <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Estimated Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Years 1 to 5</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Annual water tests, filter cartridge replacements, pressure tank pre-charge checks</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$600 to $1,500 total ($120 to $300/year)</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f8f9fa' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Years 5 to 10</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Pressure switch replacement likely, UV lamp replacements (annual), possible sediment filter housing service</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$1,200 to $2,500 total</td>
+              </tr>
+              {/* Years 10 to 15 → amber */}
+              <tr style={{ backgroundColor: '#FAEEDA' }}>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Years 10 to 15</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Pump replacement (end of typical service life), pressure tank replacement, possible water softener resin replacement</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$2,500 to $5,000 total</td>
+              </tr>
+              <tr>
+                <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Years 15 to 20</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>Second pump replacement if lifespan shorter, cap replacement, expanded water quality testing, possible iron filter media replacement</td>
+                <td className='p-3 border border-slate-200 text-slate-700'>$2,000 to $4,500 total</td>
+              </tr>
+              <tr className='font-bold'>
+                <td className='p-3 border border-slate-200 text-slate-900'>Total 20-year ownership cost</td>
+                <td className='p-3 border border-slate-200 text-slate-900'>Annual maintenance plus major replacements</td>
+                <td className='p-3 border border-slate-200 text-slate-900'>$6,300 to $13,500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For context, the average American household paying for municipal water spends $600 to $900 per year &mdash; $12,000 to $18,000 over 20 years, with no control over rate increases. The 20-year well ownership cost is typically lower and is bounded &mdash; the major equipment replacements are predictable and plannable.
+        </p>
+
+        {/* Seasonal Water Quality */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Seasonal Water Quality: Why Your Water Changes Through the Year</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Most well owners do not know that water quality from a private well is not static. The chemistry of your water changes with the seasons, with drought and wet years, and with long-term aquifer trends. This is normal and expected &mdash; but it means annual testing at the same time of year is more meaningful than random testing.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Spring: Highest Contamination Risk</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Groundwater levels are typically highest in March and April in most of the United States, per Penn State Extension research on groundwater recharge cycles. Snowmelt and spring rain push surface water into the ground rapidly. Contaminants that accumulated on the surface over winter &mdash; road salt, animal waste, agricultural fertilizers applied in fall &mdash; move into the groundwater during this recharge period. Spring is when newly introduced bacterial contamination is most likely to appear in a test. It is also when nitrate concentrations in agricultural areas are typically highest.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Testing in early May captures the post-recharge period and is the most conservative time to test for contaminants that move with surface water.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Summer: Lowest Groundwater Levels</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Groundwater levels fall from May through August or September in most of the United States as plant transpiration draws water from the soil, reducing recharge, and demand for irrigation increases. This is when marginal wells are most likely to show low yield symptoms. It is also when concentrated contaminants can appear &mdash; as water level drops, the remaining water has had more contact time with surrounding rock, sometimes increasing iron, manganese, and TDS concentrations.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Well owners in drought-prone areas should reduce outdoor water use in late summer and watch for the early signs of a well drawing down: brief pressure loss at multiple fixtures simultaneously, air sputtering from faucets, recovery taking longer than usual after heavy use.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Fall: Pre-Winter Assessment Window</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Early fall is the correct time to assess the well system before winter. Flow rate tests performed in August or September reflect the worst-case yield conditions for the year. A well that passes a flow rate test in fall is unlikely to struggle in any other season. It is also the time to inspect insulation, heat tape, and any above-grade equipment before freeze risk arrives.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Winter: Freeze Risk in Northern Climates</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The primary winter risk for well systems is freezing of above-grade components: exposed water lines in an unheated garage or crawl space, the wellhead if it is exposed and the casing does not extend deep enough, or any component in a poorly insulated well house. The underground water line from the well to the house is protected by burial depth, but shallow utilities or disrupted soil can reduce that protection.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          If water pressure drops suddenly in freezing weather without any other explanation, suspect a frozen line before diagnosing pump failure. Pump failure is not caused by cold &mdash; freezing damage is a plumbing issue, not a pump issue.
+        </p>
+
+        {/* Annual Maintenance Checklist Callout */}
+        <div className='rounded-xl p-6 mb-10 mt-10' style={{ border: '2px solid #1D9E75', backgroundColor: '#E1F5EE' }}>
+          <p className='font-bold text-slate-900 text-lg mb-4'>The Complete Well Owner&apos;s Annual Maintenance Checklist</p>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            This is the named, printable annual checklist for responsible well ownership. Perform these tasks once per year. Spring is recommended as the primary maintenance window.
+          </p>
+
+          <p className='font-bold text-slate-900 mb-2'>Water Quality</p>
+          <ul className='space-y-2 mb-4'>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Collect water sample at a state-certified laboratory (minimum: coliform, E. coli, nitrates, pH)</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Review results against EPA MCLs and compare to prior year&apos;s results</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>If any result is above limits: follow the action protocols in the <Link href='/guides/how-to-test-well-water' className='underline' style={{ color: '#1D9E75' }}>how to test your well water guide</Link></span></li>
+          </ul>
+
+          <p className='font-bold text-slate-900 mb-2'>Wellhead</p>
+          <ul className='space-y-2 mb-4'>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Visually inspect the well cap &mdash; confirm it is intact, secure, and shows no cracks or gaps</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Check that the wellhead extends at least 12 inches above grade</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Confirm the ground slopes away from the casing on all sides</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Look for any new structures, chemical storage, or activities within 100 feet of the wellhead</span></li>
+          </ul>
+
+          <p className='font-bold text-slate-900 mb-2'>Pressure System</p>
+          <ul className='space-y-2 mb-4'>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Turn off pump power and drain the pressure tank</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Check pre-charge pressure with a tire gauge at the Schrader valve &mdash; should read 2 PSI below pump cut-in</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Restore power and observe two full pressure cycles &mdash; pump should start at cut-in, stop at cut-out</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Tap the tank at multiple heights &mdash; should sound hollow; a solid or sloshing sound indicates waterlogging</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Check the pressure gauge reads within normal operating range</span></li>
+          </ul>
+
+          <p className='font-bold text-slate-900 mb-2'>Treatment Equipment</p>
+          <ul className='space-y-2'>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Replace sediment filter cartridge</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Check carbon filter service life and replace if at or past manufacturer&apos;s recommendation</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Check UV lamp installation date &mdash; replace if more than 12 months old regardless of whether it still emits light</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Refill water softener salt if below one-third full; inspect brine tank for salt bridges</span></li>
+            <li className='flex items-start gap-2 text-slate-700'><span className='mt-0.5 text-lg leading-none'>&#9633;</span><span>Check iron filter backwash cycle is running on schedule</span></li>
+          </ul>
         </div>
 
-        {/* Signs Your Well Needs Attention */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Warning Signs</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Signs Your Well System Needs Attention</h2>
-          <div className='space-y-3'>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Reduced water pressure throughout the house:</strong> Most commonly a pump beginning to fail or a pressure tank with a compromised bladder. Can also indicate a drop in the water table during drought.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Rapid pump cycling:</strong> If the pump turns on and off every few seconds, the pressure tank bladder has failed (waterlogged tank). This condition burns out the pump motor. Replace the pressure tank immediately.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Air spitting from faucets:</strong> Indicates air is entering the water supply. Can mean the water table has dropped below the pump intake, the pump screen is damaged, or a pressure tank bladder failure.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Sand or sediment in water:</strong> The pump screen may be worn or damaged, or the water table may have dropped enough that the pump is approaching the bottom of the well.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Red, brown, or orange water:</strong> Iron in the water, possibly worsened by pump screen corrosion or a water heater issue. Test for iron and manganese.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Rotten egg smell:</strong> Hydrogen sulfide gas, naturally occurring in some aquifers or produced by sulfate-reducing bacteria in the water system. Requires testing to determine the source.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Sudden change in water taste:</strong> Test immediately. Do not wait for the annual schedule.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'><strong>Spike in electricity bill without explanation:</strong> A failing pump that is running longer to maintain pressure will increase electricity consumption noticeably.</p>
-            </div>
-          </div>
+        {/* When to Call a Professional / DIY */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>When to Call a Professional vs. DIY</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Well ownership involves both DIY-appropriate tasks and situations that genuinely require a licensed well contractor. Knowing the difference prevents both unnecessary expense and dangerous DIY attempts.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Appropriate DIY Tasks</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Pressure tank pre-charge adjustment, sediment filter cartridge replacement, carbon filter cartridge replacement, UV lamp replacement, pressure switch replacement (comfortable with electrical work), water sample collection for laboratory testing, softener salt refill, and annual wellhead visual inspection.
+        </p>
+
+        <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Require a Licensed Well Contractor</h3>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Flow rate testing, pump replacement or adjustment, anything requiring pulling the pump from the well, casing camera inspection, well rehabilitation (cleaning and redevelopment), shock chlorination performed in accordance with well system specifics, diagnosing and addressing persistent bacterial contamination, and any work on the pitless adapter or underground water line.
+        </p>
+
+        {/* Warning Signs Callout */}
+        <div className='rounded-xl p-6 mb-10' style={{ backgroundColor: '#FCEBEB', borderLeft: '4px solid #A32D2D' }}>
+          <p className='font-bold text-slate-900 text-lg mb-4'>Warning Signs That Need Immediate Professional Attention</p>
+
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            <strong className='text-slate-900'>No water at any fixture:</strong> Could be pump failure, pressure switch failure, loss of power to the pump, or the well drawing down below the pump. Do not delay &mdash; call a well contractor.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            <strong className='text-slate-900'>Pump runs continuously without building pressure:</strong> Pump failure, stuck check valve, broken drop pipe, or the well has gone dry. Running a pump dry destroys it rapidly &mdash; turn off the pump circuit and call a contractor.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            <strong className='text-slate-900'>Sudden brown or discolored water after running clear:</strong> Disturbed sediment in the well (could indicate well structure problem), iron bacteria bloom, or pump disturbing the sediment at the bottom of the well. Test the water and contact a contractor.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            <strong className='text-slate-900'>Sputtering air from faucets followed by water:</strong> Failed check valve (most common), waterlogged pressure tank, or the well drawing down temporarily. Usually not an emergency but should be investigated.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            <strong className='text-slate-900'>Water pressure that builds quickly then rapidly drops:</strong> Classic waterlogged pressure tank &mdash; the tank has lost its air charge and is providing almost no draw-down storage. Replace the pressure tank.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-0'>
+            For detailed diagnostic guides on each of these symptoms, see the <Link href='/problems/well-running-dry' className='underline' style={{ color: '#1D9E75' }}>well running dry guide</Link> and the <Link href='/guides/well-pressure-tank-guide' className='underline' style={{ color: '#1D9E75' }}>well pressure tank guide</Link>.
+          </p>
         </div>
 
-        {/* Well Water vs City Water */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Comparison</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Well Water vs City Water: The Core Differences</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>The most important things to understand if you have recently moved from municipal to well water, or are evaluating a property with a well:</p>
-          <div className='space-y-3'>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'>City water is tested continuously and treated to meet EPA Safe Drinking Water Act standards. The utility is responsible for everything up to your meter. Well water receives no government monitoring and no automatic treatment. You are the water utility for your property.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'>City water contains chlorine or chloramine added as disinfectants, and in many systems, fluoride. Well water contains neither unless you add treatment. This means no disinfection by-product concerns from well water, but also no built-in bacterial protection.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'>City water costs a monthly fee regardless of usage. Well water costs primarily come up-front (drilling) and as periodic maintenance and replacement expenses. Over a 20-year ownership period, a well is typically less expensive than municipal water rates &mdash; but the expenses are lumpy and unpredictable rather than steady.</p>
-            </div>
-            <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm'>City water supply can fail during a main break or utility emergency. A well with a backup generator is the most reliable water source available during a power outage or natural disaster.</p>
-            </div>
-          </div>
+        {/* Buying a Home With a Well */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Buying a Home With a Well</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          If you are evaluating a property with an existing well, the due diligence process is fundamentally different from a standard home inspection. A general home inspector typically does not test water quality, measure flow rate, or assess the mechanical condition of the well system to any meaningful depth.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          What you need before closing: a dedicated well inspection by a licensed well contractor, a flow rate test, and an independently collected water quality test from a state-certified laboratory.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          What your loan type may require: FHA loans require a minimum 3 GPM flow rate, water quality meeting EPA standards, and minimum separation distances between the well and septic system. VA and USDA loans have mandatory water testing requirements. Conventional loans typically require testing only if the appraiser flags a concern.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the complete homebuyer&apos;s guide including the full inspection checklist with pass/fail criteria, specific negotiation dollar amounts for every type of well problem, walk-away conditions, and a 30-day post-closing checklist, see the <Link href='/guides/buying-house-with-well' className='underline' style={{ color: '#1D9E75' }}>buying a house with a well guide</Link>.
+        </p>
+
+        {/* Private Well Water Quality Testing */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Private Well Water Quality Testing</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Testing is the foundation of responsible well ownership. The EPA does not regulate private wells or test the water in them. You are the only person who will ensure your water is safe.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          At minimum, test annually for coliform bacteria, E. coli, nitrates, and pH. These four tests catch the most common and most serious well water problems. Bacteria testing is critical because contamination can appear at any time &mdash; a flooding event, a cracked cap, a failing grout seal &mdash; and has no taste, odor, or color.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Additional tests are warranted based on your region, your well&apos;s geology, and any nearby land use changes. See the regional contaminant guide above for what to test based on where you live.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the complete testing protocol including how to select a certified lab, how to collect a sample correctly, how to interpret results against EPA MCLs, and what to do when a test comes back positive, see the <Link href='/guides/how-to-test-well-water' className='underline' style={{ color: '#1D9E75' }}>how to test your well water guide</Link>. For at-home test options with honest assessments of what they can and cannot detect, see the <Link href='/reviews/best-well-water-test-kits' className='underline' style={{ color: '#1D9E75' }}>best well water test kits review</Link>.
+        </p>
+
+        {/* Well Water Treatment */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Well Water Treatment</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          No treatment system works for all wells. The correct treatment depends entirely on what your water test shows. A system purchased without a test is either treating the wrong problem or doing nothing useful.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The fundamental decision framework: Is the contaminant a whole-house problem (iron staining on laundry, bacteria at every tap, scale in all pipes) or a drinking water problem (arsenic or nitrates that are only a concern when consumed)? Whole-house problems require point-of-entry treatment. Drinking water problems can often be addressed with a point-of-use RO system at the kitchen tap at a fraction of the cost.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The most common well water treatment stack for a Midwest or Northeast well with iron, hardness, and occasional bacteria: sediment pre-filter, then oxidizing iron filter, then water softener, then UV disinfection system, with an under-sink RO added if arsenic or nitrates are present.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the complete treatment decision framework mapping every common contaminant to the correct technology, what each system can and cannot remove, and how to sequence a multi-component treatment stack, see the <Link href='/guides/well-water-treatment-options' className='underline' style={{ color: '#1D9E75' }}>well water treatment options guide</Link>. For specific product recommendations, see the <Link href='/reviews/best-whole-house-water-filters' className='underline' style={{ color: '#1D9E75' }}>best whole house water filters review</Link>.
+        </p>
+
+        {/* Shock Chlorination */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Shock Chlorination</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Shock chlorination is the process of introducing a high concentration of chlorine into a well to disinfect it. It is the first-line response to a positive bacteria test result, after a flooding event, after any work on the well that may have introduced contamination, and when a well has not been used for an extended period.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          Shock chlorination is not a permanent treatment for ongoing contamination &mdash; it is a one-time disinfection event. If the source of contamination (a structural problem with the well, inadequate separation from the septic system, a cracked casing) is not addressed, the bacteria will return.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the complete procedure including how to calculate the correct bleach amount for your well&apos;s diameter and depth, the step-by-step 12-step process, the 24-hour timeline, how to clear the chlorine smell, and the retest protocol, see the <a href='/guides/shock-chlorination-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>.
+        </p>
+
+        {/* The Pressure Tank System In Depth */}
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>The Pressure Tank System In Depth</h2>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The pressure tank is the component most likely to need replacement in the first 15 years of well ownership and the component whose failure has the most immediate impact on the rest of the system. A failed pressure tank &mdash; specifically a waterlogged tank &mdash; is one of the leading causes of premature pump failure because it forces the pump to short-cycle continuously.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          The key maintenance task that prevents waterlogged tanks is the annual pre-charge pressure check. Pre-charge pressure should be 2 PSI below the pump&apos;s cut-in pressure. A tank where the pre-charge has bled down to zero is a tank whose bladder has failed &mdash; it needs replacement.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the complete guide to pressure tank types (galvanized, diaphragm, and bladder), sizing formulas, pre-charge adjustment, all failure signs, and the complete replacement procedure, see the <Link href='/guides/well-pressure-tank-guide' className='underline' style={{ color: '#1D9E75' }}>well pressure tank guide</Link>. For cost breakdowns by tank size, brand, and region, see the <Link href='/cost-guides/pressure-tank-replacement-cost' className='underline' style={{ color: '#1D9E75' }}>pressure tank replacement cost guide</Link>.
+        </p>
+
+        {/* External Resource */}
+        <div className='bg-gray-50 border border-gray-200 rounded-xl p-6 mb-10'>
+          <p className='font-bold text-slate-900 mb-3'>USGS Groundwater Resources</p>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The USGS Groundwater Atlas of the United States provides detailed maps of aquifer systems, groundwater quality patterns, and water level trends for every region of the country. For any well owner wanting to understand the geological and hydrogeological context of their specific well, the USGS National Water Information System (NWIS) provides real-time and historical groundwater level data from monitoring wells across the country &mdash; many of which are located near residential wells and can give context for your local water table trends.
+          </p>
+          <ul className='space-y-2 text-slate-700'>
+            <li>
+              <a href='https://pubs.usgs.gov/ha/ha730/' target='_blank' rel='noopener noreferrer' className='underline' style={{ color: '#1D9E75' }}>USGS Groundwater Atlas of the United States</a> &mdash; Regional aquifer maps and groundwater quality data
+            </li>
+            <li>
+              <a href='https://waterdata.usgs.gov' target='_blank' rel='noopener noreferrer' className='underline' style={{ color: '#1D9E75' }}>USGS National Water Information System (NWIS)</a> &mdash; Real-time and historical groundwater level monitoring data
+            </li>
+          </ul>
         </div>
 
         {/* FAQ */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>FAQ</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Frequently Asked Questions</h2>
-          <div className='space-y-4'>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>How do I know if my well water is safe to drink?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>You cannot know without testing &mdash; there is no visual, taste, or smell indicator that reliably confirms safety. Arsenic, nitrates, bacteria, and PFAS are all completely undetectable by human senses. Test annually for total coliform bacteria, nitrates, pH, and total dissolved solids through a state-certified laboratory. Do baseline testing for arsenic, lead, and PFAS if you have never done it. Know your regional contamination risks by contacting your county health department. A clean annual test plus baseline testing for the major threats gives you the most complete picture of safety available to a private well owner.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>How often should I test my well water?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>Test for total coliform bacteria, nitrates, pH, and total dissolved solids at minimum once per year. Spring is the recommended timing. Test immediately &mdash; outside this schedule &mdash; any time your water changes in taste, color, or smell, after any well repair, or after flooding. Every 3 to 5 years, do more comprehensive testing including a metals panel. Test for arsenic, lead, and PFAS at least once as a baseline if you have not already done so.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>What are the most dangerous well water contaminants?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>For acute illness, coliform bacteria and E. coli pose the most immediate risk. For long-term health effects, arsenic, nitrates above 10 mg/L (especially for infants), PFAS, and radon in certain geological areas are the primary concerns. Nitrates above 10 mg/L are dangerous specifically to infants under six months. The critical point is that none of these contaminants can be detected by taste, smell, or appearance &mdash; testing is the only way to know they are present.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>How long does a well pump last?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>The average lifespan of a submersible well pump is 8 to 15 years. Pumps in clean, low-sediment water with a properly sized pressure tank regularly last 15 to 20 years. Pumps in high-iron or high-sediment water conditions may need replacement sooner. Jet pumps, used in shallow wells, typically last 8 to 12 years. Begin budgeting for replacement when the pump reaches 10 years.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>What does it mean when my well pump keeps cycling on and off rapidly?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>Rapid pump cycling &mdash; turning on and off every few seconds &mdash; almost always indicates a failed pressure tank bladder. The tank is waterlogged: the air cushion that normally buffers the system has been lost, and the pump is trying to maintain pressure directly with no buffer. This is an urgent issue that needs to be addressed quickly. The constant cycling will burn out the pump motor. Call a well contractor to replace the pressure tank.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>Is well water safe to drink without treatment?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>It depends entirely on your specific well and local geology. Many private wells produce clean, safe water that needs no treatment beyond annual testing. Others have naturally occurring contaminants including arsenic, iron, manganese, or radon that require treatment. The only way to know is to test. Start with the annual core test and expand based on your results and your region&apos;s known groundwater concerns.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>Do I need a whole house water filter for well water?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>Not necessarily. A filter should be selected based on what your test results show is actually in your water. Buying a filter before testing is like prescribing medication without a diagnosis. Test first. If bacteria are confirmed, UV treatment or shock chlorination is appropriate. If arsenic, nitrates, or PFAS are detected, a point-of-use reverse osmosis system is usually the most effective and economical solution. If iron or hardness is the issue, a dedicated iron filter or water softener addresses those specifically.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>What is the difference between a dug well and a drilled well?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>A dug well is shallow (typically under 30 feet), hand-excavated, and draws from the uppermost groundwater layer. It is highly vulnerable to surface contamination including bacterial runoff, nitrates from nearby agriculture, and drying during drought. A drilled well goes much deeper &mdash; 100 to 400 feet or more &mdash; reaches a deeper aquifer, is sealed with grouted casing, and is significantly more protected from surface contamination. Almost all new wells installed today are drilled wells. If you have an older property with a dug well, discuss its condition, vulnerability, and potential replacement with a licensed well contractor.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>Can a septic system contaminate a well?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>Yes. A failing or improperly located septic system is one of the most common sources of bacterial and nitrate contamination in private wells. Setback requirements &mdash; the minimum distance between a well and a septic system &mdash; vary by state and county, typically ranging from 50 to 100 feet. If your well and septic system are on the same property, annual bacterial testing is especially important, and any indication of septic system problems should be investigated promptly. See theseptic.guide for comprehensive guidance on maintaining your septic system to protect both systems.</div>
-            </details>
-            <details className='group bg-white border border-slate-200 rounded-lg'>
-              <summary className='cursor-pointer p-4 font-semibold text-slate-900 text-sm'>What should I do if my well water test comes back positive for bacteria?</summary>
-              <div className='px-4 pb-4 text-slate-700 text-sm leading-relaxed'>Stop drinking the water and switch to bottled water immediately. Do not boil water for drinking without first filtering it if the water is turbid or cloudy &mdash; boiling concentrates some contaminants. Shock chlorinate the well following standard procedures, wait 12 to 24 hours, flush the system thoroughly, and retest. If the test comes back positive again after chlorination, there is a structural problem with the well &mdash; a cracked casing, compromised cap, or contaminated pump assembly &mdash; that requires a licensed well contractor to diagnose and repair. Do not return to using the well until a test confirms it is clear.</div>
-            </details>
-          </div>
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Frequently Asked Questions</h2>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>How does a private well work?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            A private well is a drilled hole that extends from the surface down to a water-bearing underground layer called an aquifer. A submersible pump positioned below the water level inside the well pushes water up through a pipe to the surface. The water flows underground into the house and into a pressure tank, which stores it under pressure so water is available without the pump running every time a faucet opens. A pressure switch monitors the tank pressure and cycles the pump on when pressure drops and off when it builds back up. Water then passes through any treatment equipment installed &mdash; a sediment filter, iron filter, UV system, or water softener depending on what the water chemistry requires &mdash; and distributes through the home&apos;s plumbing to every fixture.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>How often should I test my well water?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            At minimum, once per year for coliform bacteria, E. coli, nitrates, and pH. Spring is the recommended timing &mdash; snowmelt and spring rain mobilize surface contaminants and represent the highest contamination risk period of the year. Test more frequently &mdash; or test for additional contaminants &mdash; after any flooding event, after any work on the well, after any nearby land use change (new agricultural activity, construction, fuel spill), or any time you notice a change in water taste, odor, or appearance. The EPA recommends annual testing for private wells, and it is the only way to catch contamination that has no detectable taste, color, or odor.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>What contaminants are most common in private well water?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The most common contaminants vary significantly by region. Bacteria (coliform and E. coli) can affect any well at any time and are universal testing priorities. Nitrates are the most common health contaminant in agricultural areas, exceeding the EPA limit of 10 mg/L in a significant percentage of Midwest wells. Iron and manganese are widespread aesthetic contaminants that cause staining and taste issues. Arsenic occurs naturally in bedrock in New England, the Mountain West, and parts of the Midwest and Southwest. Hard water (calcium and magnesium) affects the majority of wells east of the Rocky Mountains. PFAS contamination is emerging near military bases, airports, and industrial sites nationwide.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>How long does a well pump last?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            A quality submersible pump in a residential well typically lasts 8 to 15 years. Factors that shorten pump life include: high iron or sediment content in the water (abrasive to pump impellers), a waterlogged pressure tank forcing the pump to short-cycle continuously, the well drawing down and allowing the pump to run dry, and undersizing relative to the well&apos;s yield. Regular annual maintenance &mdash; specifically keeping the pressure tank properly pre-charged and replacing water treatment media on schedule &mdash; is the most effective way to extend pump life toward 15 years rather than 8.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>What is the difference between a pressure tank and a water tank?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            A pressure tank (also called a well pressure tank or hydropneumatic tank) contains a pre-charged air chamber separated from the water by a rubber bladder. The air acts as a spring, providing the pressurized water storage that allows water to flow without the pump running on every use event. It is sized in gallons but its useful function is measured by its drawdown volume &mdash; typically 30 to 40 percent of the total tank volume. A plain water storage tank (cistern) contains only water with no pressurization &mdash; it requires a separate booster pump to deliver water under pressure. Pressure tanks are the standard configuration in residential well systems. Cisterns or storage tanks are used in low-yield well situations where the well cannot deliver water fast enough to meet household demand in real time.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>How do I know if my well water is safe to drink?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            You cannot determine this without testing. Many of the most serious well water contaminants &mdash; arsenic, nitrates, PFAS, lead &mdash; have no taste, odor, or visible color at concentrations that pose health risks. Clear water that looks and tastes fine can contain arsenic at 30 ppb (three times the EPA limit) without any detectable change in appearance. Annual laboratory testing from a state-certified lab is the only reliable method. Use first-flush sampling protocol for lead (sample before any water has run that morning). If you have never tested your well, that is the single most important action you can take.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>What are the signs of well pump failure?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The clearest signs are no water at any fixture, loss of water pressure that gets progressively worse over days or weeks, the pump running continuously without building pressure to the cut-out setting, and loud or unusual sounds from the pump control box. Air sputtering from faucets before water flows can indicate the pump is drawing down the well or a check valve has failed. A sudden loss of all water with no recent freezing weather is almost always a pump failure or loss of power to the pump circuit. See the <Link href='/problems/well-running-dry' className='underline' style={{ color: '#1D9E75' }}>well running dry guide</Link> for the complete diagnostic procedure.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>How much does it cost to maintain a well per year?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            Annual maintenance for a residential well system with basic treatment equipment runs $200 to $500 per year. This covers a certified lab water quality test ($100 to $300), sediment filter cartridge replacements ($20 to $80), UV lamp replacement ($50 to $150 if applicable), and periodic softener salt ($100 to $200 if applicable). This does not include the lifecycle replacement costs for the pump (every 10 to 15 years at $1,000 to $2,500) and pressure tank (every 10 to 15 years at $600 to $1,500). Building a sinking fund of $100 to $200 per year for these larger replacements makes them manageable when they arrive. Total cost of well ownership over 20 years is typically $6,300 to $13,500 &mdash; less than the equivalent cost of municipal water service over the same period in most US cities.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Is well water better than city water?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            They serve different needs and have different characteristics. Private well water does not contain chlorine, chloramines, or disinfection byproducts that municipal treatment introduces. Many well owners prefer the taste. Well water is not subject to distribution system failures, boil-water advisories, or utility rate increases. However, private well water also has no guarantee of safety unless the owner tests regularly and treats appropriately. Municipal water is continuously monitored and meets enforceable EPA standards before it reaches your tap. Well water quality depends entirely on local geology, land use, and owner vigilance. A properly tested and treated well can deliver water quality that exceeds municipal standards. An untested and untreated well may contain contaminants that are harmful without the owner&apos;s knowledge.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>What is the water table and how does it affect my well?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The water table is the upper boundary of the saturated zone in the ground &mdash; the depth at which the soil and rock are completely filled with water. Your well extends below the water table so the pump can draw from the saturated zone. The water table is not fixed &mdash; it rises in wet seasons (typically highest in early spring in the northern United States) and falls in dry seasons and drought. If the water table drops below the pump&apos;s intake, the well goes dry. Shallow wells and unconfined aquifers are more vulnerable to seasonal water table variation than deep bedrock wells in confined aquifers. Significant long-term water table decline &mdash; caused by aquifer depletion from intensive agricultural irrigation in areas like the High Plains &mdash; can permanently reduce well yield and is a growing issue in some regions of the United States.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>What should I do if my water test comes back positive for bacteria?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            Do not use the water for drinking or cooking until the problem is resolved. Follow up with a second test immediately using proper sampling protocol to confirm the result &mdash; false positives from improper sample collection occur. If the second test also returns positive, contact a licensed well contractor to perform shock chlorination. After chlorination, flush the system completely according to the shock chlorination protocol and retest. If the third test returns positive, the contamination has a structural source &mdash; inadequate separation from the septic system, a cracked casing at depth, or a failed grout seal. Source investigation by a licensed contractor is required. See the complete procedure in the <a href='/guides/shock-chlorination-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>What is the best whole house water filter for well water?</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The correct answer depends entirely on your water test results. There is no single best filter for all wells. For iron and manganese under 3 ppm with no bacteria, the Home Master HMF3SDGFEC is the best cartridge-based option. For wells with bacteria plus general contamination, the Aquasana EQ-WELL-UV-PRO-AST combines carbon, KDF, and Class A UV in one system. For mild wells with primarily sediment and taste concerns on a budget, the iSpring WGB32B is the most cost-effective starting point. For the complete matched recommendations including verified specifications, honest limitations, and the multiple-problem treatment stacks, see the <Link href='/reviews/best-whole-house-water-filters' className='underline' style={{ color: '#1D9E75' }}>best whole house water filters review</Link>.
+          </p>
         </div>
 
         {/* Glossary */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Glossary</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Glossary</h2>
-          <div className='space-y-6'>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Aquifer</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>An underground layer of permeable rock, sand, gravel, or other material that stores and transmits groundwater. Wells draw their water from aquifers. The depth and character of an aquifer determines water quality, yield, and vulnerability to contamination. Confined aquifers sit between layers of impermeable rock and are generally more protected from surface contamination. Unconfined aquifers are directly connected to the surface and more vulnerable.</p>
-            </div>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Coliform Bacteria</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>A group of bacteria used as indicator organisms in water quality testing. The presence of total coliform bacteria in well water signals that the well has been infiltrated by surface water and that potentially harmful pathogens may also be present. Fecal coliform bacteria and E. coli specifically indicate contamination from fecal material &mdash; human or animal waste.</p>
-            </div>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Pitless Adapter</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>The fitting that allows the well&apos;s water supply pipe to exit the casing horizontally below the frost line without requiring the casing to be cut or the surrounding soil to be excavated for servicing. It provides a watertight seal where the pipe exits the casing and allows the pump and drop pipe assembly to be removed from the well for service.</p>
-            </div>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Pressure Tank</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>A sealed tank that stores water and maintains system pressure in a well water system. Modern residential pressure tanks contain a rubber bladder that separates water from a pre-charged air cushion. The air cushion provides the pressure that pushes water to faucets without the pump running on every demand. When the bladder fails, the tank becomes waterlogged and the pump cycles rapidly.</p>
-            </div>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Total Dissolved Solids (TDS)</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>A measure of all dissolved inorganic and organic material in water, expressed in milligrams per liter (mg/L) or parts per million (ppm). High TDS can indicate the presence of minerals, salts, metals, or other dissolved substances. It is one of the four parameters in the CDC and EPA&apos;s recommended annual core test for private wells.</p>
-            </div>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>PFAS (Per- and Polyfluoroalkyl Substances)</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>A class of thousands of synthetic chemicals characterized by extremely strong carbon-fluorine bonds that make them virtually indestructible in the environment and in the human body. Used since the 1940s in industrial applications and consumer products including non-stick coatings, water-repellent fabrics, firefighting foam, and food packaging. Linked to immune system disruption, thyroid disorders, liver damage, and certain cancers. The EPA set maximum contaminant levels for PFOA and PFOS at 4 parts per trillion in April 2024 for public water systems. Private well owners must test voluntarily.</p>
-            </div>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Shock Chlorination</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>A well disinfection procedure in which a calculated amount of chlorine bleach is added to the well casing, allowed to circulate through the pump, pressure tank, and all household plumbing, and then flushed from the system over 12 to 24 hours. Used to address confirmed bacterial contamination and as a standard practice after any well repair or component replacement.</p>
-            </div>
-            <div>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Water Table</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>The upper boundary of the saturated zone in the ground &mdash; the level below which all spaces in soil and rock are filled with water. The water table rises after significant rainfall and drops during drought. Wells that draw from near the water table are vulnerable to running dry during extended dry periods. Deep drilled wells typically penetrate far enough below the normal seasonal variation in the water table to maintain reliable yield through drought.</p>
-            </div>
-          </div>
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Glossary</h2>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Aquifer</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            An underground layer of permeable rock, sand, or gravel that holds water and allows it to move. Unconfined aquifers are connected to the surface and recharged directly by rain and snowmelt &mdash; their water level fluctuates seasonally. Confined aquifers are sandwiched between impermeable layers, are recharged from distant areas, and are less directly affected by local precipitation. Bedrock aquifers in fractured rock are the source for most deep drilled wells. The type of aquifer your well taps determines both the yield characteristics and the contaminant risk profile of the water.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Drawdown</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The drop in water level inside a well during active pumping. As the pump removes water from the well, the water level inside the casing drops &mdash; this is drawdown. The rate of drawdown depends on both the pump rate and the rate at which the surrounding aquifer can supply water to replace what is being removed. When drawdown reaches the pump intake, the well goes dry temporarily. A flow rate test measures the well&apos;s sustained yield and recovery rate by observing how drawdown behaves over an extended pumping period.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Static Water Level</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The depth to water in the well measured from the top of the casing when the pump has not run for several hours and the water is at its natural equilibrium. Comparing current static water level to the original static water level recorded in the well log reveals long-term aquifer trends. A deeper current static level than the original indicates water table decline in the area over time.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Short Cycling</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The condition in which a well pump turns on and off in rapid succession &mdash; every few seconds &mdash; rather than running for 1 to 2 minutes per cycle as designed. Short cycling is almost always caused by a waterlogged pressure tank that has lost its air charge and can no longer store meaningful drawdown volume. Every start cycle puts stress on the pump motor; a pump that short-cycles continuously will fail in a fraction of its normal service life. The fix is pressure tank replacement, not pump replacement.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Pitless Adapter</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            A fitting installed through the wall of the well casing below frost depth that allows the water supply line to exit the well and travel underground to the house while maintaining a watertight, sanitary seal at the casing penetration. Without a pitless adapter, the water line must exit above ground and is vulnerable to freezing and contamination. Pitless adapters are standard in modern drilled wells in any climate where frost penetration is a concern.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Confined vs. Unconfined Aquifer</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            An unconfined aquifer is directly connected to the surface &mdash; precipitation infiltrates downward and recharges it directly. Water levels fluctuate with rainfall and drought. Most shallow wells draw from unconfined aquifers. A confined aquifer is trapped between two impermeable layers and can only be recharged from areas where those layers are absent, often many miles away. Confined aquifers are more stable seasonally but can be significantly affected by heavy pumping that exceeds the recharge rate. Deep artesian wells often tap confined aquifers, where the pressure of the confined water can be high enough to push water toward the surface without pumping.
+          </p>
+        </div>
+
+        <div className='border-b border-slate-200 pb-6 mb-6'>
+          <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Grout Seal</h3>
+          <p className='text-slate-700 leading-relaxed mb-4'>
+            The layer of cement or bentonite clay pumped into the space between the outside of the well casing and the borehole wall during well construction. The grout seal prevents surface water, soil water, and shallow contaminated water from channeling downward along the outside of the casing to the water-bearing zone. A failed or incomplete grout seal bypasses all the protective value of casing depth &mdash; surface contaminants can reach the water as if the casing were not there.
+          </p>
+        </div>
+
+        {/* LeadForm */}
+        <div className='my-12'>
+          <LeadForm />
         </div>
 
         {/* Related Guides */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Related</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Related Guides</h2>
-          <div className='grid md:grid-cols-2 gap-3'>
-            <Link href='/guides/how-to-test-well-water' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>How to Test Your Well Water</p>
-            </Link>
-            <Link href='/guides/how-well-pump-works' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>How a Well Pump Works</p>
-            </Link>
-            <Link href='/guides/well-water-contaminants' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Well Water Contaminants Guide</p>
-            </Link>
-            <Link href='/guides/well-maintenance-checklist' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Annual Well Maintenance Checklist</p>
-            </Link>
-            <Link href='/guides/well-water-vs-city-water' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Well Water vs City Water</p>
-            </Link>
-            <Link href='/cost-guides/well-pump-replacement-cost' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Well Pump Replacement Cost</p>
-            </Link>
-            <Link href='/cost-guides/well-water-testing-cost' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Well Water Testing Cost</p>
-            </Link>
-            <Link href='/problems/well-water-smells-like-sulfur' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Well Water Smells Like Sulfur</p>
-            </Link>
-            <Link href='/problems/well-water-pressure-low' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Well Water Pressure Low</p>
-            </Link>
-            <Link href='/problems/brown-rusty-well-water' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Brown or Rusty Well Water</p>
-            </Link>
-            <Link href='/reviews/best-well-water-test-kits' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Best Well Water Test Kits</p>
-            </Link>
-            <Link href='/reviews/best-whole-house-water-filters' className='block bg-white border border-slate-200 rounded-lg p-4 hover:border-[#1D9E75] transition-colors'>
-              <p className='font-semibold text-slate-900 text-sm'>Best Whole House Water Filters for Wells</p>
-            </Link>
-          </div>
+        <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Related Guides on well.guide</h2>
+        <div className='flex flex-wrap gap-3'>
+          <Link href='/guides/buying-house-with-well' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Buying a House With a Well
+          </Link>
+          <Link href='/guides/how-to-test-well-water' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            How to Test Your Well Water
+          </Link>
+          <Link href='/guides/well-water-treatment-options' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Well Water Treatment Options
+          </Link>
+          <a href='/guides/shock-chlorination-well' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Shock Chlorination Guide
+          </a>
+          <Link href='/guides/well-pressure-tank-guide' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Well Pressure Tank Guide
+          </Link>
+          <Link href='/cost-guides/pressure-tank-replacement-cost' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Pressure Tank Replacement Cost
+          </Link>
+          <Link href='/problems/well-running-dry' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Well Running Dry
+          </Link>
+          <Link href='/reviews/best-well-water-test-kits' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Best Well Water Test Kits
+          </Link>
+          <Link href='/reviews/best-whole-house-water-filters' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+            Best Whole House Water Filters
+          </Link>
         </div>
-
-        {/* Lead Form */}
-        <section className='py-12 bg-[#E1F5EE] rounded-2xl mt-12'>
-          <div className='max-w-2xl mx-auto px-4'>
-            <h2 className='text-2xl md:text-3xl font-bold text-[#0F6E56] text-center mb-3'>Get Expert Well Help</h2>
-            <p className='text-gray-600 text-center mb-8'>Connect with qualified well professionals in your area. Free quotes, no obligation.</p>
-            <LeadForm />
-          </div>
-        </section>
 
       </article>
     </>
