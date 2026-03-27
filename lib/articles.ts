@@ -86,6 +86,14 @@ export const articles: Article[] = [
     image: '/_well-water-vs-city-water.jpg',
   },
   {
+    title: 'Hard Water in Wells: What It Is, What It Costs You, and How to Fix It',
+    description: 'The complete guide to hard water in private wells. What hardness levels mean in grains per gallon, how to test for hardness at home, the real cost of untreated hard water on appliances and plumbing, and the correct treatment sequence for wells with both iron and hardness.',
+    slug: 'guides/hard-water-well',
+    category: 'Guide',
+    readTime: '13 min read',
+    image: '/hard-water-well.jpg',
+  },
+  {
     title: 'Well Water Pressure Problems',
     description: "Low pressure, no water, or pressure surges — here's what causes them.",
     slug: 'problems/well-water-pressure-problems',
