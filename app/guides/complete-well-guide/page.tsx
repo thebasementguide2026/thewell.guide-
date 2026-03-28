@@ -799,7 +799,7 @@ export default function CompleteWellGuide() {
           Shock chlorination is not a permanent treatment for ongoing contamination &mdash; it is a one-time disinfection event. If the source of contamination (a structural problem with the well, inadequate separation from the septic system, a cracked casing) is not addressed, the bacteria will return.
         </p>
         <p className='text-slate-700 leading-relaxed mb-4'>
-          For the complete procedure including how to calculate the correct bleach amount for your well&apos;s diameter and depth, the step-by-step 12-step process, the 24-hour timeline, how to clear the chlorine smell, and the retest protocol, see the <a href='/guides/shock-chlorination-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>.
+          For the complete procedure including how to calculate the correct bleach amount for your well&apos;s diameter and depth, the step-by-step 12-step process, the 24-hour timeline, how to clear the chlorine smell, and the retest protocol, see the <a href='/guides/how-to-shock-chlorinate-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>.
         </p>
 
         {/* The Pressure Tank System In Depth */}
@@ -906,7 +906,7 @@ export default function CompleteWellGuide() {
         <div className='border-b border-slate-200 pb-6 mb-6'>
           <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>What should I do if my water test comes back positive for bacteria?</h3>
           <p className='text-slate-700 leading-relaxed mb-4'>
-            Do not use the water for drinking or cooking until the problem is resolved. Follow up with a second test immediately using proper sampling protocol to confirm the result &mdash; false positives from improper sample collection occur. If the second test also returns positive, contact a licensed well contractor to perform shock chlorination. After chlorination, flush the system completely according to the shock chlorination protocol and retest. If the third test returns positive, the contamination has a structural source &mdash; inadequate separation from the septic system, a cracked casing at depth, or a failed grout seal. Source investigation by a licensed contractor is required. See the complete procedure in the <a href='/guides/shock-chlorination-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>.
+            Do not use the water for drinking or cooking until the problem is resolved. Follow up with a second test immediately using proper sampling protocol to confirm the result &mdash; false positives from improper sample collection occur. If the second test also returns positive, contact a licensed well contractor to perform shock chlorination. After chlorination, flush the system completely according to the shock chlorination protocol and retest. If the third test returns positive, the contamination has a structural source &mdash; inadequate separation from the septic system, a cracked casing at depth, or a failed grout seal. Source investigation by a licensed contractor is required. See the complete procedure in the <a href='/guides/how-to-shock-chlorinate-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>.
           </p>
         </div>
 
@@ -986,7 +986,7 @@ export default function CompleteWellGuide() {
           <Link href='/guides/well-water-treatment-options' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
             Well Water Treatment Options
           </Link>
-          <a href='/guides/shock-chlorination-well' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
+          <a href='/guides/how-to-shock-chlorinate-well' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
             Shock Chlorination Guide
           </a>
           <Link href='/guides/well-pressure-tank-guide' className='inline-block px-4 py-2 rounded-full text-sm font-medium border border-slate-200 bg-white hover:bg-slate-50 underline' style={{ color: '#1D9E75' }}>
