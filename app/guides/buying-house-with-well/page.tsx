@@ -649,7 +649,7 @@ export default function BuyingHouseWithWell() {
 
         <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Problem-by-Problem Negotiation Reference</h3>
         <p className='text-slate-700 leading-relaxed mb-4'>
-          <strong className='text-slate-900'>Bacteria present (first positive coliform or E. coli result):</strong> Require the seller to perform <a href='/guides/shock-chlorination-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination</a> and provide a clean certified retest before closing. Do not accept a credit and perform remediation yourself after closing &mdash; you need a documented clean test result before you take ownership. Shock chlorination by a licensed contractor: $200 to $600.
+          <strong className='text-slate-900'>Bacteria present (first positive coliform or E. coli result):</strong> Require the seller to perform <a href='/guides/how-to-shock-chlorinate-well' className='underline' style={{ color: '#1D9E75' }}>shock chlorination</a> and provide a clean certified retest before closing. Do not accept a credit and perform remediation yourself after closing &mdash; you need a documented clean test result before you take ownership. Shock chlorination by a licensed contractor: $200 to $600.
         </p>
         <p className='text-slate-700 leading-relaxed mb-4'>
           <strong className='text-slate-900'>Bacteria present (positive result after one round of shock chlorination):</strong> Now indicates a potential structural issue. Require investigation of the contamination source and documentation of the corrective action before proceeding. Source investigation may reveal a fixable cause (new cap needed, grout seal failing) or a structural problem (inadequate separation from septic). Costs vary: cap replacement $50 to $200, casing repair $500 to $3,000, drain field relocation (if possible) $3,000 to $10,000.
@@ -1017,7 +1017,7 @@ export default function BuyingHouseWithWell() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FAEEDA', color: '#854F0B' }}>COST GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Pressure Tank Replacement Cost</span>
             </Link>
-            <a href='/guides/shock-chlorination-well' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
+            <a href='/guides/how-to-shock-chlorinate-well' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}>GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Shock Chlorination Guide</span>
             </a>
