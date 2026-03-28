@@ -16,6 +16,7 @@ const footerSections = [
       { label: 'Well Water vs. City Water', href: '/guides/well-water-vs-city-water' },
       { label: 'Hard Water Well Guide', href: '/guides/hard-water-well' },
       { label: 'Dug Well vs. Drilled Well', href: '/guides/dug-well-vs-drilled-well' },
+      { label: 'How to Shock Chlorinate a Well', href: '/guides/how-to-shock-chlorinate-well' },
     ],
   },
   {
