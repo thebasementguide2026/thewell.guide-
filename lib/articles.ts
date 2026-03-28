@@ -239,7 +239,15 @@ export const articles: Article[] = [
     category: 'Problem',
     readTime: '13 min read',
     image: '/well dry.png',
-  }
+  },
+  {
+    title: 'Signs Your Well Pump Is Failing: 8 Warning Signs and What to Do',
+    description: 'The complete guide to recognizing a failing well pump before it stops working entirely. Eight specific warning signs with urgency levels, the age factor, DIY vs. professional diagnosis, when to shut the pump off immediately, and the repair vs. replace decision framework.',
+    slug: 'problems/well-pump-failing',
+    category: 'Problem',
+    readTime: '15 min read',
+    image: '/pressure tank fail.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {
