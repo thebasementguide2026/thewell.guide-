@@ -46,6 +46,7 @@ const footerSections = [
       { label: 'Well Pump Short Cycling', href: '/problems/well-pump-short-cycling' },
       { label: 'Well Water Tastes Bad', href: '/problems/well-water-tastes-bad' },
       { label: 'Well Running Dry', href: '/problems/well-running-dry' },
+      { label: 'Signs Your Well Pump Is Failing', href: '/problems/well-pump-failing' },
     ],
   },
 ]
