@@ -17,6 +17,7 @@ const footerSections = [
       { label: 'Hard Water Well Guide', href: '/guides/hard-water-well' },
       { label: 'Dug Well vs. Drilled Well', href: '/guides/dug-well-vs-drilled-well' },
       { label: 'How to Shock Chlorinate a Well', href: '/guides/how-to-shock-chlorinate-well' },
+      { label: 'Well Pump Maintenance', href: '/guides/well-pump-maintenance' },
     ],
   },
   {
