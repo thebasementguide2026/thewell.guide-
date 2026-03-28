@@ -309,7 +309,7 @@ export default function WellWaterTastesBad() {
 
           <h3 className='text-lg font-bold text-slate-900 mb-4'>Sulfur Bacteria</h3>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'>Sulfur-reducing bacteria are naturally occurring microorganisms that use sulfates as an energy source, converting them to hydrogen sulfide. They colonize wells, pipes, pressure tanks, and water heaters. Iron bacteria often coexist with sulfur bacteria and can produce a combined metallic-sulfur taste.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'>Sulfur bacteria are not pathogenic but indicate conditions where other bacteria may thrive. A well with sulfur bacteria should be shock chlorinated. See the <a href='/guides/shock-chlorination-well' className='font-semibold underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>. Note that chlorination suppresses sulfur bacteria but often does not eliminate them permanently. Recurrence is common and may eventually require continuous disinfection.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'>Sulfur bacteria are not pathogenic but indicate conditions where other bacteria may thrive. A well with sulfur bacteria should be shock chlorinated. See the <a href='/guides/how-to-shock-chlorinate-well' className='font-semibold underline' style={{ color: '#1D9E75' }}>shock chlorination guide</a>. Note that chlorination suppresses sulfur bacteria but often does not eliminate them permanently. Recurrence is common and may eventually require continuous disinfection.</p>
         </div>
 
         {/* Earthy, Musty, or Swampy Taste */}
@@ -699,7 +699,7 @@ export default function WellWaterTastesBad() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}>GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>How to Test Your Well Water</span>
             </Link>
-            <a href='/guides/shock-chlorination-well' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
+            <a href='/guides/how-to-shock-chlorinate-well' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}>GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Shock Chlorination Guide</span>
             </a>
