@@ -762,6 +762,9 @@ export default function BuyingHouseWithWell() {
         <p className='text-slate-700 leading-relaxed mb-4'>
           <strong className='text-slate-900'>Treatment media:</strong> Oxidizing filter catalytic media every 5 to 7 years ($300 to $800). Carbon filter media every 3 to 5 years ($200 to $500). Water softener resin rarely needs replacement.
         </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For a full comparison of what well ownership means versus city water service in terms of annual cost, water quality responsibility, and long-term financial picture, see the <Link href='/guides/well-water-vs-city-water' className='underline' style={{ color: '#1D9E75' }}>well water vs. city water guide</Link>.
+        </p>
 
         {/* Your First 30 Days After Closing */}
         <h2 className='text-2xl font-bold text-slate-900 mt-12 mb-4'>Your First 30 Days After Closing</h2>
