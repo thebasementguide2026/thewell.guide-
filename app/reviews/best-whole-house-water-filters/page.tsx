@@ -249,6 +249,9 @@ export default function BestWholeHouseWaterFilters() {
           <p className='text-slate-700 leading-relaxed mb-8'>
             <strong>Installation complexity:</strong> Some systems require only basic plumbing. Others need electrical work for UV lamps or programming of backwash controllers. We flagged which require professional installation.
           </p>
+          <p className='text-slate-700 leading-relaxed mb-8'>
+            For a complete cost breakdown by system type including installation costs, annual maintenance costs, and the 10-year total cost of ownership, see the <Link href='/cost-guides/whole-house-water-filter-cost' className='underline' style={{ color: '#1D9E75' }}>whole house water filter cost guide</Link>.
+          </p>
         </div>
 
         {/* At a Glance Comparison Table */}
