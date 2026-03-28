@@ -89,6 +89,14 @@ export const articles: Article[] = [
     image: '/how-to-shock-chlorinate-well.jpg',
   },
   {
+    title: 'Well Pump Maintenance: The Complete Annual Schedule for Private Well Owners',
+    description: 'The complete well pump and system maintenance guide for private well owners. Annual maintenance schedule by task and season, the pressure tank pre-charge check procedure, wellhead inspection checklist, what professional inspection covers versus what homeowners can do themselves, how to track well yield over time, and how to maintain a maintenance log that protects resale value.',
+    slug: 'guides/well-pump-maintenance',
+    category: 'Guide',
+    readTime: '13 min read',
+    image: '/well-pump-maintenance.jpg',
+  },
+  {
     title: 'Whole House Water Filter Cost: What Well Owners Actually Pay in 2026',
     description: 'The complete cost guide to whole house water filtration for well water. Equipment costs by system type, installation costs, annual maintenance costs, cost by contaminant problem, the 10-year ownership picture, and exactly what a quote should include.',
     slug: 'cost-guides/whole-house-water-filter-cost',
