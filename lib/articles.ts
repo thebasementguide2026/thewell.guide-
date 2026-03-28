@@ -94,6 +94,14 @@ export const articles: Article[] = [
     image: '/hard-water-well.jpg',
   },
   {
+    title: 'Dug Well vs. Drilled Well: The Complete Comparison for Homeowners',
+    description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, water quality, construction standards, setback requirements, cost, lifespan, and what to do if you are buying a property with a dug well.',
+    slug: 'guides/dug-well-vs-drilled-well',
+    category: 'Guide',
+    readTime: '13 min read',
+    image: '/dug-well-vs-drilled-well.jpg',
+  },
+  {
     title: 'Whole House Water Filter Cost: What Well Owners Actually Pay in 2026',
     description: 'The complete cost guide to whole house water filtration for well water. Equipment costs by system type, installation costs, annual maintenance costs, cost by contaminant problem, the 10-year ownership picture, and exactly what a quote should include.',
     slug: 'cost-guides/whole-house-water-filter-cost',
