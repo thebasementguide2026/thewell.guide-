@@ -49,27 +49,6 @@ export const articles: Article[] = [
     image: '/well-drilling-cost.jpg',
   },
   {
-    title: 'Well Water Testing: What to Test For and When',
-    description: 'How often to test, which contaminants matter, and what to do if results are bad.',
-    slug: 'guides/well-water-testing',
-    category: 'Guide',
-    readTime: '12 min read',
-  },
-  {
-    title: 'Well Pump Maintenance Guide',
-    description: 'Keep your pump running for decades with these maintenance steps.',
-    slug: 'guides/well-pump-maintenance',
-    category: 'Guide',
-    readTime: '10 min read',
-  },
-  {
-    title: 'How to Shock Chlorinate Your Well',
-    description: 'Step-by-step disinfection guide after contamination or flooding.',
-    slug: 'guides/how-to-shock-chlorinate-well',
-    category: 'Guide',
-    readTime: '8 min read',
-  },
-  {
     title: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide',
     description: 'Everything a homebuyer needs to know before purchasing a house with a private well. Well inspection checklist with pass/fail criteria, required water tests by contaminant, loan requirements for FHA/VA/USDA/conventional, negotiating well problems with specific dollar amounts, seller disclosure laws, walk-away conditions, and a 30-day post-closing checklist.',
     slug: 'guides/buying-house-with-well',
@@ -110,41 +89,6 @@ export const articles: Article[] = [
     image: '/whole-house-water-filter-cost.jpg',
   },
   {
-    title: 'Well Water Pressure Problems',
-    description: "Low pressure, no water, or pressure surges — here's what causes them.",
-    slug: 'problems/well-water-pressure-problems',
-    category: 'Problem',
-    readTime: '10 min read',
-  },
-  {
-    title: 'How Much Does Well Water Treatment Cost?',
-    description: 'Real pricing for water treatment systems, filters, and ongoing maintenance costs.',
-    slug: 'cost-guides/well-water-treatment-cost',
-    category: 'Cost Guide',
-    readTime: '10 min read',
-  },
-  {
-    title: 'Best Well Water Filters Reviewed',
-    description: 'Top-rated whole house water filters for private wells, compared and ranked.',
-    slug: 'reviews/best-well-water-filters',
-    category: 'Review',
-    readTime: '12 min read',
-  },
-  {
-    title: 'Well Pump Replacement Cost',
-    description: 'What you will actually pay to replace a well pump, by type and depth.',
-    slug: 'cost-guides/well-pump-replacement-cost',
-    category: 'Cost Guide',
-    readTime: '8 min read',
-  },
-  {
-    title: 'Signs Your Well Pump Is Failing',
-    description: 'The warning signs that your well pump is on its way out and what to do about it.',
-    slug: 'problems/well-pump-failing',
-    category: 'Problem',
-    readTime: '8 min read',
-  },
-  {
     title: 'Best Whole House Water Filters for Well Water: 2026 Picks by Contaminant',
     description: 'The best whole house water filters for well water reviewed by contaminant type - iron, sulfur, bacteria, sediment, and comprehensive systems. Real specs, verified Amazon availability, honest limitations, and a complete buying guide so you buy the right system for your actual water test results.',
     slug: 'reviews/best-whole-house-water-filters',
@@ -159,13 +103,6 @@ export const articles: Article[] = [
     category: 'Review',
     readTime: '14 min read',
     image: '/welltestkits.jpg',
-  },
-  {
-    title: 'Best Pressure Tanks for Wells',
-    description: 'Top-rated pressure tanks compared by size, durability, and value.',
-    slug: 'reviews/best-pressure-tanks',
-    category: 'Review',
-    readTime: '10 min read',
   },
 
   {
@@ -278,7 +215,7 @@ export const articles: Article[] = [
     category: 'Problem',
     readTime: '13 min read',
     image: '/well dry.png',
-  },
+  }
 ]
 
 export function searchArticles(query: string): Article[] {
