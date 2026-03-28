@@ -97,6 +97,14 @@ export const articles: Article[] = [
     image: '/waterfilters.jpg',
   },
   {
+    title: 'Best Well Pressure Tanks (2026): Sizing, Specs, and Real Picks',
+    description: 'The best well pressure tanks for private wells reviewed with real specs, sizing guidance, and honest trade-offs. Bladder and diaphragm tanks compared by household size, budget, and installation type.',
+    slug: 'reviews/best-pressure-tanks',
+    category: 'Review',
+    readTime: '14 min read',
+    image: '/best pressure tanks.jpg',
+  },
+  {
     title: 'Best Well Water Test Kits (2026): Lab and DIY Options Reviewed',
     description: 'The four best well water test kits for private well owners, reviewed and compared. Includes certified lab tests for annual baseline testing and DIY strips for monitoring between lab tests. All four are available on Amazon with free shipping.',
     slug: 'reviews/best-well-water-test-kits',
