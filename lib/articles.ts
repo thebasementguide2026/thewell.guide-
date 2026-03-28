@@ -81,6 +81,14 @@ export const articles: Article[] = [
     image: '/dug-well-vs-drilled-well.jpg',
   },
   {
+    title: 'How to Shock Chlorinate a Well: Step-by-Step Instructions for Homeowners',
+    description: 'Complete instructions for shock chlorinating a private well after a positive bacteria test, flooding, or well service. Includes the casing volume calculation, correct bleach dose by well diameter and depth, the full 8-step procedure, flushing instructions, safety precautions, and the retest requirement.',
+    slug: 'guides/how-to-shock-chlorinate-well',
+    category: 'Guide',
+    readTime: '14 min read',
+    image: '/how-to-shock-chlorinate-well.jpg',
+  },
+  {
     title: 'Whole House Water Filter Cost: What Well Owners Actually Pay in 2026',
     description: 'The complete cost guide to whole house water filtration for well water. Equipment costs by system type, installation costs, annual maintenance costs, cost by contaminant problem, the 10-year ownership picture, and exactly what a quote should include.',
     slug: 'cost-guides/whole-house-water-filter-cost',
