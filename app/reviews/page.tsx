@@ -12,6 +12,7 @@ export const metadata = {
 const reviews = [
   { title: 'Best Well Water Test Kits (2026): Lab and DIY Options Reviewed', href: '/reviews/best-well-water-test-kits', description: 'The four best well water test kits for private well owners, reviewed and compared. Includes certified lab tests for annual baseline testing and DIY strips for monitoring between lab tests.', image: '/welltestkits.jpg', readTime: '14 min read' },
   { title: 'Best Whole House Water Filters for Well Water: 2026 Picks by Contaminant', href: '/reviews/best-whole-house-water-filters', description: 'The best whole house water filters for well water reviewed by contaminant type — iron, sulfur, bacteria, sediment, and comprehensive systems. Real specs, verified availability, honest limitations, and a complete buying guide.', image: '/waterfilters.jpg', readTime: '14 min read' },
+  { title: 'Best Well Pressure Tanks (2026): Sizing, Specs, and Real Picks', href: '/reviews/best-pressure-tanks', description: 'The best well pressure tanks for private wells reviewed with real specs, sizing guidance, and honest trade-offs. Bladder and diaphragm tanks compared by household size, budget, and installation type.', image: '/best pressure tanks.jpg', readTime: '14 min read' },
 ]
 
 export default function ReviewsIndexPage() {
