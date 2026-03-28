@@ -448,6 +448,12 @@ export default function WellWaterTreatmentOptions() {
         <p className='text-slate-700 leading-relaxed mb-6'>
           <strong className='text-slate-900'>Cost:</strong> Residential water softeners: $600 to $2,000 for the unit. Installation: $300 to $600. Salt cost: $100 to $200 per year. Total 10-year cost: approximately $2,000 to $5,000.
         </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the full cost breakdown of every treatment system type &mdash; sediment filters, iron filters, softeners, UV systems, and multi-stage combinations &mdash; including installed costs, annual maintenance, and the 10-year ownership picture, see the <Link href='/cost-guides/whole-house-water-filter-cost' className='underline' style={{ color: '#1D9E75' }}>whole house water filter cost guide</Link>.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For the complete guide to hard water in private wells &mdash; including how to test at home, the real cost of untreated hard water on appliances and plumbing, the iron co-occurrence problem, and the correct treatment sequence &mdash; see the <Link href='/guides/hard-water-well' className='underline' style={{ color: '#1D9E75' }}>hard water well guide</Link>.
+        </p>
 
         {/* UV Disinfection Systems */}
         <h3 className='text-xl font-bold text-slate-900 mt-8 mb-4'>UV Disinfection Systems</h3>
