@@ -18,6 +18,11 @@ const nextConfig = {
         destination: '/reviews/best-whole-house-water-filters',
         permanent: true,
       },
+      {
+        source: '/cost-guides/well-water-treatment-cost',
+        destination: '/cost-guides/whole-house-water-filter-cost',
+        permanent: true,
+      },
     ]
   },
 }
