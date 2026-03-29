@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Water Contaminants: The Complete Guide for Private Well Owners | The Well Guide',
-  description: 'A complete reference guide to every contaminant found in private well water. For each contaminant: where it comes from, what it does to health, the EPA limit, which regions are most affected, how to test, and how to treat. The only reference a private well owner needs.',
+  description: 'A complete reference guide to every contaminant in private well water — sources, health effects, EPA limits, regional risk, testing, and treatment.',
   openGraph: {
     title: 'Well Water Contaminants: The Complete Guide for Private Well Owners',
-    description: 'A complete reference to every contaminant in private well water — health effects, EPA limits, regional prevalence, testing, and treatment for each.',
+    description: 'A complete reference guide to every contaminant in private well water — sources, health effects, EPA limits, regional risk, testing, and treatment.',
     url: 'https://www.thewell.guide/guides/well-water-contaminants',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Water Contaminants: The Complete Guide for Private Well Owners',
-  description: 'A complete reference guide to every contaminant found in private well water including health effects, EPA limits, regional prevalence, testing guidance, and treatment options for each contaminant.',
+  description: 'A complete reference guide to every contaminant in private well water — sources, health effects, EPA limits, regional risk, testing, and treatment.',
   image: 'https://www.thewell.guide/wellguidecontaminants.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
