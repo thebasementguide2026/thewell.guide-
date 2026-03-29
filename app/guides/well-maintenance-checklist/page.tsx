@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Annual Well Maintenance Checklist: Everything You Need to Do Each Year',
     description: 'A complete seasonal well maintenance checklist covering spring, summer, fall, and winter tasks with specific instructions, DIY vs hire guidance, and red flags that require same-day contractor calls.',
-    url: 'https://well.guide/guides/well-maintenance-checklist',
+    url: 'https://www.thewell.guide/guides/well-maintenance-checklist',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well maintance.jpg', width: 1200, height: 630, alt: 'Homeowner kneeling at a wellhead doing a visual inspection' }],
+    images: [{ url: 'https://www.thewell.guide/well maintance.jpg', width: 1200, height: 630, alt: 'Homeowner kneeling at a wellhead doing a visual inspection' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/well-maintenance-checklist' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/well-maintenance-checklist' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Annual Well Maintenance Checklist: Everything You Need to Do Each Year',
   description: 'A complete seasonal well maintenance checklist for private well owners covering spring, summer, fall, and winter tasks with specific instructions, DIY vs hire guidance, and red flags that require same-day contractor calls.',
-  image: 'https://well.guide/well maintance.jpg',
+  image: 'https://www.thewell.guide/well maintance.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/well-maintenance-checklist',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/well-maintenance-checklist',
 }
 
 export default function WellMaintenanceChecklist() {
