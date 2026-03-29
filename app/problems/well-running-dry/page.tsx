@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Running Dry: Diagnose the Cause and Know Exactly What to Do',
     description: 'The complete guide to a well running dry. Learn the four distinct scenarios and the specific diagnosis and fix for each.',
-    url: 'https://well.guide/problems/well-running-dry',
+    url: 'https://www.thewell.guide/problems/well-running-dry',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well dry.png', width: 1200, height: 630, alt: 'Person at a kitchen sink turning on the faucet with a concerned expression, no water coming out' }],
+    images: [{ url: 'https://www.thewell.guide/well dry.png', width: 1200, height: 630, alt: 'Person at a kitchen sink turning on the faucet with a concerned expression, no water coming out' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/well-running-dry' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/well-running-dry' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Running Dry: Diagnose the Cause and Know Exactly What to Do',
   description: 'Complete guide to a well running dry. Learn the four distinct scenarios and their specific fixes. Includes what to do right now, how to get interim water, static water level measurement, and when deepening vs. drilling new is the right call.',
-  image: 'https://well.guide/well dry.png',
+  image: 'https://www.thewell.guide/well dry.png',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/well-running-dry',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/well-running-dry',
 }
 
 export default function WellRunningDry() {
