@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Hard Water in Wells: What It Is, What It Costs You, and How to Fix It | The Well Guide',
-  description: 'The complete guide to hard water in private wells. What hardness levels mean in grains per gallon, how to test for hardness at home, the real cost of untreated hard water on appliances and plumbing, and the correct treatment sequence for wells with both iron and hardness — the most common combination well owners face.',
+  description: 'The complete guide to hard water in private wells. What hardness levels mean, how to test, the real appliance cost, and the right treatment sequence.',
   openGraph: {
     title: 'Hard Water in Wells: What It Is, What It Costs You, and How to Fix It',
-    description: 'The complete guide to hard water in private wells — hardness levels in grains per gallon, how to test at home, the real cost on appliances, and the correct treatment sequence for wells with iron and hardness.',
+    description: 'The complete guide to hard water in private wells. What hardness levels mean, how to test, the real appliance cost, and the right treatment sequence.',
     url: 'https://www.thewell.guide/guides/hard-water-well',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Hard Water in Wells: What It Is, What It Costs You, and How to Fix It',
-  description: 'The complete guide to hard water in private wells — hardness levels in grains per gallon, how to test at home, the real cost on appliances, and the correct treatment sequence for wells with iron and hardness.',
+  description: 'The complete guide to hard water in private wells. What hardness levels mean, how to test, the real appliance cost, and the right treatment sequence.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/hard-water-well',
