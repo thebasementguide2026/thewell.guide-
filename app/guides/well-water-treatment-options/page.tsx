@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Water Treatment Options: Match the Right System to Your Contaminant | The Well Guide',
-  description: 'The complete neutral guide to well water treatment. Every treatment technology explained - sediment filters, carbon filters, UV disinfection, water softeners, reverse osmosis, oxidizing filters, and more - with the specific contaminants each removes, what each cannot do, costs, and the treatment sequence that works for well water.',
+  description: 'Every well water treatment technology explained and matched to your specific contaminants — sediment, carbon, UV, softeners, RO, and oxidizing filters.',
   openGraph: {
     title: 'Well Water Treatment Options: Match the Right System to Your Contaminant',
-    description: 'The complete neutral guide to well water treatment. Every treatment technology explained with specific contaminants each removes, what each cannot do, costs, and correct treatment sequences.',
+    description: 'Every well water treatment technology explained and matched to your specific contaminants — sediment, carbon, UV, softeners, RO, and oxidizing filters.',
     url: 'https://www.thewell.guide/guides/well-water-treatment-options',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Water Treatment Options: Match the Right System to Your Contaminant',
-  description: 'The complete neutral guide to well water treatment. Every treatment technology explained with specific contaminants each removes, what each cannot do, costs, and correct treatment sequences for well water.',
+  description: 'Every well water treatment technology explained and matched to your specific contaminants — sediment, carbon, UV, softeners, RO, and oxidizing filters.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/well-water-treatment-options',
