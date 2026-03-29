@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Well Pressure Tanks (2026): Sizing, Specs, and Real Picks',
     description: 'The best well pressure tanks for private wells reviewed with real specs, sizing guidance, and honest trade-offs.',
-    url: 'https://well.guide/reviews/best-pressure-tanks',
+    url: 'https://www.thewell.guide/reviews/best-pressure-tanks',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/best pressure tanks.jpg', width: 1200, height: 630, alt: 'Well pressure tanks comparison for residential well systems' }],
+    images: [{ url: 'https://www.thewell.guide/best pressure tanks.jpg', width: 1200, height: 630, alt: 'Well pressure tanks comparison for residential well systems' }],
   },
-  alternates: { canonical: 'https://well.guide/reviews/best-pressure-tanks' },
+  alternates: { canonical: 'https://www.thewell.guide/reviews/best-pressure-tanks' },
 }
 
 const articleSchema = {
@@ -23,7 +23,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Best Well Pressure Tanks (2026): Sizing, Specs, and Real Picks',
   description: 'The best well pressure tanks for private wells reviewed with real specs, sizing guidance, and honest trade-offs.',
-  image: 'https://well.guide/best pressure tanks.jpg',
+  image: 'https://www.thewell.guide/best pressure tanks.jpg',
   datePublished: '2026-03-28',
   dateModified: '2026-03-28',
   author: {
@@ -36,7 +36,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/reviews/best-pressure-tanks',
+  mainEntityOfPage: 'https://www.thewell.guide/reviews/best-pressure-tanks',
 }
 
 const itemListSchema = {
@@ -51,28 +51,28 @@ const itemListSchema = {
       position: 1,
       name: 'Amtrol WX-202',
       description: 'Best overall for most homes. 20-gallon pre-charged bladder tank with stainless steel system connection and 5-year warranty.',
-      url: 'https://well.guide/reviews/best-pressure-tanks#pick-1',
+      url: 'https://www.thewell.guide/reviews/best-pressure-tanks#pick-1',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Water Worker HT-32B',
       description: 'Best budget option. 32-gallon bladder tank with strong value and a 5-year warranty.',
-      url: 'https://well.guide/reviews/best-pressure-tanks#pick-2',
+      url: 'https://www.thewell.guide/reviews/best-pressure-tanks#pick-2',
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Amtrol WX-250',
       description: 'Best for large homes. 44-gallon pre-charged bladder tank with heavy-duty stainless steel connection for 4+ bathroom households.',
-      url: 'https://well.guide/reviews/best-pressure-tanks#pick-3',
+      url: 'https://www.thewell.guide/reviews/best-pressure-tanks#pick-3',
     },
     {
       '@type': 'ListItem',
       position: 4,
       name: 'Wellmate WM-9',
       description: 'Best for corrosion resistance and longevity. Composite fiberglass construction, no metal to corrode, lifetime corrosion warranty.',
-      url: 'https://well.guide/reviews/best-pressure-tanks#pick-4',
+      url: 'https://www.thewell.guide/reviews/best-pressure-tanks#pick-4',
     },
   ],
 }
