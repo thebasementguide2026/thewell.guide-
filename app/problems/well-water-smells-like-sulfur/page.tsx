@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Water Smells Like Sulfur or Rotten Eggs: Causes and Fixes',
     description: 'If your well water smells like sulfur or rotten eggs, the cause is hydrogen sulfide gas — but where it comes from determines how you fix it.',
-    url: 'https://well.guide/problems/well-water-smells-like-sulfur',
+    url: 'https://www.thewell.guide/problems/well-water-smells-like-sulfur',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/glassofwater.jpg', width: 1200, height: 630, alt: 'Glass of water on a kitchen counter' }],
+    images: [{ url: 'https://www.thewell.guide/glassofwater.jpg', width: 1200, height: 630, alt: 'Glass of water on a kitchen counter' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/well-water-smells-like-sulfur' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/well-water-smells-like-sulfur' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Water Smells Like Sulfur or Rotten Eggs: Causes and Fixes',
   description: 'If your well water smells like sulfur or rotten eggs, the cause is hydrogen sulfide gas — but where it comes from determines how you fix it. This guide covers all four sources, the hot-water-only vs cold-water diagnosis, and every treatment option matched to concentration level.',
-  image: 'https://well.guide/glassofwater.jpg',
+  image: 'https://www.thewell.guide/glassofwater.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/well-water-smells-like-sulfur',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/well-water-smells-like-sulfur',
 }
 
 export default function WellWaterSmellsLikeSulfur() {
