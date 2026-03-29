@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Test Your Well Water: The Complete Guide',
     description: '43 million Americans on private wells are solely responsible for testing their own water. This guide covers what to test for, when to test, how to collect a sample correctly, and what to do when something is wrong.',
-    url: 'https://well.guide/guides/how-to-test-well-water',
+    url: 'https://www.thewell.guide/guides/how-to-test-well-water',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/watertest.jpg', width: 1200, height: 630, alt: 'Glass of water being tested near a kitchen window' }],
+    images: [{ url: 'https://www.thewell.guide/watertest.jpg', width: 1200, height: 630, alt: 'Glass of water being tested near a kitchen window' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/how-to-test-well-water' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/how-to-test-well-water' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'How to Test Your Well Water: The Complete Guide',
   description: '43 million Americans on private wells are solely responsible for testing their own water. This guide covers what to test for, when to test, how to collect a sample correctly, how to choose between home kits and certified labs, what results mean, and what to do when something is wrong.',
-  image: 'https://well.guide/watertest.jpg',
+  image: 'https://www.thewell.guide/watertest.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/how-to-test-well-water',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/how-to-test-well-water',
 }
 
 export default function HowToTestWellWater() {
