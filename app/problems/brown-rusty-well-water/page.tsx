@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Brown or Rusty Well Water: 6 Causes and How to Fix Each One',
     description: 'Brown, orange, or rusty well water is almost always caused by iron, manganese, sediment, corroded pipes, disturbed sediment, or surface water infiltration.',
-    url: 'https://well.guide/problems/brown-rusty-well-water',
+    url: 'https://www.thewell.guide/problems/brown-rusty-well-water',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/Well guide brown water.jpg', width: 1200, height: 630, alt: 'Brown rusty well water in a glass' }],
+    images: [{ url: 'https://www.thewell.guide/Well guide brown water.jpg', width: 1200, height: 630, alt: 'Brown rusty well water in a glass' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/brown-rusty-well-water' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/brown-rusty-well-water' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Brown or Rusty Well Water: 6 Causes and How to Fix Each One',
   description: 'Brown, orange, or rusty well water is caused by iron, manganese, sediment, corroded pipes, or surface water infiltration. The color and timing of the discoloration are the diagnostic keys. This guide identifies your specific cause and treatment in minutes.',
-  image: 'https://well.guide/Well guide brown water.jpg',
+  image: 'https://www.thewell.guide/Well guide brown water.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/brown-rusty-well-water',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/brown-rusty-well-water',
 }
 
 export default function BrownRustyWellWater() {
