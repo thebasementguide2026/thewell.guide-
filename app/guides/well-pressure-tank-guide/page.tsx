@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Pressure Tank: The Complete Guide for Private Well Owners',
     description: 'Everything a private well owner needs to know about pressure tanks: how they work, the three types, how to size one correctly with the actual formula, the best brands, maintenance schedule, failure signs, and when to replace.',
-    url: 'https://well.guide/guides/well-pressure-tank-guide',
+    url: 'https://www.thewell.guide/guides/well-pressure-tank-guide',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/pressureguide.jpg', width: 1200, height: 630, alt: 'Well pressure tank in a basement utility room with pressure gauge and plumbing connections' }],
+    images: [{ url: 'https://www.thewell.guide/pressureguide.jpg', width: 1200, height: 630, alt: 'Well pressure tank in a basement utility room with pressure gauge and plumbing connections' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/well-pressure-tank-guide' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/well-pressure-tank-guide' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Pressure Tank: The Complete Guide for Private Well Owners',
   description: 'Everything a private well owner needs to know about pressure tanks: how they work, the three types, how to size correctly with the formula, best brands, maintenance, failure signs, and when to replace.',
-  image: 'https://well.guide/pressureguide.jpg',
+  image: 'https://www.thewell.guide/pressureguide.jpg',
   datePublished: '2026-03-26',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/well-pressure-tank-guide',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/well-pressure-tank-guide',
 }
 
 export default function WellPressureTankGuide() {
