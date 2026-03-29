@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Water Smells Like Sulfur or Rotten Eggs: Causes and Fixes | The Well Guide',
-  description: 'If your well water smells like sulfur or rotten eggs, the cause is hydrogen sulfide gas — but where it comes from determines how you fix it. This guide covers all four sources, the hot-water-only vs cold-water diagnosis, and every treatment option matched to concentration level.',
+  description: 'If your well water smells like sulfur or rotten eggs, hydrogen sulfide is the cause. Four sources, hot vs. cold water diagnosis, and every treatment option.',
   openGraph: {
     title: 'Well Water Smells Like Sulfur or Rotten Eggs: Causes and Fixes',
-    description: 'If your well water smells like sulfur or rotten eggs, the cause is hydrogen sulfide gas — but where it comes from determines how you fix it.',
+    description: 'If your well water smells like sulfur or rotten eggs, hydrogen sulfide is the cause. Four sources, hot vs. cold water diagnosis, and every treatment option.',
     url: 'https://www.thewell.guide/problems/well-water-smells-like-sulfur',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Water Smells Like Sulfur or Rotten Eggs: Causes and Fixes',
-  description: 'If your well water smells like sulfur or rotten eggs, the cause is hydrogen sulfide gas — but where it comes from determines how you fix it. This guide covers all four sources, the hot-water-only vs cold-water diagnosis, and every treatment option matched to concentration level.',
+  description: 'If your well water smells like sulfur or rotten eggs, hydrogen sulfide is the cause. Four sources, hot vs. cold water diagnosis, and every treatment option.',
   image: 'https://www.thewell.guide/glassofwater.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
