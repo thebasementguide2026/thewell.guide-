@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'How to Shock Chlorinate a Well: Step-by-Step Instructions for Homeowners | The Well Guide',
-  description: 'Complete instructions for shock chlorinating a private well after a positive bacteria test, flooding, or well service. Includes the casing volume calculation, correct bleach dose by well diameter and depth, the full 8-step procedure, flushing instructions, safety precautions, and the retest requirement. Sourced from Penn State Extension and university cooperative extension guidance.',
+  description: 'Complete step-by-step instructions for shock chlorinating a private well. Casing volume calculation, bleach dose, 8-step procedure, and retest requirements.',
   openGraph: {
     title: 'How to Shock Chlorinate a Well: Step-by-Step Instructions for Homeowners',
-    description: 'Complete instructions for shock chlorinating a private well after a positive bacteria test, flooding, or well service.',
+    description: 'Complete step-by-step instructions for shock chlorinating a private well. Casing volume calculation, bleach dose, 8-step procedure, and retest requirements.',
     url: 'https://www.thewell.guide/guides/how-to-shock-chlorinate-well',
     siteName: 'The Well Guide',
     type: 'article',
@@ -22,7 +22,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'How to Shock Chlorinate a Well: Step-by-Step Instructions for Homeowners',
-  description: 'Complete instructions for shock chlorinating a private well after a positive bacteria test, flooding, or well service, including the casing volume calculation, bleach dose, 8-step procedure, flushing instructions, and retest requirement.',
+  description: 'Complete step-by-step instructions for shock chlorinating a private well. Casing volume calculation, bleach dose, 8-step procedure, and retest requirements.',
   image: 'https://www.thewell.guide/how-to-shock-chlorinate-well.jpg',
   datePublished: '2026-03-28',
   dateModified: '2026-03-28',
