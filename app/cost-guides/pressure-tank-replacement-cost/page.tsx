@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pressure Tank Replacement Cost: What to Expect in 2026',
     description: 'The complete cost breakdown for well pressure tank replacement: tank prices by size and brand, labor rates, regional differences, DIY vs professional, and how to avoid overpaying.',
-    url: 'https://well.guide/cost-guides/pressure-tank-replacement-cost',
+    url: 'https://www.thewell.guide/cost-guides/pressure-tank-replacement-cost',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/pressurecost.jpg', width: 1200, height: 630, alt: 'Two contractors positioning a new pressure tank still in packaging during a basement installation' }],
+    images: [{ url: 'https://www.thewell.guide/pressurecost.jpg', width: 1200, height: 630, alt: 'Two contractors positioning a new pressure tank still in packaging during a basement installation' }],
   },
-  alternates: { canonical: 'https://well.guide/cost-guides/pressure-tank-replacement-cost' },
+  alternates: { canonical: 'https://www.thewell.guide/cost-guides/pressure-tank-replacement-cost' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Pressure Tank Replacement Cost: What to Expect in 2026',
   description: 'Complete cost breakdown for well pressure tank replacement including tank prices by size and brand, labor rates, add-on components, regional differences, DIY vs professional, and how to avoid overpaying.',
-  image: 'https://well.guide/pressurecost.jpg',
+  image: 'https://www.thewell.guide/pressurecost.jpg',
   datePublished: '2026-03-26',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/cost-guides/pressure-tank-replacement-cost',
+  mainEntityOfPage: 'https://www.thewell.guide/cost-guides/pressure-tank-replacement-cost',
 }
 
 export default function PressureTankReplacementCost() {
