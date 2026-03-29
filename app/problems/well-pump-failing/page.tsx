@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Signs Your Well Pump Is Failing: 8 Warning Signs and What to Do | The Well Guide',
-  description: 'The complete guide to recognizing a failing well pump before it stops working entirely. Eight specific warning signs with what each means mechanically, how urgent each is, and what to do next. Includes the age factor, the repair vs. replace decision framework, when to shut the pump off immediately, and what a professional diagnostic covers.',
+  description: 'The complete guide to recognizing a failing well pump. Eight warning signs, urgency levels, the age factor, and the repair vs. replace framework.',
   openGraph: {
     title: 'Signs Your Well Pump Is Failing: 8 Warning Signs and What to Do',
-    description: 'Eight specific warning signs of a failing well pump with urgency levels, the age factor, DIY vs. professional diagnosis, and the repair vs. replace decision framework.',
+    description: 'The complete guide to recognizing a failing well pump. Eight warning signs, urgency levels, the age factor, and the repair vs. replace framework.',
     url: 'https://www.thewell.guide/problems/well-pump-failing',
     siteName: 'The Well Guide',
     type: 'article',
@@ -22,7 +22,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Signs Your Well Pump Is Failing: 8 Warning Signs and What to Do',
-  description: 'The complete guide to recognizing a failing well pump before it stops working entirely. Eight specific warning signs with urgency levels, the age factor, DIY vs. professional diagnosis, when to shut the pump off, and the repair vs. replace decision framework.',
+  description: 'The complete guide to recognizing a failing well pump. Eight warning signs, urgency levels, the age factor, and the repair vs. replace framework.',
   image: 'https://www.thewell.guide/pressure tank fail.jpg',
   datePublished: '2026-03-28',
   dateModified: '2026-03-28',
