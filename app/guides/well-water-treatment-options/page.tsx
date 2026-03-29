@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Water Treatment Options: Match the Right System to Your Contaminant',
     description: 'The complete neutral guide to well water treatment. Every treatment technology explained with specific contaminants each removes, what each cannot do, costs, and correct treatment sequences.',
-    url: 'https://well.guide/guides/well-water-treatment-options',
+    url: 'https://www.thewell.guide/guides/well-water-treatment-options',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well treatmentoptions.jpg', width: 1200, height: 630, alt: 'Well water treatment system components including filters, UV disinfection, and reverse osmosis' }],
+    images: [{ url: 'https://www.thewell.guide/well treatmentoptions.jpg', width: 1200, height: 630, alt: 'Well water treatment system components including filters, UV disinfection, and reverse osmosis' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/well-water-treatment-options' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/well-water-treatment-options' },
 }
 
 const faqSchema = {
@@ -96,7 +96,7 @@ const articleSchema = {
   description: 'The complete neutral guide to well water treatment. Every treatment technology explained with specific contaminants each removes, what each cannot do, costs, and correct treatment sequences for well water.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
-  mainEntityOfPage: 'https://well.guide/guides/well-water-treatment-options',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/well-water-treatment-options',
   dateModified: '2026-03-25',
 }
 
