@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dug Well vs. Drilled Well: The Complete Comparison for Homeowners',
     description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, water quality, construction standards, setback requirements, cost, and what to do if buying a property with a dug well.',
-    url: 'https://well.guide/guides/dug-well-vs-drilled-well',
+    url: 'https://www.thewell.guide/guides/dug-well-vs-drilled-well',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/dug-well-vs-drilled-well.jpg', width: 1200, height: 630, alt: 'Split image comparing a traditional dug well with concrete block ring construction and flat cover in a rural yard on the left, and a modern drilled well steel casing with sanitary cap and pressure gauge on a residential lawn on the right.' }],
+    images: [{ url: 'https://www.thewell.guide/dug-well-vs-drilled-well.jpg', width: 1200, height: 630, alt: 'Split image comparing a traditional dug well with concrete block ring construction and flat cover in a rural yard on the left, and a modern drilled well steel casing with sanitary cap and pressure gauge on a residential lawn on the right.' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/dug-well-vs-drilled-well' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/dug-well-vs-drilled-well' },
 }
 
 const faqSchema = {
@@ -96,7 +96,7 @@ const articleSchema = {
   description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, water quality, construction standards, setback requirements, cost, and what to do if buying a property with a dug well.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
-  mainEntityOfPage: 'https://well.guide/guides/dug-well-vs-drilled-well',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/dug-well-vs-drilled-well',
   dateModified: '2026-03-25',
 }
 
