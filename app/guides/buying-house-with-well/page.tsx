@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide | The Well Guide',
-  description: 'Everything a homebuyer needs to know before purchasing a house with a private well. Well inspection checklist with pass/fail criteria, required water tests by contaminant, loan requirements for FHA/VA/USDA/conventional, negotiating well problems with specific dollar amounts, seller disclosure laws, walk-away conditions, and a 30-day post-closing checklist.',
+  description: 'Everything a homebuyer needs before purchasing a house with a well. Inspection checklist, required water tests, loan requirements, and walk-away conditions.',
   openGraph: {
     title: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide',
-    description: 'Everything a homebuyer needs to know before purchasing a house with a private well. Well inspection checklist with pass/fail criteria, required water tests by contaminant, loan requirements for FHA/VA/USDA/conventional, negotiating well problems with specific dollar amounts, seller disclosure laws, walk-away conditions, and a 30-day post-closing checklist.',
+    description: 'Everything a homebuyer needs before purchasing a house with a well. Inspection checklist, required water tests, loan requirements, and walk-away conditions.',
     url: 'https://www.thewell.guide/guides/buying-house-with-well',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide',
-  description: 'Everything a homebuyer needs before purchasing a house with a private well: inspection checklist with pass/fail criteria, water tests by contaminant, loan requirements for FHA/VA/USDA/conventional, negotiation dollar amounts by problem type, seller disclosure laws, walk-away conditions, and a 30-day post-closing checklist.',
+  description: 'Everything a homebuyer needs before purchasing a house with a well. Inspection checklist, required water tests, loan requirements, and walk-away conditions.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/buying-house-with-well',
