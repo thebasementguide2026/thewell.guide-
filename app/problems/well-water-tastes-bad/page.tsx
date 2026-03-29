@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Water Tastes Bad: What Each Taste Tells You and How to Fix It | The Well Guide',
-  description: 'A complete taste-to-cause diagnostic guide for private well water. Every bad taste (metallic, sulfur, earthy, salty, bitter, chemical, sweet) mapped to its specific cause, health risk level, required test, and treatment. Know what your water is telling you.',
+  description: 'Every bad well water taste mapped to its specific cause, health risk, required test, and treatment. Know what your water is telling you.',
   openGraph: {
     title: 'Well Water Tastes Bad: What Each Taste Tells You and How to Fix It',
-    description: 'A complete taste-to-cause diagnostic guide for private well water. Every bad taste mapped to its specific cause, health risk level, required test, and treatment.',
+    description: 'Every bad well water taste mapped to its specific cause, health risk, required test, and treatment. Know what your water is telling you.',
     url: 'https://www.thewell.guide/problems/well-water-tastes-bad',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Water Tastes Bad: What Each Taste Tells You and How to Fix It',
-  description: 'A complete taste-to-cause diagnostic guide for private well water. Every bad taste mapped to its specific cause, health risk level, required test, and treatment.',
+  description: 'Every bad well water taste mapped to its specific cause, health risk, required test, and treatment. Know what your water is telling you.',
   image: 'https://www.thewell.guide/well tastebad.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
