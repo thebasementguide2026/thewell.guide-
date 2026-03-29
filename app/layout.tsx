@@ -39,6 +39,21 @@ export default function RootLayout({
             gtag('config', 'G-8LFRQKH7F9');
           `}
         </Script>
+                  <Script
+            id="trustedform"
+            strategy="afterInteractive"
+          >
+            {`
+              (function() {
+                var field = 'xxTrustedFormCertUrl';
+                var provideReferrer = false;
+                var tf = document.createElement('script');
+                tf.type = 'text/javascript'; tf.async = true;
+                tf.src = 'http' + 's' + '://api.trustedform.com/trustedform.js?field=' + field + '&l=' + new Date().getTime() + Math.random() + '&provide_referrer=' + provideReferrer;
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+              })();
+            `}
+          </Script>
       </head>
       <body>
         <Header />
