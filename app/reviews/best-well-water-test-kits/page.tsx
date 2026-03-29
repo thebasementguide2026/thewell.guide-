@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Well Water Test Kits (2026): Lab and DIY Options Reviewed',
     description: 'The four best well water test kits for private well owners, reviewed and compared. Certified lab tests and DIY strips for every situation and budget.',
-    url: 'https://well.guide/reviews/best-well-water-test-kits',
+    url: 'https://www.thewell.guide/reviews/best-well-water-test-kits',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/welltestkits.jpg', width: 1200, height: 630, alt: 'Well water test kits reviewed for private well owners' }],
+    images: [{ url: 'https://www.thewell.guide/welltestkits.jpg', width: 1200, height: 630, alt: 'Well water test kits reviewed for private well owners' }],
   },
-  alternates: { canonical: 'https://well.guide/reviews/best-well-water-test-kits' },
+  alternates: { canonical: 'https://www.thewell.guide/reviews/best-well-water-test-kits' },
 }
 
 const articleSchema = {
@@ -23,7 +23,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Best Well Water Test Kits (2026): Lab and DIY Options Reviewed',
   description: 'The four best well water test kits for private well owners reviewed and compared. Certified lab tests and DIY strips for every situation and budget.',
-  image: 'https://well.guide/welltestkits.jpg',
+  image: 'https://www.thewell.guide/welltestkits.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -36,7 +36,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/reviews/best-well-water-test-kits',
+  mainEntityOfPage: 'https://www.thewell.guide/reviews/best-well-water-test-kits',
 }
 
 const itemListSchema = {
