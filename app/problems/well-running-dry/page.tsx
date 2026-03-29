@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Running Dry: Diagnose the Cause and Know Exactly What to Do | The Well Guide',
-  description: 'The complete guide to a well running dry. Learn the four distinct scenarios - temporary drawdown, seasonal water table drop, pump set wrong, and true aquifer depletion - and the specific diagnosis and fix for each. Includes what to do right now, how to get interim water, and when deepening vs. drilling new is the right call.',
+  description: 'The complete guide to a well running dry. Four distinct scenarios, specific diagnosis and fix for each, and when deepening vs. drilling new is right.',
   openGraph: {
     title: 'Well Running Dry: Diagnose the Cause and Know Exactly What to Do',
-    description: 'The complete guide to a well running dry. Learn the four distinct scenarios and the specific diagnosis and fix for each.',
+    description: 'The complete guide to a well running dry. Four distinct scenarios, specific diagnosis and fix for each, and when deepening vs. drilling new is right.',
     url: 'https://www.thewell.guide/problems/well-running-dry',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Running Dry: Diagnose the Cause and Know Exactly What to Do',
-  description: 'Complete guide to a well running dry. Learn the four distinct scenarios and their specific fixes. Includes what to do right now, how to get interim water, static water level measurement, and when deepening vs. drilling new is the right call.',
+  description: 'The complete guide to a well running dry. Four distinct scenarios, specific diagnosis and fix for each, and when deepening vs. drilling new is right.',
   image: 'https://www.thewell.guide/well dry.png',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
