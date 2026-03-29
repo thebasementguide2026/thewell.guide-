@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Water Testing Cost: What You\'ll Pay in 2026',
     description: 'Well water testing costs range from free to $500 depending on what you test for and where you get it done. Most homeowners spend $50 to $200 for annual testing.',
-    url: 'https://well.guide/cost-guides/well-water-testing-cost',
+    url: 'https://www.thewell.guide/cost-guides/well-water-testing-cost',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/watertestingcost.jpg', width: 1200, height: 630, alt: 'Water testing kit with sample bottle and printed results on a kitchen counter' }],
+    images: [{ url: 'https://www.thewell.guide/watertestingcost.jpg', width: 1200, height: 630, alt: 'Water testing kit with sample bottle and printed results on a kitchen counter' }],
   },
-  alternates: { canonical: 'https://well.guide/cost-guides/well-water-testing-cost' },
+  alternates: { canonical: 'https://www.thewell.guide/cost-guides/well-water-testing-cost' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Well Water Testing Cost: What You'll Pay in 2026",
   description: 'Well water testing costs range from free to $500 depending on what you test for and where you get it done. Most homeowners spend $50 to $200 for annual testing. This guide breaks down every cost by contaminant type, explains free testing programs by state, and covers mortgage requirements.',
-  image: 'https://well.guide/watertestingcost.jpg',
+  image: 'https://www.thewell.guide/watertestingcost.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/cost-guides/well-water-testing-cost',
+  mainEntityOfPage: 'https://www.thewell.guide/cost-guides/well-water-testing-cost',
 }
 
 export default function WellWaterTestingCost() {
