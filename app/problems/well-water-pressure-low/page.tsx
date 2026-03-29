@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Water Pressure Low: 6 Causes and How to Fix Each One',
     description: 'Low well water pressure has six distinct causes — waterlogged pressure tank, failing pump, dropping water table, clogged well screen, faulty pressure switch, or clogged filters — and each requires a different fix.',
-    url: 'https://well.guide/problems/well-water-pressure-low',
+    url: 'https://www.thewell.guide/problems/well-water-pressure-low',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well%20pressure.jpg', width: 1200, height: 630, alt: 'Well water pressure gauge on a residential pressure tank' }],
+    images: [{ url: 'https://www.thewell.guide/well%20pressure.jpg', width: 1200, height: 630, alt: 'Well water pressure gauge on a residential pressure tank' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/well-water-pressure-low' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/well-water-pressure-low' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Water Pressure Low: 6 Causes and How to Fix Each One',
   description: 'Low well water pressure has six distinct causes — waterlogged pressure tank, failing pump, dropping water table, clogged well screen, faulty pressure switch, or clogged filters — and each requires a different fix.',
-  image: 'https://well.guide/well%20pressure.jpg',
+  image: 'https://www.thewell.guide/well%20pressure.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/well-water-pressure-low',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/well-water-pressure-low',
 }
 
 export default function WellWaterPressureLow() {
