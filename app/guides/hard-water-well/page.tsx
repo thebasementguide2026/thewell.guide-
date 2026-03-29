@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hard Water in Wells: What It Is, What It Costs You, and How to Fix It',
     description: 'The complete guide to hard water in private wells — hardness levels in grains per gallon, how to test at home, the real cost on appliances, and the correct treatment sequence for wells with iron and hardness.',
-    url: 'https://well.guide/guides/hard-water-well',
+    url: 'https://www.thewell.guide/guides/hard-water-well',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/hard-water-well.jpg', width: 1200, height: 630, alt: 'Split image showing severe white calcium scale buildup on a bathroom faucet on the left, and a residential water softener system with resin tank and brine tank installed in a utility room on the right.' }],
+    images: [{ url: 'https://www.thewell.guide/hard-water-well.jpg', width: 1200, height: 630, alt: 'Split image showing severe white calcium scale buildup on a bathroom faucet on the left, and a residential water softener system with resin tank and brine tank installed in a utility room on the right.' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/hard-water-well' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/hard-water-well' },
 }
 
 const faqSchema = {
@@ -96,7 +96,7 @@ const articleSchema = {
   description: 'The complete guide to hard water in private wells — hardness levels in grains per gallon, how to test at home, the real cost on appliances, and the correct treatment sequence for wells with iron and hardness.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
-  mainEntityOfPage: 'https://well.guide/guides/hard-water-well',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/hard-water-well',
   dateModified: '2026-03-25',
 }
 
