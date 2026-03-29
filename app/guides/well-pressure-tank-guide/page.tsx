@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Pressure Tank: The Complete Guide for Private Well Owners | The Well Guide',
-  description: 'Everything a private well owner needs to know about pressure tanks: how they work, the three types, how to size one correctly with the actual formula, the best brands, maintenance schedule, failure signs, and when to replace. The only pressure tank reference you need.',
+  description: 'Everything a private well owner needs to know about pressure tanks — how they work, sizing formula, best brands, maintenance, and when to replace.',
   openGraph: {
     title: 'Well Pressure Tank: The Complete Guide for Private Well Owners',
-    description: 'Everything a private well owner needs to know about pressure tanks: how they work, the three types, how to size one correctly with the actual formula, the best brands, maintenance schedule, failure signs, and when to replace.',
+    description: 'Everything a private well owner needs to know about pressure tanks — how they work, sizing formula, best brands, maintenance, and when to replace.',
     url: 'https://www.thewell.guide/guides/well-pressure-tank-guide',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Pressure Tank: The Complete Guide for Private Well Owners',
-  description: 'Everything a private well owner needs to know about pressure tanks: how they work, the three types, how to size correctly with the formula, best brands, maintenance, failure signs, and when to replace.',
+  description: 'Everything a private well owner needs to know about pressure tanks — how they work, sizing formula, best brands, maintenance, and when to replace.',
   image: 'https://www.thewell.guide/pressureguide.jpg',
   datePublished: '2026-03-26',
   dateModified: '2026-03-25',
