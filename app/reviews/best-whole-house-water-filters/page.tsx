@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Whole House Water Filters for Well Water: 2026 Picks by Contaminant',
     description: 'The best whole house water filters for well water reviewed by contaminant type with real specs, honest limitations, and complete buying guidance.',
-    url: 'https://well.guide/reviews/best-whole-house-water-filters',
+    url: 'https://www.thewell.guide/reviews/best-whole-house-water-filters',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/waterfilters.jpg', width: 1200, height: 630, alt: 'Whole house water filtration system with blue tanks and UV unit mounted on a utility room wall with copper plumbing' }],
+    images: [{ url: 'https://www.thewell.guide/waterfilters.jpg', width: 1200, height: 630, alt: 'Whole house water filtration system with blue tanks and UV unit mounted on a utility room wall with copper plumbing' }],
   },
-  alternates: { canonical: 'https://well.guide/reviews/best-whole-house-water-filters' },
+  alternates: { canonical: 'https://www.thewell.guide/reviews/best-whole-house-water-filters' },
 }
 
 const articleSchema = {
@@ -23,7 +23,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Best Whole House Water Filters for Well Water: 2026 Picks by Contaminant',
   description: 'The best whole house water filters for well water reviewed by contaminant type with real specs, honest limitations, and complete buying guidance.',
-  image: 'https://well.guide/waterfilters.jpg',
+  image: 'https://www.thewell.guide/waterfilters.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -36,7 +36,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/reviews/best-whole-house-water-filters',
+  mainEntityOfPage: 'https://www.thewell.guide/reviews/best-whole-house-water-filters',
 }
 
 const itemListSchema = {
@@ -51,35 +51,35 @@ const itemListSchema = {
       position: 1,
       name: 'Home Master HMF3SDGFEC',
       description: 'Best for iron, manganese, and sulfur up to 3 ppm combined. 3-stage radial flow cartridge system. 15 GPM flow rate. Annual filter replacement.',
-      url: 'https://well.guide/reviews/best-whole-house-water-filters#pick-1',
+      url: 'https://www.thewell.guide/reviews/best-whole-house-water-filters#pick-1',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Aquasana Rhino EQ-WELL-UV-PRO-AST',
       description: 'Best for bacteria plus broad chemical contamination. Integrated carbon, KDF, Class A UV, and salt-free conditioner. 7 GPM flow rate. 500,000 gallon media life.',
-      url: 'https://well.guide/reviews/best-whole-house-water-filters#pick-2',
+      url: 'https://www.thewell.guide/reviews/best-whole-house-water-filters#pick-2',
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'iSpring WGB32B',
       description: 'Best budget system for mild well water. 3-stage sediment and dual carbon cartridge. 15 GPM flow rate. Lowest annual maintenance cost.',
-      url: 'https://well.guide/reviews/best-whole-house-water-filters#pick-3',
+      url: 'https://www.thewell.guide/reviews/best-whole-house-water-filters#pick-3',
     },
     {
       '@type': 'ListItem',
       position: 4,
       name: 'iSpring WGB32BM',
       description: 'Best budget iron and manganese filter. 3-stage with dedicated iron/manganese reduction cartridge. 15 GPM flow rate.',
-      url: 'https://well.guide/reviews/best-whole-house-water-filters#pick-4',
+      url: 'https://www.thewell.guide/reviews/best-whole-house-water-filters#pick-4',
     },
     {
       '@type': 'ListItem',
       position: 5,
       name: 'iSpring WSP-50 Spin-Down Sediment Filter',
       description: 'Best reusable sediment pre-filter. 50-micron spin-down, 20+ GPM, no cartridge replacement. Essential upstream pre-filter for wells with sediment loading.',
-      url: 'https://well.guide/reviews/best-whole-house-water-filters#pick-5',
+      url: 'https://www.thewell.guide/reviews/best-whole-house-water-filters#pick-5',
     },
   ],
 }
