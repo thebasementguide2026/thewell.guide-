@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Shock Chlorinate a Well: Step-by-Step Instructions for Homeowners',
     description: 'Complete instructions for shock chlorinating a private well after a positive bacteria test, flooding, or well service.',
-    url: 'https://well.guide/guides/how-to-shock-chlorinate-well',
+    url: 'https://www.thewell.guide/guides/how-to-shock-chlorinate-well',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/how-to-shock-chlorinate-well.jpg', width: 1200, height: 630, alt: 'Well disinfection supplies arranged on a residential lawn next to an open steel well casing with the cap removed, including a 5-gallon bucket with funnel, rubber gloves, and a bleach bottle.' }],
+    images: [{ url: 'https://www.thewell.guide/how-to-shock-chlorinate-well.jpg', width: 1200, height: 630, alt: 'Well disinfection supplies arranged on a residential lawn next to an open steel well casing with the cap removed, including a 5-gallon bucket with funnel, rubber gloves, and a bleach bottle.' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/how-to-shock-chlorinate-well' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/how-to-shock-chlorinate-well' },
 }
 
 const articleSchema = {
@@ -23,7 +23,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'How to Shock Chlorinate a Well: Step-by-Step Instructions for Homeowners',
   description: 'Complete instructions for shock chlorinating a private well after a positive bacteria test, flooding, or well service, including the casing volume calculation, bleach dose, 8-step procedure, flushing instructions, and retest requirement.',
-  image: 'https://well.guide/how-to-shock-chlorinate-well.jpg',
+  image: 'https://www.thewell.guide/how-to-shock-chlorinate-well.jpg',
   datePublished: '2026-03-28',
   dateModified: '2026-03-28',
   author: {
@@ -36,7 +36,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/how-to-shock-chlorinate-well',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/how-to-shock-chlorinate-well',
 }
 
 const faqSchema = {
