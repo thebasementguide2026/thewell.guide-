@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Water vs. City Water: An Honest Comparison for Homeowners | The Well Guide',
-  description: 'A complete comparison of well water and city water covering cost, quality, taste, health risk, maintenance, reliability, and which is better for your specific situation. Includes side-by-side comparison table, annual cost breakdown for both systems, and the honest answer to which is actually safer.',
+  description: 'Well water vs. city water compared on cost, quality, control, maintenance, and reliability. The honest breakdown for homeowners on both systems.',
   openGraph: {
     title: 'Well Water vs. City Water: An Honest Comparison for Homeowners',
-    description: 'A complete comparison of well water and city water covering cost, quality, taste, health risk, maintenance, reliability, and which is better for your specific situation.',
+    description: 'Well water vs. city water compared on cost, quality, control, maintenance, and reliability. The honest breakdown for homeowners on both systems.',
     url: 'https://www.thewell.guide/guides/well-water-vs-city-water',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Water vs. City Water: An Honest Comparison for Homeowners',
-  description: 'A complete comparison of well water and city water covering cost, quality, taste, health risk, maintenance, and reliability with a side-by-side table and the honest answer to which is actually safer.',
+  description: 'Well water vs. city water compared on cost, quality, control, maintenance, and reliability. The honest breakdown for homeowners on both systems.',
   image: 'https://www.thewell.guide/_well-water-vs-city-water.jpg',
   datePublished: '2026-03-27',
   dateModified: '2026-03-25',
