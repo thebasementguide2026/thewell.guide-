@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Pump Short Cycling: Causes, Diagnosis, and How to Fix It',
     description: 'A well pump that turns on and off every few seconds is short cycling. This guide shows you how to diagnose the cause, what to check yourself, and when to call a contractor.',
-    url: 'https://well.guide/problems/well-pump-short-cycling',
+    url: 'https://www.thewell.guide/problems/well-pump-short-cycling',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/cycling.jpg', width: 1200, height: 630, alt: 'Hand testing pressure tank Schrader valve with tire gauge to diagnose well pump short cycling' }],
+    images: [{ url: 'https://www.thewell.guide/cycling.jpg', width: 1200, height: 630, alt: 'Hand testing pressure tank Schrader valve with tire gauge to diagnose well pump short cycling' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/well-pump-short-cycling' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/well-pump-short-cycling' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Pump Short Cycling: Causes, Diagnosis, and How to Fix It',
   description: 'A well pump that turns on and off every few seconds is short cycling. Every rapid start draws 5 to 7 times normal running current. This guide diagnoses every cause with specific tests and explains what to fix yourself versus what needs a contractor.',
-  image: 'https://well.guide/cycling.jpg',
+  image: 'https://www.thewell.guide/cycling.jpg',
   datePublished: '2026-03-26',
   dateModified: '2026-03-26',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/well-pump-short-cycling',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/well-pump-short-cycling',
 }
 
 export default function WellPumpShortCycling() {
