@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Dug Well vs. Drilled Well: The Complete Comparison for Homeowners | The Well Guide',
-  description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, water quality, construction standards, setback requirements, cost, lifespan, and what to do if you are buying a property with a dug well. Includes a homebuyer\'s evaluation checklist and the honest answer on whether a dug well needs to be replaced.',
+  description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, and the homebuyer\'s evaluation checklist.'s evaluation checklist and the honest answer on whether a dug well needs to be replaced.',
   openGraph: {
     title: 'Dug Well vs. Drilled Well: The Complete Comparison for Homeowners',
-    description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, water quality, construction standards, setback requirements, cost, and what to do if buying a property with a dug well.',
+    description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, and the homebuyer's evaluation checklist.'s evaluation checklist.',
     url: 'https://www.thewell.guide/guides/dug-well-vs-drilled-well',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Dug Well vs. Drilled Well: The Complete Comparison for Homeowners',
-  description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, water quality, construction standards, setback requirements, cost, and what to do if buying a property with a dug well.',
+  description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, and the homebuyer\'s evaluation checklist.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/dug-well-vs-drilled-well',
