@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Pump Running Constantly: 6 Causes and How to Diagnose Each One',
     description: 'A well pump that won\'t shut off is an emergency. This guide shows you how to diagnose every cause in order of likelihood and what to do right now to protect the pump.',
-    url: 'https://well.guide/problems/well-pump-running-constantly',
+    url: 'https://www.thewell.guide/problems/well-pump-running-constantly',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/constantlyrunning.jpg', width: 1200, height: 630, alt: 'A well pump system with pressure gauge showing continuous operation' }],
+    images: [{ url: 'https://www.thewell.guide/constantlyrunning.jpg', width: 1200, height: 630, alt: 'A well pump system with pressure gauge showing continuous operation' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/well-pump-running-constantly' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/well-pump-running-constantly' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Pump Running Constantly: 6 Causes and How to Diagnose Each One',
   description: 'A well pump that won\'t shut off is an emergency. Continuous operation overheats the motor. This guide diagnoses every cause in order of likelihood with specific tests for each.',
-  image: 'https://well.guide/constantlyrunning.jpg',
+  image: 'https://www.thewell.guide/constantlyrunning.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/well-pump-running-constantly',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/well-pump-running-constantly',
 }
 
 export default function WellPumpRunningConstantly() {
