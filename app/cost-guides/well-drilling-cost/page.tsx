@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Drilling Cost: What Homeowners Actually Pay in 2026 | The Well Guide',
-  description: 'The complete well drilling cost guide for 2026. Per-foot drilling rates, all-in system costs by depth, regional price differences, what every contractor quote should include, the hidden costs most homeowners miss, and exactly what questions to ask before you sign.',
+  description: 'The complete well drilling cost guide for 2026. Per-foot rates, all-in system costs by depth, regional differences, and what to ask before you sign.',
   openGraph: {
     title: 'Well Drilling Cost: What Homeowners Actually Pay in 2026',
-    description: 'The complete well drilling cost guide for 2026. Per-foot drilling rates, all-in system costs by depth, regional price differences, hidden costs, and what questions to ask before signing.',
+    description: 'The complete well drilling cost guide for 2026. Per-foot rates, all-in system costs by depth, regional differences, and what to ask before you sign.',
     url: 'https://www.thewell.guide/cost-guides/well-drilling-cost',
     siteName: 'The Well Guide',
     type: 'article',
@@ -93,7 +93,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Drilling Cost: What Homeowners Actually Pay in 2026',
-  description: 'The complete well drilling cost guide for 2026. Per-foot drilling rates, all-in system costs by depth, regional price differences, hidden costs, and what questions to ask before signing.',
+  description: 'The complete well drilling cost guide for 2026. Per-foot rates, all-in system costs by depth, regional differences, and what to ask before you sign.',
   image: 'https://www.thewell.guide/well-drilling-cost.jpg',
   datePublished: '2026-03-27',
   dateModified: '2026-03-25',
