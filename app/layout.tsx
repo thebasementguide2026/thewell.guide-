@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.thewell.guide'),
   title: 'The Well Guide — Expert Private Well Advice for Homeowners',
   description: 'Independent resource for private well water quality, maintenance, testing, and cost guidance. Written for the 13 million US homeowners on private wells.',
   keywords: 'private well, well water, well pump, water quality, well maintenance, well testing, well water treatment',
