@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Whole House Water Filter Cost: What Well Owners Actually Pay in 2026',
     description: 'The complete cost guide to whole house water filtration for well water — equipment costs by system type, installation costs, annual maintenance, cost by contaminant problem, and the 10-year ownership picture.',
-    url: 'https://well.guide/cost-guides/whole-house-water-filter-cost',
+    url: 'https://www.thewell.guide/cost-guides/whole-house-water-filter-cost',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/whole-house-water-filter-cost.jpg', width: 1200, height: 630, alt: 'Multi-stage whole house water filtration system installed in a residential basement, showing multiple blue filter tanks, cartridge filter housings, a UV disinfection unit, and a digital control panel mounted on a brick wall.' }],
+    images: [{ url: 'https://www.thewell.guide/whole-house-water-filter-cost.jpg', width: 1200, height: 630, alt: 'Multi-stage whole house water filtration system installed in a residential basement, showing multiple blue filter tanks, cartridge filter housings, a UV disinfection unit, and a digital control panel mounted on a brick wall.' }],
   },
-  alternates: { canonical: 'https://well.guide/cost-guides/whole-house-water-filter-cost' },
+  alternates: { canonical: 'https://www.thewell.guide/cost-guides/whole-house-water-filter-cost' },
 }
 
 const faqSchema = {
@@ -96,7 +96,7 @@ const articleSchema = {
   description: 'The complete cost guide to whole house water filtration for well water — equipment costs by system type, installation costs, annual maintenance, cost by contaminant problem, and the 10-year ownership picture.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
-  mainEntityOfPage: 'https://well.guide/cost-guides/whole-house-water-filter-cost',
+  mainEntityOfPage: 'https://www.thewell.guide/cost-guides/whole-house-water-filter-cost',
   dateModified: '2026-03-25',
 }
 
