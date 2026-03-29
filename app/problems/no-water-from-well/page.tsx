@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'No Water from Well: A Step-by-Step Diagnosis Guide',
     description: 'Turned on the tap and got nothing? This guide walks through every cause of no water from a well in order of likelihood, from a tripped breaker to a failed pump.',
-    url: 'https://well.guide/problems/no-water-from-well',
+    url: 'https://www.thewell.guide/problems/no-water-from-well',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/nowaterinwell.jpg', width: 1200, height: 630, alt: 'A hand turning on a kitchen faucet with no water coming out' }],
+    images: [{ url: 'https://www.thewell.guide/nowaterinwell.jpg', width: 1200, height: 630, alt: 'A hand turning on a kitchen faucet with no water coming out' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/no-water-from-well' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/no-water-from-well' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'No Water from Well: A Step-by-Step Diagnosis Guide',
   description: 'When a well has no water, start at the breaker panel. This guide walks through every cause of well water loss in order of likelihood, from a tripped breaker to a failed pump, with specific diagnostic steps for each.',
-  image: 'https://well.guide/nowaterinwell.jpg',
+  image: 'https://www.thewell.guide/nowaterinwell.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/no-water-from-well',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/no-water-from-well',
 }
 
 export default function NoWaterFromWell() {
