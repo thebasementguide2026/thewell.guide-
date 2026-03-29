@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Water vs. City Water: An Honest Comparison for Homeowners',
     description: 'A complete comparison of well water and city water covering cost, quality, taste, health risk, maintenance, reliability, and which is better for your specific situation.',
-    url: 'https://well.guide/guides/well-water-vs-city-water',
+    url: 'https://www.thewell.guide/guides/well-water-vs-city-water',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/_well-water-vs-city-water.jpg', width: 1200, height: 630, alt: 'Split image comparing private well water and city water — left panel shows a residential wellhead casing with white cap on green grass, right panel shows a municipal water meter on a suburban street.' }],
+    images: [{ url: 'https://www.thewell.guide/_well-water-vs-city-water.jpg', width: 1200, height: 630, alt: 'Split image comparing private well water and city water — left panel shows a residential wellhead casing with white cap on green grass, right panel shows a municipal water meter on a suburban street.' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/well-water-vs-city-water' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/well-water-vs-city-water' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Water vs. City Water: An Honest Comparison for Homeowners',
   description: 'A complete comparison of well water and city water covering cost, quality, taste, health risk, maintenance, and reliability with a side-by-side table and the honest answer to which is actually safer.',
-  image: 'https://well.guide/_well-water-vs-city-water.jpg',
+  image: 'https://www.thewell.guide/_well-water-vs-city-water.jpg',
   datePublished: '2026-03-27',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/well-water-vs-city-water',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/well-water-vs-city-water',
 }
 
 export default function WellWaterVsCityWater() {
