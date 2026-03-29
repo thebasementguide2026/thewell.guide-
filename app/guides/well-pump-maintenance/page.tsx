@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Pump Maintenance: The Complete Annual Schedule for Private Well Owners | The Well Guide',
-  description: 'The complete well pump and system maintenance guide for private well owners. Annual maintenance schedule by task and season, the pressure tank pre-charge check procedure, wellhead inspection checklist, what professional inspection covers versus what homeowners can do themselves, how to track well yield over time, and how to maintain a maintenance log that protects resale value.',
+  description: 'The complete annual well maintenance schedule. Pressure tank pre-charge check, wellhead inspection, seasonal tasks, yield monitoring, and the maintenance log.',
   openGraph: {
     title: 'Well Pump Maintenance: The Complete Annual Schedule for Private Well Owners',
-    description: 'The complete well pump and system maintenance guide for private well owners. Annual maintenance schedule, pressure tank pre-charge check, wellhead inspection, seasonal tasks, yield monitoring, and maintenance log guidance.',
+    description: 'The complete annual well maintenance schedule. Pressure tank pre-charge check, wellhead inspection, seasonal tasks, yield monitoring, and the maintenance log.',
     url: 'https://www.thewell.guide/guides/well-pump-maintenance',
     siteName: 'The Well Guide',
     type: 'article',
@@ -22,7 +22,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Pump Maintenance: The Complete Annual Schedule for Private Well Owners',
-  description: 'The complete well pump and system maintenance guide for private well owners — annual schedule, pressure tank pre-charge check, wellhead inspection, seasonal tasks, yield monitoring, professional inspection scope, and maintenance log guidance.',
+  description: 'The complete annual well maintenance schedule. Pressure tank pre-charge check, wellhead inspection, seasonal tasks, yield monitoring, and the maintenance log.',
   image: 'https://www.thewell.guide/well-pump-maintenance.jpg',
   datePublished: '2026-03-28',
   dateModified: '2026-03-28',
