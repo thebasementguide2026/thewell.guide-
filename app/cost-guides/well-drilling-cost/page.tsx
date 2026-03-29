@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Drilling Cost: What Homeowners Actually Pay in 2026',
     description: 'The complete well drilling cost guide for 2026. Per-foot drilling rates, all-in system costs by depth, regional price differences, hidden costs, and what questions to ask before signing.',
-    url: 'https://well.guide/cost-guides/well-drilling-cost',
+    url: 'https://www.thewell.guide/cost-guides/well-drilling-cost',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well-drilling-cost.jpg', width: 1200, height: 630, alt: 'Truck-mounted water well drilling rig with mast and stabilizer legs deployed on a rural residential property, ready to begin drilling.' }],
+    images: [{ url: 'https://www.thewell.guide/well-drilling-cost.jpg', width: 1200, height: 630, alt: 'Truck-mounted water well drilling rig with mast and stabilizer legs deployed on a rural residential property, ready to begin drilling.' }],
   },
-  alternates: { canonical: 'https://well.guide/cost-guides/well-drilling-cost' },
+  alternates: { canonical: 'https://www.thewell.guide/cost-guides/well-drilling-cost' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Drilling Cost: What Homeowners Actually Pay in 2026',
   description: 'The complete well drilling cost guide for 2026. Per-foot drilling rates, all-in system costs by depth, regional price differences, hidden costs, and what questions to ask before signing.',
-  image: 'https://well.guide/well-drilling-cost.jpg',
+  image: 'https://www.thewell.guide/well-drilling-cost.jpg',
   datePublished: '2026-03-27',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/cost-guides/well-drilling-cost',
+  mainEntityOfPage: 'https://www.thewell.guide/cost-guides/well-drilling-cost',
 }
 
 export default function WellDrillingCost() {
