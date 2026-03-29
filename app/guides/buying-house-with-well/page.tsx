@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide',
     description: 'Everything a homebuyer needs to know before purchasing a house with a private well. Well inspection checklist with pass/fail criteria, required water tests by contaminant, loan requirements for FHA/VA/USDA/conventional, negotiating well problems with specific dollar amounts, seller disclosure laws, walk-away conditions, and a 30-day post-closing checklist.',
-    url: 'https://well.guide/guides/buying-house-with-well',
+    url: 'https://www.thewell.guide/guides/buying-house-with-well',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/buying a home on well.jpg', width: 1200, height: 630, alt: 'Home inspector and homebuyer examining a residential wellhead on a rural property during a pre-purchase well inspection' }],
+    images: [{ url: 'https://www.thewell.guide/buying a home on well.jpg', width: 1200, height: 630, alt: 'Home inspector and homebuyer examining a residential wellhead on a rural property during a pre-purchase well inspection' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/buying-house-with-well' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/buying-house-with-well' },
 }
 
 const faqSchema = {
@@ -96,7 +96,7 @@ const articleSchema = {
   description: 'Everything a homebuyer needs before purchasing a house with a private well: inspection checklist with pass/fail criteria, water tests by contaminant, loan requirements for FHA/VA/USDA/conventional, negotiation dollar amounts by problem type, seller disclosure laws, walk-away conditions, and a 30-day post-closing checklist.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
-  mainEntityOfPage: 'https://well.guide/guides/buying-house-with-well',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/buying-house-with-well',
   dateModified: '2026-03-25',
 }
 
