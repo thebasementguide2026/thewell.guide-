@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How a Well Pump Works: The Complete System Explained',
     description: 'Understanding how a well pump works is the foundation for diagnosing every well problem. This guide explains the full pressure cycle, submersible vs jet pumps, what the pressure tank does, and what two-wire vs three-wire means for repairs.',
-    url: 'https://well.guide/guides/how-well-pump-works',
+    url: 'https://www.thewell.guide/guides/how-well-pump-works',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/howwellworks.jpg', width: 1200, height: 630, alt: 'Pressure tank and pressure switch in a basement utility room with pipes and gauges visible' }],
+    images: [{ url: 'https://www.thewell.guide/howwellworks.jpg', width: 1200, height: 630, alt: 'Pressure tank and pressure switch in a basement utility room with pipes and gauges visible' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/how-well-pump-works' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/how-well-pump-works' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'How a Well Pump Works: The Complete System Explained',
   description: 'Understanding how a well pump works is the foundation for diagnosing every well problem. This guide explains the full pressure cycle, submersible vs jet pumps, what the pressure tank actually does, and what two-wire vs three-wire means for repairs.',
-  image: 'https://well.guide/howwellworks.jpg',
+  image: 'https://www.thewell.guide/howwellworks.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/how-well-pump-works',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/how-well-pump-works',
 }
 
 export default function HowWellPumpWorks() {
