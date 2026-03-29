@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Pump Maintenance: The Complete Annual Schedule for Private Well Owners',
     description: 'The complete well pump and system maintenance guide for private well owners. Annual maintenance schedule, pressure tank pre-charge check, wellhead inspection, seasonal tasks, yield monitoring, and maintenance log guidance.',
-    url: 'https://well.guide/guides/well-pump-maintenance',
+    url: 'https://www.thewell.guide/guides/well-pump-maintenance',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well-pump-maintenance.jpg', width: 1200, height: 630, alt: 'Blue well water pressure tank installed in a residential basement utility room with copper pipe connection, pressure gauge, and pressure switch visible.' }],
+    images: [{ url: 'https://www.thewell.guide/well-pump-maintenance.jpg', width: 1200, height: 630, alt: 'Blue well water pressure tank installed in a residential basement utility room with copper pipe connection, pressure gauge, and pressure switch visible.' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/well-pump-maintenance' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/well-pump-maintenance' },
 }
 
 const articleSchema = {
@@ -23,7 +23,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Pump Maintenance: The Complete Annual Schedule for Private Well Owners',
   description: 'The complete well pump and system maintenance guide for private well owners — annual schedule, pressure tank pre-charge check, wellhead inspection, seasonal tasks, yield monitoring, professional inspection scope, and maintenance log guidance.',
-  image: 'https://well.guide/well-pump-maintenance.jpg',
+  image: 'https://www.thewell.guide/well-pump-maintenance.jpg',
   datePublished: '2026-03-28',
   dateModified: '2026-03-28',
   author: {
@@ -36,7 +36,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/well-pump-maintenance',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/well-pump-maintenance',
 }
 
 const faqSchema = {
