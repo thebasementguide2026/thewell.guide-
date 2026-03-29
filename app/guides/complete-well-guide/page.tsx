@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Complete Guide to Private Well Water Systems (2026)',
     description: 'The definitive guide to private well water systems for homeowners. How wells work, all 12 components, water quality by region, annual maintenance schedule, 20-year cost table, seasonal care, and links to every deep-dive guide on well.guide.',
-    url: 'https://well.guide/guides/complete-well-guide',
+    url: 'https://www.thewell.guide/guides/complete-well-guide',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/complete-well-guide.jpg', width: 1200, height: 630, alt: 'Diagram of a residential private well water system showing the outdoor wellhead and underground cross-section with submersible pump and aquifer on the left, and the basement pressure tank, pressure switch, pressure gauge, sediment filter, and UV system on the right, with teal flow arrows tracing the water path from aquifer to faucet.' }],
+    images: [{ url: 'https://www.thewell.guide/complete-well-guide.jpg', width: 1200, height: 630, alt: 'Diagram of a residential private well water system showing the outdoor wellhead and underground cross-section with submersible pump and aquifer on the left, and the basement pressure tank, pressure switch, pressure gauge, sediment filter, and UV system on the right, with teal flow arrows tracing the water path from aquifer to faucet.' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/complete-well-guide' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/complete-well-guide' },
 }
 
 const articleSchema = {
@@ -25,7 +25,7 @@ const articleSchema = {
   description: 'The definitive guide to private well water systems for homeowners. How wells work, all 12 components, water quality by region, annual maintenance schedule, 20-year cost table, seasonal care, and links to every deep-dive guide on well.guide.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
   publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
-  mainEntityOfPage: 'https://well.guide/guides/complete-well-guide',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/complete-well-guide',
   dateModified: '2026-03-25',
 }
 
