@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Signs Your Well Pump Is Failing: 8 Warning Signs and What to Do',
     description: 'Eight specific warning signs of a failing well pump with urgency levels, the age factor, DIY vs. professional diagnosis, and the repair vs. replace decision framework.',
-    url: 'https://well.guide/problems/well-pump-failing',
+    url: 'https://www.thewell.guide/problems/well-pump-failing',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/pressure tank fail.jpg', width: 1200, height: 630, alt: 'Hand turning a residential faucet with no water coming out, indicating a well pump failure.' }],
+    images: [{ url: 'https://www.thewell.guide/pressure tank fail.jpg', width: 1200, height: 630, alt: 'Hand turning a residential faucet with no water coming out, indicating a well pump failure.' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/well-pump-failing' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/well-pump-failing' },
 }
 
 const articleSchema = {
@@ -23,7 +23,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Signs Your Well Pump Is Failing: 8 Warning Signs and What to Do',
   description: 'The complete guide to recognizing a failing well pump before it stops working entirely. Eight specific warning signs with urgency levels, the age factor, DIY vs. professional diagnosis, when to shut the pump off, and the repair vs. replace decision framework.',
-  image: 'https://well.guide/pressure tank fail.jpg',
+  image: 'https://www.thewell.guide/pressure tank fail.jpg',
   datePublished: '2026-03-28',
   dateModified: '2026-03-28',
   author: {
@@ -36,7 +36,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/well-pump-failing',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/well-pump-failing',
 }
 
 const faqSchema = {
