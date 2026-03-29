@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Pump Replacement Cost 2026: What You\'ll Actually Pay',
     description: 'Well pump replacement costs $1,500 to $4,000 for most residential systems. This guide breaks down every cost factor by depth and pump type.',
-    url: 'https://well.guide/cost-guides/well-pump-replacement-cost',
+    url: 'https://www.thewell.guide/cost-guides/well-pump-replacement-cost',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well%20cost.jpg', width: 1200, height: 630, alt: 'Well contractor service truck at a rural property' }],
+    images: [{ url: 'https://www.thewell.guide/well%20cost.jpg', width: 1200, height: 630, alt: 'Well contractor service truck at a rural property' }],
   },
-  alternates: { canonical: 'https://well.guide/cost-guides/well-pump-replacement-cost' },
+  alternates: { canonical: 'https://www.thewell.guide/cost-guides/well-pump-replacement-cost' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Well Pump Replacement Cost 2026: What You'll Actually Pay",
   description: 'Well pump replacement costs $1,500 to $4,000 for most residential systems. This guide breaks down every cost factor by depth and pump type, explains when to repair vs replace, and shows how to get an accurate quote.',
-  image: 'https://well.guide/well%20cost.jpg',
+  image: 'https://www.thewell.guide/well%20cost.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/cost-guides/well-pump-replacement-cost',
+  mainEntityOfPage: 'https://www.thewell.guide/cost-guides/well-pump-replacement-cost',
 }
 
 export default function WellPumpReplacementCost() {
