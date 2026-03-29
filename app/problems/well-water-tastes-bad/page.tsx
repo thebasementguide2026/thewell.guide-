@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Water Tastes Bad: What Each Taste Tells You and How to Fix It',
     description: 'A complete taste-to-cause diagnostic guide for private well water. Every bad taste mapped to its specific cause, health risk level, required test, and treatment.',
-    url: 'https://well.guide/problems/well-water-tastes-bad',
+    url: 'https://www.thewell.guide/problems/well-water-tastes-bad',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/well tastebad.jpg', width: 1200, height: 630, alt: 'Person holding a glass of well water up to the light with a concerned expression, examining water quality in a kitchen' }],
+    images: [{ url: 'https://www.thewell.guide/well tastebad.jpg', width: 1200, height: 630, alt: 'Person holding a glass of well water up to the light with a concerned expression, examining water quality in a kitchen' }],
   },
-  alternates: { canonical: 'https://well.guide/problems/well-water-tastes-bad' },
+  alternates: { canonical: 'https://www.thewell.guide/problems/well-water-tastes-bad' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Water Tastes Bad: What Each Taste Tells You and How to Fix It',
   description: 'A complete taste-to-cause diagnostic guide for private well water. Every bad taste mapped to its specific cause, health risk level, required test, and treatment.',
-  image: 'https://well.guide/well tastebad.jpg',
+  image: 'https://www.thewell.guide/well tastebad.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/problems/well-water-tastes-bad',
+  mainEntityOfPage: 'https://www.thewell.guide/problems/well-water-tastes-bad',
 }
 
 export default function WellWaterTastesBad() {
