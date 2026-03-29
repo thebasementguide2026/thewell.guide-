@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Well Water Contaminants: The Complete Guide for Private Well Owners',
     description: 'A complete reference to every contaminant in private well water — health effects, EPA limits, regional prevalence, testing, and treatment for each.',
-    url: 'https://well.guide/guides/well-water-contaminants',
+    url: 'https://www.thewell.guide/guides/well-water-contaminants',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://well.guide/wellguidecontaminants.jpg', width: 1200, height: 630, alt: 'A clean glass of water against a light neutral background' }],
+    images: [{ url: 'https://www.thewell.guide/wellguidecontaminants.jpg', width: 1200, height: 630, alt: 'A clean glass of water against a light neutral background' }],
   },
-  alternates: { canonical: 'https://well.guide/guides/well-water-contaminants' },
+  alternates: { canonical: 'https://www.thewell.guide/guides/well-water-contaminants' },
 }
 
 const faqSchema = {
@@ -94,7 +94,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Well Water Contaminants: The Complete Guide for Private Well Owners',
   description: 'A complete reference guide to every contaminant found in private well water including health effects, EPA limits, regional prevalence, testing guidance, and treatment options for each contaminant.',
-  image: 'https://well.guide/wellguidecontaminants.jpg',
+  image: 'https://www.thewell.guide/wellguidecontaminants.jpg',
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   author: {
@@ -107,7 +107,7 @@ const articleSchema = {
     name: 'The Well Guide',
     url: 'https://well.guide',
   },
-  mainEntityOfPage: 'https://well.guide/guides/well-water-contaminants',
+  mainEntityOfPage: 'https://www.thewell.guide/guides/well-water-contaminants',
 }
 
 export default function WellWaterContaminants() {
