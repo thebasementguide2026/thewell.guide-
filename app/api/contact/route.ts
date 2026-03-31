@@ -20,22 +20,26 @@ export async function POST(request: Request) {
       )
     }
 
-    const FORWARD_TO = 'thebasementguide@gmail.com'
+    const RESEND_KEY = process.env.RESEND_KEY || 're_ZiUbQzxv_7Wj3zmYxRPbJzLKx8RoFE1CD'
 
-    const res = await fetch('https://api.web3forms.com/submit', {
+    const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${RESEND_KEY}`,
+      },
       body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_KEY || '',
-        subject: `Contact form submission from The Well Guide`,
-        from_name: name,
-        replyto: email,
-        to: FORWARD_TO,
-        message: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+        from: 'The Well Guide <onboarding@resend.dev>',
+        to: 'thebasementguide@gmail.com',
+        reply_to: email,
+        subject: `Contact form: ${name} via The Well Guide`,
+        text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       }),
     })
 
     if (!res.ok) {
+      const errorData = await res.json().catch(() => ({}))
+      console.error('Resend error:', errorData)
       throw new Error('Failed to send message')
     }
 
