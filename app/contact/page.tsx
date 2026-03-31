@@ -165,7 +165,7 @@ export default function ContactPage() {
               type="submit"
               disabled={submitting}
               className="w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors disabled:opacity-50"
-              style={{ backgroundColor: submitting ? \
+              style={{ backgroundColor: submitting ? '#1a5c47' : '#0D3D30' }}
             >
               {submitting ? 'Sending...' : 'Send Message'}
             </button>
