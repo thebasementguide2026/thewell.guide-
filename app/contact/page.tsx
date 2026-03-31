@@ -25,7 +25,7 @@ const faqSchema = {
       name: 'How can I contact The Well Guide?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can reach us by filling out the contact form on this page. We typically respond within 1\u20132 business days.',
+        text: 'You can reach us by filling out the contact form on this page. We typically respond within 1–2 business days.',
       },
     },
     {
@@ -33,7 +33,7 @@ const faqSchema = {
       name: 'How long does it take to get a response?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We aim to respond to all inquiries within 1\u20132 business days.',
+        text: 'We aim to respond to all inquiries within 1–2 business days.',
       },
     },
   ],
@@ -91,7 +91,7 @@ export default function ContactPage() {
       <section style={{ backgroundColor: '#0D3D30' }} className="text-white py-16">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-white/60">Have a question or feedback? We\u2019d love to hear from you.</p>
+          <p className="text-xl text-white/60">Have a question or feedback? We'd love to hear from you.</p>
         </div>
       </section>
 
@@ -99,13 +99,13 @@ export default function ContactPage() {
           <div className="mb-10">
             <h2 className="text-2xl font-bold text-slate-900 mb-3">Send Us a Message</h2>
             <p className="text-slate-600">
-              Fill out the form below and we\u2019ll get back to you within 1\u20132 business days.
+              Fill out the form below and we'll get back to you within 1–2 business days.
             </p>
           </div>
 
           {success && (
             <div className="mb-6 p-4 rounded-lg border bg-green-50 border-green-200 text-green-800">
-              Thank you for reaching out! We\u2019ll get back to you soon.
+              Thank you for reaching out! We'll get back to you soon.
             </div>
           )}
 
@@ -176,11 +176,11 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold text-slate-900">How can I contact The Well Guide?</h3>
-                <p className="text-slate-600 mt-1">You can reach us by filling out the contact form above. We typically respond within 1\u20132 business days.</p>
+                <p className="text-slate-600 mt-1">You can reach us by filling out the contact form above. We typically respond within 1–2 business days.</p>
               </div>
               <div>
                 <h3 className="font-semibold text-slate-900">How long does it take to get a response?</h3>
-                <p className="text-slate-600 mt-1">We aim to respond to all inquiries within 1\u20132 business days.</p>
+                <p className="text-slate-600 mt-1">We aim to respond to all inquiries within 1–2 business days.</p>
               </div>
             </div>
           </div>
