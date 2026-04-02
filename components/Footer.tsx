@@ -118,6 +118,7 @@ export default function Footer() {
           <p className="text-white/30 text-xs">
             &copy; {new Date().getFullYear()} The Well Guide. All rights reserved.
           </p>
+          <p className="text-white/30 text-xs">Part of <a href="https://thehome.guide" className="hover:text-white/60">The Home Guide Network</a></p>
           <div className="flex gap-4">
             <Link href="/privacy" className="text-white/30 hover:text-white/60 text-xs">Privacy Policy</Link>
             <Link href="/terms" className="text-white/30 hover:text-white/60 text-xs">Terms of Use</Link>
