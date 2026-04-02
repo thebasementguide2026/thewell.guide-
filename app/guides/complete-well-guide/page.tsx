@@ -3,6 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
+import AuthorBio from '@/components/AuthorBio'
 
 export const metadata: Metadata = {
   title: 'The Complete Guide to Private Well Water Systems (2026) | The Well Guide',
@@ -968,6 +969,9 @@ export default function CompleteWellGuide() {
             The layer of cement or bentonite clay pumped into the space between the outside of the well casing and the borehole wall during well construction. The grout seal prevents surface water, soil water, and shallow contaminated water from channeling downward along the outside of the casing to the water-bearing zone. A failed or incomplete grout seal bypasses all the protective value of casing depth &mdash; surface contaminants can reach the water as if the casing were not there.
           </p>
         </div>
+
+        {/* Author Bio */}
+        <AuthorBio />
 
         {/* LeadForm */}
         <div className='my-12'>
