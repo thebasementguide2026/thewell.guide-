@@ -3,6 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
+import BeehiivEmailCapture from '@/components/BeehiivEmailCapture'
 
 export const metadata: Metadata = {
   title: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide | The Well Guide',
@@ -989,6 +990,8 @@ export default function BuyingHouseWithWell() {
 
         {/* Lead Form */}
         <div className='my-12'>
+          <BeehiivEmailCapture />
+
           <LeadForm />
         </div>
 
