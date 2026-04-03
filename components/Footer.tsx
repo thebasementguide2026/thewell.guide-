@@ -61,6 +61,21 @@ export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#0D3D30' }} className="text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
+
+        {/* Email Signup Row */}
+        <div className='border-b border-white/10 pb-6 mb-6'>
+          <div className='flex flex-col sm:flex-row items-center justify-center gap-3'>
+            <p className='font-semibold text-white text-sm'>Get free homeowner tips</p>
+            <a
+              href='https://thehomeservicesguide.beehiiv.com/subscribe'
+              className='inline-block px-5 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white text-sm font-medium transition-colors'
+            >
+              Subscribe Free &rarr;
+            </a>
+          </div>
+          <p className='text-white/30 text-[10px] text-center mt-2'>No spam. Unsubscribe anytime.</p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
           <div className="lg:col-span-2">
             <Link href="/" className="text-xl font-black tracking-tight">
