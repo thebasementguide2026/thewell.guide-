@@ -7,7 +7,7 @@ import BeehiivEmailCapture from '@/components/BeehiivEmailCapture'
 
 export const metadata: Metadata = {
   title: 'Well Pump Replacement Cost 2026: What You\'ll Actually Pay | The Well Guide',
-  description: 'Well pump replacement costs $1,500 to $4,000 for most residential systems, but depth is the single biggest variable — a 100-foot well costs roughly half what a 400-foot well costs. This guide breaks down every cost factor, explains when to repair vs replace, and shows you how to get an accurate quote.',
+  description: 'Well pump replacement costs $400 to $2,000 for the pump plus $200 to $800 in labor. Covers submersible vs jet pump replacement, when repair makes more sense, and how to get an accurate quote.',
   openGraph: {
     title: 'Well Pump Replacement Cost 2026: What You\'ll Actually Pay',
     description: 'Well pump replacement costs $1,500 to $4,000 for most residential systems. This guide breaks down every cost factor by depth and pump type.',
