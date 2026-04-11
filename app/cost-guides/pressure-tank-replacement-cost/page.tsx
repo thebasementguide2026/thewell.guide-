@@ -5,8 +5,8 @@ import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
-  title: 'Pressure Tank Replacement Cost: What to Expect in 2026 | The Well Guide',
-  description: 'The complete cost breakdown for well pressure tank replacement: tank prices by size and brand, labor rates, what add-ons are worth it, regional price differences, DIY vs professional, and how to avoid overpaying. Real numbers from 2026 contractor data.',
+  title: 'Well Pressure Tank Replacement Cost 2026: What You\'ll Actually Pay | The Well Guide',
+  description: 'Well pressure tank replacement costs $450 to $1,500 for most homes. Covers tank prices by size, labor rates, DIY vs professional, and what drives the price up or down.',
   openGraph: {
     title: 'Pressure Tank Replacement Cost: What to Expect in 2026',
     description: 'The complete cost breakdown for well pressure tank replacement: tank prices by size and brand, labor rates, regional differences, DIY vs professional, and how to avoid overpaying.',
