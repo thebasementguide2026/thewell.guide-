@@ -248,6 +248,14 @@ export const articles: Article[] = [
     readTime: '15 min read',
     image: '/pressure tank fail.jpg',
   },
+  {
+    title: 'Well Inspection Cost 2026: What You\'ll Actually Pay',
+    description: 'The complete guide to well inspection costs in 2026. Standard inspections run $300–$500 while comprehensive water-quality inspections reach $800–$1,500. Covers inspection types, what\'s included, when you need one, and how to avoid overpaying.',
+    slug: 'cost-guides/well-inspection-cost',
+    category: 'Cost Guide',
+    readTime: '12 min read',
+    image: '/well-inspection.jpg',
+  },
 ]
 
 export function searchArticles(query: string): Article[] {

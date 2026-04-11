@@ -29,6 +29,7 @@ const footerSections = [
       { label: 'Pressure Tank Replacement Cost', href: '/cost-guides/pressure-tank-replacement-cost' },
       { label: 'Well Drilling Cost', href: '/cost-guides/well-drilling-cost' },
       { label: 'Whole House Water Filter Cost', href: '/cost-guides/whole-house-water-filter-cost' },
+      { label: 'Well Inspection Cost', href: '/cost-guides/well-inspection-cost' },
     ],
   },
   { title: 'REVIEWS', href: '/reviews', links: [{ label: 'Best Well Water Test Kits', href: '/reviews/best-well-water-test-kits' },
