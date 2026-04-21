@@ -34,7 +34,8 @@ const footerSections = [
   },
   { title: 'REVIEWS', href: '/reviews', links: [{ label: 'Best Well Water Test Kits', href: '/reviews/best-well-water-test-kits' },
       { label: 'Best Whole House Water Filters', href: '/reviews/best-whole-house-water-filters' },
-      { label: 'Best Pressure Tanks', href: '/reviews/best-pressure-tanks' }] },
+      { label: 'Best Pressure Tanks', href: '/reviews/best-pressure-tanks' },
+      { label: 'Best Well Pumps', href: '/reviews/best-well-pumps' }] },
   {
     title: 'PROBLEMS',
     href: '/problems',
