@@ -121,6 +121,14 @@ export const articles: Article[] = [
     image: '/best pressure tanks.jpg',
   },
   {
+    title: 'Best Well Pumps 2026: Top Picks for Shallow, Deep, and Convertible Applications',
+    description: 'Find the right well pump for your home in 2026. Tested picks for shallow wells, deep wells, and convertible jet applications from $300 to $900. Submersible and jet pump comparison with sizing by well depth and household size.',
+    slug: 'reviews/best-well-pumps',
+    category: 'Review',
+    readTime: '16 min read',
+    image: '/bestwellpumps.jpg',
+  },
+  {
     title: 'Best Well Water Test Kits (2026): Lab and DIY Options Reviewed',
     description: 'The four best well water test kits for private well owners, reviewed and compared. Includes certified lab tests for annual baseline testing and DIY strips for monitoring between lab tests. All four are available on Amazon with free shipping.',
     slug: 'reviews/best-well-water-test-kits',
