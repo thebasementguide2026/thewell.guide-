@@ -105,7 +105,7 @@ const articleSchema = {
     {
       '@type': 'Thing',
       name: 'Arsenic',
-      sameAs: 'https://www.cdc.gov/arsenic/index.html',
+      sameAs: 'https://wwwn.cdc.gov/TSP/PHS/PHS.aspx?phsid=18&toxid=3',
     },
     {
       '@type': 'MedicalCondition',
@@ -297,7 +297,7 @@ export default function ArsenicInWellWater() {
           </p>
 
           <p className='text-slate-700 leading-relaxed'>
-            The <a href='https://www.cdc.gov/arsenic/index.html' target='_blank' rel='noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>Centers for Disease Control and Prevention (CDC)</a> maintains comprehensive health information on arsenic exposure and its effects.
+            The <a href='https://wwwn.cdc.gov/TSP/PHS/PHS.aspx?phsid=18&toxid=3' target='_blank' rel='noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>Centers for Disease Control and Prevention (CDC)</a> maintains comprehensive health information on arsenic exposure and its effects.
           </p>
         </div>
 
