@@ -49,6 +49,7 @@ const footerSections = [
       { label: 'Well Water Tastes Bad', href: '/problems/well-water-tastes-bad' },
       { label: 'Well Running Dry', href: '/problems/well-running-dry' },
       { label: 'Signs Your Well Pump Is Failing', href: '/problems/well-pump-failing' },
+      { label: 'How to Prime a Well Pump', href: '/problems/how-to-prime-a-well-pump' },
     ],
   },
 ]
