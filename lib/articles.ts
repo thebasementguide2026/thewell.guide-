@@ -262,7 +262,7 @@ export const articles: Article[] = [
     slug: 'problems/how-to-prime-a-well-pump',
     category: 'Problem',
     readTime: '14 min read',
-    image: '/primewellpump.jpg',
+    image: '/primewellpump.jpg.jpg',
   },
   {
     title: 'Well Inspection Cost 2026: What You\'ll Actually Pay',
