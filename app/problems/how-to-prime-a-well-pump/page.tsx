@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: 'https://www.thewell.guide/problems/how-to-prime-a-well-pump',
     siteName: 'The Well Guide',
     type: 'article',
-    images: [{ url: 'https://www.thewell.guide/primewellpump.jpg', width: 1200, height: 630, alt: 'Blue shallow well jet pump installed with plumbing fittings and electrical connections' }],
+    images: [{ url: 'https://www.thewell.guide/primewellpump.jpg.jpg', width: 1200, height: 630, alt: 'Blue shallow well jet pump installed with plumbing fittings and electrical connections' }],
   },
   alternates: { canonical: 'https://www.thewell.guide/problems/how-to-prime-a-well-pump' },
 }
@@ -95,7 +95,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'How to Prime a Well Pump: Step-by-Step Guide 2026',
   description: 'Prime a shallow well jet pump or convertible jet pump in 5 to 10 minutes with step-by-step instructions. Troubleshooting when priming does not hold, foot valve and check valve diagnosis, and when to call a professional.',
-  image: 'https://www.thewell.guide/primewellpump.jpg',
+  image: 'https://www.thewell.guide/primewellpump.jpg.jpg',
   datePublished: '2026-04-22',
   dateModified: '2026-04-22',
   author: {
@@ -120,7 +120,7 @@ const howToSchema = {
   '@type': 'HowTo',
   name: 'How to Prime a Jet Well Pump',
   description: 'Prime a shallow well jet pump or convertible jet pump in 5 to 10 minutes by turning off power, opening a downstream faucet, removing the priming plug, filling the pump housing with water, resealing the plug, and restoring power.',
-  image: 'https://www.thewell.guide/primewellpump.jpg',
+  image: 'https://www.thewell.guide/primewellpump.jpg.jpg',
   totalTime: 'PT30M',
   estimatedCost: {
     '@type': 'MonetaryAmount',
@@ -209,7 +209,7 @@ export default function HowToPrimeAWellPump() {
       {/* Hero */}
       <section className='relative h-[70vh] min-h-[500px] overflow-hidden' style={{ backgroundColor: '#0D3D30' }}>
         <Image
-          src='/primewellpump.jpg'
+          src='/primewellpump.jpg.jpg'
           alt='Blue shallow well jet pump installed with plumbing fittings and electrical connections'
           fill
           className='object-cover opacity-45 scale-105 transition-transform duration-700 hover:scale-100'
