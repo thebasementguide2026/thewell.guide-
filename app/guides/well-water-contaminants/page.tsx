@@ -382,6 +382,9 @@ export default function WellWaterContaminants() {
           <p className='text-slate-700 leading-relaxed mb-8'>
             <strong>Testing:</strong> Test once as a baseline regardless of region. Test every 3 to 5 years in low-risk areas. Test annually in high-arsenic geology regions.
           </p>
+          <p className='text-slate-700 leading-relaxed mb-8'>
+            Arsenic is one of the most dangerous well water contaminants because it is colorless, tasteless, and linked to multiple cancers at levels above 10 parts per billion. For a complete guide to testing and treating arsenic in well water, see our dedicated article on <a href='/guides/arsenic-in-well-water' className='font-semibold underline' style={{ color: '#1D9E75' }}>arsenic in well water</a>.
+          </p>
 
           {/* Lead */}
           <h3 className='text-xl font-bold text-slate-900 mb-4'>Lead</h3>
