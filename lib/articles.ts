@@ -257,6 +257,14 @@ export const articles: Article[] = [
     image: '/pressure tank fail.jpg',
   },
   {
+    title: 'How to Prime a Well Pump: Step-by-Step Guide 2026',
+    description: 'Prime a shallow well jet pump or convertible jet pump in 5 to 10 minutes with step-by-step instructions. Troubleshooting when priming does not hold, foot valve and check valve diagnosis, and when to call a professional.',
+    slug: 'problems/how-to-prime-a-well-pump',
+    category: 'Problem',
+    readTime: '14 min read',
+    image: '/primewellpump.jpg',
+  },
+  {
     title: 'Well Inspection Cost 2026: What You\'ll Actually Pay',
     description: 'The complete guide to well inspection costs in 2026. Standard inspections run $300–$500 while comprehensive water-quality inspections reach $800–$1,500. Covers inspection types, what\'s included, when you need one, and how to avoid overpaying.',
     slug: 'cost-guides/well-inspection-cost',
