@@ -496,6 +496,9 @@ export default function WellWaterTreatmentOptions() {
         <p className='text-slate-700 leading-relaxed mb-4'>
           <strong className='text-slate-900'>Cost:</strong> Under-sink RO systems: $200 to $600. Filter replacement (sediment and carbon stages): $50 to $100 per year. Membrane replacement: $30 to $100 every 2 to 3 years.
         </p>
+        <p className='text-slate-700 leading-relaxed mb-4'>
+          For arsenic specifically, treatment technology selection depends on the concentration in your water and whether you need point-of-use protection (kitchen sink drinking water only) or whole-house protection. Reverse osmosis at the kitchen sink is cost-effective for typical residential arsenic levels, while whole-house activated alumina or ion exchange systems protect against bathing exposure at higher concentrations. For a complete comparison of arsenic treatment options with costs and limitations, see our dedicated article on <a href='/guides/arsenic-in-well-water' className='font-semibold underline' style={{ color: '#1D9E75' }}>arsenic in well water</a>.
+        </p>
 
         {/* PFAS short-chain callout */}
         <div className='rounded-xl p-6 mb-6' style={{ backgroundColor: '#FAEEDA', borderLeft: '4px solid #854F0B' }}>
