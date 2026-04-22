@@ -217,6 +217,14 @@ export const articles: Article[] = [
     image: '/wellguidecontaminants.jpg',
   },
   {
+    title: 'Arsenic in Well Water: How to Test, Treat, and Protect Your Family 2026',
+    description: 'Arsenic in well water is a serious health risk at levels above 10 ppb. Complete guide to testing, treatment options (reverse osmosis, activated alumina, whole-house systems), costs, and EPA standards for private well owners.',
+    slug: 'guides/arsenic-in-well-water',
+    category: 'Guide',
+    readTime: '16 min read',
+    image: '/Arsenic in well water .jpg',
+  },
+  {
     title: 'Well Pump Short Cycling: Causes, Diagnosis, and How to Fix It',
     description: 'A well pump that turns on and off every few seconds is short cycling. The cause is almost always a waterlogged pressure tank. This guide shows you how to diagnose every cause, what to check yourself, and when to call a contractor.',
     slug: 'problems/well-pump-short-cycling',
