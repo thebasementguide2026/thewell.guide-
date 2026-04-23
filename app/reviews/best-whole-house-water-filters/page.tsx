@@ -226,6 +226,10 @@ export default function BestWholeHouseWaterFilters() {
           </p>
         </div>
 
+        <p className='text-slate-700 leading-relaxed mb-12'>
+          For wells with iron contamination specifically, a general whole-house filter is often not the right choice. Iron requires specialized treatment technology such as air injection oxidation, catalytic media, or ion-exchange fine mesh resin, depending on iron type and concentration. Generic whole-house sediment or carbon filters will not effectively remove dissolved iron and may foul rapidly when exposed to iron-rich well water. For dedicated iron filter recommendations organized by iron type, see our <Link href='/reviews/best-iron-filters' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>best iron filters review</Link>.
+        </p>
+
         {/* How We Selected */}
         <div className='border-t border-slate-200 pt-12 mb-12'>
           <h2 className='text-3xl font-black text-slate-900 mb-6'>How We Selected These Products</h2>
