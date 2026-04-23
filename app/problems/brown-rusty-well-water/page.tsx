@@ -376,7 +376,9 @@ export default function BrownRustyWellWater() {
           <h3 className='font-bold text-slate-900 text-sm mb-3'>How to treat ferric iron</h3>
           <p className='text-slate-700 leading-relaxed text-sm mb-6'>A backwashing sediment filter handles low concentrations. An air injection oxidizing filter handles both ferric and ferrous iron together and is the better choice if both forms are present. For concentrations below 1 mg/L, a cartridge sediment filter may be sufficient for point-of-entry removal of visible particles, though the filter will need frequent replacement at higher concentrations.</p>
 
-          <p className='text-slate-700 leading-relaxed text-sm'><strong>Cost:</strong> Whole-house cartridge sediment filter: $150 to $400 installed. Backwashing iron filter: $1,200 to $3,000 installed.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-6'><strong>Cost:</strong> Whole-house cartridge sediment filter: $150 to $400 installed. Backwashing iron filter: $1,200 to $3,000 installed.</p>
+
+          <p className='text-slate-700 leading-relaxed text-sm'>Brown or rusty well water is almost always caused by iron, which occurs in four distinct forms (ferrous, ferric, bacterial, and colloidal) that each require different treatment. Identifying which type of iron you have is the essential first step before buying any treatment equipment, because a system designed for one iron type will fail on another. For a complete breakdown of the four iron types, a 5-minute diagnostic test using nothing but a clear glass, and full treatment comparison with costs, see our <Link href='/guides/iron-in-well-water' className='text-[#0F6E56] font-semibold hover:underline'>iron in well water guide</Link>.</p>
         </div>
 
         {/* Cause 3: Manganese */}
