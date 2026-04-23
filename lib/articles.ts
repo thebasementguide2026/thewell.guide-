@@ -225,6 +225,14 @@ export const articles: Article[] = [
     image: '/Arsenic in well water .jpg',
   },
   {
+    title: 'Iron in Well Water: Types, Treatment, and Costs 2026',
+    description: 'Iron in well water causes orange staining, metallic taste, and plumbing damage. Complete guide to the 4 types of iron, treatment options (air injection, water softeners, chlorination), costs, and the 0.3 mg/L EPA limit.',
+    slug: 'guides/iron-in-well-water',
+    category: 'Guide',
+    readTime: '14 min read',
+    image: '/ironinwellwater.jpg',
+  },
+  {
     title: 'Well Pump Short Cycling: Causes, Diagnosis, and How to Fix It',
     description: 'A well pump that turns on and off every few seconds is short cycling. The cause is almost always a waterlogged pressure tank. This guide shows you how to diagnose every cause, what to check yourself, and when to call a contractor.',
     slug: 'problems/well-pump-short-cycling',
