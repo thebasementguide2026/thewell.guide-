@@ -11,6 +11,7 @@ const footerSections = [
       { label: 'Annual Well Maintenance Checklist', href: '/guides/well-maintenance-checklist' },
       { label: 'Well Water Contaminants', href: '/guides/well-water-contaminants' },
       { label: 'Arsenic in Well Water', href: '/guides/arsenic-in-well-water' },
+      { label: 'Iron in Well Water', href: '/guides/iron-in-well-water' },
       { label: 'Well Pressure Tank Guide', href: '/guides/well-pressure-tank-guide' },
       { label: 'Well Water Treatment Options', href: '/guides/well-water-treatment-options' },
       { label: 'Buying a House With a Well', href: '/guides/buying-house-with-well' },
