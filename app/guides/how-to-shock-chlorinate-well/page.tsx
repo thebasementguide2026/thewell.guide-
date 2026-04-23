@@ -207,6 +207,10 @@ export default function HowToShockChlorinateWell() {
               </p>
             </div>
           </div>
+
+          <p className='text-slate-700 text-sm leading-relaxed mt-6'>
+            Iron bacteria is one of the most common reasons to shock chlorinate a residential well. Iron bacteria produce a slimy reddish-brown biofilm that clogs plumbing, fouls iron filters, and creates foul odors. Shock chlorination is the essential first step in treating bacterial iron, because iron filters cannot capture living bacterial biofilm and must be paired with bacterial elimination. For the full context on bacterial iron, how to identify it, and how to pair shock chlorination with subsequent filtration for persistent cases, see our <Link href='/guides/iron-in-well-water' className='font-semibold underline' style={{ color: '#1D9E75' }}>iron in well water guide</Link>.
+          </p>
         </div>
 
         {/* What You Need Before You Start */}
