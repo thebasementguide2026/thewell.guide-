@@ -415,8 +415,11 @@ export default function WellWaterTreatmentOptions() {
         <p className='text-slate-700 leading-relaxed mb-4'>
           <strong className='text-slate-900'>Important distinction &mdash; iron bacteria:</strong> If iron bacteria are present (indicated by rusty slime in toilet tanks, biofilm in plumbing), the iron bacteria will colonize and defeat oxidizing filter media over time. Shock chlorinate the well first, then install the oxidizing filter. Running an oxidizing filter without first addressing iron bacteria typically leads to progressive loss of performance.
         </p>
-        <p className='text-slate-700 leading-relaxed mb-6'>
+        <p className='text-slate-700 leading-relaxed mb-4'>
           <strong className='text-slate-900'>Cost:</strong> Air injection systems: $1,200 to $2,500. Greensand systems: $1,000 to $2,200. Catalytic media systems: $1,500 to $3,000. All require professional installation. Annual maintenance cost: $100 to $300.
+        </p>
+        <p className='text-slate-700 leading-relaxed mb-6'>
+          For iron specifically, treatment selection depends on which of the four iron types you have (ferrous, ferric, bacterial, or colloidal) and the iron concentration in your water. A water softener handles low-level ferrous iron, an air injection oxidation filter handles moderate to high iron, and shock chlorination is required before filtration for wells with bacterial iron. Installing the wrong equipment for your iron type is the single most common iron treatment mistake. For a complete breakdown of iron types, diagnostic testing, and treatment comparison with real costs, see our <Link href='/guides/iron-in-well-water' className='font-semibold underline' style={{ color: '#1D9E75' }}>iron in well water guide</Link>.
         </p>
 
         {/* Water Softeners */}
