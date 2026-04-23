@@ -472,7 +472,7 @@ export default function IronInWellWater() {
               Air injection systems pump air into the incoming water, which oxidizes dissolved ferrous iron into particulate ferric iron. The particles are then captured by filter media (Katalox, BIRM, or greensand) and flushed out during periodic backwashing. AIO systems are the standard whole-house solution for moderate to high iron.
             </p>
             <p className='text-slate-700 leading-relaxed mb-2'><strong className='text-slate-900'>Effective for:</strong> Ferrous iron, ferric iron, hydrogen sulfide, and manganese simultaneously. Typical capacity 5 to 30 mg/L iron depending on system.</p>
-            <p className='text-slate-700 leading-relaxed mb-2'><strong className='text-slate-900'>Cost:</strong> $800 to $3,000 installed. The <a href='https://amzn.to/42tN2QA' target='_blank' rel='nofollow sponsored noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>AIS10-25SXT Air Injection system</a> is a commonly recommended residential unit with a Fleck 5600SXT valve, handling typical residential iron loads.</p>
+            <p className='text-slate-700 leading-relaxed mb-2'><strong className='text-slate-900'>Cost:</strong> $800 to $3,000 installed. The <a href='https://amzn.to/42tN2QA' target='_blank' rel='nofollow sponsored noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>AIS10-25SXT Air Injection system</a> is a commonly recommended residential unit with a Fleck 5600SXT valve, handling typical residential iron loads. For a complete comparison of the top 5 iron filters ranked by iron type, including detailed specs, pricing, and real cost of ownership over 10 years, see our <Link href='/reviews/best-iron-filters' className='font-semibold underline' style={{ color: '#1D9E75' }}>best iron filters review</Link>.</p>
             <p className='text-slate-700 leading-relaxed mb-2'><strong className='text-slate-900'>Maintenance:</strong> Automatic backwashing requires no daily attention. Filter media replacement every 5 to 10 years ($200 to $400).</p>
             <p className='text-slate-700 leading-relaxed mb-2'><strong className='text-slate-900'>Best for:</strong> Moderate to high ferrous and ferric iron (3 to 15 mg/L), wells with combined iron and sulfur problems, and homes wanting a single whole-house solution.</p>
             <p className='text-slate-700 leading-relaxed'><strong className='text-slate-900'>Limitations:</strong> Does not treat bacterial iron (requires shock chlorination first). Backwashing uses 30 to 60 gallons of water per cycle. Professional installation typically required for electrical and plumbing integration.</p>
@@ -655,6 +655,10 @@ export default function IronInWellWater() {
         <div className='border-t border-slate-200 pt-12 mb-12'>
           <h2 className='text-3xl font-black text-slate-900 mb-6'>Related Guides</h2>
           <div className='space-y-3'>
+            <Link href='/reviews/best-iron-filters' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
+              <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E8F5E9', color: '#1B5E20' }}>REVIEW</span>
+              <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Best Iron Filters for Well Water</span>
+            </Link>
             <Link href='/problems/brown-rusty-well-water' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FCEBEB', color: '#A32D2D' }}>PROBLEM</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Brown or Rusty Well Water</span>
