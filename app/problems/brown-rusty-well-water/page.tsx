@@ -379,6 +379,8 @@ export default function BrownRustyWellWater() {
           <p className='text-slate-700 leading-relaxed text-sm mb-6'><strong>Cost:</strong> Whole-house cartridge sediment filter: $150 to $400 installed. Backwashing iron filter: $1,200 to $3,000 installed.</p>
 
           <p className='text-slate-700 leading-relaxed text-sm'>Brown or rusty well water is almost always caused by iron, which occurs in four distinct forms (ferrous, ferric, bacterial, and colloidal) that each require different treatment. Identifying which type of iron you have is the essential first step before buying any treatment equipment, because a system designed for one iron type will fail on another. For a complete breakdown of the four iron types, a 5-minute diagnostic test using nothing but a clear glass, and full treatment comparison with costs, see our <Link href='/guides/iron-in-well-water' className='text-[#0F6E56] font-semibold hover:underline'>iron in well water guide</Link>.</p>
+
+          <p className='text-slate-700 leading-relaxed text-sm mt-4'>Once you have confirmed iron as the cause of your brown or rusty water and identified your iron type, the next step is selecting the right filter for your specific water chemistry. Iron filters are organized around iron type rather than generic rankings, because a system designed for ferrous iron often underperforms on ferric iron and vice versa. For the top 5 iron filters ranked by iron type with full specs and pricing, see our <Link href='/reviews/best-iron-filters' className='text-[#0F6E56] font-semibold hover:underline'>best iron filters review</Link>.</p>
         </div>
 
         {/* Cause 3: Manganese */}
