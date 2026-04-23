@@ -439,8 +439,11 @@ export default function WellWaterContaminants() {
           <p className='text-slate-700 leading-relaxed mb-4'>
             <strong>Forms of iron in well water:</strong> Ferrous (dissolved, clear-water iron) &mdash; invisible in the tap but turns orange-brown when exposed to air. Ferric (oxidized, red-water iron) &mdash; already visible as orange-brown particles. Iron bacteria &mdash; microorganisms that feed on iron and create slime, staining, and musty odors. See the <Link href='/problems/brown-rusty-well-water' className='font-semibold underline' style={{ color: '#1D9E75' }}>brown or rusty water guide</Link> for complete diagnosis.
           </p>
-          <p className='text-slate-700 leading-relaxed mb-8'>
+          <p className='text-slate-700 leading-relaxed mb-4'>
             <strong>Treatment:</strong> Depends on the form and concentration. Water softeners for ferrous iron under 3 mg/L. Air injection oxidizing filters for higher concentrations and for ferric iron. Chemical injection (chlorine or hydrogen peroxide) for very high concentrations or iron bacteria.
+          </p>
+          <p className='text-slate-700 leading-relaxed mb-8'>
+            Iron is the most common well water contaminant in the United States, affecting the majority of private wells to some degree. Unlike arsenic or bacteria, iron is not a serious health threat at typical residential levels; the costs are aesthetic (orange staining on fixtures and laundry) and financial (early appliance failure and plumbing damage totaling thousands of dollars over 20 years). For a complete guide to identifying which of the four iron types you have and which treatment works for each, see our <Link href='/guides/iron-in-well-water' className='font-semibold underline' style={{ color: '#1D9E75' }}>iron in well water guide</Link>.
           </p>
 
           {/* pH and TDS */}
