@@ -113,6 +113,14 @@ export const articles: Article[] = [
     image: '/waterfilters.jpg',
   },
   {
+    title: 'Best Iron Filters for Well Water 2026: Reviews by Iron Type',
+    description: 'The 5 best iron filters for well water in 2026, organized by iron type. Reviews of AIS10-25SXT, iSpring WCFM500K, IRON Pro 2, Durawater Iron Eater, and Premier AIO with specs, costs, and clear recommendations.',
+    slug: 'reviews/best-iron-filters',
+    category: 'Review',
+    readTime: '16 min read',
+    image: '/bestironfilters.jpg',
+  },
+  {
     title: 'Best Well Pressure Tanks (2026): Sizing, Specs, and Real Picks',
     description: 'The best well pressure tanks for private wells reviewed with real specs, sizing guidance, and honest trade-offs. Bladder and diaphragm tanks compared by household size, budget, and installation type.',
     slug: 'reviews/best-pressure-tanks',
