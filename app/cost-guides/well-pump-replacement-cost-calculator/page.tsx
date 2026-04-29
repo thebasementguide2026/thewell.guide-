@@ -5,7 +5,6 @@ import LeadForm from '@/components/LeadForm'
 import BeehiivEmailCapture from '@/components/BeehiivEmailCapture'
 import WellPumpCostCalculator from './Calculator'
 import CtaLink from './CtaLink'
-import PremiumPreview from './PremiumPreview'
 
 export const metadata: Metadata = {
   title: 'Well Pump Replacement Cost Calculator 2026: Estimate Your Total Cost | The Well Guide',
@@ -182,15 +181,6 @@ export default function WellPumpReplacementCostCalculatorPage() {
               Get Free Quotes &rarr;
             </CtaLink>
           </div>
-        </div>
-
-        {/* Premium preview */}
-        <div className='mb-16'>
-          <div className='flex items-center space-x-3 mb-4'>
-            <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Premium</span>
-            <div className='flex-1 h-px bg-slate-200'></div>
-          </div>
-          <PremiumPreview />
         </div>
 
         {/* What affects cost */}
