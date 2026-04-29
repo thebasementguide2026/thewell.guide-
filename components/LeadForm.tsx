@@ -84,6 +84,14 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
 
       if (response.ok) {
         setSubmitted(true)
+        if (typeof window !== 'undefined' && typeof (window as unknown as {gtag?: (...a: unknown[]) => void}).gtag === 'function') {
+          ;(window as unknown as {gtag: (...a: unknown[]) => void}).gtag('event', 'generate_lead', {
+            currency: 'USD',
+            value: 0,
+            form_location: pathname,
+            project_type: formData.projectType,
+          })
+        }
       } else {
         setError('Something went wrong. Please try again.')
       }
