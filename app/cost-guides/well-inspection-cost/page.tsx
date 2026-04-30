@@ -326,7 +326,8 @@ export default function WellInspectionCost() {
             <li>What is included in the written report?</li>
           </ul>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Get at least two quotes.</strong> The difference between the highest and lowest responsible quote on the same scope of work is often $100 to $200. Price differences above that usually reflect differences in what is included, not just labor rates.</p>
-          <p className='text-slate-700 text-sm leading-relaxed'><strong>Check licensing.</strong> Well inspectors should be licensed water well system professionals or licensed well contractors in your state. Licensing requirements vary by state but most states require certification for anyone performing well work. Ask for the inspector{`'`}s license number and verify it with your state{`'`}s licensing board before booking.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Check licensing.</strong> Well inspectors should be licensed water well system professionals or licensed well contractors in your state. Licensing requirements vary by state but most states require certification for anyone performing well work. Ask for the inspector{`'`}s license number and verify it with your state{`'`}s licensing board before booking.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>If the inspection reveals pump failure or imminent pump replacement, use our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump replacement cost calculator</Link> to estimate the replacement project before requesting contractor quotes.</p>
         </div>
 
         {/* External Link */}
