@@ -468,6 +468,7 @@ export default function WholeHouseWaterFilterCostPage() {
             </table>
           </div>
           <p className="text-[#3D5A52] leading-relaxed mb-4">The most important column is the 10-year total — not the equipment cost. A cheap cartridge system that requires $300 per year in replacements costs more over a decade than a higher-quality tank-based system with $100 per year in maintenance. Tank-based iron filters and softeners have higher upfront costs but lower annual maintenance costs than cartridge-based alternatives for the same contaminant.</p>
+          <p className="text-[#3D5A52] leading-relaxed mb-4">For wells with treatment needs beyond a basic whole-house filter (iron, sulfur, hardness, or bacteria), our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='text-[#0F6E56] underline font-semibold'>well water treatment cost calculator</Link> estimates the full multi-stage system cost based on your specific water issue and home characteristics.</p>
 
           {/* Red Flags — Red Callout */}
           <div className="rounded-lg p-6 my-10" style={{ backgroundColor: '#FCEBEB', border: '1px solid #A32D2D' }}>
@@ -604,3 +605,4 @@ export default function WholeHouseWaterFilterCostPage() {
     </>
   )
 }
+
