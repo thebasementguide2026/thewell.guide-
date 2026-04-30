@@ -466,6 +466,7 @@ export default function WellPumpFailing() {
             </div>
           </div>
           <p className='text-slate-700 text-sm leading-relaxed mt-4'>See the <a href='/cost-guides/well-drilling-cost' className='underline' style={{ color: '#1D9E75' }}>well drilling cost guide</a> if the diagnostic reveals the well itself &mdash; rather than the pump &mdash; needs replacement or significant rehabilitation.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>Once you have confirmed your pump is failing, use our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump replacement cost calculator</Link> to estimate the replacement project. Walking into the quoting process with a planning estimate based on your specific pump type, well depth, and region helps you spot inflated bids and have more informed conversations with contractors.</p>
         </div>
 
         {/* FAQ Section */}
