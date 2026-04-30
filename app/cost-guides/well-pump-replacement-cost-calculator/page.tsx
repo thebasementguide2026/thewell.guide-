@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import LeadForm from '@/components/LeadForm'
@@ -116,17 +117,25 @@ export default function WellPumpReplacementCostCalculatorPage() {
       <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
-      <section className='relative py-16 sm:py-20 overflow-hidden' style={{ backgroundColor: '#0D3D30' }}>
-        <div className='relative max-w-7xl mx-auto px-6'>
-          <div className='flex items-center space-x-3 mb-6'>
+      <section className='relative h-[70vh] min-h-[500px] overflow-hidden' style={{ backgroundColor: '#0D3D30' }}>
+        <Image
+          src='/WellPumpReplacementCostCalculator.jpg'
+          alt='Well pump replacement cost calculator'
+          fill
+          className='object-cover opacity-45 scale-105 transition-transform duration-700 hover:scale-100'
+          priority
+        />
+        <div className='absolute inset-0 bg-gradient-to-t from-[#0D3D30] via-[#0D3D30]/40 to-transparent' />
+        <div className='relative h-full max-w-7xl mx-auto px-6 flex flex-col justify-end pb-20'>
+          <div className='flex items-center space-x-3 mb-8'>
             <div className='w-12 h-px' style={{ backgroundColor: '#1D9E75' }}></div>
             <span className='font-bold tracking-[0.3em] text-sm uppercase' style={{ color: '#854F0B' }}>Calculator</span>
           </div>
-          <h1 className='text-4xl md:text-5xl font-black text-white mb-5 leading-[0.95] tracking-tight max-w-4xl'>
+          <h1 className='text-4xl md:text-6xl font-black text-white mb-6 leading-[0.9] tracking-tighter'>
             Well Pump Replacement<br />
             Cost Calculator <span style={{ color: '#5DCAA5' }}>2026</span>
           </h1>
-          <p className='text-lg text-white/80 max-w-2xl font-medium leading-relaxed'>
+          <p className='text-lg text-white/70 max-w-2xl mb-4 font-medium leading-relaxed'>
             Estimate your total replacement cost in under a minute. Built on the same 2026 price ranges in our well pump cost guide, with adjustments for your pump type, well depth, demand, region, and project scope.
           </p>
         </div>
