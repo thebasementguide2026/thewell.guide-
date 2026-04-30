@@ -8,8 +8,8 @@ import WellPumpCostCalculator from './Calculator'
 import CtaLink from './CtaLink'
 
 export const metadata: Metadata = {
-  title: 'Well Pump Replacement Cost Calculator 2026: Estimate Your Total Cost | The Well Guide',
-  description: 'Estimate well pump replacement cost by pump type, depth, home size, and region. Free 2026 calculator with realistic price ranges before you call a contractor.',
+  title: 'Well Pump Replacement Cost Calculator (2026): How Much Does a Well Pump Replacement Cost? | The Well Guide',
+  description: 'Free 2026 well pump replacement cost calculator. Get an instant estimate based on pump type, well depth, and region. How much does a well pump replacement cost? Most cost $1,500 to $4,000 installed.',
   openGraph: {
     title: 'Well Pump Replacement Cost Calculator 2026: Estimate Your Total Cost',
     description: 'Free calculator that estimates well pump replacement cost by pump type, depth, home demand, and region. Built on real 2026 contractor pricing.',
@@ -153,7 +153,7 @@ export default function WellPumpReplacementCostCalculatorPage() {
         <div className='mb-10 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
           <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
           <p className='text-slate-700 text-sm leading-relaxed'>
-            Most residential well pump replacements cost $1,500 to $4,000 fully installed. Well depth, pump type, and replacement difficulty drive most of the variation. Use the calculator below for a personalized range, then compare it against two to four written contractor quotes. For the full cost breakdown by component, see our <Link href='/cost-guides/well-pump-replacement-cost' className='underline font-semibold' style={{ color: '#0F6E56' }}>well pump replacement cost guide</Link>.
+            How much does a well pump replacement cost? Most residential well pump replacements cost $1,500 to $4,000 fully installed. Well depth, pump type, and replacement difficulty drive most of the variation. Use the calculator below for a personalized range, then compare it against two to four written contractor quotes. For the full cost breakdown by component, see our <Link href='/cost-guides/well-pump-replacement-cost' className='underline font-semibold' style={{ color: '#0F6E56' }}>well pump replacement cost guide</Link>.
           </p>
         </div>
 
@@ -245,7 +245,7 @@ export default function WellPumpReplacementCostCalculatorPage() {
             <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>2026 Pricing</span>
             <div className='flex-1 h-px bg-slate-200'></div>
           </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Typical replacement cost ranges</h2>
+          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Typical Well Pump Replacement Cost by Type and Depth</h2>
           <div className='overflow-x-auto'>
             <table className='w-full border-collapse text-sm'>
               <thead>
@@ -266,6 +266,24 @@ export default function WellPumpReplacementCostCalculatorPage() {
             </table>
           </div>
           <p className='text-xs text-slate-500 mt-3'>Ranges assume scheduled weekday installation. Emergency or weekend service typically adds 25 to 50 percent to the labor portion.</p>
+        </div>
+
+        {/* Cost by Depth */}
+        <div className='mb-12'>
+          <h2 className='text-2xl font-bold text-slate-900 mb-4'>Well Pump Replacement Cost by Depth</h2>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'>
+            Well depth is the single biggest variable in pump replacement cost. The same submersible pump unit can cost $1,500 to install in a 100-foot well or $5,000 to install in a 400-foot well because deeper wells require more drop pipe, more electrical wire, and significantly more labor to pull and reinstall the pump.
+          </p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-3'>Cost ranges by depth (assuming a quality submersible pump):</p>
+          <ul className='list-disc pl-6 text-slate-700 text-sm space-y-1 mb-4'>
+            <li>Shallow wells under 100 feet: $1,200 to $2,500 fully installed</li>
+            <li>Mid-depth wells 100 to 250 feet: $1,500 to $3,000 fully installed</li>
+            <li>Deeper wells 250 to 400 feet: $2,800 to $5,500 fully installed</li>
+            <li>Deep wells 400 feet or more: $4,000 to $8,000 or more fully installed</li>
+          </ul>
+          <p className='text-slate-700 text-sm leading-relaxed'>
+            For deep well pump replacement specifically, expect labor and pipe costs to represent a larger share of the total bill than the pump unit itself. A 350-foot well replacement might break down as $500 for the pump, $1,200 for drop pipe and wire, and $2,000 for labor, with the remainder covering pressure tank or control work. Use the calculator above to estimate your specific replacement cost based on your actual well depth.
+          </p>
         </div>
 
         {/* FAQ */}
