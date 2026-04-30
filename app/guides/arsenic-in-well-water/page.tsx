@@ -601,6 +601,9 @@ export default function ArsenicInWellWater() {
           <p className='text-slate-700 leading-relaxed'>
             The striking comparison is that buying bottled water for 10 years is the most expensive option by a wide margin and solves only the drinking water problem, not bathing or cooking exposure. Almost any installed treatment system pays for itself in 1 to 4 years compared to bottled water, while also providing better safety.
           </p>
+          <p className='text-slate-700 leading-relaxed mt-4'>
+            For a planning estimate of full home water treatment costs (including potential combined systems for arsenic, hardness, and other contaminants), use our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='text-[#0F6E56] underline font-semibold hover:text-[#0a4f3e]'>well water treatment cost calculator</Link>.
+          </p>
         </div>
 
         {/* DIY vs Professional */}
@@ -808,3 +811,4 @@ export default function ArsenicInWellWater() {
     </>
   )
 }
+
