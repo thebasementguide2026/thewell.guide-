@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     url: 'https://www.thewell.guide/cost-guides/well-pump-replacement-cost-calculator',
     siteName: 'The Well Guide',
     type: 'website',
-    images: [{ url: 'https://www.thewell.guide/well%20cost.jpg', width: 1200, height: 630, alt: 'Well pump replacement cost calculator' }],
+    images: [{ url: 'https://www.thewell.guide/WellPumpReplacementCostCalculator.jpg', width: 1200, height: 630, alt: 'Well pump replacement cost calculator' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Well Pump Replacement Cost Calculator 2026',
     description: 'Estimate well pump replacement cost by pump type, depth, and region. Free 2026 calculator from The Well Guide.',
-    images: ['https://www.thewell.guide/well%20cost.jpg'],
+    images: ['https://www.thewell.guide/WellPumpReplacementCostCalculator.jpg'],
   },
   alternates: { canonical: 'https://www.thewell.guide/cost-guides/well-pump-replacement-cost-calculator' },
 }
