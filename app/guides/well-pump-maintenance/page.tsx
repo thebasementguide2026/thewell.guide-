@@ -664,6 +664,7 @@ export default function WellPumpMaintenance() {
               <p className='text-slate-700 text-sm leading-relaxed'>A visible crack in the well casing above grade</p>
             </div>
           </div>
+          <p className='text-slate-700 text-sm leading-relaxed mt-6'>When repair costs approach 50 percent of replacement cost, replacement is usually the smarter financial decision. Our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump cost calculator</Link> helps you compare maintenance investment against full replacement cost based on your specific pump and well.</p>
         </div>
 
         {/* FAQ Section */}
