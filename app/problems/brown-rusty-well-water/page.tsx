@@ -607,6 +607,7 @@ export default function BrownRustyWellWater() {
               </tbody>
             </table>
           </div>
+          <p className='text-slate-700 leading-relaxed text-sm mt-6'>For a personalized iron treatment cost estimate based on your water test results and home characteristics, use our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well water treatment cost calculator</Link>.</p>
         </div>
 
         {/* Is Brown Well Water Safe to Drink? */}
@@ -840,3 +841,4 @@ export default function BrownRustyWellWater() {
     </>
   )
 }
+
