@@ -431,6 +431,7 @@ export default function WellWaterSmellsLikeSulfur() {
               <p className='text-slate-700 text-sm'><strong>Removing the anode rod entirely</strong> from the water heater eliminates the odor source but also eliminates the corrosion protection that keeps the tank from rusting through prematurely. This voids the manufacturer{`'`}s warranty. It is not a recommended solution.</p>
             </div>
           </div>
+          <p className='text-slate-700 leading-relaxed text-sm mt-6'>Sulfur removal systems typically cost $1,500 to $4,000 fully installed depending on sulfur concentration, home size, and whether iron bacteria are also present. For a personalized estimate based on your specific situation, use our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well water treatment cost calculator</Link>.</p>
         </div>
 
         {/* Safety */}
@@ -629,3 +630,4 @@ export default function WellWaterSmellsLikeSulfur() {
     </>
   )
 }
+
