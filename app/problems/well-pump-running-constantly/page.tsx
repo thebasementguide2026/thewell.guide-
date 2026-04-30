@@ -524,8 +524,11 @@ export default function WellPumpRunningConstantly() {
           <p className='text-slate-700 leading-relaxed mb-4'>
             <strong>Confirming pump wear requires a contractor.</strong> An amp draw test (measuring whether the motor is drawing current within its nameplate rating) and a flow test (measuring actual gallons per minute output against the pump&apos;s specifications) determine whether the pump is performing to spec. A pump drawing less than rated GPM against normal head pressure is worn.
           </p>
-          <p className='text-slate-700 leading-relaxed'>
+          <p className='text-slate-700 leading-relaxed mb-4'>
             <strong>Fix:</strong> Pump replacement. This is a contractor job requiring pulling the pump from the well. Average cost: $800 to $2,500 depending on well depth and pump size. A pump showing wear is almost always replaced rather than repaired because the cost of refurbishment approaches the cost of a new pump.
+          </p>
+          <p className='text-slate-700 leading-relaxed'>
+            For pumps that have run themselves to failure or whose continuous operation indicates internal damage, use our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump replacement cost calculator</Link> to estimate the replacement cost before requesting contractor quotes.
           </p>
         </div>
 
