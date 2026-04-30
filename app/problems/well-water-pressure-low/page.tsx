@@ -522,6 +522,7 @@ export default function WellWaterPressureLow() {
             </div>
           </div>
           <p className='text-slate-700 leading-relaxed text-sm mt-4'>Attempting to pull a submersible pump without the right equipment risks dropping the pump and drop pipe assembly into the well, which is an expensive recovery operation. Well contractors have the hoisting equipment and experience to pull pumps without damage.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mt-4'>If pump replacement is the right next step, our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump replacement cost calculator</Link> gives you a budget estimate based on your specific situation.</p>
         </div>
 
         {/* How to Increase Well Water Pressure Without a New Pump */}
