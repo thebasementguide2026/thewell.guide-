@@ -132,6 +132,9 @@ export default function WellWaterTreatmentOptions() {
           <p className='text-slate-700 leading-relaxed'>
             Test first, treat second. No treatment system addresses every contaminant, and many systems that fix one problem make another worse. The correct sequence for any well owner is: identify what is actually in your water through certified lab testing, then match the treatment technology to the specific contaminant. For most residential well systems with multiple issues, the answer is a combination of technologies in the correct order &mdash; sediment filter first, then the targeted treatment (iron filter, softener, UV), then a point-of-use reverse osmosis system for drinking water if you need to address dissolved contaminants like arsenic, nitrates, or PFAS that whole-house systems cannot reliably remove. This guide explains every treatment technology available, what each one actually removes, what it cannot remove, what it costs, and how to build the right stack for your specific water test results.
           </p>
+          <p className='text-slate-700 leading-relaxed mt-3'>
+            Want a quick budget number before you start reading? Use our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well water treatment cost calculator</Link> to estimate your installed cost based on your water issue, home size, and region.
+          </p>
           <p className='text-slate-500 text-sm italic mt-4'>This guide is written without product endorsements and without affiliation to any water treatment company. Every recommendation follows EPA guidance and NSF/ANSI certification standards.</p>
         </div>
 
