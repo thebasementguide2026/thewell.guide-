@@ -622,6 +622,7 @@ export default function WellWaterTestingCost() {
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Never tested the well:</strong> Start with a comprehensive $150 to $300 baseline, not an annual basic test. A comprehensive panel establishes your starting point and prevents years of testing that misses what is actually in your water.</p>
             </div>
           </div>
+          <p className='text-slate-700 leading-relaxed text-sm mt-6'>Once your water test identifies the contaminants you need to treat, use our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well water treatment cost calculator</Link> to estimate the treatment system cost based on your specific issue and home size.</p>
         </div>
 
         {/* How to Avoid Overpaying */}
@@ -816,3 +817,4 @@ export default function WellWaterTestingCost() {
     </>
   )
 }
+
