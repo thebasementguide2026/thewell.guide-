@@ -567,6 +567,9 @@ export default function IronInWellWater() {
           <p className='text-slate-700 leading-relaxed'>
             For homes with untreated iron, the 20-year cost of accumulated household damage (failed appliances, stained fixtures, reduced home value) typically runs $3,000 to $8,000. Any treatment system that costs less than that pays for itself within the useful life of the equipment.
           </p>
+          <p className='text-slate-700 leading-relaxed mt-4'>
+            For a personalized iron filter cost estimate based on your water test results, home size, and region, use our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='text-[#0F6E56] underline font-semibold hover:text-[#0a4f3e]'>well water treatment cost calculator</Link>.
+          </p>
         </div>
 
         {/* DIY vs Professional */}
@@ -794,3 +797,4 @@ export default function IronInWellWater() {
     </>
   )
 }
+
