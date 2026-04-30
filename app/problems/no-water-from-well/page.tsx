@@ -437,7 +437,8 @@ export default function NoWaterFromWell() {
             </div>
           </div>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>What you can check yourself:</strong> On three-wire systems, open the control box (the gray or beige box mounted above ground near the pressure tank). Look for a bulging, burned, or visibly failed start capacitor. Replace it with an exact match. This is a $30 to $75 fix that does not require pulling the pump.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'><strong>What requires a contractor:</strong> Any pump problem that is not the control box components requires pulling the pump from the well. This requires a cable or tripod rig to safely extract the pump and drop pipe from potentially hundreds of feet down. This is not DIY work. Average pump replacement cost: $400 to $2,500 depending on depth and pump size.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>What requires a contractor:</strong> Any pump problem that is not the control box components requires pulling the pump from the well. This requires a cable or tripod rig to safely extract the pump and drop pipe from potentially hundreds of feet down. This is not DIY work. Average pump replacement cost: $400 to $2,500 depending on depth and pump size.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'>If pump failure is confirmed as the cause, our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump cost calculator</Link> gives you a replacement cost estimate based on your specific pump type, well depth, and regional pricing.</p>
         </div>
 
         {/* Cause 5: Well Running Dry */}
