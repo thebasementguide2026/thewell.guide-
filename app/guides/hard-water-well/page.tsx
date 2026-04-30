@@ -348,6 +348,7 @@ export default function HardWaterWellPage() {
               <p className="text-[#3D5A52] text-sm leading-relaxed">Have a licensed water treatment professional service the control valve, inspect the resin for signs of fouling or degradation, and verify the brine tank is clean and the float mechanism is functioning correctly.</p>
             </div>
           </div>
+          <p className="text-[#3D5A52] leading-relaxed mt-6">For a personalized water softener cost estimate based on your home size, occupancy, and region, use our <Link href='/cost-guides/well-water-treatment-cost-calculator' className='text-[#0F6E56] underline font-semibold hover:text-[#0a4f3e]'>well water treatment cost calculator</Link>.</p>
 
           {/* FAQ Section */}
           <h2 className="text-2xl font-bold text-[#0D1F1A] mt-10 mb-6">Frequently Asked Questions</h2>
@@ -454,3 +455,4 @@ export default function HardWaterWellPage() {
     </>
   )
 }
+
