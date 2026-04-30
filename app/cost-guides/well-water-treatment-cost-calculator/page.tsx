@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     url: 'https://www.thewell.guide/cost-guides/well-water-treatment-cost-calculator',
     siteName: 'The Well Guide',
     type: 'website',
-    images: [{ url: 'https://www.thewell.guide/well%20treatmentoptions.jpg', width: 1200, height: 630, alt: 'Well water treatment cost calculator' }],
+    images: [{ url: 'https://www.thewell.guide/TreatmentCostCalculator.jpg', width: 1200, height: 630, alt: 'Well water treatment cost calculator' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Well Water Treatment Cost Calculator 2026',
     description: 'Estimate well water treatment cost by water issue, home size, and region. Free 2026 calculator from The Well Guide.',
-    images: ['https://www.thewell.guide/well%20treatmentoptions.jpg'],
+    images: ['https://www.thewell.guide/TreatmentCostCalculator.jpg'],
   },
   alternates: { canonical: 'https://www.thewell.guide/cost-guides/well-water-treatment-cost-calculator' },
 }
@@ -119,7 +119,7 @@ export default function WellWaterTreatmentCostCalculatorPage() {
       {/* Hero */}
       <section className='relative h-[70vh] min-h-[500px] overflow-hidden' style={{ backgroundColor: '#0D3D30' }}>
         <Image
-          src='/well treatmentoptions.jpg'
+          src='/TreatmentCostCalculator.jpg'
           alt='Well water treatment cost calculator'
           fill
           className='object-cover opacity-45 scale-105 transition-transform duration-700 hover:scale-100'
