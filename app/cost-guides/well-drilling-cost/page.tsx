@@ -644,6 +644,7 @@ export default function WellDrillingCost() {
           </div>
           <p className='text-slate-700 text-sm leading-relaxed mt-4'>For comparison, the average American household pays $600 to $900 per year for municipal water and sewer service &mdash; $12,000 to $18,000 over 20 years, at rates that have increased roughly 3 to 4 percent annually in most cities. Well ownership costs over 20 years are comparable or lower for most households, with the significant difference that the majority of the well cost front-loads in Year 1 while municipal costs are distributed monthly.</p>
           <p className='text-slate-700 text-sm leading-relaxed mt-4'>A properly functioning private well also adds $10,000 to $30,000 to property value in most rural and semi-rural markets, according to real estate professionals familiar with well-served properties.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>For new well construction projects, the pump installation portion of the total cost can be estimated using our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump cost calculator</Link>, which accounts for pump type, well depth, and regional pricing.</p>
         </div>
 
         {/* How to Get Accurate Quotes Callout */}
