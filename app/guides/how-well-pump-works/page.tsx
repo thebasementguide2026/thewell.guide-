@@ -466,6 +466,7 @@ export default function HowWellPumpWorks() {
               <p className='text-slate-700 text-sm leading-relaxed'>The motor is receiving power but cannot generate starting torque. On a three-wire pump, check the control box for a bulging or burned start capacitor — this is a $30 to $75 repair that does not require pulling the pump. On a two-wire pump, the starting components are sealed inside the motor and the pump must be pulled for diagnosis.</p>
             </div>
           </div>
+          <p className='text-slate-700 leading-relaxed text-sm mt-6'>When replacement becomes necessary (typically every 10 to 15 years for submersible pumps), use our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump replacement cost calculator</Link> to estimate the project.</p>
         </div>
 
         {/* FAQ Section */}
