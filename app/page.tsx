@@ -22,7 +22,8 @@ const badgeColors: Record<string, { bg: string; text: string }> = {
 const sidebarArticles = [
   { title: 'Well Water Smells Like Sulfur or Rotten Eggs', href: '/problems/well-water-smells-like-sulfur', category: 'PROBLEM', image: '/glassofwater.jpg' },
   { title: 'Well Water Pressure Low: 6 Causes and Fixes', href: '/problems/well-water-pressure-low', category: 'PROBLEM', image: '/well pressure.jpg' },
-  { title: 'Well Pump Replacement Cost 2026', href: '/cost-guides/well-pump-replacement-cost', category: 'COST GUIDE', image: '/well cost.jpg' },
+  { title: 'Well Water Treatment Cost Calculator 2026', href: '/cost-guides/well-water-treatment-cost-calculator', category: 'CALCULATOR', image: '/TreatmentCostCalculator.jpg' },
+  { title: 'Well Pump Replacement Cost Calculator 2026', href: '/cost-guides/well-pump-replacement-cost-calculator', category: 'CALCULATOR', image: '/WellPumpReplacementCostCalculator.jpg' },
   { title: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water', category: 'GUIDE', image: '/watertest.jpg' },
   { title: 'How a Well Pump Works: The Complete System Explained', href: '/guides/how-well-pump-works', category: 'GUIDE', image: '/howwellworks.jpg' },
 ]
