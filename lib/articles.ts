@@ -154,6 +154,22 @@ export const articles: Article[] = [
     image: '/well treatmentoptions.jpg',
   },
   {
+    title: 'Well Water Treatment Cost Calculator (2026)',
+    description: 'Free homeowner calculator that estimates well water treatment cost by water issue (sediment, hardness, iron, sulfur, bacteria, multiple), equipment grade, home size, occupancy, regional cost factor, and install complexity. Recommends a treatment setup based on the issue you select. Built on the same 2026 cost ranges as our well water treatment options guide.',
+    slug: 'cost-guides/well-water-treatment-cost-calculator',
+    category: 'Cost Guide',
+    readTime: 'Calculator',
+    image: '/TreatmentCostCalculator.jpg',
+  },
+  {
+    title: 'Well Pump Replacement Cost Calculator (2026)',
+    description: 'Free homeowner calculator that estimates well pump replacement cost by pump type, depth, demand, region, and project scope. Built on the same 2026 cost ranges as our well pump replacement cost guide.',
+    slug: 'cost-guides/well-pump-replacement-cost-calculator',
+    category: 'Cost Guide',
+    readTime: 'Calculator',
+    image: '/WellPumpReplacementCostCalculator.jpg',
+  },
+  {
     title: 'Annual Well Maintenance Checklist',
     description: 'The complete seasonal and annual maintenance schedule every well owner needs. Covers spring startup, summer monitoring, fall winterization, and professional inspections — with a printable at-a-glance table, DIY vs. hire-a-pro breakdown, and typical costs.',
     slug: 'guides/well-maintenance-checklist',
