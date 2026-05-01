@@ -27,6 +27,8 @@ const footerSections = [
     href: '/cost-guides',
     links: [
       { label: 'Well Pump Replacement Cost', href: '/cost-guides/well-pump-replacement-cost' },
+      { label: 'Well Pump Replacement Cost Calculator', href: '/cost-guides/well-pump-replacement-cost-calculator' },
+      { label: 'Well Water Treatment Cost Calculator', href: '/cost-guides/well-water-treatment-cost-calculator' },
       { label: 'Well Water Testing Cost', href: '/cost-guides/well-water-testing-cost' },
       { label: 'Pressure Tank Replacement Cost', href: '/cost-guides/pressure-tank-replacement-cost' },
       { label: 'Well Drilling Cost', href: '/cost-guides/well-drilling-cost' },
