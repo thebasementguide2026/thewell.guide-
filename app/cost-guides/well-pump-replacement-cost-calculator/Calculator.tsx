@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 type Gtag = (...args: unknown[]) => void
 function track(event: string, params: Record<string, unknown>) {
@@ -162,6 +162,7 @@ export default function WellPumpCostCalculator({ onResult }: Props) {
   const [extras, setExtras] = useState<Extras>('pump-only')
   const [result, setResult] = useState<Result | null>(null)
   const [started, setStarted] = useState(false)
+  const completedRef = useRef<string>('')
 
   // Fire calculator_view once per mount when component becomes available
   useEffect(() => {
@@ -171,6 +172,20 @@ export default function WellPumpCostCalculator({ onResult }: Props) {
       page_path: typeof window !== 'undefined' ? window.location.pathname : '',
     })
   }, [])
+
+  // Fire calculator_complete once per unique valid result
+  useEffect(() => {
+    if (!result) return
+    const key = pump + ':' + depth + ':' + flow + ':' + region + ':' + complexity + ':' + extras + ':' + result.low + ':' + result.high
+    if (completedRef.current === key) return
+    completedRef.current = key
+    track('calculator_complete', {
+      calculator_name: 'well_pump_replacement_cost',
+      estimate_low: result.low,
+      estimate_high: result.high,
+      currency: 'USD',
+    })
+  }, [result, pump, depth, flow, region, complexity, extras])
 
   const handleChange = <T,>(setter: (v: T) => void) => (e: React.ChangeEvent<HTMLSelectElement>) => {
     setter(e.target.value as T)
@@ -216,6 +231,7 @@ export default function WellPumpCostCalculator({ onResult }: Props) {
     setExtras('pump-only')
     setResult(null)
     setStarted(false)
+    completedRef.current = ''
     track('calculator_reset', { calculator_name: 'well_pump_replacement_cost' })
   }
 
