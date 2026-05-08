@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/problems/well-water-pressure-low`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/cost-guides/well-pump-replacement-cost`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/cost-guides/well-pump-replacement-cost-calculator`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/cost-guides/well-drilling-cost-calculator`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/cost-guides/well-water-treatment-cost-calculator`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/guides/how-to-test-well-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/brown-rusty-well-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
