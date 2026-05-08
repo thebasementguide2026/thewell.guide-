@@ -717,6 +717,7 @@ export default function BuyingHouseWithWell() {
               <strong className='text-slate-900'>Unknown well age, depth, and casing material with no well log available and seller unwilling to fund a camera inspection.</strong> An undocumented well is a compounded risk. Request a camera inspection of the casing interior before proceeding.
             </li>
           </ul>
+          <p className='text-slate-700 leading-relaxed mt-6'>If the inspection identifies a failed well requiring replacement, or if you are buying undeveloped land where a well needs to be drilled, our <Link href='/cost-guides/well-drilling-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost calculator</Link> estimates the new well project cost based on expected depth, geology, and region.</p>
         </div>
 
         {/* The Genuine Advantages of Buying a House With a Well */}
