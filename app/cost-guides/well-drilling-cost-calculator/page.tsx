@@ -156,8 +156,10 @@ export default function WellDrillingCostCalculatorPage() {
                 </p>
               </div>
 
+              <WellDrillingCostCalculator />
+
               {/* Pump-First Rule decision callout */}
-              <div className='mb-5 rounded-xl p-5 border' style={{ backgroundColor: '#FFF8EC', borderColor: '#E9D29A' }}>
+              <div className='mt-5 rounded-xl p-5 border' style={{ backgroundColor: '#FFF8EC', borderColor: '#E9D29A' }}>
                 <div className='flex items-center space-x-2 mb-2'>
                   <span className='text-lg'>⚠️</span>
                   <p className='text-xs font-bold uppercase tracking-[0.2em]' style={{ color: '#854F0B' }}>The Pump-First Rule</p>
@@ -166,8 +168,6 @@ export default function WellDrillingCostCalculatorPage() {
                   Before drilling a new well, rule out pump replacement. If your existing well, casing, and yield are fine but your pump is failing, pump replacement typically costs $1,500 to $4,000 (see our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='underline font-semibold' style={{ color: '#854F0B' }}>well pump replacement cost calculator</Link>). New well drilling costs five to ten times more for the same outcome. Drilling a new well makes sense when the well itself has failed (lost yield, corroded casing, contaminated aquifer) or you need higher flow than the existing well can deliver. Use this calculator only after confirming a new well is genuinely needed.
                 </p>
               </div>
-
-              <WellDrillingCostCalculator />
               <div className='mt-5 rounded-xl p-5 text-white' style={{ backgroundColor: '#0D3D30' }}>
                 <p className='text-xs font-bold uppercase tracking-[0.2em] mb-2' style={{ color: '#5DCAA5' }}>Need a real number?</p>
                 <h3 className='text-lg font-bold mb-2'>Compare quotes from local well drillers</h3>
