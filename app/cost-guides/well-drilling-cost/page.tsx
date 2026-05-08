@@ -168,6 +168,14 @@ export default function WellDrillingCost() {
           <p className='text-slate-700 text-sm leading-relaxed'>Drilling a residential water well costs $25 to $65 per foot for the drilling itself, and $3,750 to $15,600 total for a complete system including casing, pump, pressure tank, electrical hookup, and permit &mdash; based on the national average depth of 150 feet. Most homeowners pay between $5,500 and $12,000 all-in for a standard drilled well. The number that matters is the all-in cost, not the per-foot drilling rate &mdash; those two numbers frequently look very different, which is where homeowners get surprised at closing.</p>
         </div>
 
+        {/* Calculator callout */}
+        <div className='mb-12 rounded-xl p-5 border-2 bg-white' style={{ borderColor: '#1D9E75' }}>
+          <p className='text-xs font-bold uppercase tracking-[0.2em] mb-2' style={{ color: '#0F6E56' }}>Quick estimate</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>
+            Use our <Link href='/cost-guides/well-drilling-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost calculator</Link> to get an instant project estimate based on your specific depth, geology, casing size, pump system, and region. The calculator pulls from the same 2026 cost ranges discussed in this guide.
+          </p>
+        </div>
+
         {/* At a Glance */}
         <div className='mb-12'>
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>At a Glance: Well Drilling Costs in 2026</h2>
@@ -666,7 +674,8 @@ export default function WellDrillingCost() {
             <li className='text-slate-700 text-sm leading-relaxed'>What is the warranty on labor and on the pump?</li>
           </ol>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Ask to see the well logs from neighboring properties.</strong> Most states maintain databases of well completion reports. A contractor who has drilled extensively in your area can access these records and show you what depth and geology neighbors encountered. This is the best predictor of what your project will cost.</p>
-          <p className='text-slate-700 text-sm leading-relaxed'><strong>Request an itemized written quote.</strong> A written quote that separates drilling, casing, pump, pressure tank, electrical, permit, and testing costs lets you compare contractors on the same basis and identifies what each one is and is not including.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Request an itemized written quote.</strong> A written quote that separates drilling, casing, pump, pressure tank, electrical, permit, and testing costs lets you compare contractors on the same basis and identifies what each one is and is not including.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>For a personalized cost estimate based on your specific project, use our <Link href='/cost-guides/well-drilling-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost calculator</Link> before requesting drilling contractor quotes.</p>
         </div>
 
         {/* FAQ Section */}
