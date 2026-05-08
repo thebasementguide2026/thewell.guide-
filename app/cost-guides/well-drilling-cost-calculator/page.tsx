@@ -7,6 +7,7 @@ import WellDrillingCostCalculator from './Calculator'
 import CtaLink from './CtaLink'
 
 const PAGE_URL = 'https://www.thewell.guide/cost-guides/well-drilling-cost-calculator'
+const LAST_UPDATED = 'May 2026'
 
 export const metadata: Metadata = {
   title: 'Well Drilling Cost Calculator (2026): Estimate New Water Well Cost | The Well Guide',
@@ -24,23 +25,33 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How accurate is this calculator?',
-    a: 'It produces a planning-grade range, not a contractor quote. The model uses 2026 national drilling pricing for depth, geology, casing diameter, pump system, trenching distance, permits, and a regional cost factor. Most homeowners find their actual bids fall inside the range, but local geology and contractor pricing can move real quotes meaningfully above or below it.',
+    a: "This calculator produces a planning-grade range, not a contractor quote. It uses 2026 national drilling pricing for depth, geology, casing diameter, pump system, trenching distance, permits, and a regional cost factor. Most homeowners find their actual contractor quotes fall within the calculator's estimated range, but local geology and contractor pricing can move real quotes meaningfully above or below it. The calculator is most accurate when you have realistic information about expected depth (from neighbors, state geological survey data, or your local well drilling contractor) and accurate geology assessment for your area. For projects where depth or geology is uncertain, the high end of the calculator's range is the more conservative budget anchor. Once you have the estimate, request two to four written line-item quotes from licensed local contractors to convert it into a binding price.",
   },
   {
     q: 'What is included in a per-foot price?',
-    a: "A per-foot drilling rate normally covers the actual drilling labor, the casing material installed in the borehole, basic well log documentation, and well development. It usually does not cover the pump, pressure tank, trenching from the well to the house, electrical hookup, water testing, or permit fees. Always ask each contractor for a written line-item breakdown so you know exactly what is in their per-foot number.",
+    a: "A per-foot drilling rate normally covers the actual drilling labor, the casing material installed in the borehole, basic well log documentation, and well development. It usually does not cover the pump, pressure tank, trenching from the well to the house, electrical hookup, water testing, or permit fees. Always ask each contractor for a written line-item breakdown so you know exactly what is in their per-foot number. The biggest hidden cost in well drilling quotes is unbundled pricing where the per-foot rate looks competitive but excluded items (pump, pressure tank, trenching, electrical, permits) push the total $3,000 to $7,000 above competitors offering all-in pricing. Request itemized quotes from every contractor you talk to so you can compare like-to-like rather than comparing per-foot rates without context.",
   },
   {
     q: 'Do I have to pay extra for permits and inspections?',
-    a: 'Most jurisdictions require a permit and at least one inspection for a new residential well. Some contractors include permit and inspection fees in their quote and some bill them separately. Expect $250 to $1,200 in total depending on your state and county. Strict-permitting regions sit at the upper end of that range.',
+    a: 'Most jurisdictions require a permit and at least one inspection for a new residential well. Permit and inspection fees vary widely by state and county, ranging from $250 to $1,200 in total. Some contractors include permit and inspection fees in their quote and some bill them separately. Strict-permitting regions (parts of California, the Northeast, and certain protected watersheds) sit at the upper end of that range. Ask each contractor whether their quote includes permit fees, inspection fees, water quality testing required by the jurisdiction, and well log filing. Some areas also require post-drilling inspections by the local health department before the well can be put into service, which can add $150 to $500.',
   },
   {
-    q: "How do I estimate the depth if I do not have an existing well?",
-    a: "Start with neighbors. Ask two or three nearby homeowners what depth their wells were drilled to and what year. Your local well drilling contractor and your state geological survey usually have a sense of typical depths for your area, and most state databases publish well log data by parcel. As a rough national benchmark, most residential wells fall between 100 and 300 feet, with deeper wells more common in dry, mountainous, or hard-rock regions.",
+    q: 'How do I estimate the depth if I do not have an existing well?',
+    a: 'Start with neighbors. Ask two or three nearby homeowners what depth their wells were drilled to and what year they were drilled. Your local well drilling contractor and your state geological survey usually have a sense of typical depths for your area, and most state databases publish well log data by parcel that you can search online. As a rough national benchmark, most residential wells fall between 100 and 300 feet, with deeper wells more common in dry, mountainous, or hard-rock regions. Wells in coastal sandy soil often go shallower (50 to 150 feet); wells in hard-rock regions like New England, Appalachia, or the Rocky Mountains commonly run 300 to 500 feet or deeper. The depth your contractor actually drills depends on where they hit usable water yield, which only becomes clear during drilling, so neighbor data and state databases give you a planning estimate but not a guarantee.',
   },
   {
     q: 'Can I finance a new well?',
-    a: 'Yes. Many homeowners finance a new well with a home equity loan, HELOC, personal loan, or a contractor financing program. USDA Rural Development also offers loan and grant programs for water systems on qualifying rural properties. Get the written contract and full cost estimate first, then compare financing options on overall interest, term length, and any prepayment penalties.',
+    a: 'Yes. Many homeowners finance a new well with a home equity loan, HELOC, personal loan, or a contractor financing program. The USDA Rural Development program also offers loan and grant programs for water systems on qualifying rural properties through their Single Family Housing Repair Loans and Grants program. Some states and counties offer low-interest loan programs specifically for residential well drilling, particularly in regions where municipal water is not available. Get the written contract and full cost estimate first, then compare financing options on overall interest rate, term length, and any prepayment penalties. For lower-income rural homeowners, the USDA grant component can cover part of the project cost without repayment requirements; check eligibility through your local USDA Rural Development office before committing to commercial financing.',
+    usdaLink: true,
+  },
+  {
+    q: 'How long does it take to drill a residential well?',
+    a: 'Most residential well drilling projects take 1 to 3 days of actual drilling time once the rig is on site. The full project timeline including permit approval, contractor scheduling, drilling, casing, pump installation, trenching, electrical hookup, water testing, and final inspection typically runs 2 to 6 weeks. Permit approval alone takes 1 to 4 weeks in most jurisdictions. Strict-permitting regions and seasonal demand peaks (spring through summer in most of the country) push timelines toward the longer end. Active drilling itself runs faster in soft soil (one day for a 150 to 200 foot well) and slower in hard rock (two to four days for the same depth). Most contractors will not start drilling until permits are approved and a written contract is signed.',
+  },
+  {
+    q: 'What is the difference between a drilled well and a dug well, and how does cost compare?',
+    a: 'A drilled well is created with rotary or percussion drilling equipment that bores a narrow shaft (typically 4 to 8 inches in diameter) hundreds of feet down to reach a stable aquifer. A dug well is excavated with backhoes or hand tools, typically 3 to 20 feet wide and 10 to 30 feet deep, drawing from shallow groundwater. Drilled wells are dramatically more reliable, deliver consistently safe water from deeper aquifers, and last 30 to 50 years or more, which is why they are the standard for new residential wells in 2026. Dug wells cost $1,500 to $5,000 to construct (significantly less than drilled wells) but are vulnerable to surface contamination, can dry up during droughts, and rarely meet modern health code for new construction. Most jurisdictions no longer permit new dug wells. For a complete comparison, see our dug well vs drilled well guide.',
+    dugWellLink: true,
   },
 ]
 
@@ -121,6 +132,7 @@ export default function WellDrillingCostCalculatorPage() {
           <p className='text-lg text-white/75 max-w-2xl font-medium leading-relaxed'>
             Estimate the all-in cost to drill and equip a new residential water well in 2026. Plug in depth, geology, casing size, pump system, trenching distance, and region for a planning range you can take to local contractors.
           </p>
+          <p className='text-xs text-white/60 mt-4 font-medium uppercase tracking-wider'>Last updated: {LAST_UPDATED}</p>
         </div>
       </section>
 
@@ -136,6 +148,25 @@ export default function WellDrillingCostCalculatorPage() {
           {/* Calculator column - mobile shows first, desktop sticky right */}
           <aside className='lg:col-span-1 lg:order-2'>
             <div className='lg:sticky lg:top-6'>
+              {/* TL;DR callout */}
+              <div className='mb-5 rounded-xl border-l-4 p-5 bg-white shadow-sm' style={{ borderLeftColor: '#1D9E75' }}>
+                <p className='text-xs font-bold uppercase tracking-[0.2em] mb-2' style={{ color: '#0F6E56' }}>TL;DR</p>
+                <p className='text-slate-700 text-sm leading-relaxed'>
+                  Most residential well drilling projects in 2026 land between $5,500 and $18,000 fully equipped, with deep or hard-rock wells reaching $25,000 or more. Depth, geology, and whether you include a pump and pressure system drive most of the spread. This calculator estimates your specific range based on depth, geology, casing size, pump system, trenching distance, and region. Use the result as a planning anchor before requesting two to four written quotes from licensed local well drilling contractors.
+                </p>
+              </div>
+
+              {/* Pump-First Rule decision callout */}
+              <div className='mb-5 rounded-xl p-5 border' style={{ backgroundColor: '#FFF8EC', borderColor: '#E9D29A' }}>
+                <div className='flex items-center space-x-2 mb-2'>
+                  <span className='text-lg'>⚠️</span>
+                  <p className='text-xs font-bold uppercase tracking-[0.2em]' style={{ color: '#854F0B' }}>The Pump-First Rule</p>
+                </div>
+                <p className='text-slate-700 text-sm leading-relaxed'>
+                  Before drilling a new well, rule out pump replacement. If your existing well, casing, and yield are fine but your pump is failing, pump replacement typically costs $1,500 to $4,000 (see our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='underline font-semibold' style={{ color: '#854F0B' }}>well pump replacement cost calculator</Link>). New well drilling costs five to ten times more for the same outcome. Drilling a new well makes sense when the well itself has failed (lost yield, corroded casing, contaminated aquifer) or you need higher flow than the existing well can deliver. Use this calculator only after confirming a new well is genuinely needed.
+                </p>
+              </div>
+
               <WellDrillingCostCalculator />
               <div className='mt-5 rounded-xl p-5 text-white' style={{ backgroundColor: '#0D3D30' }}>
                 <p className='text-xs font-bold uppercase tracking-[0.2em] mb-2' style={{ color: '#5DCAA5' }}>Need a real number?</p>
@@ -335,12 +366,34 @@ export default function WellDrillingCostCalculatorPage() {
             <section className='mb-12'>
               <h2 className='text-2xl md:text-3xl font-bold text-slate-900 mb-6'>FAQ</h2>
               <div className='space-y-4'>
-                {faqs.map((f, i) => (
-                  <div key={i} className='rounded-lg border border-slate-200 bg-white p-5'>
-                    <h3 className='text-lg font-bold text-slate-900 mb-2'>{f.q}</h3>
-                    <p className='text-slate-700 leading-relaxed text-sm'>{f.a}</p>
-                  </div>
-                ))}
+                {faqs.map((f, i) => {
+                  let answerNode: any = f.a
+                  if (f.usdaLink) {
+                    const parts = f.a.split('USDA Rural Development program')
+                    answerNode = (
+                      <>
+                        {parts[0]}
+                        <a href='https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-repair-loans-grants' target='_blank' rel='noopener' className='underline font-semibold' style={{ color: '#0F6E56' }}>USDA Rural Development program</a>
+                        {parts[1]}
+                      </>
+                    )
+                  } else if (f.dugWellLink) {
+                    const parts = f.a.split('dug well vs drilled well guide')
+                    answerNode = (
+                      <>
+                        {parts[0]}
+                        <Link href='/guides/dug-well-vs-drilled-well' className='underline font-semibold' style={{ color: '#0F6E56' }}>dug well vs drilled well guide</Link>
+                        {parts[1]}
+                      </>
+                    )
+                  }
+                  return (
+                    <div key={i} className='rounded-lg border border-slate-200 bg-white p-5'>
+                      <h3 className='text-lg font-bold text-slate-900 mb-2'>{f.q}</h3>
+                      <p className='text-slate-700 leading-relaxed text-sm'>{answerNode}</p>
+                    </div>
+                  )
+                })}
               </div>
             </section>
 
