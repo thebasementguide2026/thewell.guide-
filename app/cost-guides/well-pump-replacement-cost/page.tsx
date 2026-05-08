@@ -452,6 +452,7 @@ export default function WellPumpReplacementCost() {
               <li>A licensed contractor has tested the pump output and confirmed the motor is in good condition</li>
             </ul>
           </div>
+          <p className='text-slate-700 text-sm leading-relaxed mt-6'>If your existing well has lost yield, has corroded casing, or is no longer salvageable, drilling a new well becomes the necessary path. Use our <Link href='/cost-guides/well-drilling-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost calculator</Link> to estimate the new well project.</p>
         </div>
 
         {/* Component Repair Costs Table */}
