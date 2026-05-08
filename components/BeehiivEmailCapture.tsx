@@ -7,7 +7,7 @@ export default function BeehiivEmailCapture() {
         <div className='text-center max-w-xl mx-auto mb-6'>
           <p className='text-lg font-bold text-slate-900 mb-2'>Get Homeowner Tips in Your Inbox</p>
           <p className='text-slate-600 text-sm leading-relaxed'>
-            Well maintenance tips, water quality guides, and seasonal reminders from The Well Guide — free to your inbox.
+            Well maintenance tips, water quality guides, and seasonal reminders from The Well Guide. Free to your inbox.
           </p>
         </div>
         <iframe
