@@ -42,7 +42,7 @@ export async function POST(request: Request) {
       })
 
       if (trustedFormCertUrl) {
-        params.append('xxTrustedFormCertUrl', trustedFormCertUrl)
+        params.append('cert_url', trustedFormCertUrl)
       }
 
       try {
