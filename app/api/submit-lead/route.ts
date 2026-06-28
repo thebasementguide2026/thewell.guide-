@@ -58,6 +58,12 @@ function validate(body: Record<string, unknown>) {
     errors.trustedFormCertUrl = 'We could not verify your form. Please refresh the page and try again.'
   }
 
+  // TCPA compliance text is required by Networx for every lead post.
+  const tcpaRaw = typeof body.tcpaComplianceText === 'string' ? body.tcpaComplianceText.trim() : ''
+  if (!tcpaRaw || tcpaRaw.length < 20) {
+    errors.tcpaComplianceText = 'Consent text missing. Please refresh the page and try again.'
+  }
+
   return {
     errors,
     cleaned: {
@@ -69,6 +75,7 @@ function validate(body: Record<string, unknown>) {
       taskIds,
       description: typeof body.description === 'string' ? body.description : '',
       trustedFormCertUrl: typeof body.trustedFormCertUrl === 'string' ? body.trustedFormCertUrl : '',
+      tcpaComplianceText: typeof body.tcpaComplianceText === 'string' ? body.tcpaComplianceText.trim() : '',
     },
   }
 }
@@ -92,6 +99,8 @@ export async function POST(request: Request) {
     // Submit a lead for each task ID
     const results = []
     for (const taskId of cleaned.taskIds) {
+      const customId = `wg-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`
+      const srcCreatedAt = new Date().toISOString()
       const params = new URLSearchParams({
         nx_access_key: NX_ACCESS_KEY,
         nx_userId: NX_USER_ID,
@@ -103,11 +112,11 @@ export async function POST(request: Request) {
         task_id: String(taskId),
         comments: cleaned.description || '',
         source_id: 'thewell.guide',
+        tcpa_compliance_text: cleaned.tcpaComplianceText,
+        cert_url: cleaned.trustedFormCertUrl,
+        src_created_at: srcCreatedAt,
+        custom_id: customId,
       })
-
-      if (cleaned.trustedFormCertUrl) {
-        params.append('cert_url', cleaned.trustedFormCertUrl)
-      }
 
       try {
         const response = await fetch('https://api.networx.com/?' + params.toString(), {
