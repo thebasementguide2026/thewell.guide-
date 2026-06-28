@@ -93,7 +93,17 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
           })
         }
       } else {
-        setError('Something went wrong. Please try again.')
+        let msg = 'Something went wrong. Please try again.'
+        try {
+          const data = await response.json()
+          if (data && data.fields && typeof data.fields === 'object') {
+            const firstField = Object.values(data.fields)[0]
+            if (typeof firstField === 'string') msg = firstField
+          } else if (data && typeof data.error === 'string') {
+            msg = data.error
+          }
+        } catch {}
+        setError(msg)
       }
     } catch (err) {
       setError('Something went wrong. Please try again.')
