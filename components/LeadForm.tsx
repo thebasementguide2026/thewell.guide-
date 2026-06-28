@@ -126,6 +126,8 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
               msg = 'Form security check failed. Please refresh the page and try again.'
             } else if (outcome === 'invalid') {
               msg = 'Some of your contact info could not be verified. Please double-check your email, phone, and ZIP code, then try again.'
+            } else if (outcome === 'refused') {
+              msg = 'Our partner is not accepting submissions for this service in your area right now. Please try a different project type or try again later.'
             } else if (outcome === 'network_error') {
               msg = 'We had trouble reaching our partner. Please try again in a moment.'
             } else if (rawMsg) {

@@ -114,7 +114,7 @@ export async function POST(request: Request) {
     const results: Array<{
       taskId: number | string
       ok: boolean
-      outcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'network_error' | 'unknown'
+      outcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'refused' | 'network_error' | 'unknown'
       statusCode: string
       statusDesc: string
       errorMessage: string
@@ -160,7 +160,7 @@ export async function POST(request: Request) {
         // Classify outcome by parsing Networx's errorMessage.
         // Networx still records "Duplicate Data" leads in their system (visible in Earnings dashboard
         // as Unmatched/Disqualified), so we treat duplicate as a soft-success from the user's perspective.
-        let outcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'unknown' = 'unknown'
+        let outcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'refused' | 'unknown' = 'unknown'
         if (ok) {
           outcome = 'success'
         } else if (/duplicate/i.test(errorMessage)) {
@@ -169,6 +169,8 @@ export async function POST(request: Request) {
           outcome = 'missing_cert'
         } else if (/invalid/i.test(errorMessage)) {
           outcome = 'invalid'
+        } else if (/refused|reject|throttl|rate.?limit|denied/i.test(errorMessage)) {
+          outcome = 'refused'
         }
 
         console.log(`[lead ${reqId}] networx_response`, JSON.stringify({
@@ -226,6 +228,7 @@ export async function POST(request: Request) {
     const duplicateCount = results.filter((r) => r.outcome === 'duplicate').length
     const invalidCount = results.filter((r) => r.outcome === 'invalid').length
     const missingCertCount = results.filter((r) => r.outcome === 'missing_cert').length
+    const refusedCount = results.filter((r) => r.outcome === 'refused').length
     const networkErrorCount = results.filter((r) => r.outcome === 'network_error').length
     const failCount = results.length - successCount
 
@@ -233,11 +236,12 @@ export async function POST(request: Request) {
     // Priority: success > duplicate > missing_cert > invalid > network_error > unknown.
     // Duplicate is treated as a soft-success: Networx still records these leads in their system,
     // so the user-facing experience should be the thank-you screen, not a scary error.
-    let topOutcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'network_error' | 'unknown' = 'unknown'
+    let topOutcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'refused' | 'network_error' | 'unknown' = 'unknown'
     if (successCount > 0) topOutcome = 'success'
     else if (duplicateCount > 0) topOutcome = 'duplicate'
     else if (missingCertCount > 0) topOutcome = 'missing_cert'
     else if (invalidCount > 0) topOutcome = 'invalid'
+    else if (refusedCount > 0) topOutcome = 'refused'
     else if (networkErrorCount > 0) topOutcome = 'network_error'
 
     console.log(`[lead ${reqId}] submit_done`, JSON.stringify({
@@ -246,6 +250,7 @@ export async function POST(request: Request) {
       duplicate: duplicateCount,
       invalid: invalidCount,
       missing_cert: missingCertCount,
+      refused: refusedCount,
       network_error: networkErrorCount,
       fail: failCount,
       top_outcome: topOutcome,
