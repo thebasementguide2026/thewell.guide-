@@ -114,8 +114,10 @@ export async function POST(request: Request) {
     const results: Array<{
       taskId: number | string
       ok: boolean
+      outcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'network_error' | 'unknown'
       statusCode: string
       statusDesc: string
+      errorMessage: string
       leadId: string
       httpStatus: number
       durationMs: number
@@ -150,8 +152,24 @@ export async function POST(request: Request) {
         const durationMs = Date.now() - started
         const statusCode = extractTag(text, 'statusCode') || extractTag(text, 'status_code')
         const statusDesc = extractTag(text, 'statusDesc') || extractTag(text, 'status_desc') || extractTag(text, 'message')
+        const errorMessage = extractTag(text, 'errorMessage') || extractTag(text, 'error_message') || extractTag(text, 'error') || ''
+        const successCode = extractTag(text, 'successCode') || extractTag(text, 'success_code') || ''
         const leadId = extractTag(text, 'leadId') || extractTag(text, 'lead_id') || extractTag(text, 'id')
-        const ok = response.ok && /success/i.test(statusCode)
+        const ok = response.ok && (/success/i.test(statusCode) || /^2/.test(statusCode) || !!successCode || !!leadId)
+
+        // Classify outcome by parsing Networx's errorMessage.
+        // Networx still records "Duplicate Data" leads in their system (visible in Earnings dashboard
+        // as Unmatched/Disqualified), so we treat duplicate as a soft-success from the user's perspective.
+        let outcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'unknown' = 'unknown'
+        if (ok) {
+          outcome = 'success'
+        } else if (/duplicate/i.test(errorMessage)) {
+          outcome = 'duplicate'
+        } else if (/missing.*trusted.*form|trusted.*form.*missing|missing.*cert/i.test(errorMessage)) {
+          outcome = 'missing_cert'
+        } else if (/invalid/i.test(errorMessage)) {
+          outcome = 'invalid'
+        }
 
         console.log(`[lead ${reqId}] networx_response`, JSON.stringify({
           task_id: taskId,
@@ -159,7 +177,10 @@ export async function POST(request: Request) {
           duration_ms: durationMs,
           statusCode,
           statusDesc,
+          errorMessage,
+          successCode,
           leadId,
+          outcome,
           custom_id: customId,
           url: redactUrl(url),
           raw: text.slice(0, 800),
@@ -168,8 +189,10 @@ export async function POST(request: Request) {
         results.push({
           taskId,
           ok,
+          outcome,
           statusCode,
           statusDesc,
+          errorMessage,
           leadId,
           httpStatus: response.status,
           durationMs,
@@ -187,8 +210,10 @@ export async function POST(request: Request) {
         results.push({
           taskId,
           ok: false,
+          outcome: 'network_error',
           statusCode: 'NETWORK_ERROR',
           statusDesc: message,
+          errorMessage: message,
           leadId: '',
           httpStatus: 0,
           durationMs,
@@ -198,24 +223,61 @@ export async function POST(request: Request) {
     }
 
     const successCount = results.filter((r) => r.ok).length
+    const duplicateCount = results.filter((r) => r.outcome === 'duplicate').length
+    const invalidCount = results.filter((r) => r.outcome === 'invalid').length
+    const missingCertCount = results.filter((r) => r.outcome === 'missing_cert').length
+    const networkErrorCount = results.filter((r) => r.outcome === 'network_error').length
     const failCount = results.length - successCount
+
+    // Roll up to a single top-level outcome the client can switch on.
+    // Priority: success > duplicate > missing_cert > invalid > network_error > unknown.
+    // Duplicate is treated as a soft-success: Networx still records these leads in their system,
+    // so the user-facing experience should be the thank-you screen, not a scary error.
+    let topOutcome: 'success' | 'duplicate' | 'invalid' | 'missing_cert' | 'network_error' | 'unknown' = 'unknown'
+    if (successCount > 0) topOutcome = 'success'
+    else if (duplicateCount > 0) topOutcome = 'duplicate'
+    else if (missingCertCount > 0) topOutcome = 'missing_cert'
+    else if (invalidCount > 0) topOutcome = 'invalid'
+    else if (networkErrorCount > 0) topOutcome = 'network_error'
 
     console.log(`[lead ${reqId}] submit_done`, JSON.stringify({
       total: results.length,
       success: successCount,
+      duplicate: duplicateCount,
+      invalid: invalidCount,
+      missing_cert: missingCertCount,
+      network_error: networkErrorCount,
       fail: failCount,
+      top_outcome: topOutcome,
     }))
 
-    // Treat the submission as "successful from the user's perspective" if at least one task posted.
-    // The user should never see a server error if Networx accepted at least one lead.
-    if (successCount > 0) {
-      return NextResponse.json({ success: true, total: results.length, posted: successCount, failed: failCount, results })
+    // Success or Duplicate => 200, show thank-you on the client.
+    if (topOutcome === 'success' || topOutcome === 'duplicate') {
+      return NextResponse.json({
+        success: true,
+        outcome: topOutcome,
+        total: results.length,
+        posted: successCount,
+        duplicates: duplicateCount,
+        failed: failCount,
+        results,
+      })
     }
 
-    // All Networx attempts failed — surface a 502 so the client knows it didn't go through.
-    // Front-end will keep its existing "Something went wrong" copy.
+    // All Networx attempts failed for an actionable reason. Return the classified outcome
+    // and the raw Networx error message so the client can show specific, helpful copy.
+    const firstFailure = results.find((r) => !r.ok) || results[0]
     return NextResponse.json(
-      { success: false, error: 'Lead could not be submitted to partner', total: results.length, posted: 0, failed: failCount, results },
+      {
+        success: false,
+        outcome: topOutcome,
+        error: firstFailure?.errorMessage || 'Lead could not be submitted to partner',
+        errorMessage: firstFailure?.errorMessage || '',
+        total: results.length,
+        posted: 0,
+        failed: failCount,
+        results,
+      },
       { status: 502 }
     )
   } catch (error) {

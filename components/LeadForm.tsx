@@ -95,6 +95,12 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
       })
 
       if (response.ok) {
+        // Parse body to read outcome — both success and duplicate are user-facing thank-you flows
+        let outcome = 'success'
+        try {
+          const data = await response.json()
+          if (data && typeof data.outcome === 'string') outcome = data.outcome
+        } catch {}
         setSubmitted(true)
         if (typeof window !== 'undefined' && typeof (window as unknown as {gtag?: (...a: unknown[]) => void}).gtag === 'function') {
           ;(window as unknown as {gtag: (...a: unknown[]) => void}).gtag('event', 'generate_lead', {
@@ -102,6 +108,7 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
             value: 0,
             form_location: pathname,
             project_type: formData.projectType,
+            lead_outcome: outcome,
           })
         }
       } else {
@@ -111,6 +118,21 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
           if (data && data.fields && typeof data.fields === 'object') {
             const firstField = Object.values(data.fields)[0]
             if (typeof firstField === 'string') msg = firstField
+          } else if (data && typeof data.outcome === 'string') {
+            // Map server-classified outcomes to user-friendly copy
+            const outcome = data.outcome as string
+            const rawMsg = typeof data.errorMessage === 'string' && data.errorMessage ? data.errorMessage : ''
+            if (outcome === 'missing_cert') {
+              msg = 'Form security check failed. Please refresh the page and try again.'
+            } else if (outcome === 'invalid') {
+              msg = 'Some of your contact info could not be verified. Please double-check your email, phone, and ZIP code, then try again.'
+            } else if (outcome === 'network_error') {
+              msg = 'We had trouble reaching our partner. Please try again in a moment.'
+            } else if (rawMsg) {
+              msg = rawMsg
+            } else if (typeof data.error === 'string') {
+              msg = data.error
+            }
           } else if (data && typeof data.error === 'string') {
             msg = data.error
           }
