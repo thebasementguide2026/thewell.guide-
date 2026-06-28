@@ -59,9 +59,26 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
     setSubmitting(true)
     setError('')
 
-    // Get TrustedForm cert URL from hidden field injected by TrustedForm script
-    const certInput = document.querySelector('input[name="xxTrustedFormCertUrl"]') as HTMLInputElement
-    const trustedFormCertUrl = certInput?.value || ''
+    // Get TrustedForm cert URL from hidden field injected by TrustedForm script.
+    // Wait up to ~3s for the script to populate the cert URL before submitting.
+    const getCertUrl = (): string => {
+      const el = document.querySelector('input[name="xxTrustedFormCertUrl"]') as HTMLInputElement | null
+      return el?.value || ''
+    }
+    let trustedFormCertUrl = getCertUrl()
+    if (!trustedFormCertUrl) {
+      const start = Date.now()
+      while (Date.now() - start < 3000) {
+        await new Promise((res) => setTimeout(res, 150))
+        trustedFormCertUrl = getCertUrl()
+        if (trustedFormCertUrl) break
+      }
+    }
+    if (!trustedFormCertUrl) {
+      setError('We could not verify your form. Please refresh the page and try again.')
+      setSubmitting(false)
+      return
+    }
 
     // Build final task IDs: start with the user-selected project type,
     // then include the page-level auto-detected IDs for full coverage

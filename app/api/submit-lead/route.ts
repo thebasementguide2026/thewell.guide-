@@ -52,6 +52,12 @@ function validate(body: Record<string, unknown>) {
     errors.taskIds = 'Please select a project type.'
   }
 
+  // TrustedForm certificate URL is required by our lead partner (Networx).
+  const tfRaw = typeof body.trustedFormCertUrl === 'string' ? body.trustedFormCertUrl.trim() : ''
+  if (!tfRaw || !/^https?:\/\/cert\.trustedform\.com\//i.test(tfRaw)) {
+    errors.trustedFormCertUrl = 'We could not verify your form. Please refresh the page and try again.'
+  }
+
   return {
     errors,
     cleaned: {
