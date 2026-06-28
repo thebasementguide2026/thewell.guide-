@@ -6,25 +6,17 @@ import { getTaskIdsForArticle, FALLBACK_TASK_IDS } from '@/lib/taskIdMap'
 
 // All Networx task IDs with human-readable labels (well/water related)
 const PROJECT_TYPE_OPTIONS = [
-  { value: '138', label: 'Well Water Line Repair' },
-  { value: '232', label: 'Water Main - Replace / Repair' },
-  { value: '139', label: 'Water Treatment / Purification' },
-  { value: '130', label: 'Plumbing (General)' },
+  { value: '138', label: 'Water Line' },
+  { value: '232', label: 'Water Main - Replace/Repair' },
+  { value: '139', label: 'Water Treatment/Purification' },
   { value: '461', label: 'Plumbing Inspection' },
-  { value: '129', label: 'Plumbing Leak Detection / Repair' },
-  { value: '229', label: 'Sump Pump - Repair / Replace' },
-  { value: '573', label: 'French Drain Installation / Repair' },
-  { value: '337', label: 'Crawl Space / Basement Water Remediation' },
-  { value: '393', label: 'Crawl Space / Basement Waterproofing' },
-  { value: '123', label: 'Drain Clog / Blockage - Clear' },
-  { value: '227', label: 'Drain Line Break - Camera Locate' },
-  { value: '234', label: 'Sewer Main - Clear' },
-  { value: '233', label: 'Sewer Main - Replace / Repair' },
-  { value: '463', label: 'Backflow Preventer Install' },
   { value: '569', label: 'Backflow Testing' },
+  { value: '463', label: 'Backflow Preventer Install' },
+  { value: '130', label: 'Plumbing' },
+  { value: '129', label: 'Plumbing Leak Detection/Repair' },
+  { value: '123', label: 'Drain Clog/Blockage - Clear' },
+  { value: '573', label: 'French Drains Installation and Repair' },
   { value: '483', label: 'Excavation or Major Grading' },
-  { value: '254', label: 'Storm / Water Damage Restoration' },
-  { value: '287', label: 'Mold Remediation' },
 ]
 
 const TCPA_TEXT = `By clicking "Get Free Quotes," I consent to be contacted by home service professionals at the phone number and/or email address I provided, including via automated calls, texts, and prerecorded messages, even if my number is on a Do Not Call list. I understand this consent is not a condition of purchase. I also agree to The Well Guide's Terms of Service and Privacy Policy.`
