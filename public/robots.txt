@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.thewell.guide/sitemap.xml
+
+# AI / LLM discovery
+# LLM-friendly site index: https://www.thewell.guide/llms.txt
+# Full content archive:    https://www.thewell.guide/llms-full.txt
