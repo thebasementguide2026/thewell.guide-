@@ -50,28 +50,28 @@ const itemListSchema = {
       position: 1,
       name: 'Tap Score Essential Well Water Test',
       description: 'Best annual baseline lab test for most private well households. 50+ analytes, certified lab, 5 business day results, interactive report with EPA comparisons.',
-      url: 'https://www.amazon.com/dp/B08DP5TMWQ',
+      url: 'https://link.amazon/B057pjNs8',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Tap Score Advanced Well Water Test',
       description: 'Best for wells near agricultural land, industrial sites, or military bases. 116 analytes including VOCs and industrial chemicals.',
-      url: 'https://www.amazon.com/dp/B076DRBCBX',
+      url: 'https://link.amazon/B0jayhxsV',
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Safe Home ULTIMATE Drinking Water Test Kit',
       description: 'Most comprehensive consumer well water test available. 200 parameters including 130 VOCs and semi-volatile organic compounds. Best for new home purchase or full baseline.',
-      url: 'https://www.amazon.com/dp/B01MSTJ1TT',
+      url: 'https://link.amazon/B00yPyRM7',
     },
     {
       '@type': 'ListItem',
       position: 4,
       name: 'Varify 17-in-1 Complete Drinking Water Test Kit',
       description: 'Best DIY strip kit for monitoring between annual lab tests. 100 strips plus 2 bacteria tests, results in 60 seconds.',
-      url: 'https://www.amazon.com/dp/B0837Z5PBJ',
+      url: 'https://link.amazon/B04yXsXDQ',
     },
   ],
 }
@@ -352,7 +352,7 @@ export default function BestWellWaterTestKits() {
               <strong>Who should buy it:</strong> Every private well owner who has never tested or has not tested in more than a year. Households in areas without known industrial or agricultural contamination. Anyone who wants a comprehensive annual health check on their well water without testing for every possible contaminant.
             </p>
 
-            <a href='https://amzn.to/47ZeTvh' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0du28wAw' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>
@@ -403,7 +403,7 @@ export default function BestWellWaterTestKits() {
               <strong>Who should buy it:</strong> Well owners near farms, feedlots, gas stations, dry cleaners, industrial facilities, military bases, airports, or any documented contaminated site. Households with a first test showing unexpected results who want a more complete picture. Anyone buying a home with a well and doing due diligence before purchase.
             </p>
 
-            <a href='https://amzn.to/4v7Qi1s' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0edqFZLa' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>
@@ -450,7 +450,7 @@ export default function BestWellWaterTestKits() {
               <strong>Who should buy it:</strong> Anyone buying a home with a well and no prior testing history &mdash; this is the best single test for due diligence before purchase. Well owners who have never done a comprehensive test and want a complete picture once. Wells in areas with industrial or agricultural history where you want coverage of every possible chemical class. Anyone whose water has unexplained odors, tastes, or colors that prior tests have not explained.
             </p>
 
-            <a href='https://amzn.to/4uSIL6k' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0eFUTLie' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>
@@ -504,7 +504,7 @@ export default function BestWellWaterTestKits() {
               <strong>What this kit will not catch:</strong> Arsenic, lead below about 15 ppb, PFAS, radon, VOCs, pesticides, and most industrial chemicals. The bacteria test has documented false negative issues at low coliform concentrations &mdash; a negative result from the Varify bacteria test is reassuring but not conclusive. Treat any positive result as confirmed and seek lab verification. Treat a negative result as a screening outcome that warrants annual lab confirmation.
             </p>
 
-            <a href='https://amzn.to/47RN87S' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B03Ftor5K' target='_blank' rel='noopener noreferrer' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>

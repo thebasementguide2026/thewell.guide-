@@ -446,7 +446,7 @@ export default function ArsenicInWellWater() {
               </div>
               <div>
                 <dt className='font-bold text-slate-900 mb-1'>Cost</dt>
-                <dd className='text-slate-700 leading-relaxed text-sm'>$200 to $600 for the system (an <a href='https://amzn.to/4tXJxxG' target='_blank' rel='nofollow sponsored noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>APEC ROES-50</a> or similar WQA-certified under-sink system runs $200 to $400). Installation by a plumber costs $200 to $400 additional, though DIY is feasible.</dd>
+                <dd className='text-slate-700 leading-relaxed text-sm'>$200 to $600 for the system (an <a href='https://link.amazon/A04DSegwU' target='_blank' rel='nofollow sponsored noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>APEC ROES-50</a> or similar WQA-certified under-sink system runs $200 to $400). Installation by a plumber costs $200 to $400 additional, though DIY is feasible.</dd>
               </div>
               <div>
                 <dt className='font-bold text-slate-900 mb-1'>Maintenance</dt>
@@ -480,7 +480,7 @@ export default function ArsenicInWellWater() {
               </div>
               <div>
                 <dt className='font-bold text-slate-900 mb-1'>Cost</dt>
-                <dd className='text-slate-700 leading-relaxed text-sm'>$1,500 to $4,000 installed. A <a href='https://amzn.to/4trmJ9B' target='_blank' rel='nofollow sponsored noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>WECO whole-house activated alumina filter</a> or similar residential unit costs $800 to $2,000 for the system itself; professional installation adds $500 to $2,000 depending on plumbing complexity.</dd>
+                <dd className='text-slate-700 leading-relaxed text-sm'>$1,500 to $4,000 installed. A <a href='https://link.amazon/B05LLcREa' target='_blank' rel='nofollow sponsored noopener' className='font-semibold underline' style={{ color: '#1D9E75' }}>WECO whole-house activated alumina filter</a> or similar residential unit costs $800 to $2,000 for the system itself; professional installation adds $500 to $2,000 depending on plumbing complexity.</dd>
               </div>
               <div>
                 <dt className='font-bold text-slate-900 mb-1'>Maintenance</dt>

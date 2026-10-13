@@ -454,7 +454,7 @@ export default function BestWellPumps() {
               </div>
             </div>
 
-            <a href='https://amzn.to/3Qqi9Kg' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0dn0zf5L' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>
@@ -499,7 +499,7 @@ export default function BestWellPumps() {
               </div>
             </div>
 
-            <a href='https://amzn.to/4cUBQCK' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0fWhcW27' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>
@@ -543,7 +543,7 @@ export default function BestWellPumps() {
               </div>
             </div>
 
-            <a href='https://amzn.to/3OdBfmk' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0akMhDOS' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>
@@ -587,7 +587,7 @@ export default function BestWellPumps() {
               </div>
             </div>
 
-            <a href='https://amzn.to/4tZKUvI' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0fgZSZaD' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
           </div>

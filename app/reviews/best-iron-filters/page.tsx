@@ -56,35 +56,35 @@ const itemListSchema = {
       position: 1,
       name: 'AIS10-25SXT Air Injection Iron Filter',
       description: 'Best overall iron filter for most residential wells with iron between 2 and 8 ppm. Air injection oxidation with Fleck 5600SXT valve.',
-      url: 'https://amzn.to/42oQHz9',
+      url: 'https://link.amazon/B068xj8AB',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'iSpring WCFM500K Whole House Iron Filter',
       description: 'Best for high iron (up to 12 ppm) and set-and-forget operation. Catalytic media with automatic air regeneration and no filter replacement for 10 years.',
-      url: 'https://amzn.to/4u4nbKU',
+      url: 'https://link.amazon/B04X41gS3',
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'AFWFilters IRON Pro 2 Combination Water Softener Iron Filter',
       description: 'Best for iron plus hard water combined. Combination softener and iron filter in one unit with Fleck 5600SXT valve and fine mesh resin.',
-      url: 'https://amzn.to/4cHz7eF',
+      url: 'https://link.amazon/B06kOixhV',
     },
     {
       '@type': 'ListItem',
       position: 4,
       name: 'Premier Whole House AIO Iron Filter with Fleck 2510SXT',
       description: 'Best premium pick. Upgraded Fleck 2510SXT valve with 10-year extended warranty for larger homes and long-term reliability.',
-      url: 'https://amzn.to/3QuR0pw',
+      url: 'https://link.amazon/B04FJ7Rfh',
     },
     {
       '@type': 'ListItem',
       position: 5,
       name: 'Durawater Fleck 5600 SXT Air Injection Iron Eater Filter',
       description: 'Best budget AIO alternative. Same air injection oxidation technology as the AIS10-25SXT at a lower upfront price point.',
-      url: 'https://amzn.to/4sXVHFX',
+      url: 'https://link.amazon/B04OTZjMt',
     },
   ],
 }
@@ -360,7 +360,7 @@ export default function BestIronFilters() {
             </div>
             <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Most residential wells with iron between 2 and 8 ppm, particularly wells with combined iron, sulfur, and manganese problems.</p>
 
-            <a href='https://amzn.to/42oQHz9' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B068xj8AB' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
 
@@ -427,7 +427,7 @@ export default function BestIronFilters() {
             </div>
             <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Wells with iron levels between 4 and 12 ppm, homeowners who want a genuine set-and-forget experience with minimal ongoing maintenance.</p>
 
-            <a href='https://amzn.to/4u4nbKU' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B04X41gS3' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
 
@@ -494,7 +494,7 @@ export default function BestIronFilters() {
             </div>
             <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Wells with combined iron (under 7 ppm ferrous iron) AND hard water (above 10 gpg). Common in the Midwest and parts of the Northeast.</p>
 
-            <a href='https://amzn.to/4cHz7eF' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B06kOixhV' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
 
@@ -561,7 +561,7 @@ export default function BestIronFilters() {
             </div>
             <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Larger homes (4+ bathrooms) with moderate iron levels (2 to 8 ppm), homeowners who prioritize long-term reliability and extended warranty coverage.</p>
 
-            <a href='https://amzn.to/3QuR0pw' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B04FJ7Rfh' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
 
@@ -627,7 +627,7 @@ export default function BestIronFilters() {
             </div>
             <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Cost-conscious homeowners with iron levels under 7 ppm who want the same AIO technology as the AIS10-25SXT at a lower upfront price.</p>
 
-            <a href='https://amzn.to/4sXVHFX' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B04OTZjMt' target='_blank' rel='nofollow sponsored noopener' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors mb-6' style={{ backgroundColor: '#1D9E75' }}>
               Check Price on Amazon
             </a>
 

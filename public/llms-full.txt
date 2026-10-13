@@ -2714,7 +2714,7 @@ What it treats
     Only the water at the RO faucet (typically kitchen sink). Water at other taps in the house remains untreated.
 
 Cost
-    $200 to $600 for the system (an [APEC ROES-50](https://amzn.to/4tXJxxG) or similar WQA-certified under-sink system runs $200 to $400). Installation by a plumber costs $200 to $400 additional, though DIY is feasible.
+    $200 to $600 for the system (an [APEC ROES-50](https://link.amazon/A04DSegwU) or similar WQA-certified under-sink system runs $200 to $400). Installation by a plumber costs $200 to $400 additional, though DIY is feasible.
 
 Maintenance
     Filter cartridges replaced every 6 to 12 months ($50 to $120/year). RO membrane replaced every 2 to 5 years ($50 to $150).
@@ -2735,7 +2735,7 @@ What it treats
     All water in the house.
 
 Cost
-    $1,500 to $4,000 installed. A [WECO whole-house activated alumina filter](https://amzn.to/4trmJ9B) or similar residential unit costs $800 to $2,000 for the system itself; professional installation adds $500 to $2,000 depending on plumbing complexity.
+    $1,500 to $4,000 installed. A [WECO whole-house activated alumina filter](https://link.amazon/B05LLcREa) or similar residential unit costs $800 to $2,000 for the system itself; professional installation adds $500 to $2,000 depending on plumbing complexity.
 
 Maintenance
     Media replacement every 3 to 7 years depending on water usage and arsenic concentration ($200 to $600). Some systems require periodic pH adjustment for optimal arsenic removal.
@@ -5841,7 +5841,7 @@ Air injection systems pump air into the incoming water, which oxidizes dissolved
 
 **Effective for:** Ferrous iron, ferric iron, hydrogen sulfide, and manganese simultaneously. Typical capacity 5 to 30 mg/L iron depending on system.
 
-**Cost:** $800 to $3,000 installed. The [AIS10-25SXT Air Injection system](https://amzn.to/42tN2QA) is a commonly recommended residential unit with a Fleck 5600SXT valve, handling typical residential iron loads. For a complete comparison of the top 5 iron filters ranked by iron type, including detailed specs, pricing, and real cost of ownership over 10 years, see our [best iron filters review](/reviews/best-iron-filters).
+**Cost:** $800 to $3,000 installed. The [AIS10-25SXT Air Injection system](https://link.amazon/B0cAARLSF) is a commonly recommended residential unit with a Fleck 5600SXT valve, handling typical residential iron loads. For a complete comparison of the top 5 iron filters ranked by iron type, including detailed specs, pricing, and real cost of ownership over 10 years, see our [best iron filters review](/reviews/best-iron-filters).
 
 **Maintenance:** Automatic backwashing requires no daily attention. Filter media replacement every 5 to 10 years ($200 to $400).
 
@@ -12360,7 +12360,7 @@ Durawater Iron Eater| 7 ppm| Air injection oxidation| Fleck 5600SXT| $150 to $20
 
 Best for: Most residential wells with iron between 2 and 8 ppm, particularly wells with combined iron, sulfur, and manganese problems.
 
-[Check Price on Amazon](https://amzn.to/42oQHz9)
+[Check Price on Amazon](https://link.amazon/B068xj8AB)
 
 **What it is:** A whole-house air injection oxidation (AIO) iron filter by Oceanic Water Systems, built around the industry-standard Fleck 5600SXT digital control valve. The system uses a single-tank AIO design where air injected into the top of the tank oxidizes ferrous iron into filterable ferric iron particles, which are captured by the media bed and flushed during automatic daily backwashing.
 
@@ -12401,7 +12401,7 @@ Specs
 
 Best for: Wells with iron levels between 4 and 12 ppm, homeowners who want a genuine set-and-forget experience with minimal ongoing maintenance.
 
-[Check Price on Amazon](https://amzn.to/4u4nbKU)
+[Check Price on Amazon](https://link.amazon/B04X41gS3)
 
 **What it is:** A whole-house iron, manganese, and hydrogen sulfide filtration system using catalytic media with automatic air-regeneration. Unlike traditional AIO systems, the WCFM500K uses a proprietary media that regenerates using only air (no chemicals, no oxidizers, no filter replacement), with a digital LED control that allows customizable auto-flush intervals.
 
@@ -12442,7 +12442,7 @@ Specs
 
 Best for: Wells with combined iron (under 7 ppm ferrous iron) AND hard water (above 10 gpg). Common in the Midwest and parts of the Northeast.
 
-[Check Price on Amazon](https://amzn.to/4cHz7eF)
+[Check Price on Amazon](https://link.amazon/B06kOixhV)
 
 **What it is:** A combination water softener and iron filter in a single unit by AFWFilters, using fine mesh ion-exchange resin specifically designed to handle hardness AND ferrous iron simultaneously. The Fleck 5600SXT digital metered valve adjusts regeneration frequency based on actual water usage, optimizing salt consumption.
 
@@ -12483,7 +12483,7 @@ Specs (48,000 grain model)
 
 Best for: Larger homes (4+ bathrooms) with moderate iron levels (2 to 8 ppm), homeowners who prioritize long-term reliability and extended warranty coverage.
 
-[Check Price on Amazon](https://amzn.to/3QuR0pw)
+[Check Price on Amazon](https://link.amazon/B04FJ7Rfh)
 
 **What it is:** A premium whole-house AIO iron filter using the upgraded Fleck 2510SXT control valve (vs the 5600SXT used in most residential systems). The 2510 valve handles higher flow rates and has heavier-duty internal components designed for larger homes or higher usage.
 
@@ -12523,7 +12523,7 @@ Specs
 
 Best for: Cost-conscious homeowners with iron levels under 7 ppm who want the same AIO technology as the AIS10-25SXT at a lower upfront price.
 
-[Check Price on Amazon](https://amzn.to/4sXVHFX)
+[Check Price on Amazon](https://link.amazon/B04OTZjMt)
 
 **What it is:** A whole-house AIO iron filter similar in design to the AIS10-25SXT but typically at a slightly lower price point. Built around the Fleck 5600SXT valve with 1.5 cubic feet of upgraded catalytic carbon media.
 
@@ -12832,7 +12832,7 @@ Warranty5-year limited
 
 **Expected lifespan:** 7 to 12 years with annual air pressure checks. The most common failure mode is gradual bladder degradation, which manifests as waterlogging. Check the air valve annually with a tire gauge when the system is depressurized. See the [pressure tank guide](/guides/well-pressure-tank-guide) for the complete maintenance protocol.
 
-[Check Current Price](https://amzn.to/4v1OGX2)
+[Check Current Price](https://link.amazon/B0ffawRen)
 
 #2
 
@@ -12872,7 +12872,7 @@ Warranty5-year limited
 
 **Expected lifespan:** 5 to 10 years. The steel connection is the likely first point of failure in corrosive water environments. Annual air pressure checks and visual inspection of the connection fitting extend useful life.
 
-[Check Current Price](https://amzn.to/4s0Dd78)
+[Check Current Price](https://link.amazon/B0gmn3oVU)
 
 #3
 
@@ -12910,7 +12910,7 @@ Warranty5-year limited
 
 **Expected lifespan:** 7 to 12 years, same as the WX-202. The stainless connection and quality bladder extend service life in the same way. Annual air pressure checks are the single most important maintenance task. See the [short cycling guide](/problems/well-pump-short-cycling) for diagnosis steps if your pump starts rapid cycling despite having this tank.
 
-[Check Current Price](https://amzn.to/4t5o2dK)
+[Check Current Price](https://link.amazon/B0cixPYsm)
 
 #4
 
@@ -12950,7 +12950,7 @@ WarrantyLifetime (shell) / 5-year (bladder)
 
 **Expected lifespan:** 15 or more years for the shell. The bladder remains the wear component at 7 to 12 years, but the tank shell itself should outlast two or more bladder replacements. In non-corrosive environments, the lifespan advantage over steel is less pronounced. In corrosive environments, the Wellmate will outlast steel tanks by a factor of two or more.
 
-[Check Current Price](https://amzn.to/3O73P8H)
+[Check Current Price](https://link.amazon/B0gsA5REw)
 
 ## Sizing Your Pressure Tank: The Math Most Guides Skip
 
@@ -13225,7 +13225,7 @@ Check valveBuilt-in
 
 Warranty3 years
 
-[Check Price on Amazon](https://amzn.to/3Qqi9Kg)
+[Check Price on Amazon](https://link.amazon/B0dn0zf5L)
 
 #2
 
@@ -13263,7 +13263,7 @@ Pressure switch30/50 PSI factory pre-set
 
 Warranty3 years
 
-[Check Price on Amazon](https://amzn.to/4cUBQCK)
+[Check Price on Amazon](https://link.amazon/B0fWhcW27)
 
 #3
 
@@ -13299,7 +13299,7 @@ Injector kitIncluded (deep well)
 
 Warranty3 years
 
-[Check Price on Amazon](https://amzn.to/3OdBfmk)
+[Check Price on Amazon](https://link.amazon/B0akMhDOS)
 
 #4
 
@@ -13335,7 +13335,7 @@ Check valveBuilt-in, with suction screen
 
 Warranty3 years
 
-[Check Price on Amazon](https://amzn.to/4tZKUvI)
+[Check Price on Amazon](https://link.amazon/B0fgZSZaD)
 
 ## How to Pick the Right Pump for Your Well
 
@@ -13634,7 +13634,7 @@ Price
 
 **Who should buy it:** Every private well owner who has never tested or has not tested in more than a year. Households in areas without known industrial or agricultural contamination. Anyone who wants a comprehensive annual health check on their well water without testing for every possible contaminant.
 
-[Check Price on Amazon](https://amzn.to/47ZeTvh)
+[Check Price on Amazon](https://link.amazon/B0du28wAw)
 
 #2
 
@@ -13674,7 +13674,7 @@ Price
 
 **Who should buy it:** Well owners near farms, feedlots, gas stations, dry cleaners, industrial facilities, military bases, airports, or any documented contaminated site. Households with a first test showing unexpected results who want a more complete picture. Anyone buying a home with a well and doing due diligence before purchase.
 
-[Check Price on Amazon](https://amzn.to/4v7Qi1s)
+[Check Price on Amazon](https://link.amazon/B0edqFZLa)
 
 #3
 
@@ -13712,7 +13712,7 @@ Price
 
 **Who should buy it:** Anyone buying a home with a well and no prior testing history — this is the best single test for due diligence before purchase. Well owners who have never done a comprehensive test and want a complete picture once. Wells in areas with industrial or agricultural history where you want coverage of every possible chemical class. Anyone whose water has unexplained odors, tastes, or colors that prior tests have not explained.
 
-[Check Price on Amazon](https://amzn.to/4uSIL6k)
+[Check Price on Amazon](https://link.amazon/B0eFUTLie)
 
 #4
 
@@ -13756,7 +13756,7 @@ Price
 
 **What this kit will not catch:** Arsenic, lead below about 15 ppb, PFAS, radon, VOCs, pesticides, and most industrial chemicals. The bacteria test has documented false negative issues at low coliform concentrations — a negative result from the Varify bacteria test is reassuring but not conclusive. Treat any positive result as confirmed and seek lab verification. Treat a negative result as a screening outcome that warrants annual lab confirmation.
 
-[Check Price on Amazon](https://amzn.to/47RN87S)
+[Check Price on Amazon](https://link.amazon/B03Ftor5K)
 
 ## Strip Test vs. Lab Test: A Direct Accuracy Comparison
 
@@ -14001,7 +14001,7 @@ Warranty2-year limited
 
 **The honest limitation no product page mentions:** This system is not appropriate for wells with iron bacteria. If you see reddish-brown slime inside toilet tanks or notice a viscous reddish film on fixtures, you have iron bacteria. Install this system into an iron bacteria problem and the bacteria will colonize the filter media within months, defeating the iron removal capability. Shock chlorinate the well first, address iron bacteria, then install the Home Master. See the [shock chlorination guide](/guides/how-to-shock-chlorinate-well) for the procedure.
 
-[Check Current Price](https://amzn.to/4s1qVLY)
+[Check Current Price](https://link.amazon/B09iZr6qJ)
 
 #2
 
@@ -14049,7 +14049,7 @@ Warranty10yr tank / 1yr UV & electrical
 
 **Why the 7 GPM flow rate is often misunderstood:** The 7 GPM rating reflects the UV disinfection contact time requirement — water must move slowly enough through the UV chamber to receive the minimum 40 mJ/cm² dose required for Class A disinfection. At higher flow rates, contact time is insufficient and bacteria survive. If your household peak demand exceeds 7 GPM, you need a UV system with a higher-rated lamp or supplemental storage, or you accept that peak demand moments may receive lower UV doses.
 
-[Check Current Price](https://amzn.to/48da8OK)
+[Check Current Price](https://link.amazon/A04pdxrEZ)
 
 #3
 
@@ -14085,7 +14085,7 @@ Warranty1-year limited
 
 **Installation:** The most DIY-friendly system on this list. Pre-assembled housing, push-in connection fittings, standard 1-inch NPT. iSpring provides YouTube installation guides. Most homeowners with basic plumbing tools complete installation in 2 to 3 hours.
 
-[Check Current Price](https://amzn.to/4uRVTbQ)
+[Check Current Price](https://link.amazon/B01zqmvj4)
 
 #4
 
@@ -14117,7 +14117,7 @@ Warranty1-year limited
 
 **Annual ownership cost:** Replacement filter set approximately $80 to $130 per year — slightly higher than the standard WGB32B due to iron/manganese cartridge cost.
 
-[Check Current Price](https://amzn.to/4uVTDQZ)
+[Check Current Price](https://link.amazon/B0cZm8MyG)
 
 #5
 

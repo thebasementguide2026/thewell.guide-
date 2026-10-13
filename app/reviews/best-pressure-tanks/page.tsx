@@ -335,7 +335,7 @@ export default function BestPressureTanks() {
               <strong>Expected lifespan:</strong> 7 to 12 years with annual air pressure checks. The most common failure mode is gradual bladder degradation, which manifests as waterlogging. Check the air valve annually with a tire gauge when the system is depressurized. See the <Link href='/guides/well-pressure-tank-guide' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>pressure tank guide</Link> for the complete maintenance protocol.
             </p>
 
-            <a href='https://amzn.to/4v1OGX2' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0ffawRen' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
@@ -387,7 +387,7 @@ export default function BestPressureTanks() {
               <strong>Expected lifespan:</strong> 5 to 10 years. The steel connection is the likely first point of failure in corrosive water environments. Annual air pressure checks and visual inspection of the connection fitting extend useful life.
             </p>
 
-            <a href='https://amzn.to/4s0Dd78' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0gmn3oVU' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
@@ -436,7 +436,7 @@ export default function BestPressureTanks() {
               <strong>Expected lifespan:</strong> 7 to 12 years, same as the WX-202. The stainless connection and quality bladder extend service life in the same way. Annual air pressure checks are the single most important maintenance task. See the <Link href='/problems/well-pump-short-cycling' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>short cycling guide</Link> for diagnosis steps if your pump starts rapid cycling despite having this tank.
             </p>
 
-            <a href='https://amzn.to/4t5o2dK' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0cixPYsm' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
@@ -488,7 +488,7 @@ export default function BestPressureTanks() {
               <strong>Expected lifespan:</strong> 15 or more years for the shell. The bladder remains the wear component at 7 to 12 years, but the tank shell itself should outlast two or more bladder replacements. In non-corrosive environments, the lifespan advantage over steel is less pronounced. In corrosive environments, the Wellmate will outlast steel tanks by a factor of two or more.
             </p>
 
-            <a href='https://amzn.to/3O73P8H' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
+            <a href='https://link.amazon/B0gsA5REw' target='_blank' rel='noopener noreferrer nofollow' className='inline-block px-8 py-3 rounded-lg font-bold text-white text-sm transition-colors' style={{ backgroundColor: '#1D9E75' }}>
               Check Current Price
             </a>
           </div>
