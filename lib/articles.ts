@@ -8,6 +8,7 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {"title":"What Size Generator Do You Need to Run a Well Pump?","description":"Size a generator for your well pump by horsepower, why you need 240V, how to connect it safely, and what portable, standby, and battery backup cost over 10 years.","slug":"guides/generator-for-well-pump","category":"Guide","readTime":"11 min read","image":"/generator-for-well-pump.jpg"},
   {
   "title": "Frozen Well Pipes: How to Thaw Them and Keep Your Well From Freezing",
   "description": "No water in a cold snap? Find where your well system froze, thaw it safely, check for damage, and protect the pressure switch, tank, and pipes for under $150.",

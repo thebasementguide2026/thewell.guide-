@@ -8,6 +8,7 @@ const footerSections = [
       { label: 'Complete Well Guide', href: '/guides/complete-well-guide' },
       { label: 'How to Test Your Well Water', href: '/guides/how-to-test-well-water' },
       { label: 'How a Well Pump Works', href: '/guides/how-well-pump-works' },
+      { label: 'Generator for a Well Pump', href: '/guides/generator-for-well-pump' },
       { label: 'Annual Well Maintenance Checklist', href: '/guides/well-maintenance-checklist' },
       { label: 'Well Water Contaminants', href: '/guides/well-water-contaminants' },
       { label: 'Arsenic in Well Water', href: '/guides/arsenic-in-well-water' },

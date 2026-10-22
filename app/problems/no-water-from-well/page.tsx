@@ -378,6 +378,7 @@ export default function NoWaterFromWell() {
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Why it happens:</strong> Submersible pumps draw high starting current every time they start. Over years of cycling, this strains the breaker. Breakers also trip when the pump motor draws excess current due to a tight impeller, low voltage, or a partially failed motor winding. A single trip that resets successfully is usually a fluke. A breaker that trips repeatedly means something is drawing too much current.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>What to check:</strong> Reset once as described in Check 1. If it holds, run water normally for 10 minutes and observe. If it trips during use, have a contractor check the pump{`'`}s amp draw. Normal amp draw is printed on the pump motor nameplate. If the pump is drawing more than rated amps, the motor is failing.</p>
           <p className='text-slate-700 leading-relaxed text-sm'><strong>Cost to fix:</strong> Nothing if it was a fluke trip. Breaker replacement: $15 to $40 for the part, simple electrical work. Motor replacement: $400 to $2,500 for the full pump replacement if the motor has failed.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mt-4'>If the power is out, see our guide to <Link href='/guides/generator-for-well-pump' className='text-[#1D9E75] underline'>sizing a generator for your well pump</Link>.</p>
         </div>
 
         {/* Cause 2: Failed Pressure Switch */}

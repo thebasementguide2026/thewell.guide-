@@ -4,6 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.thewell.guide'
 
   return [
+    { url: `${baseUrl}/guides/generator-for-well-pump`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
     { url: `${baseUrl}/guides/complete-well-guide`, lastModified: new Date(), changeFrequency: 'monthly', priority: 1.0 },
     { url: `${baseUrl}/problems/well-water-smells-like-sulfur`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

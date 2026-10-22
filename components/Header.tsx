@@ -11,6 +11,73 @@ const navItems = [
   { label: 'About', href: '/about' },
 ]
 
+const guideLinks = [
+  {
+    "label": "Complete Well Guide",
+    "href": "/guides/complete-well-guide"
+  },
+  {
+    "label": "How to Test Your Well Water",
+    "href": "/guides/how-to-test-well-water"
+  },
+  {
+    "label": "How a Well Pump Works",
+    "href": "/guides/how-well-pump-works"
+  },
+  {
+    "label": "Generator for a Well Pump",
+    "href": "/guides/generator-for-well-pump"
+  },
+  {
+    "label": "Annual Well Maintenance Checklist",
+    "href": "/guides/well-maintenance-checklist"
+  },
+  {
+    "label": "Well Water Contaminants",
+    "href": "/guides/well-water-contaminants"
+  },
+  {
+    "label": "Arsenic in Well Water",
+    "href": "/guides/arsenic-in-well-water"
+  },
+  {
+    "label": "Iron in Well Water",
+    "href": "/guides/iron-in-well-water"
+  },
+  {
+    "label": "Well Pressure Tank Guide",
+    "href": "/guides/well-pressure-tank-guide"
+  },
+  {
+    "label": "Well Water Treatment Options",
+    "href": "/guides/well-water-treatment-options"
+  },
+  {
+    "label": "Buying a House With a Well",
+    "href": "/guides/buying-house-with-well"
+  },
+  {
+    "label": "Well Water vs. City Water",
+    "href": "/guides/well-water-vs-city-water"
+  },
+  {
+    "label": "Hard Water Well Guide",
+    "href": "/guides/hard-water-well"
+  },
+  {
+    "label": "Dug Well vs. Drilled Well",
+    "href": "/guides/dug-well-vs-drilled-well"
+  },
+  {
+    "label": "How to Shock Chlorinate a Well",
+    "href": "/guides/how-to-shock-chlorinate-well"
+  },
+  {
+    "label": "Well Pump Maintenance",
+    "href": "/guides/well-pump-maintenance"
+  }
+]
+
 const problemLinks = [
   { label: 'Well Water Smells Like Sulfur', href: '/problems/well-water-smells-like-sulfur' },
   { label: 'Well Water Pressure Low', href: '/problems/well-water-pressure-low' },
@@ -53,12 +120,12 @@ export default function Header() {
 
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
-              item.label === 'Problems' ? (
+              (item.label === 'Problems' || item.label === 'Guides') ? (
                 <details key={item.label} className="relative">
-                  <summary className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white cursor-pointer rounded-lg hover:bg-white/10">Problems</summary>
+                  <summary className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white cursor-pointer rounded-lg hover:bg-white/10">{item.label}</summary>
                   <div className="absolute top-full left-0 w-72 max-h-[75vh] overflow-y-auto rounded-lg bg-[#0D3D30] border border-[#1A5C48] p-2 shadow-xl">
-                    <Link href="/problems" className="block px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">All Problems</Link>
-                    {problemLinks.map(link => <Link key={link.href} href={link.href} className="block px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">{link.label}</Link>)}
+                    <Link href={item.href} className="block px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">All {item.label}</Link>
+                    {(item.label === 'Guides' ? guideLinks : problemLinks).map(link => <Link key={link.href} href={link.href} className="block px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">{link.label}</Link>)}
                   </div>
                 </details>
               ) : (
@@ -138,6 +205,7 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+            <details className="px-4"><summary className="py-2 text-white/80 cursor-pointer text-sm font-medium">Browse Guides</summary><div className="pl-4 border-l border-white/10">{guideLinks.map(link => <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">{link.label}</Link>)}</div></details>
             <div className="pl-4 border-l border-white/10 ml-4">
               {problemLinks.map(link => <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">{link.label}</Link>)}
             </div>
