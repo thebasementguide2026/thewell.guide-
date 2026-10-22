@@ -50,6 +50,7 @@ const footerSections = [
       { label: 'Well Water Pressure Low', href: '/problems/well-water-pressure-low' },
       { label: 'Brown or Rusty Well Water', href: '/problems/brown-rusty-well-water' },
       { label: 'No Water from Well', href: '/problems/no-water-from-well' },
+      { label: 'Frozen Well Pipes', href: '/problems/frozen-well-pipes' },
       { label: 'Well Pump Running Constantly', href: '/problems/well-pump-running-constantly' },
       { label: 'Well Pump Short Cycling', href: '/problems/well-pump-short-cycling' },
       { label: 'Well Water Tastes Bad', href: '/problems/well-water-tastes-bad' },

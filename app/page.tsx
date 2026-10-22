@@ -20,6 +20,7 @@ const badgeColors: Record<string, { bg: string; text: string }> = {
 }
 
 const sidebarArticles = [
+  {"title":"Frozen Well Pipes: How to Thaw Them and Keep Your Well From Freezing","href":"/problems/frozen-well-pipes","category":"PROBLEM","image":"/frozen-well-pipes.jpg"},
   { title: 'Well Water Smells Like Sulfur or Rotten Eggs', href: '/problems/well-water-smells-like-sulfur', category: 'PROBLEM', image: '/glassofwater.jpg' },
   { title: 'Well Water Pressure Low: 6 Causes and Fixes', href: '/problems/well-water-pressure-low', category: 'PROBLEM', image: '/well pressure.jpg' },
   { title: 'Well Water Treatment Cost Calculator 2026', href: '/cost-guides/well-water-treatment-cost-calculator', category: 'CALCULATOR', image: '/TreatmentCostCalculator.jpg' },

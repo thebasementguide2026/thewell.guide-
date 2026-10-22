@@ -9,6 +9,14 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+  "title": "Frozen Well Pipes: How to Thaw Them and Keep Your Well From Freezing",
+  "description": "No water in a cold snap? Find where your well system froze, thaw it safely, check for damage, and protect the pressure switch, tank, and pipes for under $150.",
+  "slug": "problems/frozen-well-pipes",
+  "category": "Problem",
+  "readTime": "12 min read",
+  "image": "/frozen-well-pipes.jpg"
+},
+  {
     title: 'The Complete Guide to Private Well Water Systems (2026)',
     description: 'The definitive guide to private well water systems for homeowners. How wells work, the full system from aquifer to faucet, all 12 components explained, water quality by region, annual maintenance schedule, 10-year cost table, seasonal care, what fails when, and links to every deep-dive guide on well.guide.',
     slug: 'guides/complete-well-guide',

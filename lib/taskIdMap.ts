@@ -33,6 +33,7 @@ export const TASK_ID_MAP: Record<string, number[]> = {
   'whole-house-water-filter-cost': [...DEFAULT_TASK_IDS, 461],
 
   // Problems
+  'frozen-well-pipes': [138, 232, 130, 129],
   'well-water-smells-like-sulfur': [...DEFAULT_TASK_IDS, 461],
   'well-water-pressure-low': [...DEFAULT_TASK_IDS, 232, 461, 229],
   'brown-rusty-well-water': [...DEFAULT_TASK_IDS, 461],

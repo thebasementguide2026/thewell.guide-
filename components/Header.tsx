@@ -11,6 +11,20 @@ const navItems = [
   { label: 'About', href: '/about' },
 ]
 
+const problemLinks = [
+  { label: 'Well Water Smells Like Sulfur', href: '/problems/well-water-smells-like-sulfur' },
+  { label: 'Well Water Pressure Low', href: '/problems/well-water-pressure-low' },
+  { label: 'Brown or Rusty Well Water', href: '/problems/brown-rusty-well-water' },
+  { label: 'No Water from Well', href: '/problems/no-water-from-well' },
+  { label: 'Frozen Well Pipes', href: '/problems/frozen-well-pipes' },
+  { label: 'Well Pump Running Constantly', href: '/problems/well-pump-running-constantly' },
+  { label: 'Well Pump Short Cycling', href: '/problems/well-pump-short-cycling' },
+  { label: 'Well Water Tastes Bad', href: '/problems/well-water-tastes-bad' },
+  { label: 'Well Running Dry', href: '/problems/well-running-dry' },
+  { label: 'Signs Your Well Pump Is Failing', href: '/problems/well-pump-failing' },
+  { label: 'How to Prime a Well Pump', href: '/problems/how-to-prime-a-well-pump' },
+]
+
 function DropletLogo({ color = '#5DCAA5' }: { color?: string }) {
   return (
     <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,6 +53,15 @@ export default function Header() {
 
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
+              item.label === 'Problems' ? (
+                <details key={item.label} className="relative">
+                  <summary className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white cursor-pointer rounded-lg hover:bg-white/10">Problems</summary>
+                  <div className="absolute top-full left-0 w-72 max-h-[75vh] overflow-y-auto rounded-lg bg-[#0D3D30] border border-[#1A5C48] p-2 shadow-xl">
+                    <Link href="/problems" className="block px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">All Problems</Link>
+                    {problemLinks.map(link => <Link key={link.href} href={link.href} className="block px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">{link.label}</Link>)}
+                  </div>
+                </details>
+              ) : (
               <Link
                 key={item.label}
                 href={item.href}
@@ -46,6 +69,7 @@ export default function Header() {
               >
                 {item.label}
               </Link>
+              )
             ))}
           </nav>
 
@@ -114,6 +138,9 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
+            <div className="pl-4 border-l border-white/10 ml-4">
+              {problemLinks.map(link => <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-lg">{link.label}</Link>)}
+            </div>
             <Link
               href="/get-quote"
               className="block mx-4 mt-3 text-white px-4 py-2.5 rounded-lg text-sm font-semibold text-center transition-colors"

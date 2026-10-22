@@ -23,9 +23,10 @@ const TCPA_TEXT = `By clicking "Get Free Quotes," I consent to be contacted by h
 
 interface LeadFormProps {
   taskIds?: number[]
+  defaultProjectType?: string
 }
 
-export default function LeadForm({ taskIds }: LeadFormProps) {
+export default function LeadForm({ taskIds, defaultProjectType = '' }: LeadFormProps) {
   const pathname = usePathname()
 
   // Auto-detect task IDs from URL if not explicitly passed
@@ -41,7 +42,7 @@ export default function LeadForm({ taskIds }: LeadFormProps) {
     email: '',
     phone: '',
     zipCode: '',
-    projectType: '',
+    projectType: defaultProjectType,
     description: '',
   })
   const [submitted, setSubmitted] = useState(false)
