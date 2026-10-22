@@ -4,6 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.thewell.guide'
 
   return [
+    { url: `${baseUrl}/guides/well-pressure-switch`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/generator-for-well-pump`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
     { url: `${baseUrl}/guides/complete-well-guide`, lastModified: new Date(), changeFrequency: 'monthly', priority: 1.0 },
@@ -20,13 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/well-maintenance-checklist`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/no-water-from-well`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/frozen-well-pipes`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/problems/well-pump-running-constantly`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/problems/well-pump-running-constantly`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/well-water-contaminants`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/arsenic-in-well-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/iron-in-well-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/reviews/best-well-water-test-kits`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/problems/well-pump-short-cycling`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/guides/well-pressure-tank-guide`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/problems/well-pump-short-cycling`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/guides/well-pressure-tank-guide`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/well-running-dry`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/well-water-tastes-bad`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/cost-guides/pressure-tank-replacement-cost`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

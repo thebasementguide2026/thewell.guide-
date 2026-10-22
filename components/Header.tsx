@@ -48,6 +48,7 @@ const guideLinks = [
     "label": "Well Pressure Tank Guide",
     "href": "/guides/well-pressure-tank-guide"
   },
+  {"label": "Well Pressure Switch", "href": "/guides/well-pressure-switch"},
   {
     "label": "Well Water Treatment Options",
     "href": "/guides/well-water-treatment-options"

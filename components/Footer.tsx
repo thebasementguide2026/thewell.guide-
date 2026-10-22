@@ -14,6 +14,7 @@ const footerSections = [
       { label: 'Arsenic in Well Water', href: '/guides/arsenic-in-well-water' },
       { label: 'Iron in Well Water', href: '/guides/iron-in-well-water' },
       { label: 'Well Pressure Tank Guide', href: '/guides/well-pressure-tank-guide' },
+      { label: 'Well Pressure Switch', href: '/guides/well-pressure-switch' },
       { label: 'Well Water Treatment Options', href: '/guides/well-water-treatment-options' },
       { label: 'Buying a House With a Well', href: '/guides/buying-house-with-well' },
       { label: 'Well Water vs. City Water', href: '/guides/well-water-vs-city-water' },

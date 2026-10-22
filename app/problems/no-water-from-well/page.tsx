@@ -394,6 +394,7 @@ export default function NoWaterFromWell() {
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>DIY repair:</strong> A pressure switch is one of the few well system components that many homeowners can replace themselves. Turn off power, confirm it is dead, label the wires, remove the old switch, thread in the new switch with pipe dope on the threads, and reconnect the wires. New switch: $20 to $50. Takes about 30 minutes.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'>Important: when you replace a pressure switch, check the pressure tank air charge immediately after. The air pre-charge must be 2 PSI below the cut-in pressure of the new switch. If you install a 30/50 switch, the tank needs 28 PSI pre-charge. If you install a 40/60 switch, the tank needs 38 PSI.</p>
           <p className='text-slate-700 leading-relaxed text-sm'><strong>Contractor cost:</strong> $150 to $300 including parts and labor if you prefer not to DIY.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>For full step-by-step instructions, see our guide to <Link href='/guides/well-pressure-switch' className='text-[#1D9E75] underline'>replacing a well pressure switch</Link>.</p>
         </div>
 
         {/* Cause 3: Frozen Pipes */}

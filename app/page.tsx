@@ -20,6 +20,7 @@ const badgeColors: Record<string, { bg: string; text: string }> = {
 }
 
 const sidebarArticles = [
+  {"title":"How to Adjust or Replace a Well Pressure Switch","href":"/guides/well-pressure-switch","category":"GUIDE","image":"/well-pressure-switch.jpg"},
   {"title":"What Size Generator Do You Need to Run a Well Pump?","href":"/guides/generator-for-well-pump","category":"GUIDE","image":"/generator-for-well-pump.jpg"},
   {"title":"Frozen Well Pipes: How to Thaw Them and Keep Your Well From Freezing","href":"/problems/frozen-well-pipes","category":"PROBLEM","image":"/frozen-well-pipes.jpg"},
   { title: 'Well Water Smells Like Sulfur or Rotten Eggs', href: '/problems/well-water-smells-like-sulfur', category: 'PROBLEM', image: '/glassofwater.jpg' },

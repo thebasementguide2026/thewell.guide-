@@ -488,6 +488,7 @@ export default function WellPumpShortCycling() {
           <p className='text-slate-700 leading-relaxed mb-8'>
             <strong>Fix:</strong> Replace the pressure switch. A new 30/50 or 40/60 pressure switch costs $20 to $50 and installs in 20 to 30 minutes. Turn off the pump power completely before touching the switch. Label all wires before removing them. Use pipe dope or thread tape on the sensing port threads. After replacement, verify the new switch&apos;s pre-charge setting matches your tank&apos;s pre-charge.
           </p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>For adjustment and replacement steps, see our <Link href='/guides/well-pressure-switch' className='text-[#1D9E75] underline'>well pressure switch guide</Link>.</p>
         </div>
 
         {/* Cause 5: Undersized Pressure Tank */}

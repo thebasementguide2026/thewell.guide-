@@ -8,6 +8,7 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {"title":"How to Adjust or Replace a Well Pressure Switch","description":"Step-by-step guide to adjusting your well pressure switch from 30/50 to 40/60, changing the cut-in and cut-out, and replacing a failed switch safely for $20 to $50.","slug":"guides/well-pressure-switch","category":"Guide","readTime":"11 min read","image":"/well-pressure-switch.jpg"},
   {"title":"What Size Generator Do You Need to Run a Well Pump?","description":"Size a generator for your well pump by horsepower, why you need 240V, how to connect it safely, and what portable, standby, and battery backup cost over 10 years.","slug":"guides/generator-for-well-pump","category":"Guide","readTime":"11 min read","image":"/generator-for-well-pump.jpg"},
   {
   "title": "Frozen Well Pipes: How to Thaw Them and Keep Your Well From Freezing",

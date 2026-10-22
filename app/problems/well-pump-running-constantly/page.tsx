@@ -393,6 +393,7 @@ export default function WellPumpRunningConstantly() {
           <p className='text-slate-700 leading-relaxed'>
             <strong>Fix:</strong> Replace the pressure switch. A new switch costs $20 to $50 and takes 30 minutes to install. Turn off power completely. Label the wires before disconnecting. Use pipe dope or thread tape on the sensing tube threads. Reconnect wires to matching terminals. After replacement, verify the pressure tank air pre-charge is 2 PSI below the new switch&apos;s cut-in setting.
           </p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>For full replacement steps, see our <Link href='/guides/well-pressure-switch' className='text-[#1D9E75] underline'>well pressure switch guide</Link>.</p>
         </div>
 
         {/* Cause 3: Waterlogged Pressure Tank */}

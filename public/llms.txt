@@ -40,6 +40,8 @@ The Well Guide is an independent publication for the 15 percent of U.S. homeowne
 
 ## Guides
 
+- [How to Adjust or Replace a Well Pressure Switch](https://www.thewell.guide/guides/well-pressure-switch): How to adjust a well pressure switch's cut-in and cut-out settings, raise water pressure to 40/60, and replace a failed switch.
+
 - [What Size Generator Do You Need to Run a Well Pump?](https://www.thewell.guide/guides/generator-for-well-pump): How to size a generator for a well pump by horsepower, why it needs 240V, and how to connect it safely.
 
 - [Arsenic in Well Water: How to Test, Treat, and Protect Your Family 2026](https://www.thewell.guide/guides/arsenic-in-well-water): Arsenic in well water is a serious health risk at levels above 10 ppb. Complete guide to testing, treatment options (reverse osmosis, activated alumina, whole-house systems), costs, and EPA standar...

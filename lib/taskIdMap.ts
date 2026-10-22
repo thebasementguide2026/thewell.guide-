@@ -11,6 +11,7 @@ export const FALLBACK_TASK_IDS = DEFAULT_TASK_IDS
 
 export const TASK_ID_MAP: Record<string, number[]> = {
   // Guides
+  'well-pressure-switch': [138, 232, 130, 461],
   'generator-for-well-pump': [138, 232, 130, 461],
   'complete-well-guide': [...DEFAULT_TASK_IDS, 461, 232],
   'how-to-test-well-water': [...DEFAULT_TASK_IDS, 461],
