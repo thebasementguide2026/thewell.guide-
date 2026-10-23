@@ -10,6 +10,7 @@ export const metadata = {
 }
 
 const problems = [
+  {"title":"Air in Well Water Lines? Why Faucets Sputter and How to Fix It","href":"/problems/air-in-well-water-lines","description":"Why well water sputters, spits air, or comes out cloudy, how to tell a harmless air pocket from a failing pump, leaking drop pipe, or gas in your well, and how to fix each cause.","image":"/well dry.png","readTime":"20 min read"},
   {"title":"Frozen Well Pipes: How to Thaw Them and Keep Your Well From Freezing","href":"/problems/frozen-well-pipes","description":"No water in a cold snap? Find where your well system froze, thaw it safely, check for damage, and protect the pressure switch, tank, and pipes for under $150.","image":"/frozen-well-pipes.jpg","readTime":"12 min read"},
   { title: 'Well Water Smells Like Sulfur or Rotten Eggs: Causes and Fixes', href: '/problems/well-water-smells-like-sulfur', description: 'If your well water smells like sulfur or rotten eggs, the cause is hydrogen sulfide gas — but where it comes from determines how you fix it. Covers all four sources, diagnosis, and every treatment option.', image: '/glassofwater.jpg', readTime: '14 min read' },
   { title: 'Well Water Pressure Low: 6 Causes and How to Fix Each One', href: '/problems/well-water-pressure-low', description: 'Low well water pressure has six distinct causes — waterlogged pressure tank, failing pump, dropping water table, clogged well screen, faulty pressure switch, or clogged filters — and each requires a different fix.', image: '/well pressure.jpg', readTime: '15 min read' },

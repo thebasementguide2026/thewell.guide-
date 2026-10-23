@@ -57,6 +57,7 @@ const footerSections = [
       { label: 'Well Pump Short Cycling', href: '/problems/well-pump-short-cycling' },
       { label: 'Well Water Tastes Bad', href: '/problems/well-water-tastes-bad' },
       { label: 'Well Running Dry', href: '/problems/well-running-dry' },
+      { label: 'Air in Well Water Lines', href: '/problems/air-in-well-water-lines' },
       { label: 'Signs Your Well Pump Is Failing', href: '/problems/well-pump-failing' },
       { label: 'How to Prime a Well Pump', href: '/problems/how-to-prime-a-well-pump' },
     ],

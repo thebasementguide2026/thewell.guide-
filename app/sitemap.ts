@@ -5,6 +5,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.thewell.guide'
 
   const updatedPaths = new Set([
+    '/problems/air-in-well-water-lines',
+    '/problems/well-pump-failing',
+    '/problems/well-running-dry',
     '/problems/frozen-well-pipes',
     '/guides/generator-for-well-pump',
     '/guides/well-pressure-switch',

@@ -217,6 +217,7 @@ export default function WellRunningDry() {
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>At Stage 1:</strong> Reduce demand. Stagger high-use activities. Check your well log for the original static water level and consider having a contractor measure the current level.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>At Stage 2:</strong> Immediately reduce demand to essentials only. Turn off irrigation. Do not run laundry or dishwasher. Have a contractor scheduled. Begin sourcing backup water.</p>
           <p className='text-slate-700 leading-relaxed text-sm'><strong>At Stage 3:</strong> Turn off the pump at the breaker now. Do not run it again until a contractor has confirmed water is available. At this stage, continued pumping will destroy the pump within minutes.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>Sputtering can have other causes too. See our <Link href='/problems/air-in-well-water-lines' className='text-[#1D9E75] underline'>guide to air in well water lines</Link>.</p>
         </div>
 
         {/* The Four Scenarios */}

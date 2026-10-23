@@ -279,6 +279,7 @@ export default function WellPumpFailing() {
                 <p className='mb-4'><span className='text-sm font-bold' style={{ color: '#A32D2D' }}>Urgency: High</span> <span className='text-slate-700 text-sm leading-relaxed'>when accompanied by reduced flow or during drought conditions. Persistent air spitting warrants professional evaluation promptly.</span></p>
                 <p className='text-slate-900 text-sm font-bold mb-1'>What to do:</p>
                 <p className='text-slate-700 text-sm leading-relaxed'>Note when the air spitting occurs and report this pattern to the professional. Do not run the pump continuously if you suspect it is drawing air. See the <a href='/problems/well-running-dry' className='underline' style={{ color: '#1D9E75' }}>well running dry guide</a> if you suspect yield is the issue.</p>
+                <p className='text-slate-700 text-sm leading-relaxed mt-4'>For every cause of air in the lines and how to tell them apart, see our <Link href='/problems/air-in-well-water-lines' className='text-[#1D9E75] underline'>guide to air in well water lines</Link>.</p>
               </div>
             </div>
 

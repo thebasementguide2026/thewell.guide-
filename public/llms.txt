@@ -25,6 +25,8 @@ The Well Guide is an independent publication for the 15 percent of U.S. homeowne
 
 ## Problem Diagnosis & Repair
 
+- [Air in Well Water Lines? Why Faucets Sputter and How to Fix It](https://www.thewell.guide/problems/air-in-well-water-lines): Why well water sputters or spits air, how to tell trapped air from a low well, a leaking check valve, a failing tank, or dissolved gas, and how to fix each.
+
 - [Frozen Well Pipes: How to Thaw Them and Keep Your Well From Freezing](https://www.thewell.guide/problems/frozen-well-pipes): How to find and safely thaw a frozen well line or pressure switch, check for damage, and keep a well system from freezing.
 
 - [Brown or Rusty Well Water: 6 Causes and How to Fix Each One](https://www.thewell.guide/problems/brown-rusty-well-water): Brown or rusty well water is almost always iron, manganese, sediment, or corrosion. Diagnose which cause you have in minutes and fix it.
