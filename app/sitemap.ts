@@ -1,9 +1,20 @@
 import { MetadataRoute } from 'next'
+import { articles } from '@/lib/articles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.thewell.guide'
 
-  return [
+  const updatedPaths = new Set([
+    '/problems/frozen-well-pipes',
+    '/guides/generator-for-well-pump',
+    '/guides/well-pressure-switch',
+    '/problems/no-water-from-well',
+    '/problems/well-pump-short-cycling',
+    '/problems/well-pump-running-constantly',
+    '/guides/well-pressure-tank-guide',
+  ])
+
+  const existingPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/guides/well-pressure-switch`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/generator-for-well-pump`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
@@ -17,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/how-to-test-well-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/brown-rusty-well-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/cost-guides/well-water-testing-cost`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/guides/how-well-pump-works`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/guides/how-well-pump-works`, lastModified: '2026-10-22T18:51:39.073Z', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/well-maintenance-checklist`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/no-water-from-well`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/frozen-well-pipes`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
@@ -52,4 +63,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
     { url: `${baseUrl}/affiliate-disclosure`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
   ]
+
+  // Retain special routes and their settings, while automatically including
+  // newly published articles from the site's shared content registry.
+  const pages = new Map(existingPages.map((page) => [page.url, page]))
+  for (const article of articles) {
+    const url = `${baseUrl}/${article.slug.replace(/^\/+/, '')}`
+    if (!pages.has(url)) {
+      pages.set(url, {
+        url,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      })
+    }
+  }
+
+  return Array.from(pages.values()).map((page) => ({
+    ...page,
+    lastModified: updatedPaths.has(new URL(page.url).pathname)
+      ? '2026-10-23'
+      : page.lastModified,
+  }))
 }
