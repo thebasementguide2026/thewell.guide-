@@ -42,6 +42,8 @@ The Well Guide is an independent publication for the 15 percent of U.S. homeowne
 
 ## Guides
 
+- [How to Seal an Abandoned Well and What It Costs](https://www.thewell.guide/guides/well-abandonment): Why unused water wells must be sealed, how to find an old well, how wells are sealed, state rules, typical costs by depth, and cost-share programs.
+
 - [How to Adjust or Replace a Well Pressure Switch](https://www.thewell.guide/guides/well-pressure-switch): How to adjust a well pressure switch's cut-in and cut-out settings, raise water pressure to 40/60, and replace a failed switch.
 
 - [What Size Generator Do You Need to Run a Well Pump?](https://www.thewell.guide/guides/generator-for-well-pump): How to size a generator for a well pump by horsepower, why it needs 240V, and how to connect it safely.

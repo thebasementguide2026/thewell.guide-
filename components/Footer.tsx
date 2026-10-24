@@ -17,6 +17,7 @@ const footerSections = [
       { label: 'Well Pressure Switch', href: '/guides/well-pressure-switch' },
       { label: 'Well Water Treatment Options', href: '/guides/well-water-treatment-options' },
       { label: 'Buying a House With a Well', href: '/guides/buying-house-with-well' },
+      { label: 'Well Abandonment', href: '/guides/well-abandonment' },
       { label: 'Well Water vs. City Water', href: '/guides/well-water-vs-city-water' },
       { label: 'Hard Water Well Guide', href: '/guides/hard-water-well' },
       { label: 'Dug Well vs. Drilled Well', href: '/guides/dug-well-vs-drilled-well' },

@@ -436,6 +436,7 @@ export default function WellDrillingCost() {
             </table>
           </div>
           <p className='text-slate-700 text-sm leading-relaxed mt-4'>Most homeowners at average depth (150 feet) in average geology land between $8,000 and $15,000 for a complete working system. Wells in hard rock, deep aquifer areas, or high-labor-cost regions should be budgeted at $15,000 to $25,000.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'>Replacing an old well? Ask your driller to quote <Link href='/guides/well-abandonment' className='text-[#1D9E75] underline'>sealing the old one</Link> while the rig is on site.</p>
         </div>
 
         {/* Regional Cost Differences */}

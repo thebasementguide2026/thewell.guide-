@@ -8,6 +8,7 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {"title":"How to Seal an Abandoned Well and What It Costs","description":"Why unused wells have to be sealed, how to find an old well on your property, how licensed contractors seal drilled and dug wells, what it costs, and the cost-share programs that can cover most of the bill.","slug":"guides/well-abandonment","category":"Guide","readTime":"18 min read","image":"/well-abandonment.jpg"},
   {"title":"Air in Well Water Lines? Why Faucets Sputter and How to Fix It","description":"Why well water sputters, spits air, or comes out cloudy, how to tell a harmless air pocket from a failing pump, leaking drop pipe, or gas in your well, and how to fix each cause.","slug":"problems/air-in-well-water-lines","category":"Problem","readTime":"20 min read","image":"/well dry.png"},
   {"title":"How to Adjust or Replace a Well Pressure Switch","description":"Step-by-step guide to adjusting your well pressure switch from 30/50 to 40/60, changing the cut-in and cut-out, and replacing a failed switch safely for $20 to $50.","slug":"guides/well-pressure-switch","category":"Guide","readTime":"11 min read","image":"/well-pressure-switch.jpg"},
   {"title":"What Size Generator Do You Need to Run a Well Pump?","description":"Size a generator for your well pump by horsepower, why you need 240V, how to connect it safely, and what portable, standby, and battery backup cost over 10 years.","slug":"guides/generator-for-well-pump","category":"Guide","readTime":"11 min read","image":"/generator-for-well-pump.jpg"},

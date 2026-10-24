@@ -521,7 +521,7 @@ export default function WellWaterVsCityWater() {
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>Can you switch from well water to city water?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Yes, if municipal water service is available at your property&apos;s location. Connection typically requires paying a connection or tap fee ($1,000 to $10,000 or more depending on the municipality), running a water service line from the main to your house, and retiring the well according to your state&apos;s well abandonment requirements (typically sealing the casing with concrete or grout). Whether switching is worthwhile depends on the condition of your existing well, local water rates, and your timeline in the property.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Yes, if municipal water service is available at your property&apos;s location. Connection typically requires paying a connection or tap fee ($1,000 to $10,000 or more depending on the municipality), running a water service line from the main to your house, and retiring the well according to your state&apos;s well abandonment requirements (typically sealing the casing with concrete or grout). Whether switching is worthwhile depends on the condition of your existing well, local water rates, and your timeline in the property. See our guide to <Link href='/guides/well-abandonment' className='text-[#1D9E75] underline'>sealing an old well</Link> for the process and costs.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>Does having a well affect home value?</h3>

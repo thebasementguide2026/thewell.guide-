@@ -5,6 +5,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.thewell.guide'
 
   const updatedPaths = new Set([
+    '/guides/well-abandonment',
+    '/guides/well-water-vs-city-water',
+    '/guides/buying-house-with-well',
+    '/cost-guides/well-drilling-cost',
+    '/guides/dug-well-vs-drilled-well',
     '/problems/air-in-well-water-lines',
     '/problems/well-pump-failing',
     '/problems/well-running-dry',

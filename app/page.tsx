@@ -20,6 +20,7 @@ const badgeColors: Record<string, { bg: string; text: string }> = {
 }
 
 const sidebarArticles = [
+  {"title":"How to Seal an Abandoned Well and What It Costs","href":"/guides/well-abandonment","category":"GUIDE","image":"/well-abandonment.jpg"},
   {"title":"Air in Well Water Lines? Why Faucets Sputter and How to Fix It","href":"/problems/air-in-well-water-lines","category":"PROBLEM","image":"/well dry.png"},
   {"title":"How to Adjust or Replace a Well Pressure Switch","href":"/guides/well-pressure-switch","category":"GUIDE","image":"/well-pressure-switch.jpg"},
   {"title":"What Size Generator Do You Need to Run a Well Pump?","href":"/guides/generator-for-well-pump","category":"GUIDE","image":"/generator-for-well-pump.jpg"},

@@ -244,6 +244,8 @@ export default function BuyingHouseWithWell() {
           </table>
         </div>
 
+        <p className='text-slate-700 text-sm leading-relaxed mb-4'>If the property has an old or unused well, see our guide to <Link href='/guides/well-abandonment' className='text-[#1D9E75] underline'>sealing an abandoned well</Link>.</p>
+
         {/* Table 2: Pump and Pressure System */}
         <h3 className='text-xl font-bold text-slate-900 mt-8 mb-3'>Pump and Pressure System</h3>
         <div className='overflow-x-auto mb-10'>
