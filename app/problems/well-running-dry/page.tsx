@@ -412,7 +412,7 @@ export default function WellRunningDry() {
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Well rehabilitation:</strong> Cleaning, acidizing, or redeveloping an older well can restore 20 to 50 percent of lost yield in some cases. Worth attempting on wells over 15 years old before committing to deepening or drilling.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Hydrofracturing:</strong> For bedrock wells. Injects high-pressure water to open fractures. Success rate 60 to 90 percent. Cost $2,000 to $7,000.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Well deepening:</strong> Access to a deeper, more stable aquifer. Not guaranteed to find water. Cost $3,000 to $10,000. Only appropriate after confirming the current aquifer cannot supply adequate water.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'><strong>New well:</strong> The last resort when all other options fail or when the well is too old to rehabilitate. Cost $5,000 to $15,000.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'><strong>New well:</strong> The last resort when all other options fail or when the well is too old to rehabilitate. Cost $7,000 to $16,000 for a standard 100 to 200 foot well, more for deep wells.</p>
         </div>
 
         {/* When to Call a Contractor */}

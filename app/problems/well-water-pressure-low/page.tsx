@@ -370,7 +370,7 @@ export default function WellWaterPressureLow() {
             </div>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'>Do not run the pump dry. If the well is running low, turn off the pump and wait for recovery rather than running it continuously. A pump running without water overheats and damages impellers within minutes.</p>
             <div className='bg-slate-50 border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm font-semibold'>Typical cost: Storage tank installation: $1,500 to $4,000. Pump lowering: $400 to $1,000. Well deepening: $5,000 to $15,000+.</p>
+              <p className='text-slate-700 text-sm font-semibold'>Typical cost: Storage tank installation: $1,500 to $4,000. Pump lowering: $400 to $1,000. Well deepening: $3,000 to $10,000.</p>
             </div>
           </div>
 
