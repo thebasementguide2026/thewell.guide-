@@ -7,10 +7,10 @@ import BeehiivEmailCapture from '@/components/BeehiivEmailCapture'
 
 export const metadata: Metadata = {
   title: 'Well Pump Replacement Cost 2026: What You\'ll Actually Pay | The Well Guide',
-  description: 'Well pump replacement costs $400 to $2,000 for the pump plus $200 to $800 in labor. Covers submersible vs jet pump replacement, when repair makes more sense, and how to get an accurate quote.',
+  description: "Most well pump replacements cost $1,500 to $4,000 installed, including pump, pipe, wire, and labor. Prices by pump type and depth, repair costs, and how to get a fair quote.",
   openGraph: {
     title: 'Well Pump Replacement Cost 2026: What You\'ll Actually Pay',
-    description: 'Well pump replacement costs $1,500 to $4,000 for most residential systems. This guide breaks down every cost factor by depth and pump type.',
+    description: "Most well pump replacements cost $1,500 to $4,000 installed, including pump, pipe, wire, and labor. Prices by pump type and depth, repair costs, and how to get a fair quote.",
     url: 'https://www.thewell.guide/cost-guides/well-pump-replacement-cost',
     siteName: 'The Well Guide',
     type: 'article',
@@ -20,74 +20,98 @@ export const metadata: Metadata = {
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'How much does it cost to replace a well pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Most residential well pump replacements cost $1,500 to $4,000 fully installed including pump, drop pipe, wiring, and labor. The national average is around $1,900. Shallow well jet pumps run $800 to $1,800. Submersible pumps in 100 to 200 foot wells run $1,500 to $3,000. Submersible pumps in 300 to 400 foot wells run $2,800 to $5,500. Emergency weekend service adds 25 to 50 percent.',
-      },
+      "@type": "Question",
+      "name": "How much does it cost to replace a well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most residential well pump replacements cost $1,500 to $4,000 fully installed. The national average is around $1,900. Shallow well jet pump replacements run $800 to $1,800. Submersible pumps in wells 100 to 200 feet deep run $1,500 to $3,000. Submersible pumps in wells 300 to 400 feet deep run $2,800 to $5,500. Emergency weekend service adds 25 to 50 percent. Get three quotes with itemized breakdowns before authorizing work."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What is the most expensive part of replacing a well pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'For shallow wells, the pump unit is the dominant cost. For deep wells (200 feet or more), labor is the largest line item — pulling a pump from 300 feet with a service truck and two-person crew costs more than the pump itself in many cases. The combination of labor, drop pipe replacement, and wiring replacement on a deep well job often exceeds the pump unit cost.',
-      },
+      "@type": "Question",
+      "name": "What is the most expensive part of replacing a well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For shallow wells (under 100 feet), the pump itself is the dominant cost. For deep wells (200 feet or more), labor is the largest line item, pulling a pump from 300 feet with a service truck, a two-person crew, and 4 to 8 hours of work costs more than the pump itself in many cases. The combination of labor, drop pipe replacement, and wiring replacement on a deep well job often exceeds the pump unit cost."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How long does it take to replace a well pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Most residential pump replacements complete in one day. A shallow jet pump replacement takes 2 to 4 hours. A submersible pump in a 100 to 200 foot well takes 4 to 6 hours. A submersible pump in a 300 to 400 foot well takes 6 to 8 hours. Complex jobs with difficult access or electrical upgrades can extend into a second day.',
-      },
+      "@type": "Question",
+      "name": "How long does it take to replace a well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most residential pump replacements complete in one day. A shallow jet pump replacement takes 2 to 4 hours. A submersible pump in a 100 to 200 foot well takes 4 to 6 hours. A submersible pump in a 300 to 400 foot well takes 6 to 8 hours. Complex jobs, difficult site access, corroded pipe that must be replaced section by section, electrical upgrades, can extend into a second day."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Should I replace the pressure tank at the same time as the pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Yes, if the tank is more than 8 years old or near the pump's age. Adding pressure tank replacement while the contractor is already on site costs $200 to $500 incremental — far less than scheduling a separate service call. Replacing them separately later would cost $300 to $700 just for the tank job.",
-      },
+      "@type": "Question",
+      "name": "Should I replace the pressure tank at the same time as the pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if the tank is more than 8 years old or within a few years of the pump's age. The incremental cost of adding pressure tank replacement while the contractor is already on site is much lower than scheduling a separate service call later. A new pressure tank typically adds $200 to $500 to the total cost when bundled with a pump replacement. Replacing them separately later would cost $450 to $1,500 just for the tank job."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I replace a well pump myself?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A shallow well jet pump above ground is within DIY capability for someone comfortable with plumbing and electrical work. A submersible pump in any well deeper than 25 feet is not a practical DIY project. Pulling a submersible pump requires a cable hoist to manage hundreds of feet of pipe and wire without dropping the assembly into the well. Dropping the pump results in an extremely expensive recovery operation.',
-      },
+      "@type": "Question",
+      "name": "Can I replace a well pump myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A shallow well jet pump above ground is within DIY capability for a homeowner comfortable with plumbing and electrical work. A submersible pump in any well deeper than 25 feet is not a practical DIY project. Pulling a submersible pump requires a cable hoist to manage hundreds of feet of pipe and wire without dropping the assembly into the well. Dropping the pump results in an extremely expensive recovery operation. The electrical work (230V wiring, pressure switch, control box) also carries real shock risk."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Does homeowners insurance cover well pump replacement?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Standard homeowners insurance does not cover well pump replacement due to normal wear, mechanical failure, or end of service life. Insurance may cover replacement if a covered peril caused the damage — lightning strike, fire, or in some cases a power surge. Document the event thoroughly before filing a claim. Some insurers offer equipment breakdown endorsements that cover mechanical failure — ask about adding this before you need it.',
-      },
+      "@type": "Question",
+      "name": "Is it worth replacing a well pump on an old house?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pump's age matters, not the house's age. A pump under 8 years old with its first problem is usually worth repairing. Between 8 and 12 years, use the 50 percent rule above. Over 12 years, or after repeated repairs, replace it. The condition of the drop pipe and wiring, well yield, and water quality all factor in, but age of the pump itself is the primary variable. A professional inspection before replacement can determine whether the well casing, screen, and yield support a new pump."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What brands of well pump are most reliable?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Franklin Electric is the dominant residential brand, with motors used as OEM components in many other pump housings. Grundfos makes reliable variable-speed and constant-pressure systems. Goulds (owned by Xylem) is another quality choice widely used by professional contractors. Ask your contractor which brand they are installing and whether they carry warranty replacement stock for it.',
-      },
+      "@type": "Question",
+      "name": "What brands of well pumps are the most reliable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Franklin Electric is the dominant residential brand, with motors used as OEM components in many other pump housings. Grundfos makes reliable variable-speed and constant-pressure systems. Goulds (owned by Xylem) is another quality choice widely used by professional contractors. Ask your contractor which brand they are installing and whether they carry warranty replacement stock for it. Avoid off-brand pumps sold through online marketplaces without local contractor support."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'When should I repair vs replace my well pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Apply the 50 percent rule: if a repair costs more than 50 percent of full replacement, replace the pump. Always repair surface components (pressure switch, control box capacitor, pressure tank) without replacing the pump. Replace the pump when the motor or impellers have failed, the pump is over 12 years old, it has had multiple service calls in two years, or it ran dry at any point. Dry running destroys internal components within minutes even if the pump continues to operate.',
-      },
+      "@type": "Question",
+      "name": "What happens if I do not replace a failing well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A pump that is failing but still delivering some water will eventually fail completely, leaving you with no water. The timing is unpredictable, it could be months or it could be the next time power cycles. A failing pump also draws more electricity than a healthy one, increasing utility bills. Continued operation on a worn pump can also damage the pressure tank (short-cycling) and stress the wiring from repeated starts against mechanical resistance. Replacing at first signs of decline rather than waiting for complete failure typically reduces total project cost."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "How much does well pump repair cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most well pump repairs cost $100 to $500 when the problem is above ground. A pressure switch runs $100 to $300 installed, a start capacitor $75 to $200, and a control box $200 to $500. Repairs that require pulling the pump cost more: $200 to $500 for a check valve, $300 to $1,200 for drop pipe, and $600 to $1,500 or more for the motor. If a pull-the-pump repair costs more than half of a full replacement, replace the pump."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a well pump cost without installation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 1/2 HP submersible pump typically costs $300 to $600, a 3/4 HP $500 to $900, and a 1 HP $700 to $1,400. A shallow well jet pump runs $200 to $700. Installed, most submersible replacements cost $1,500 to $4,000, because pipe, wire, and labor often cost more than the pump itself, especially on deep wells."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to replace a well pump and pressure tank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most homeowners pay about $1,700 to $4,500 to replace a submersible pump and pressure tank together. Adding the tank to a pump job typically adds $200 to $500, compared with $450 to $1,500 to replace the tank on its own later. If the tank is more than 8 years old, replace both at once."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
@@ -97,10 +121,10 @@ const articleSchema = {
   description: 'Well pump replacement costs $1,500 to $4,000 for most residential systems. This guide breaks down every cost factor by depth and pump type, explains when to repair vs replace, and shows how to get an accurate quote.',
   image: 'https://www.thewell.guide/well%20cost.jpg',
   datePublished: '2026-03-25',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
-    name: 'The Well Guide',
+    name: 'The Well Guide Editorial Team',
     url: 'https://www.thewell.guide',
   },
   publisher: {
@@ -149,8 +173,8 @@ export default function WellPumpReplacementCost() {
           <div className='flex items-center space-x-4'>
             <div className='w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm' style={{ backgroundColor: '#1D9E75' }}>WG</div>
             <div>
-              <p className='text-white font-semibold'>The Well Guide</p>
-              <p className='text-white/50 text-sm'>Updated Mar 2026 &middot; 14 min read</p>
+              <p className='text-white font-semibold'>By The Well Guide Editorial Team</p>
+              <p className='text-white/50 text-sm'>Updated October 2026 &middot; 14 min read</p>
             </div>
           </div>
         </div>
@@ -167,13 +191,13 @@ export default function WellPumpReplacementCost() {
         {/* TL;DR Box */}
         <div className='mb-12 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
           <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>Most residential well pump replacements cost $1,500 to $4,000 fully installed, including the pump, drop pipe, wiring, and labor. The national average is around $1,900. Well depth is the single biggest cost driver — every 100 feet adds roughly $500 to $1,000 in pipe, wire, and labor. A shallow well jet pump replacement runs $800 to $1,800. A submersible pump in a 200-foot well runs $1,800 to $3,000. A submersible pump in a 400-foot well can reach $4,000 to $6,000 or more. Emergency weekend service adds 25 to 50 percent to any of these figures. For a personalized estimate, run your scenario through our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well pump replacement cost calculator</Link>.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>Most residential well pump replacements cost $1,500 to $4,000 fully installed, including the pump, drop pipe, wiring, and labor. The national average is around $1,900. Well depth is the single biggest cost driver, every 100 feet adds roughly $500 to $1,000 in pipe, wire, and labor. A shallow well jet pump replacement runs $800 to $1,800. A submersible pump in a 200-foot well runs $1,800 to $3,000. A submersible pump in a 400-foot well can reach $4,000 to $6,000 or more. Emergency weekend service adds 25 to 50 percent to any of these figures. For a personalized estimate, run your scenario through our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well pump replacement cost calculator</Link>. If the problem is above ground, like a pressure switch, start capacitor, or control box, a repair usually costs $100 to $500 and the pump stays in the well.</p>
         </div>
 
         {/* Intro */}
         <div className='mb-12'>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>Most homeowners find out they need a well pump replacement at the worst possible moment — no water on a Saturday morning, guests arriving, no time to comparison shop. This guide gives you the numbers and the framework to understand exactly what you should be paying before anyone starts work, so you can evaluate quotes with confidence rather than desperation.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'>Three factors explain 90 percent of the variation in well pump replacement costs. First, well depth — every 100 feet of depth adds roughly $500 to $1,000 in pipe, wire, and labor, and a 400-foot well can cost two to three times more than a 100-foot well for the same pump. Second, whether the job is scheduled or emergency — weekend and after-hours service adds 25 to 50 percent to the labor portion automatically. Third, whether the drop pipe and wire need replacing — contractors who exclude these from their initial quote will add them to the final invoice. Understand these three variables and you can estimate your project cost within a few hundred dollars before making a single phone call.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'>Most homeowners find out they need a well pump replacement at the worst possible moment, no water on a Saturday morning, guests arriving, no time to comparison shop. This guide gives you the numbers and the framework to understand exactly what you should be paying before anyone starts work, so you can evaluate quotes with confidence rather than desperation.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'>Three factors explain 90 percent of the variation in well pump replacement costs. First, well depth, every 100 feet of depth adds roughly $500 to $1,000 in pipe, wire, and labor, and a 400-foot well can cost two to three times more than a 100-foot well for the same pump. Second, whether the job is scheduled or emergency, weekend and after-hours service adds 25 to 50 percent to the labor portion automatically. Third, whether the drop pipe and wire need replacing, contractors who exclude these from their initial quote will add them to the final invoice. Understand these three variables and you can estimate your project cost within a few hundred dollars before making a single phone call.</p>
         </div>
 
         {/* What Is Included */}
@@ -191,7 +215,7 @@ export default function WellPumpReplacementCost() {
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>The drop pipe</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Connects the pump to the surface, running the full depth of the well. Standard residential drop pipe is Schedule 80 PVC or polyethylene in 20-foot sections. Replacing all of it during a pump swap adds $1 to $3 per foot of depth — so $200 to $600 for a 200-foot well, and $400 to $1,200 for a 400-foot well. Most contractors recommend replacing the drop pipe whenever the pump is pulled.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Connects the pump to the surface, running the full depth of the well. Standard residential drop pipe is Schedule 80 PVC or polyethylene in 20-foot sections. Replacing all of it during a pump swap adds $1 to $3 per foot of depth, so $200 to $600 for a 200-foot well, and $400 to $1,200 for a 400-foot well. Most contractors recommend replacing the drop pipe whenever the pump is pulled.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>The wiring</h3>
@@ -199,7 +223,7 @@ export default function WellPumpReplacementCost() {
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>The control box</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>On three-wire pump systems, sits above ground and houses the capacitors and relay that govern motor startup. If the pump motor failed partly due to a failed capacitor, the control box may need replacement too. Control box replacement: $100 to $400.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>On three-wire pump systems, sits above ground and houses the capacitors and relay that govern motor startup. If the pump motor failed partly due to a failed capacitor, the control box may need replacement too. Control box replacement: $200 to $500.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Pitless adapter and well cap</h3>
@@ -224,7 +248,7 @@ export default function WellPumpReplacementCost() {
             <div className='flex-1 h-px bg-slate-200'></div>
           </div>
           <h2 className='text-2xl font-bold text-slate-900 mb-6'>Well Pump Replacement Cost by Pump Type and Depth</h2>
-          <p className='text-slate-700 leading-relaxed text-sm mb-6'>This is the table most homeowners actually need — a realistic cost range by the type of system you have, fully installed including pump, pipe, wire, and labor.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-6'>This is the table most homeowners actually need, a realistic cost range by the type of system you have, fully installed including pump, pipe, wire, and labor.</p>
           <div className='overflow-x-auto mb-4'>
             <table className='w-full border-collapse text-sm'>
               <thead>
@@ -336,6 +360,7 @@ export default function WellPumpReplacementCost() {
           <p className='text-slate-700 leading-relaxed text-sm'>One counterintuitive note: rural areas do not always cost less than suburban areas. Rural wells are often deeper, requiring more pipe and labor. And in areas with fewer well contractors, travel fees and reduced competition can push rural prices above suburban averages in the same state.</p>
         </div>
 
+<section data-pump-only className='mb-16'><div dangerouslySetInnerHTML={{ __html: "<h2 class=\"text-2xl font-bold text-slate-900 mb-6\">How Much Does a Well Pump Cost? (Pump Only)</h2>\n<p class=\"text-slate-700 leading-relaxed text-sm mb-4\">If you're buying the pump yourself or checking the line items on a quote, these are typical prices for the pump unit alone, before pipe, wire, and labor:</p>\n<div class=\"overflow-x-auto mb-6\"><table class=\"w-full text-sm border-collapse\">\n<thead>\n<tr>\n<th class=\"p-3 text-left border border-slate-200 bg-slate-100 font-semibold text-slate-700\">Pump</th>\n<th class=\"p-3 text-left border border-slate-200 bg-slate-100 font-semibold text-slate-700\">Typical Price, Pump Only</th>\n</tr>\n</thead>\n<tbody><tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Shallow well jet pump</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$200 to $700</td>\n</tr>\n<tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">1/2 HP submersible</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$300 to $600</td>\n</tr>\n<tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">3/4 HP submersible</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$500 to $900</td>\n</tr>\n<tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">1 HP submersible</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$700 to $1,400</td>\n</tr>\n<tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Constant pressure (VFD) system</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Adds $800 to $2,000 installed</td>\n</tr>\n</tbody></table></div>\n<p class=\"text-slate-700 leading-relaxed text-sm mb-4\">Most wells under 200 feet use a 1/2 HP pump. Wells 200 to 300 feet deep typically use 3/4 HP, and deeper wells or high-demand homes use 1 HP or more. On a deep well, the pump is often less than half the bill, since pipe, wire, and labor make up the rest. See our <a href=\"/reviews/best-well-pumps\" class=\"text-[#1D9E75] underline hover:text-[#0F6E56]\">best well pumps</a> for specific models.</p>\n" }} /></section>
         {/* Six Key Variables */}
         <div className='mb-16'>
           <div className='flex items-center space-x-3 mb-4'>
@@ -362,13 +387,13 @@ export default function WellPumpReplacementCost() {
             <h3 className='text-xl font-bold text-slate-900 mb-4'>Variable 2: Pump Horsepower and Brand</h3>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'>Submersible pump motors are rated in horsepower. Most residential wells under 200 feet use a 1/2 HP pump. Wells 200 to 300 feet deep typically use 3/4 HP. Wells deeper than 300 feet or serving homes with high water demand use 1 HP or larger.</p>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'>Half HP pumps cost roughly half what 1 HP units cost. A basic 1/2 HP submersible pump unit costs $300 to $600. A quality 3/4 HP unit costs $500 to $900. A 1 HP unit costs $700 to $1,400.</p>
-            <p className='text-slate-700 leading-relaxed text-sm'>Brand affects both upfront cost and longevity. Franklin Electric is the dominant brand in the residential market — their motors are OEM components in many other pump brands. Grundfos and Goulds (Xylem) are the other major quality brands. Premium brands cost 15 to 25 percent more than budget brands but typically last 15 to 25 years versus 5 to 10 years for lower-tier options. Over a 20-year ownership period, premium brands are almost always less expensive when you factor in the labor cost of one or two additional replacements.</p>
+            <p className='text-slate-700 leading-relaxed text-sm'>Brand affects both upfront cost and longevity. Franklin Electric is the dominant brand in the residential market, their motors are OEM components in many other pump brands. Grundfos and Goulds (Xylem) are the other major quality brands. Premium brands cost 15 to 25 percent more than budget brands but typically last 15 to 25 years versus 5 to 10 years for lower-tier options. Over a 20-year ownership period, premium brands are almost always less expensive when you factor in the labor cost of one or two additional replacements.</p>
           </div>
 
           <div className='mb-10'>
             <h3 className='text-xl font-bold text-slate-900 mb-4'>Variable 3: Drop Pipe and Wire Condition</h3>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'>If your existing drop pipe and wire are in good condition and made of current materials, a contractor may reuse them and save significant cost. Ask specifically whether your contractor plans to replace them and why. Reasons to replace both regardless of apparent condition: old polyethylene pipe degrades and develops pinhole leaks that are impossible to detect until after reassembly; old wire insulation cracks and creates short-circuit risk deep in the well where it cannot be repaired without pulling the pump again.</p>
-            <p className='text-slate-700 leading-relaxed text-sm'>If your pump has reached the end of its service life (10 to 15 years), the pipe and wire are a similar age. Replacing them proactively at the same time the pump comes out saves the full cost of pulling the pump a second time in a few years. The labor to pull the pump is the expensive part — adding new pipe and wire while it is already out costs a fraction of what it would cost as a separate service call.</p>
+            <p className='text-slate-700 leading-relaxed text-sm'>If your pump has reached the end of its service life (10 to 15 years), the pipe and wire are a similar age. Replacing them proactively at the same time the pump comes out saves the full cost of pulling the pump a second time in a few years. The labor to pull the pump is the expensive part, adding new pipe and wire while it is already out costs a fraction of what it would cost as a separate service call.</p>
           </div>
 
           <div className='mb-10'>
@@ -376,7 +401,7 @@ export default function WellPumpReplacementCost() {
             <p className='text-slate-700 leading-relaxed text-sm mb-4'>Several components beyond the pump itself commonly need replacement during a pump job:</p>
             <div className='space-y-3'>
               <div className='bg-white border border-slate-200 rounded-lg p-4'>
-                <p className='text-slate-700 text-sm leading-relaxed'><strong>Pressure tank:</strong> If your pressure tank is the same age as the pump, replacing it at the same time saves a future service call. A new tank costs $300 to $700 installed. Adding it to an existing pump replacement typically adds $200 to $400. See our <Link href='/guides/well-pressure-tank-guide' className='underline' style={{ color: '#1D9E75' }}>well pressure tank guide</Link> for more on sizing and selection.</p>
+                <p className='text-slate-700 text-sm leading-relaxed'><strong>Pressure tank:</strong> If your pressure tank is the same age as the pump, replacing it at the same time saves a future service call. A new tank costs <Link href='/cost-guides/pressure-tank-replacement-cost' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>$450 to $1,500</Link> installed. Adding it to a pump replacement typically adds $200 to $500. See our <Link href='/guides/well-pressure-tank-guide' className='underline' style={{ color: '#1D9E75' }}>well pressure tank guide</Link> for more on sizing and selection.</p>
               </div>
               <div className='bg-white border border-slate-200 rounded-lg p-4'>
                 <p className='text-slate-700 text-sm leading-relaxed'><strong>Pressure switch:</strong> A $25 part that takes 30 minutes to replace. Almost always worth replacing when the pump comes out, especially if the switch is over 5 years old.</p>
@@ -395,14 +420,14 @@ export default function WellPumpReplacementCost() {
 
           <div className='mb-10'>
             <h3 className='text-xl font-bold text-slate-900 mb-4'>Variable 5: Scheduled vs Emergency Service</h3>
-            <p className='text-slate-700 leading-relaxed text-sm mb-4'>Emergency pump replacement — no water, weekend, immediate service required — almost always costs more than scheduled replacement. Emergency and after-hours premiums run 25 to 50 percent above standard rates. A job that costs $2,500 during the week can cost $3,500 or more on a Saturday.</p>
+            <p className='text-slate-700 leading-relaxed text-sm mb-4'>Emergency pump replacement, no water, weekend, immediate service required, almost always costs more than scheduled replacement. Emergency and after-hours premiums run 25 to 50 percent above standard rates. A job that costs $2,500 during the week can cost $3,500 or more on a Saturday.</p>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'>If your pump is over 10 years old and showing early signs of decline (occasional pressure drops, slightly elevated electricity bills, occasional air spurting), scheduling a proactive replacement before failure saves both the emergency premium and the stress of losing water without notice.</p>
             <p className='text-slate-700 leading-relaxed text-sm'>Signs that predict imminent failure and justify proactive scheduling: pump age over 12 years, increasing electricity consumption from the well pump circuit, occasional air in faucets during heavy use, and recovery time that has noticeably lengthened since the well was new.</p>
           </div>
 
           <div className='mb-10'>
             <h3 className='text-xl font-bold text-slate-900 mb-4'>Variable 6: Water Quality and Well Conditions</h3>
-            <p className='text-slate-700 leading-relaxed text-sm mb-4'>Wells with high iron, manganese, sand, or sediment accelerate pump wear. A pump serving high-mineral water may need replacement in 8 to 10 years rather than 12 to 15. Abrasive particles — sand, grit — damage impellers and accelerate wear significantly faster than clean water.</p>
+            <p className='text-slate-700 leading-relaxed text-sm mb-4'>Wells with high iron, manganese, sand, or sediment accelerate pump wear. A pump serving high-mineral water may need replacement in 8 to 10 years rather than 12 to 15. Abrasive particles, sand, grit, damage impellers and accelerate wear significantly faster than clean water.</p>
             <p className='text-slate-700 leading-relaxed text-sm'>If your water has known quality issues, factor a shorter replacement interval into your long-term cost planning. Installing an appropriate pre-pump filter or sediment separator during the pump replacement protects the new unit and extends its service life. This adds $100 to $400 to the job but can add years to pump life.</p>
           </div>
         </div>
@@ -422,8 +447,8 @@ export default function WellPumpReplacementCost() {
               <p className='text-slate-700 text-sm leading-relaxed mb-3'>These problems do not require pulling the pump from the well:</p>
               <ul className='list-disc list-inside space-y-1 text-slate-700 text-sm leading-relaxed'>
                 <li>Pressure switch failure: $100 to $300</li>
-                <li>Pressure tank bladder failure: $300 to $800</li>
-                <li>Control box capacitor: $100 to $250</li>
+                <li>Pressure tank replacement: $450 to $1,500</li>
+                <li>Control box capacitor: $75 to $200</li>
                 <li>Corroded wire connection at wellhead: $100 to $300</li>
               </ul>
             </div>
@@ -440,7 +465,7 @@ export default function WellPumpReplacementCost() {
 
           <div className='rounded-lg p-5 mb-6' style={{ backgroundColor: '#FAEEDA', borderLeft: '4px solid #854F0B' }}>
             <p className='font-semibold text-sm mb-2' style={{ color: '#854F0B' }}>The 50 percent rule:</p>
-            <p className='text-slate-700 text-sm leading-relaxed'>If a repair requires pulling the pump and the repair cost exceeds 50 percent of full replacement cost, replace the pump. A $1,500 repair on a system that costs $2,800 to replace completely means you are paying more than half the replacement price to keep an old pump in service — and that pump could fail again within a year or two.</p>
+            <p className='text-slate-700 text-sm leading-relaxed'>If a repair requires pulling the pump and the repair cost exceeds 50 percent of full replacement cost, replace the pump. A $1,500 repair on a system that costs $2,800 to replace completely means you are paying more than half the replacement price to keep an old pump in service, and that pump could fail again within a year or two.</p>
           </div>
 
           <div className='bg-white border border-slate-200 rounded-lg p-5'>
@@ -461,7 +486,7 @@ export default function WellPumpReplacementCost() {
             <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Reference</span>
             <div className='flex-1 h-px bg-slate-200'></div>
           </div>
-          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Component Repair Costs: Reference Table</h2>
+          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Component Repair Costs: Reference Table</h2><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed text-sm mb-4\">Most well pump repairs cost $100 to $500 when the problem is above ground: a pressure switch, start capacitor, control box, or wiring at the wellhead. Repairs that require pulling the pump out of the well cost more, from $200 to $500 for a check valve up to $600 to $1,500 or more for the motor. If a repair means pulling the pump and costs more than half of a full replacement, replace the pump instead.</p>\n" }} />
           <div className='overflow-x-auto'>
             <table className='w-full border-collapse text-sm'>
               <thead>
@@ -479,7 +504,7 @@ export default function WellPumpReplacementCost() {
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 border border-slate-200 text-slate-700'>Pressure tank (bladder failure)</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$300 to $800</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$450 to $1,500</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>No</td>
                 </tr>
                 <tr>
@@ -538,19 +563,19 @@ export default function WellPumpReplacementCost() {
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-3'>Signs that typically mean replacement</h3>
               <ul className='space-y-3 text-slate-700 text-sm leading-relaxed'>
-                <li>Low water pressure gradually worsening over months or years — almost always means impeller wear or well screen clogging</li>
-                <li>Pump is 12+ years old and needs a motor-level repair — economics rarely favor repairing an old motor</li>
+                <li>Low water pressure gradually worsening over months or years, almost always means impeller wear or well screen clogging</li>
+                <li>Pump is 12+ years old and needs a motor-level repair, economics rarely favor repairing an old motor</li>
                 <li>Electricity consumption from the well pump circuit has increased noticeably over 12 months</li>
-                <li>The pump ran dry — internal damage is very likely even if the pump currently operates</li>
+                <li>The pump ran dry, internal damage is very likely even if the pump currently operates</li>
               </ul>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-3'>Signs that might be repaired</h3>
               <ul className='space-y-3 text-slate-700 text-sm leading-relaxed'>
-                <li>Sudden complete loss of pressure — more often a tripped breaker, failed pressure switch, or waterlogged tank</li>
-                <li>Pump hums but does not start — typically a failed starting capacitor ($75 to $200)</li>
-                <li>Rapid short-cycling — pressure tank bladder failure, not pump failure</li>
-                <li>Pressure drops during simultaneous use but recovers — a capacity or well yield issue</li>
+                <li>Sudden complete loss of pressure, more often a tripped breaker, failed pressure switch, or waterlogged tank</li>
+                <li>Pump hums but does not start, typically a failed starting capacitor ($75 to $200)</li>
+                <li>Rapid short-cycling, pressure tank bladder failure, not pump failure</li>
+                <li>Pressure drops during simultaneous use but recovers, a capacity or well yield issue</li>
               </ul>
             </div>
           </div>
@@ -594,7 +619,7 @@ export default function WellPumpReplacementCost() {
             </div>
           </div>
 
-          <h3 className='text-xl font-bold text-slate-900 mb-4'>Questions to Ask Every Contractor — Verbatim</h3>
+          <h3 className='text-xl font-bold text-slate-900 mb-4'>Questions to Ask Every Contractor, Verbatim</h3>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'>Use these exact questions when getting quotes. A contractor who cannot answer them clearly or becomes evasive is a risk:</p>
           <div className='space-y-3'>
             {[
@@ -687,8 +712,8 @@ export default function WellPumpReplacementCost() {
               </tbody>
             </table>
           </div>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'>If a quote for this same job comes in at $1,200, ask which line items are missing. If a quote comes in at $3,500, ask what is driving the premium — more expensive pump brand, higher local labor rates, or unexpected conditions. Both outliers deserve an explanation before you accept or reject them.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'>A quote that is simply a single number — {`"`}$2,100 for well pump replacement{`"`} — with no itemization should be followed immediately by the questions in the section above. A legitimate contractor quotes this work in line items because the variables are too significant to lump together honestly.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'>If a quote for this same job comes in at $1,200, ask which line items are missing. If a quote comes in at $3,500, ask what is driving the premium, more expensive pump brand, higher local labor rates, or unexpected conditions. Both outliers deserve an explanation before you accept or reject them.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'>A quote that is simply a single number, {`"`}$2,100 for well pump replacement{`"`}, with no itemization should be followed immediately by the questions in the section above. A legitimate contractor quotes this work in line items because the variables are too significant to lump together honestly.</p>
         </div>
 
         {/* Insurance */}
@@ -705,7 +730,7 @@ export default function WellPumpReplacementCost() {
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Lightning strike:</strong> If a lightning strike damaged the pump motor and you can demonstrate the cause, most policies cover the pump as equipment damaged by a covered peril. Document the event with dates and any visible damage before calling the insurance company.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm leading-relaxed'><strong>Fire:</strong> Same principle — if a fire damaged the pump or associated wiring, document and file.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'><strong>Fire:</strong> Same principle, if a fire damaged the pump or associated wiring, document and file.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-4'>
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Power surge:</strong> Some policies cover equipment damaged by electrical surges. Check your specific policy language.</p>
@@ -738,7 +763,7 @@ export default function WellPumpReplacementCost() {
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Running dry</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>The single event most likely to cause immediate or premature pump failure. Never allow the pump to run when the well has run low — turn off the breaker at the first sign of air sputtering and wait for the well to recover.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>The single event most likely to cause immediate or premature pump failure. Never allow the pump to run when the well has run low, turn off the breaker at the first sign of air sputtering and wait for the well to recover.</p>
             </div>
           </div>
           <p className='text-slate-700 leading-relaxed text-sm'>To maximize the life of your new pump: install the correct size pressure tank with the correct air pre-charge, add a low-water cutoff switch if your well has a history of running low, and install appropriate pre-pump filtration if your water has elevated sediment, iron, or sand.</p>
@@ -758,15 +783,15 @@ export default function WellPumpReplacementCost() {
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>What is the most expensive part of replacing a well pump?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>For shallow wells (under 100 feet), the pump itself is the dominant cost. For deep wells (200 feet or more), labor is the largest line item — pulling a pump from 300 feet with a service truck, a two-person crew, and 4 to 8 hours of work costs more than the pump itself in many cases. The combination of labor, drop pipe replacement, and wiring replacement on a deep well job often exceeds the pump unit cost.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>For shallow wells (under 100 feet), the pump itself is the dominant cost. For deep wells (200 feet or more), labor is the largest line item, pulling a pump from 300 feet with a service truck, a two-person crew, and 4 to 8 hours of work costs more than the pump itself in many cases. The combination of labor, drop pipe replacement, and wiring replacement on a deep well job often exceeds the pump unit cost.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>How long does it take to replace a well pump?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Most residential pump replacements complete in one day. A shallow jet pump replacement takes 2 to 4 hours. A submersible pump in a 100 to 200 foot well takes 4 to 6 hours. A submersible pump in a 300 to 400 foot well takes 6 to 8 hours. Complex jobs — difficult site access, corroded pipe that must be replaced section by section, electrical upgrades — can extend into a second day.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Most residential pump replacements complete in one day. A shallow jet pump replacement takes 2 to 4 hours. A submersible pump in a 100 to 200 foot well takes 4 to 6 hours. A submersible pump in a 300 to 400 foot well takes 6 to 8 hours. Complex jobs, difficult site access, corroded pipe that must be replaced section by section, electrical upgrades, can extend into a second day.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Should I replace the pressure tank at the same time as the pump?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Yes, if the tank is more than 8 years old or within a few years of the pump{`'`}s age. The incremental cost of adding pressure tank replacement while the contractor is already on site is much lower than scheduling a separate service call later. A new pressure tank typically adds $200 to $500 to the total cost when bundled with a pump replacement. Replacing them separately later would cost $300 to $700 just for the tank job.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Yes, if the tank is more than 8 years old or within a few years of the pump{`'`}s age. The incremental cost of adding pressure tank replacement while the contractor is already on site is much lower than scheduling a separate service call later. A new pressure tank typically adds $200 to $500 to the total cost when bundled with a pump replacement. Replacing them separately later would cost $450 to $1,500 just for the tank job.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Can I replace a well pump myself?</h3>
@@ -774,7 +799,7 @@ export default function WellPumpReplacementCost() {
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Is it worth replacing a well pump on an old house?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>The pump{`'`}s age matters, not the house{`'`}s age. A pump that is 8 to 12 years old with a single repair is worth replacing. A pump that is 15 or more years old or has had multiple repairs should be replaced. The condition of the drop pipe and wiring, well yield, and water quality all factor in, but age of the pump itself is the primary variable. A professional inspection before replacement can determine whether the well casing, screen, and yield support a new pump.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>The pump{`'`}s age matters, not the house{`'`}s age. A pump under 8 years old with its first problem is usually worth repairing. Between 8 and 12 years, use the 50 percent rule above. Over 12 years, or after repeated repairs, replace it. The condition of the drop pipe and wiring, well yield, and water quality all factor in, but age of the pump itself is the primary variable. A professional inspection before replacement can determine whether the well casing, screen, and yield support a new pump.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>What brands of well pumps are the most reliable?</h3>
@@ -782,9 +807,11 @@ export default function WellPumpReplacementCost() {
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>What happens if I do not replace a failing well pump?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>A pump that is failing but still delivering some water will eventually fail completely, leaving you with no water. The timing is unpredictable — it could be months or it could be the next time power cycles. A failing pump also draws more electricity than a healthy one, increasing utility bills. Continued operation on a worn pump can also damage the pressure tank (short-cycling) and stress the wiring from repeated starts against mechanical resistance. Replacing at first signs of decline rather than waiting for complete failure typically reduces total project cost.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>A pump that is failing but still delivering some water will eventually fail completely, leaving you with no water. The timing is unpredictable, it could be months or it could be the next time power cycles. A failing pump also draws more electricity than a healthy one, increasing utility bills. Continued operation on a worn pump can also damage the pressure tank (short-cycling) and stress the wiring from repeated starts against mechanical resistance. Replacing at first signs of decline rather than waiting for complete failure typically reduces total project cost.</p>
             </div>
-          </div>
+          <div><h3 className='font-bold text-slate-900 text-sm mb-2'>How much does well pump repair cost?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed text-sm mb-4\">Most well pump repairs cost $100 to $500 when the problem is above ground. A pressure switch runs $100 to $300 installed, a start capacitor $75 to $200, and a control box $200 to $500. Repairs that require pulling the pump cost more: $200 to $500 for a check valve, $300 to $1,200 for drop pipe, and $600 to $1,500 or more for the motor. If a pull-the-pump repair costs more than half of a full replacement, replace the pump.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 text-sm mb-2'>How much does a well pump cost without installation?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed text-sm mb-4\">A 1/2 HP submersible pump typically costs $300 to $600, a 3/4 HP $500 to $900, and a 1 HP $700 to $1,400. A shallow well jet pump runs $200 to $700. Installed, most submersible replacements cost $1,500 to $4,000, because pipe, wire, and labor often cost more than the pump itself, especially on deep wells.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 text-sm mb-2'>How much does it cost to replace a well pump and pressure tank?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed text-sm mb-4\">Most homeowners pay about $1,700 to $4,500 to replace a submersible pump and pressure tank together. Adding the tank to a pump job typically adds $200 to $500, compared with $450 to $1,500 to replace the tank on its own later. If the tank is more than 8 years old, replace both at once.</p>\n" }} /></div></div>
         </div>
 
         {/* Glossary */}
@@ -870,7 +897,7 @@ export default function WellPumpReplacementCost() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FCEBEB', color: '#A32D2D' }}>PROBLEM</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Signs Your Well Is Running Dry</span>
             </Link>
-          </div>
+          <Link href='/cost-guides/pressure-tank-replacement-cost' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'><span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Pressure Tank Replacement Cost</span></Link><Link href='/problems/well-pump-failing' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'><span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Signs Your Well Pump Is Failing</span></Link><Link href='/reviews/best-well-pumps' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'><span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Best Well Pumps</span></Link><Link href='/guides/well-pressure-switch' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'><span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Well Pressure Switch</span></Link></div>
         </div>
 
         {/* Lead Form */}

@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/complete-well-guide`, lastModified: new Date(), changeFrequency: 'monthly', priority: 1.0 },
     { url: `${baseUrl}/problems/well-water-smells-like-sulfur`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/well-water-pressure-low`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/cost-guides/well-pump-replacement-cost`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/cost-guides/well-pump-replacement-cost`, lastModified: '2026-10-26', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/cost-guides/well-pump-replacement-cost-calculator`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/cost-guides/well-drilling-cost-calculator`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/cost-guides/well-water-treatment-cost-calculator`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
