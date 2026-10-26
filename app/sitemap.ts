@@ -50,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/reviews/best-whole-house-water-filters`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/reviews/best-iron-filters`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/reviews/best-pressure-tanks`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/reviews/best-well-pumps`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/reviews/best-well-pumps`, lastModified: '2026-10-26', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/buying-house-with-well`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/guides/well-water-vs-city-water`, lastModified: '2026-10-26', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/hard-water-well`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

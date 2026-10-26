@@ -7,10 +7,10 @@ import BeehiivEmailCapture from '@/components/BeehiivEmailCapture'
 
 export const metadata: Metadata = {
   title: 'Best Well Pumps 2026: Top Picks for Shallow, Deep, and Convertible Applications | The Well Guide',
-  description: 'Find the right well pump for your home in 2026. Tested picks for shallow wells, deep wells, and convertible jet applications from $300 to $900. Submersible and jet pump comparison with sizing by well depth and household size.',
+  description: "Find the right well pump for your home in 2026. Our picks for shallow wells, deep wells, and convertible jet applications from $300 to $900, with sizing by water level and household size.",
   openGraph: {
     title: 'Best Well Pumps 2026: Top Picks for Shallow, Deep, and Convertible Applications',
-    description: 'Find the right well pump for your home in 2026. Tested picks for shallow wells, deep wells, and convertible jet applications from $300 to $900.',
+    description: "Find the right well pump for your home in 2026. Our picks for shallow wells, deep wells, and convertible jet applications from $300 to $900, with sizing by water level and household size.",
     url: 'https://www.thewell.guide/reviews/best-well-pumps',
     siteName: 'The Well Guide',
     type: 'article',
@@ -23,13 +23,13 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Best Well Pumps 2026: Top Picks for Shallow, Deep, and Convertible Applications',
-  description: 'Find the right well pump for your home in 2026. Tested picks for shallow wells, deep wells, and convertible jet applications from $300 to $900. Submersible and jet pump comparison with sizing by well depth and household size.',
+  description: "Find the right well pump for your home in 2026. Our picks for shallow wells, deep wells, and convertible jet applications from $300 to $900, with sizing by water level and household size.",
   image: 'https://www.thewell.guide/bestwellpumps.jpg',
   datePublished: '2026-04-21',
-  dateModified: '2026-04-21',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
-    name: 'The Well Guide',
+    name: 'The Well Guide Editorial Team',
     url: 'https://www.thewell.guide',
   },
   publisher: {
@@ -41,112 +41,137 @@ const articleSchema = {
 }
 
 const itemListSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  name: 'Best Well Pumps 2026',
-  description: 'Four top residential well pumps reviewed and ranked for shallow wells, deep wells, and convertible jet applications.',
-  numberOfItems: 4,
-  itemListElement: [
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Well Pumps 2026",
+  "numberOfItems": 5,
+  "itemListElement": [
     {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Red Lion RL12G05-2W2V Submersible Deep Well Pump',
-      description: 'Best submersible well pump for most homeowners with standard 4-inch residential wells up to 250 feet deep.',
-      url: 'https://www.thewell.guide/reviews/best-well-pumps#pick-1',
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Red Lion RL12G05-2W2V Submersible Deep Well Pump",
+      "url": "https://www.thewell.guide/reviews/best-well-pumps#pick-1"
     },
     {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Red Lion RJS-100-PREM Shallow Well Jet Pump',
-      description: 'Best shallow well jet pump for homes with wells under 25 feet, cabins, and budget-conscious buyers.',
-      url: 'https://www.thewell.guide/reviews/best-well-pumps#pick-2',
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Red Lion RL12G07-2W2V Submersible Deep Well Pump",
+      "url": "https://www.thewell.guide/reviews/best-well-pumps#pick-2"
     },
     {
-      '@type': 'ListItem',
-      position: 3,
-      name: 'Red Lion RJC-100 Convertible Jet Pump',
-      description: 'Best convertible jet pump for wells in the 25 to 90 foot range with above-ground serviceability.',
-      url: 'https://www.thewell.guide/reviews/best-well-pumps#pick-3',
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Red Lion RJS-100-PREM Shallow Well Jet Pump",
+      "url": "https://www.thewell.guide/reviews/best-well-pumps#pick-3"
     },
     {
-      '@type': 'ListItem',
-      position: 4,
-      name: 'Red Lion RL22G10-3W2V Submersible Deep Well Pump',
-      description: 'Best high-flow submersible for deep wells, larger households with 3 to 4 bathrooms, and light irrigation loads.',
-      url: 'https://www.thewell.guide/reviews/best-well-pumps#pick-4',
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Red Lion RJC-100 Convertible Jet Pump",
+      "url": "https://www.thewell.guide/reviews/best-well-pumps#pick-4"
     },
-  ],
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Red Lion RL22G10-3W2V Submersible Deep Well Pump",
+      "url": "https://www.thewell.guide/reviews/best-well-pumps#pick-5"
+    }
+  ]
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'How do I know if I need a shallow well pump or a deep well submersible pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "The determining factor is your well's static water level, which is the depth from the ground surface to the top of the water when the pump is not running. If the static water level is 25 feet or less, a shallow well jet pump works and is the most affordable option. If the static water level is more than 25 feet, a shallow well jet pump cannot physically lift water that far because of atmospheric pressure limits, and you need either a convertible jet pump (for depths up to 90 feet) or a submersible pump installed down in the well (for any depth up to 250+ feet). If you do not know your well's static water level, a well service company can measure it for $50 to $150, and this measurement should be the first step before buying any pump.",
-      },
+      "@type": "Question",
+      "name": "How do I know if I need a shallow well pump or a deep well submersible pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The determining factor is your well's static water level, which is the depth from the ground surface to the top of the water when the pump is not running. If the static water level is 25 feet or less, a shallow well jet pump works and is the most affordable option. If the static water level is more than 25 feet, a shallow well jet pump cannot physically lift water that far because of atmospheric pressure limits, and you need either a convertible jet pump (for depths up to 90 feet) or a submersible pump installed down in the well (for any depth up to 250+ feet). If you do not know your well's static water level, a well service company can measure it for $50 to $150, and this measurement should be the first step before buying any pump."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What size well pump do I need for a typical 3-bedroom home?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A typical 3-bedroom home with 2 bathrooms, a kitchen, a laundry room, and 2 outside faucets has 10 to 12 plumbing fixtures total, requiring a well pump rated at 10 to 12 gallons per minute (GPM) at the operating depth of the well. Count your fixtures at 1 GPM per fixture: every sink, toilet, shower, tub, outside hose bib, washing machine, and dishwasher. For horsepower, wells under 100 feet deep need a 1/2 HP pump, wells 100-200 feet deep need 3/4 HP, and wells 200-300 feet deep need 1 HP. The Red Lion RL12G05-2W2V (1/2 HP, 12 GPM, 4-inch submersible) covers this typical use case for wells up to 200 feet deep and is one of the best-selling residential well pumps in America.',
-      },
+      "@type": "Question",
+      "name": "What size well pump do I need for a typical 3-bedroom home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical 3-bedroom home with 2 bathrooms, a kitchen, a laundry room, and 2 outside faucets has 10 to 12 plumbing fixtures total, requiring a well pump rated at 10 to 12 gallons per minute (GPM) at the operating depth of the well. Count your fixtures at 1 GPM per fixture: every sink, toilet, shower, tub, outside hose bib, washing machine, and dishwasher. For horsepower, water levels under 100 feet need a 1/2 HP pump, 100 to 200 feet need 3/4 HP, and 200 to 300 feet need 1 HP. The Red Lion RL12G05-2W2V (1/2 HP, 12 GPM) covers this use case when the water is within about 100 feet, and the RL12G07-2W2V (3/4 HP, 12 GPM) covers water levels of 100 to 200 feet."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How long does a well pump last?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A well-installed submersible well pump typically lasts 10 to 25 years, with all-stainless-steel pumps reaching the upper end of that range and budget pumps lasting closer to 10 to 15 years. Shallow well jet pumps typically last 10 to 15 years because they operate above ground and experience more thermal cycling and wear than submerged units. Factors that shorten pump life include: running dry from water table drops, sand or sediment in the water, voltage fluctuations, short-cycling from a failed pressure tank, and mineralized water that corrodes the pump body. Proper sizing and installation typically double the life of a pump compared to an oversized, overworked, or poorly installed unit.',
-      },
+      "@type": "Question",
+      "name": "How long does a well pump last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A well-installed submersible well pump typically lasts 10 to 25 years, with all-stainless-steel pumps reaching the upper end of that range and budget pumps lasting closer to 10 to 15 years. Shallow well jet pumps typically last 10 to 15 years because they operate above ground and experience more thermal cycling and wear than submerged units. Factors that shorten pump life include: running dry from water table drops, sand or sediment in the water, voltage fluctuations, short-cycling from a failed pressure tank, and mineralized water that corrodes the pump body. Proper sizing and installation typically double the life of a pump compared to an oversized, overworked, or poorly installed unit."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I install a well pump myself or do I need a professional?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A shallow well jet pump installation in a basement or pump house is a reasonable DIY project for a homeowner comfortable with plumbing and 230V electrical work, taking 4 to 8 hours for a first-time installer. Submersible pump installation in a well deeper than 100 feet typically requires professional installation because it involves specialized pump hoist equipment, underwater-rated wiring connections that must last 10 to 25 years without leaks, and electrical work on a dedicated 230V circuit that requires licensed electrical work in most jurisdictions. The labor cost for professional installation ranges from $400 to $1,200 on top of the pump cost. Most homeowners with deep wells correctly opt for professional installation because a single installation error means pulling the pump back up, which is a 4 to 6 hour job with specialized equipment.',
-      },
+      "@type": "Question",
+      "name": "Can I install a well pump myself or do I need a professional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A shallow well jet pump installation in a basement or pump house is a reasonable DIY project for a homeowner comfortable with plumbing and 230V electrical work, taking 4 to 8 hours for a first-time installer. Submersible pump installation in a well deeper than 100 feet typically requires professional installation because it involves specialized pump hoist equipment, underwater-rated wiring connections that must last 10 to 25 years without leaks, and electrical work on a dedicated 230V circuit that requires licensed electrical work in most jurisdictions. The labor cost for professional installation ranges from $400 to $1,200 on top of the pump cost. Most homeowners with deep wells correctly opt for professional installation because a single installation error means pulling the pump back up, which is a 4 to 6 hour job with specialized equipment."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What is the difference between a 2-wire and 3-wire submersible well pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A 2-wire submersible well pump has the starting mechanism built into the pump itself, requiring only two power wires plus a ground (three wires total) running from the surface down to the pump. A 3-wire submersible has an external starting mechanism housed in a control box installed at the pressure tank or near the well head, requiring three power wires plus a ground (four wires total) between the pump and the control box. 2-wire pumps are simpler to install (no control box required), have fewer components to fail, and are generally the better choice for 1/2 HP to 1 HP residential applications. 3-wire pumps are often required for horsepower ratings of 1 HP and above because the larger motors benefit from the external starting capacitor in the control box, and they are also easier to service because electronic components are accessible above ground rather than underwater.',
-      },
+      "@type": "Question",
+      "name": "What is the difference between a 2-wire and 3-wire submersible well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 2-wire submersible well pump has the starting mechanism built into the pump itself, requiring only two power wires plus a ground (three wires total) running from the surface down to the pump. A 3-wire submersible has an external starting mechanism housed in a control box installed at the pressure tank or near the well head, requiring three power wires plus a ground (four wires total) between the pump and the control box. 2-wire pumps are simpler to install (no control box required), have fewer components to fail, and are generally the better choice for 1/2 HP to 1 HP residential applications. 3-wire pumps are often required for horsepower ratings of 1 HP and above because the larger motors benefit from the external starting capacitor in the control box, and they are also easier to service because electronic components are accessible above ground rather than underwater."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Why are all 4 of the recommended well pumps Red Lion brand?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Red Lion (manufactured by Franklin Electric) consistently delivers the best balance of price, reliability, and parts availability across the full range of residential well pump applications, from shallow wells to deep wells to convertible jet pumps. Other well-respected brands include Goulds, Grundfos, and Flotec, but Goulds and Grundfos premium pumps cost 50 to 100 percent more than equivalent Red Lion models without delivering meaningfully better residential performance, and Flotec is a budget brand owned by Pentair that does not match Red Lion's stainless steel construction or warranty terms in the equivalent price tier. Sticking with one brand also simplifies parts inventory and repair if multiple components need replacement over the 10 to 25 year life of the pump system. For wells in extremely sandy geology, iron-rich water, or applications requiring 1.5 HP or larger, Goulds and Grundfos premium models can be worth the price upgrade, and a licensed well contractor can specify those alternatives based on your specific water conditions.",
-      },
+      "@type": "Question",
+      "name": "Why are all 5 of the recommended well pumps Red Lion brand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Red Lion (manufactured by Franklin Electric) consistently delivers the best balance of price, reliability, and parts availability across the full range of residential well pump applications, from shallow wells to deep wells to convertible jet pumps. Other well-respected brands include Goulds, Grundfos, and Flotec, but Goulds and Grundfos premium pumps cost 50 to 100 percent more than equivalent Red Lion models without delivering meaningfully better residential performance, and Flotec is a budget brand owned by Pentair that does not match Red Lion's stainless steel construction or warranty terms in the equivalent price tier. Sticking with one brand also simplifies parts inventory and repair if multiple components need replacement over the 10 to 25 year life of the pump system. For wells in extremely sandy geology, iron-rich water, or applications requiring 1.5 HP or larger, Goulds and Grundfos premium models can be worth the price upgrade, and a licensed well contractor can specify those alternatives based on your specific water conditions."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How much does it cost to replace a well pump including labor?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Professional well pump replacement costs $1,100 to $4,500 total including the pump, wiring, pipe, labor, and pump hoist service. The breakdown: pump $290 to $1,400, submersible wire $100 to $300, pipe and fittings $80 to $250, labor $400 to $1,200. If the pressure tank is also being replaced at the same time (recommended if the tank is over 10 years old), add $400 to $900 for the tank and installation. Shallow well jet pump replacements are meaningfully cheaper because no specialized pump hoist is needed, typically running $600 to $1,500 total installed. DIY replacement of a shallow well jet pump reduces the total cost to $500 to $900 for materials only. DIY replacement of a submersible pump is possible but requires renting a pump hoist truck for $200 to $400 per day.',
-      },
+      "@type": "Question",
+      "name": "How much does it cost to replace a well pump including labor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional well pump replacement costs $1,500 to $4,000 total including the pump, wiring, pipe, labor, and pump hoist service. The breakdown: pump $290 to $1,400, submersible wire $100 to $300, pipe and fittings $80 to $250, labor $400 to $1,200. If the pressure tank is also being replaced at the same time (recommended if the tank is over 10 years old), add $200 to $500 for the tank when it's bundled with the pump job. Shallow well jet pump replacements are meaningfully cheaper because no specialized pump hoist is needed, typically running $800 to $1,800 total installed. DIY replacement of a shallow well jet pump reduces the total cost to $500 to $900 for materials only. DIY replacement of a submersible pump is possible but requires renting a pump hoist truck for $200 to $400 per day."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Do I need to replace my pressure tank when I replace my well pump?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'You should replace the pressure tank at the same time as the pump if the tank is more than 10 years old, or if the tank is showing signs of failure (short-cycling pump, waterlogged tank that has lost its air pre-charge, or rust on the tank shell). A failing pressure tank causes the new pump to short-cycle (turn on and off rapidly), which dramatically shortens the life of the new pump from 15+ years down to 2 to 5 years. Replacing both at the same time costs $400 to $900 extra for the tank, but protects the $370 to $1,400 pump investment. If the pressure tank is less than 5 years old, verify its air pre-charge is correct (typically 2 PSI below the pump cut-in pressure) and reuse it with the new pump.',
-      },
+      "@type": "Question",
+      "name": "Do I need to replace my pressure tank when I replace my well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You should replace the pressure tank at the same time as the pump if the tank is more than 10 years old, or if the tank is showing signs of failure (short-cycling pump, waterlogged tank that has lost its air pre-charge, or rust on the tank shell). A failing pressure tank causes the new pump to short-cycle (turn on and off rapidly), which dramatically shortens the life of the new pump from 15+ years down to 2 to 5 years. Replacing both at the same time adds about $200 to $500 for the tank, but protects the $370 to $1,400 pump investment. If the pressure tank is less than 5 years old, verify its air pre-charge is correct (typically 2 PSI below the pump cut-in pressure) and reuse it with the new pump."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "What is the best submersible well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most homes, the best submersible is a 4-inch, 2-wire, stainless steel pump sized to your water level, not the biggest motor you can afford. Our picks are the Red Lion RL12G05-2W2V (1/2 HP) for water within about 100 feet and the RL12G07-2W2V (3/4 HP) for water at 100 to 200 feet. Franklin Electric, Goulds, and Grundfos are the other major brands well contractors install. They cost more and earn it in sandy or iron-rich water or at 1.5 HP and up. Whatever brand you choose, check the manufacturer's performance chart for flow at your water level and pressure setting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How deep can a 1/2 HP or 3/4 HP submersible pump work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with the pump's shut-off head, the maximum height it can lift water. Subtract 2.31 feet for every PSI of household pressure: about 92 feet at 40 PSI and 139 feet at 60 PSI. Then allow for pipe friction. What's left is roughly the deepest water level the pump can serve. A typical 1/2 HP pump with a 212-foot shut-off head works best with water within about 100 feet. A 3/4 HP pump with about 290 feet of shut-off head covers roughly 100 to 200 feet. Total well depth doesn't matter. The depth to the water does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best shallow well pump with a pressure tank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shallow well jet pumps and pressure tanks are usually bought separately, and any standard well pressure tank works with a jet pump. Our pick is the Red Lion RJS-100-PREM, which comes with a factory-set 30/50 pressure switch and gauge. Pair it with a pressure tank and set the tank's air pre-charge to 28 PSI, 2 PSI below the switch's 30 PSI cut-in. See our best pressure tanks for sizing and picks."
+      }
+    }
+  ]
 }
 
 export default function BestWellPumps() {
@@ -185,13 +210,13 @@ export default function BestWellPumps() {
             <span style={{ color: '#5DCAA5' }}>(2026)</span>
           </h1>
           <p className='text-lg text-white/70 max-w-2xl mb-10 font-medium leading-relaxed'>
-            Top picks for shallow, deep, and convertible applications. Four residential well pumps reviewed with real specs, sizing guidance, and the depth-first rule most guides skip.
+            Top picks for shallow, deep, and convertible applications. Five residential well pumps reviewed with real specs, sizing guidance, and the depth-first rule most guides skip.
           </p>
           <div className='flex items-center space-x-4'>
             <div className='w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm' style={{ backgroundColor: '#1D9E75' }}>WG</div>
             <div>
-              <p className='text-white font-semibold'>The Well Guide</p>
-              <p className='text-white/50 text-sm'>Updated April 2026 &middot; 16 min read</p>
+              <p className='text-white font-semibold'>By The Well Guide Editorial Team</p>
+              <p className='text-white/50 text-sm'>Updated October 2026 &middot; 16 min read</p>
             </div>
           </div>
         </div>
@@ -215,9 +240,7 @@ export default function BestWellPumps() {
           <p className='text-slate-700 leading-relaxed mb-4'>
             Well pump selection comes down to one question before anything else: how deep is your well? Shallow wells under 25 feet use jet pumps mounted above ground. Wells deeper than 25 feet use submersible pumps installed down inside the well casing. Buy the wrong type and the pump either will not pull water at all or will burn out within months.
           </p>
-          <p className='text-slate-700 leading-relaxed'>
-            The 4 picks below cover the major buyer segments: the <strong>Red Lion RL12G05-2W2V</strong> for most homeowners with standard deep wells, the <strong>Red Lion RJS-100-PREM</strong> for shallow wells, the <strong>Red Lion RJC-100</strong> convertible for wells in the 25 to 90 foot range, and the <strong>Red Lion RL22G10-3W2V</strong> for high-demand deep wells with larger households. For complete installation costs, see the <Link href='/cost-guides/well-pump-replacement-cost' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>well pump replacement cost guide</Link>.
-          </p>
+          <div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed\">The 5 picks below cover the major buyer segments: the Red Lion RL12G05-2W2V for deep wells with water within about 100 feet, the Red Lion RL12G07-2W2V for water levels of 100 to 200 feet, the Red Lion RJS-100-PREM for shallow wells, the Red Lion RJC-100 convertible for wells in the 25 to 90 foot range, and the Red Lion RL22G10-3W2V for high-demand households. For complete installation costs, see the <a href=\"/cost-guides/well-pump-replacement-cost\" class=\"text-[#1D9E75] underline hover:text-[#0F6E56]\">well pump replacement cost guide</a>.</p>\n" }} />
         </div>
 
         {/* The Depth-First Rule callout */}
@@ -344,7 +367,7 @@ export default function BestWellPumps() {
             <table className='w-full text-sm border-collapse'>
               <thead>
                 <tr style={{ backgroundColor: '#E1F5EE' }}>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Well Depth</th>
+                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Depth to Water (Pumping Level)</th>
                   <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Typical HP Needed</th>
                 </tr>
               </thead>
@@ -356,7 +379,7 @@ export default function BestWellPumps() {
                 <tr><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Over 450 feet</td><td className='p-3 border border-slate-200 text-slate-700'>2 HP or larger</td></tr>
               </tbody>
             </table>
-          </div>
+          </div><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed\">This is the depth to the water while the pump is running, not the total depth of the well. A 300-foot well with water at 80 feet sizes like an 80-foot well.</p>\n" }} />
           <p className='text-slate-700 leading-relaxed'>
             The depth measurement that matters is &ldquo;total dynamic head,&rdquo; which includes the vertical lift plus pressure losses in the pipe plus the required tank pressure (usually 30 to 50 PSI). A well installer or pump supplier can calculate this precisely if you give them your well depth, desired pressure, and pipe size.
           </p>
@@ -366,53 +389,13 @@ export default function BestWellPumps() {
         <div className='border-t border-slate-200 pt-12 mb-12'>
           <h2 className='text-3xl font-black text-slate-900 mb-6'>Our Top Picks at a Glance</h2>
           <div className='overflow-x-auto'>
-            <table className='w-full text-sm border-collapse min-w-[700px]'>
-              <thead>
-                <tr style={{ backgroundColor: '#E1F5EE' }}>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Pump</th>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Best For</th>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Type</th>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Well Depth</th>
-                  <th className='text-left p-3 font-bold text-slate-900 border border-slate-200'>Price Range</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Red Lion RL12G05-2W2V</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Most homeowners with standard deep wells</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Submersible, 1/2 HP, 2-wire</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Up to 250 ft</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$370 to $550</td>
-                </tr>
-                <tr style={{ backgroundColor: '#E1F5EE' }}>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Red Lion RJS-100-PREM</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Shallow wells, cabins, budget-conscious buyers</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Shallow well jet, 1 HP</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Up to 25 ft</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$290 to $420</td>
-                </tr>
-                <tr>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Red Lion RJC-100</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Wells in the 25 to 90 ft range</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Convertible jet, 1 HP</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>25 to 90 ft</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$380 to $520</td>
-                </tr>
-                <tr style={{ backgroundColor: '#E1F5EE' }}>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-medium'>Red Lion RL22G10-3W2V</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Deep wells, larger households, irrigation</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Submersible, 1 HP, 3-wire</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Up to 300+ ft</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$620 to $880</td>
-                </tr>
-              </tbody>
-            </table>
+            <div dangerouslySetInnerHTML={{ __html: "<table class=\"w-full text-sm border-collapse min-w-[700px]\">\n<thead>\n<tr style=\"background-color:#E1F5EE\">\n<th class=\"text-left p-3 font-bold text-slate-900 border border-slate-200\">Pump</th>\n<th class=\"text-left p-3 font-bold text-slate-900 border border-slate-200\">Best For</th>\n<th class=\"text-left p-3 font-bold text-slate-900 border border-slate-200\">Type</th>\n<th class=\"text-left p-3 font-bold text-slate-900 border border-slate-200\">Water Level</th>\n<th class=\"text-left p-3 font-bold text-slate-900 border border-slate-200\">Price Range</th>\n</tr>\n</thead>\n<tbody><tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Red Lion RL12G05-2W2V</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Most homeowners with standard deep wells</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Submersible, 1/2 HP, 2-wire</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Within about 100 ft</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$370 to $550</td>\n</tr>\n<tr style=\"background-color:#E1F5EE\">\n<td class=\"p-3 border border-slate-200 text-slate-700\">Red Lion RL12G07-2W2V</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Water levels of 100 to 200 feet</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Submersible, 3/4 HP, 2-wire</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">About 100 to 200 ft</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$550 to $700</td>\n</tr>\n<tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Red Lion RJS-100-PREM</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Shallow wells, cabins, budget-conscious buyers</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Shallow well jet, 1 HP</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Up to 25 ft</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$290 to $420</td>\n</tr>\n<tr style=\"background-color:#E1F5EE\">\n<td class=\"p-3 border border-slate-200 text-slate-700\">Red Lion RJC-100</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Wells in the 25 to 90 ft range</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Convertible jet, 1 HP</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">25 to 90 ft</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$380 to $520</td>\n</tr>\n<tr>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Red Lion RL22G10-3W2V</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Larger households, irrigation</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Submersible, 1 HP, 3-wire</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">Within about 120 to 150 ft</td>\n<td class=\"p-3 border border-slate-200 text-slate-700\">$620 to $880</td>\n</tr>\n</tbody></table>\n" }} />
           </div>
         </div>
 
         {/* The 4 Best Picks */}
         <div className='border-t border-slate-200 pt-12 mb-12'>
-          <h2 className='text-3xl font-black text-slate-900 mb-8'>The 4 Best Well Pumps</h2>
+          <h2 className='text-3xl font-black text-slate-900 mb-8'>The 5 Best Well Pumps</h2>
 
           {/* Pick 1 */}
           <div id='pick-1' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'>
@@ -420,13 +403,13 @@ export default function BestWellPumps() {
               <span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#1</span>
               <h3 className='text-2xl font-black text-slate-900'>Red Lion RL12G05-2W2V Submersible Deep Well Pump</h3>
             </div>
-            <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Most homeowners with a 4-inch or larger residential well between 50 and 250 feet deep who need reliable, proven hardware at a reasonable price point.</p>
+            <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Most homeowners with a 4-inch or larger residential well where the water sits within about 100 feet of the surface (the well itself can be deeper) who need reliable, proven hardware at a reasonable price point.</p>
             <div className='bg-slate-50 rounded-xl p-4 mb-6'>
-              <p className='text-sm text-slate-600'>Price: $370 to $550 &middot; Type: Submersible, 1/2 HP, 2-wire &middot; Max depth: 250 feet</p>
+              <p className='text-sm text-slate-600'>Price: $370 to $550 &middot; Type: Submersible, 1/2 HP, 2-wire &middot; Practical depth: water levels within about 100 feet</p>
             </div>
 
             <p className='text-slate-700 leading-relaxed mb-4'>
-              <strong>Compatibility:</strong> Fits 4-inch diameter wells or larger. Rated for depths up to 250 feet. Requires a 230-volt dedicated circuit. NSF/ANSI 372 certified for potable water.
+              <strong>Compatibility:</strong> Fits 4-inch diameter wells or larger. Its shut-off head of about 212 feet means it serves water levels within about 100 feet at normal household pressure. Requires a 230-volt dedicated circuit. NSF/ANSI 372 certified for potable water.
             </p>
             <p className='text-slate-700 leading-relaxed mb-4'>
               <strong>Household size:</strong> 2 to 4 people, standard 2-bathroom home with typical fixture count.
@@ -436,7 +419,7 @@ export default function BestWellPumps() {
               <strong>Pros:</strong> Widely considered the best-selling residential well pump in America for a reason. Stainless steel construction resists corrosion over decades. Built-in check valve prevents backflow and reduces pump cycling. Two-wire design eliminates the need for a separate control box, simplifying installation and reducing failure points. NSF/ANSI 372 potable water certification. Replacement parts are readily available because the pump has been in continuous production for years.
             </p>
             <p className='text-slate-700 leading-relaxed mb-6'>
-              <strong>Cons:</strong> At 1/2 HP, this pump handles wells up to 250 feet but struggles at the deeper end of that range. Wells deeper than 200 feet benefit from a 3/4 HP or 1 HP upgrade. The 12 GPM flow rate is adequate for most 2-bathroom homes but may be tight for 4+ bathroom homes with simultaneous fixture use. Installation into the well requires specialized hoisting equipment for most DIY-ers.
+              <strong>Cons:</strong> At 1/2 HP, its maximum lift is about 212 feet, and household pressure uses up 90 to 140 feet of that, so it works best with water within about 100 feet. For water at 100 to 200 feet, step up to the 3/4 HP RL12G07-2W2V. The 12 GPM flow rate is adequate for most 2-bathroom homes but may be tight for 4+ bathroom homes with simultaneous fixture use. Installation into the well requires specialized hoisting equipment for most DIY-ers.
             </p>
 
             {/* Verified specs */}
@@ -459,10 +442,11 @@ export default function BestWellPumps() {
             </a>
           </div>
 
-          {/* Pick 2 */}
-          <div id='pick-2' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'>
+<div id='pick-2' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'><div className='flex items-center gap-3 mb-4'><span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#2</span><h3 className='text-2xl font-black text-slate-900'>Red Lion RL12G07-2W2V Submersible Deep Well Pump</h3></div><p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Homes with a 4-inch or larger well where the water sits about 100 to 200 feet down. This is the most common depth range for drilled wells, and it's past what a 1/2 HP pump can reliably handle at normal household pressure.</p><div className='bg-slate-50 rounded-xl p-4 mb-6'><p className='text-sm text-slate-600'>Price: $550 to $700 · Type: Submersible, 3/4 HP, 2-wire · Practical depth: water levels of about 100 to 200 feet</p></div><p className='text-slate-700 leading-relaxed mb-4'><strong>Compatibility:</strong> Fits 4-inch diameter wells or larger. Requires a 230-volt dedicated circuit. Same RL12 series as our #1 pick, so it uses the same 2-wire setup with no control box.</p><p className='text-slate-700 leading-relaxed mb-4'><strong>Household size:</strong> 2 to 4 people, standard 2-bathroom home with typical fixture count.</p><p className='text-slate-700 leading-relaxed mb-4'><strong>Pros:</strong> The extra 1/4 HP buys roughly 60 to 100 more feet of lift than the 1/2 HP RL12G05, which is the difference between a pump that works at your water level and one that runs without building pressure. Stainless steel pump shell. Built-in check valve and suction screen. Two-wire design means no control box above ground and one less part to fail. Same 12 GPM flow as the RL12G05, so it suits the same household size, just deeper.</p><p className='text-slate-700 leading-relaxed mb-4'><strong>Cons:</strong> Costs about $150 to $200 more than the 1/2 HP model, so don't buy it for water within 100 feet, where the RL12G05 does the job. At 12 GPM, it's not the right pick for 4+ bathroom homes or irrigation. Like any submersible, installation usually needs a pump hoist and a licensed contractor.</p><div className='bg-slate-50 rounded-xl p-5 mb-6'><p className='text-sm font-bold text-slate-900 mb-3'>Verified specifications</p><div className='grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm'><div className='flex justify-between border-b border-slate-200 pb-1 gap-3'><span className='text-slate-500'>Type</span><span className='text-slate-900 font-medium'>Submersible, 4-inch</span></div><div className='flex justify-between border-b border-slate-200 pb-1 gap-3'><span className='text-slate-500'>Horsepower</span><span className='text-slate-900 font-medium'>3/4 HP</span></div><div className='flex justify-between border-b border-slate-200 pb-1 gap-3'><span className='text-slate-500'>Max flow rate</span><span className='text-slate-900 font-medium'>12 GPM</span></div><div className='flex justify-between border-b border-slate-200 pb-1 gap-3'><span className='text-slate-500'>Max shut-off</span><span className='text-slate-900 font-medium'>about 290 feet (Red Lion performance chart)</span></div><div className='flex justify-between border-b border-slate-200 pb-1 gap-3'><span className='text-slate-500'>Voltage</span><span className='text-slate-900 font-medium'>230V, 2-wire (no control box)</span></div><div className='flex justify-between border-b border-slate-200 pb-1 gap-3'><span className='text-slate-500'>Pump body</span><span className='text-slate-900 font-medium'>Stainless steel shell</span></div><div className='flex justify-between border-b border-slate-200 pb-1 gap-3'><span className='text-slate-500'>Check valve</span><span className='text-slate-900 font-medium'>Built-in, with suction screen</span></div></div></div></div>
+          {/* Pick 3 */}
+          <div id='pick-3' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'>
             <div className='flex items-center gap-3 mb-4'>
-              <span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#2</span>
+              <span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#3</span>
               <h3 className='text-2xl font-black text-slate-900'>Red Lion RJS-100-PREM Shallow Well Jet Pump</h3>
             </div>
             <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Homes with shallow wells under 25 feet, cabins, cottages, small farms, and rural buyers who want a serviceable above-ground pump at budget-friendly pricing.</p>
@@ -504,10 +488,10 @@ export default function BestWellPumps() {
             </a>
           </div>
 
-          {/* Pick 3 */}
-          <div id='pick-3' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'>
+          {/* Pick 4 */}
+          <div id='pick-4' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'>
             <div className='flex items-center gap-3 mb-4'>
-              <span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#3</span>
+              <span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#4</span>
               <h3 className='text-2xl font-black text-slate-900'>Red Lion RJC-100 Convertible Jet Pump</h3>
             </div>
             <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Wells in the 25 to 90 foot range where a shallow well jet will not work but a submersible feels like overkill, or homeowners who prefer above-ground serviceability even at greater depths.</p>
@@ -548,19 +532,19 @@ export default function BestWellPumps() {
             </a>
           </div>
 
-          {/* Pick 4 */}
-          <div id='pick-4' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'>
+          {/* Pick 5 */}
+          <div id='pick-5' className='border border-slate-200 rounded-2xl p-8 mb-8 bg-white shadow-sm'>
             <div className='flex items-center gap-3 mb-4'>
-              <span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#4</span>
+              <span className='inline-block px-3 py-1 text-xs font-bold rounded-full bg-[#E1F5EE] text-[#0F6E56]'>#5</span>
               <h3 className='text-2xl font-black text-slate-900'>Red Lion RL22G10-3W2V Submersible Deep Well Pump</h3>
             </div>
-            <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Deep wells, larger households with 3-4 bathrooms, homes with irrigation or livestock watering needs, or any application requiring high flow at depth.</p>
+            <p className='text-sm font-semibold text-[#1D9E75] mb-4'>Best for: Larger households with 3 to 4 bathrooms, homes with irrigation or livestock watering, or any home that needs high flow, where the water level is within about 120 to 150 feet.</p>
             <div className='bg-slate-50 rounded-xl p-4 mb-6'>
-              <p className='text-sm text-slate-600'>Price: $620 to $880 &middot; Type: Submersible, 1 HP, 3-wire &middot; Max depth: 300+ feet</p>
+              <p className='text-sm text-slate-600'>Price: $620 to $880 &middot; Type: Submersible, 1 HP, 3-wire &middot; Practical depth: water levels within about 120 to 150 feet</p>
             </div>
 
             <p className='text-slate-700 leading-relaxed mb-4'>
-              <strong>Compatibility:</strong> Fits 4-inch diameter wells or larger. Rated for depths up to 300+ feet. Requires a 230-volt dedicated circuit. 3-wire configuration includes a control box. NSF/ANSI 372 certified for potable water.
+              <strong>Compatibility:</strong> Fits 4-inch diameter wells or larger. It's built for flow, not depth. At 22 GPM it serves water levels within about 120 to 150 feet at normal household pressure. For deeper water, a lower-flow pump with more lift is the better fit. Requires a 230-volt dedicated circuit. 3-wire configuration includes a control box. NSF/ANSI 372 certified for potable water.
             </p>
             <p className='text-slate-700 leading-relaxed mb-4'>
               <strong>Household size:</strong> 4 to 8 people, 3-4 bathroom homes, homes with light irrigation loads.
@@ -604,11 +588,7 @@ export default function BestWellPumps() {
           <p className='text-slate-700 leading-relaxed mb-4'>
             The static water level is the depth from the ground to the top of the water in the well when no pumping is happening. This is NOT the total well depth. A 300-foot well may have a static water level of only 80 feet if the well drills down into a well-saturated aquifer. Check your well report (if you have one) or have a well service company measure it for $50 to $150.
           </p>
-          <ul className='list-disc pl-6 mb-8 text-slate-700 leading-relaxed space-y-2'>
-            <li>If static water level is under 25 feet: pick a shallow well jet pump (RJS-100-PREM).</li>
-            <li>If static water level is 25 to 90 feet: pick a convertible jet pump (RJC-100) or a submersible (RL12G05-2W2V).</li>
-            <li>If static water level is over 90 feet: pick a submersible (RL12G05-2W2V for up to 200 feet, Red Lion RL22G10-3W2V for over 200 feet or homes with high simultaneous demand).</li>
-          </ul>
+          <ul className='list-disc pl-6 mb-8 text-slate-700 leading-relaxed space-y-2'><li>If the water level is under 25 feet: pick a shallow well jet pump (RJS-100-PREM).</li><li>If the water level is 25 to 90 feet: pick a convertible jet pump (RJC-100) or a submersible (RL12G05-2W2V).</li><li>If the water level is 90 to 100 feet: pick the RL12G05-2W2V. From 100 to 200 feet: pick the RL12G07-2W2V. Larger households that need 15 GPM or more with water within about 150 feet: pick the RL22G10-3W2V. Deeper than 200 feet: have a well contractor size the pump from the manufacturer's performance chart.</li></ul>
 
           <h3 className='text-xl font-bold text-slate-900 mb-3'>Question 2: How Many Fixtures Does Your Home Have?</h3>
           <p className='text-slate-700 leading-relaxed mb-4'>
@@ -686,10 +666,10 @@ export default function BestWellPumps() {
                 <tr style={{ backgroundColor: '#E1F5EE' }}><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Submersible pump wire</td><td className='p-3 border border-slate-200 text-slate-700'>$100 to $300</td><td className='p-3 border border-slate-200 text-slate-700'>Included in labor</td></tr>
                 <tr><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Well pipe and fittings</td><td className='p-3 border border-slate-200 text-slate-700'>$80 to $250</td><td className='p-3 border border-slate-200 text-slate-700'>Included in labor</td></tr>
                 <tr style={{ backgroundColor: '#E1F5EE' }}><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pressure switch (if replacing)</td><td className='p-3 border border-slate-200 text-slate-700'>$25 to $60</td><td className='p-3 border border-slate-200 text-slate-700'>Included in labor</td></tr>
-                <tr><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pressure tank (if replacing)</td><td className='p-3 border border-slate-200 text-slate-700'>$200 to $500</td><td className='p-3 border border-slate-200 text-slate-700'>$400 to $900 installed</td></tr>
+                <tr><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pressure tank (if replacing)</td><td className='p-3 border border-slate-200 text-slate-700'>$200 to $500</td><td className='p-3 border border-slate-200 text-slate-700'>$450 to $1,500 installed</td></tr>
                 <tr style={{ backgroundColor: '#E1F5EE' }}><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Labor</td><td className='p-3 border border-slate-200 text-slate-700'>N/A</td><td className='p-3 border border-slate-200 text-slate-700'>$400 to $1,200</td></tr>
                 <tr><td className='p-3 border border-slate-200 text-slate-700 font-medium'>Pump hoist truck call</td><td className='p-3 border border-slate-200 text-slate-700'>N/A</td><td className='p-3 border border-slate-200 text-slate-700'>Usually included in labor</td></tr>
-                <tr style={{ backgroundColor: '#E1F5EE' }}><td className='p-3 border border-slate-200 text-slate-900 font-bold'>Total range</td><td className='p-3 border border-slate-200 text-slate-900 font-bold'>$500 to $2,500</td><td className='p-3 border border-slate-200 text-slate-900 font-bold'>$1,100 to $4,500</td></tr>
+                <tr style={{ backgroundColor: '#E1F5EE' }}><td className='p-3 border border-slate-200 text-slate-900 font-bold'>Total range</td><td className='p-3 border border-slate-200 text-slate-900 font-bold'>$500 to $2,500</td><td className='p-3 border border-slate-200 text-slate-900 font-bold'>$1,500 to $4,000 (submersible), $800 to $1,800 (shallow jet)</td></tr>
               </tbody>
             </table>
           </div>
@@ -732,7 +712,7 @@ export default function BestWellPumps() {
             </div>
             <div className='border-b border-slate-200 pb-6'>
               <h3 className='text-lg font-bold text-slate-900 mb-2'>What size well pump do I need for a typical 3-bedroom home?</h3>
-              <p className='text-slate-700 leading-relaxed'>A typical 3-bedroom home with 2 bathrooms, a kitchen, a laundry room, and 2 outside faucets has 10 to 12 plumbing fixtures total, requiring a well pump rated at 10 to 12 gallons per minute (GPM) at the operating depth of the well. Count your fixtures at 1 GPM per fixture: every sink, toilet, shower, tub, outside hose bib, washing machine, and dishwasher. For horsepower, wells under 100 feet deep need a 1/2 HP pump, wells 100-200 feet deep need 3/4 HP, and wells 200-300 feet deep need 1 HP. The Red Lion RL12G05-2W2V (1/2 HP, 12 GPM, 4-inch submersible) covers this typical use case for wells up to 200 feet deep and is one of the best-selling residential well pumps in America.</p>
+              <p className='text-slate-700 leading-relaxed'>A typical 3-bedroom home with 2 bathrooms, a kitchen, a laundry room, and 2 outside faucets has 10 to 12 plumbing fixtures total, requiring a well pump rated at 10 to 12 gallons per minute (GPM) at the operating depth of the well. Count your fixtures at 1 GPM per fixture: every sink, toilet, shower, tub, outside hose bib, washing machine, and dishwasher. For horsepower, water levels under 100 feet need a 1/2 HP pump, 100 to 200 feet need 3/4 HP, and 200 to 300 feet need 1 HP. The Red Lion RL12G05-2W2V (1/2 HP, 12 GPM) covers this use case when the water is within about 100 feet, and the RL12G07-2W2V (3/4 HP, 12 GPM) covers water levels of 100 to 200 feet.</p>
             </div>
             <div className='border-b border-slate-200 pb-6'>
               <h3 className='text-lg font-bold text-slate-900 mb-2'>How long does a well pump last?</h3>
@@ -747,18 +727,20 @@ export default function BestWellPumps() {
               <p className='text-slate-700 leading-relaxed'>A 2-wire submersible well pump has the starting mechanism built into the pump itself, requiring only two power wires plus a ground (three wires total) running from the surface down to the pump. A 3-wire submersible has an external starting mechanism housed in a control box installed at the pressure tank or near the well head, requiring three power wires plus a ground (four wires total) between the pump and the control box. 2-wire pumps are simpler to install (no control box required), have fewer components to fail, and are generally the better choice for 1/2 HP to 1 HP residential applications. 3-wire pumps are often required for horsepower ratings of 1 HP and above because the larger motors benefit from the external starting capacitor in the control box, and they are also easier to service because electronic components are accessible above ground rather than underwater.</p>
             </div>
             <div className='border-b border-slate-200 pb-6'>
-              <h3 className='text-lg font-bold text-slate-900 mb-2'>Why are all 4 of the recommended well pumps Red Lion brand?</h3>
+              <h3 className='text-lg font-bold text-slate-900 mb-2'>Why are all 5 of the recommended well pumps Red Lion brand?</h3>
               <p className='text-slate-700 leading-relaxed'>Red Lion (manufactured by Franklin Electric) consistently delivers the best balance of price, reliability, and parts availability across the full range of residential well pump applications, from shallow wells to deep wells to convertible jet pumps. Other well-respected brands include Goulds, Grundfos, and Flotec, but Goulds and Grundfos premium pumps cost 50 to 100 percent more than equivalent Red Lion models without delivering meaningfully better residential performance, and Flotec is a budget brand owned by Pentair that does not match Red Lion&apos;s stainless steel construction or warranty terms in the equivalent price tier. Sticking with one brand also simplifies parts inventory and repair if multiple components need replacement over the 10 to 25 year life of the pump system. For wells in extremely sandy geology, iron-rich water, or applications requiring 1.5 HP or larger, Goulds and Grundfos premium models can be worth the price upgrade, and a licensed well contractor can specify those alternatives based on your specific water conditions.</p>
             </div>
             <div className='border-b border-slate-200 pb-6'>
               <h3 className='text-lg font-bold text-slate-900 mb-2'>How much does it cost to replace a well pump including labor?</h3>
-              <p className='text-slate-700 leading-relaxed'>Professional well pump replacement costs $1,100 to $4,500 total including the pump, wiring, pipe, labor, and pump hoist service. The breakdown: pump $290 to $1,400, submersible wire $100 to $300, pipe and fittings $80 to $250, labor $400 to $1,200. If the pressure tank is also being replaced at the same time (recommended if the tank is over 10 years old), add $400 to $900 for the tank and installation. Shallow well jet pump replacements are meaningfully cheaper because no specialized pump hoist is needed, typically running $600 to $1,500 total installed. DIY replacement of a shallow well jet pump reduces the total cost to $500 to $900 for materials only. DIY replacement of a submersible pump is possible but requires renting a pump hoist truck for $200 to $400 per day.</p>
+              <p className='text-slate-700 leading-relaxed'>Professional well pump replacement costs $1,500 to $4,000 total including the pump, wiring, pipe, labor, and pump hoist service. The breakdown: pump $290 to $1,400, submersible wire $100 to $300, pipe and fittings $80 to $250, labor $400 to $1,200. If the pressure tank is also being replaced at the same time (recommended if the tank is over 10 years old), add $200 to $500 for the tank when it's bundled with the pump job. Shallow well jet pump replacements are meaningfully cheaper because no specialized pump hoist is needed, typically running $800 to $1,800 total installed. DIY replacement of a shallow well jet pump reduces the total cost to $500 to $900 for materials only. DIY replacement of a submersible pump is possible but requires renting a pump hoist truck for $200 to $400 per day.</p>
             </div>
             <div className='border-b border-slate-200 pb-6'>
               <h3 className='text-lg font-bold text-slate-900 mb-2'>Do I need to replace my pressure tank when I replace my well pump?</h3>
-              <p className='text-slate-700 leading-relaxed'>You should replace the pressure tank at the same time as the pump if the tank is more than 10 years old, or if the tank is showing signs of failure (short-cycling pump, waterlogged tank that has lost its air pre-charge, or rust on the tank shell). A failing pressure tank causes the new pump to short-cycle (turn on and off rapidly), which dramatically shortens the life of the new pump from 15+ years down to 2 to 5 years. Replacing both at the same time costs $400 to $900 extra for the tank, but protects the $370 to $1,400 pump investment. If the pressure tank is less than 5 years old, verify its air pre-charge is correct (typically 2 PSI below the pump cut-in pressure) and reuse it with the new pump.</p>
+              <p className='text-slate-700 leading-relaxed'>You should replace the pressure tank at the same time as the pump if the tank is more than 10 years old, or if the tank is showing signs of failure (short-cycling pump, waterlogged tank that has lost its air pre-charge, or rust on the tank shell). A failing pressure tank causes the new pump to short-cycle (turn on and off rapidly), which dramatically shortens the life of the new pump from 15+ years down to 2 to 5 years. Replacing both at the same time adds about $200 to $500 for the tank, but protects the $370 to $1,400 pump investment. If the pressure tank is less than 5 years old, verify its air pre-charge is correct (typically 2 PSI below the pump cut-in pressure) and reuse it with the new pump.</p>
             </div>
-          </div>
+          <div className='border-b border-slate-200 pb-6'><h3 className='text-lg font-bold text-slate-900 mb-2'>What is the best submersible well pump?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed\">For most homes, the best submersible is a 4-inch, 2-wire, stainless steel pump sized to your water level, not the biggest motor you can afford. Our picks are the Red Lion RL12G05-2W2V (1/2 HP) for water within about 100 feet and the RL12G07-2W2V (3/4 HP) for water at 100 to 200 feet. Franklin Electric, Goulds, and Grundfos are the other major brands well contractors install. They cost more and earn it in sandy or iron-rich water or at 1.5 HP and up. Whatever brand you choose, check the manufacturer's performance chart for flow at your water level and pressure setting.</p>\n" }} /></div>
+<div className='border-b border-slate-200 pb-6'><h3 className='text-lg font-bold text-slate-900 mb-2'>How deep can a 1/2 HP or 3/4 HP submersible pump work?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed\">Start with the pump's shut-off head, the maximum height it can lift water. Subtract 2.31 feet for every PSI of household pressure: about 92 feet at 40 PSI and 139 feet at 60 PSI. Then allow for pipe friction. What's left is roughly the deepest water level the pump can serve. A typical 1/2 HP pump with a 212-foot shut-off head works best with water within about 100 feet. A 3/4 HP pump with about 290 feet of shut-off head covers roughly 100 to 200 feet. Total well depth doesn't matter. The depth to the water does.</p>\n" }} /></div>
+<div className='border-b border-slate-200 pb-6'><h3 className='text-lg font-bold text-slate-900 mb-2'>What is the best shallow well pump with a pressure tank?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 leading-relaxed\">Shallow well jet pumps and pressure tanks are usually bought separately, and any standard well pressure tank works with a jet pump. Our pick is the Red Lion RJS-100-PREM, which comes with a factory-set 30/50 pressure switch and gauge. Pair it with a pressure tank and set the tank's air pre-charge to 28 PSI, 2 PSI below the switch's 30 PSI cut-in. See our <a href=\"/reviews/best-pressure-tanks\" class=\"text-[#1D9E75] underline hover:text-[#0F6E56]\">best pressure tanks</a> for sizing and picks.</p>\n" }} /></div></div>
         </div>
 
         {/* Glossary */}
@@ -828,7 +810,7 @@ export default function BestWellPumps() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FCEBEB', color: '#A32D2D' }}>PROBLEM</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Well Pump Short Cycling Troubleshooting</span>
             </Link>
-          </div>
+          <Link href='/problems/how-to-prime-a-well-pump' className='block bg-white rounded-xl p-5 border border-slate-200 hover:border-emerald-300'><p className='font-bold text-slate-900'>How to Prime a Well Pump</p></Link><Link href='/problems/well-pump-failing' className='block bg-white rounded-xl p-5 border border-slate-200 hover:border-emerald-300'><p className='font-bold text-slate-900'>Signs Your Well Pump Is Failing</p></Link></div>
         </div>
 
         {/* Newsletter */}
