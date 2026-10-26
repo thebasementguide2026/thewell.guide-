@@ -399,7 +399,17 @@ export default function NoWaterFromWell() {
           </div>
         </div>
 
-<section data-no-water-outage className='mb-16'><div dangerouslySetInnerHTML={{ __html: "" }} /></section>
+        <section data-no-water-outage className='mb-16'>
+          <h2 className='text-2xl font-bold text-slate-900 mb-6'>No Water After a Power Outage</h2>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'>Your well pump runs on electricity, so you'll have no water during an outage. That's normal. Whatever is already in the pressure tank, usually a few gallons, is all you get until the power comes back or you run the pump on a generator. See our guide to <Link href='/guides/generator-for-well-pump' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>sizing a generator for your well pump</Link>.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'>If the power is back and you still have no water, check these in order:</p>
+          <ol className='list-decimal pl-6 space-y-3 text-slate-700 text-sm mb-6'>
+            <li><strong>The well pump breaker.</strong> Power surges when the grid comes back can trip it. Push it firmly to OFF, then ON.</li>
+            <li><strong>A low-pressure cutoff on the pressure switch.</strong> Many pressure switches have a small lever on the side. If system pressure drops below about 10 PSI, the switch shuts the pump off and won't restart it on its own. With the breaker ON, lift the lever and hold it until the gauge climbs past 20 to 30 PSI, then let go. If the gauge doesn't climb within a minute or two, let go and turn the pump off. Something else is wrong, and holding the lever makes the pump run without water.</li>
+            <li><strong>A constant-pressure controller.</strong> If your system has a variable-speed controller instead of a standard pressure switch, look for a fault light or code. Many shut the pump down to protect it after a power problem or a dry-run and restart on their own after a delay. Check the controller's label or manual for the reset steps.</li>
+            <li><strong>Frozen lines.</strong> If the outage lasted long enough for the house or well pit to get cold, a pipe or the pressure switch sensing tube may have frozen. See our <Link href='/problems/frozen-well-pipes' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>frozen well pipes guide</Link>.</li>
+          </ol>
+        </section>
         {/* Cause 1: Tripped Breaker */}
         <div className='mb-16'>
           <div className='flex items-center space-x-3 mb-4'>
@@ -543,7 +553,13 @@ export default function NoWaterFromWell() {
           <p className='text-slate-700 leading-relaxed text-sm'><strong>Fix:</strong> Drop pipe failure and wiring failure both require pulling the pump. Contractor work. A contractor doing a pump service call will inspect the drop pipe and wiring before concluding the pump has failed.</p>
         </div>
 
-<section data-no-water-prime className='mb-16'><div dangerouslySetInnerHTML={{ __html: "" }} /></section>
+        <section data-no-water-prime className='mb-16'>
+          <h2 className='text-2xl font-bold text-slate-900 mb-6'>Jet Pump Lost Its Prime (Shallow Wells)</h2>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Who it affects:</strong> Homes with a jet pump, which sits above ground in a basement, crawl space, or well house instead of down in the well. Common on shallow and dug wells.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Why it happens:</strong> A jet pump has to stay full of water to pull water up from the well. If air gets into the suction line, through a leaking foot valve, a loose fitting, or a water level that dropped below the end of the pipe, the pump loses its prime.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Symptoms:</strong> The pump runs, but the gauge stays at or near zero and no water reaches the house. It often happens after the power goes out, after work on the plumbing, or when the well runs low.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'><strong>What to do:</strong> Turn the pump off at the breaker. A jet pump running without water damages its seal. Then reprime it. Our <Link href='/problems/how-to-prime-a-well-pump' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>how to prime a well pump guide</Link> walks through it step by step. If the pump loses its prime again within a few days, the foot valve or a suction line fitting is leaking and needs repair.</p>
+        </section>
         {/* The No-Water Decision Tree */}
         <div className='mb-16'>
           <div className='flex items-center space-x-3 mb-4'>
