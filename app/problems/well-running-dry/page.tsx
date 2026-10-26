@@ -59,7 +59,7 @@ const faqSchema = {
       name: 'How much does it cost to fix a dry well?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cost depends entirely on the cause. Waiting for temporary drawdown to resolve costs nothing. Lowering the pump costs $300 to $800. Well rehabilitation costs $500 to $3,000. Hydrofracturing a bedrock well costs $2,000 to $7,000. Deepening an existing well costs $3,000 to $10,000. Drilling a new well costs $5,000 to $15,000. Confirming the diagnosis before proceeding is the single most important cost control measure.',
+        text: 'Cost depends entirely on the cause. Waiting for temporary drawdown to resolve costs nothing. Lowering the pump costs $300 to $800. Well rehabilitation costs $500 to $3,000. Hydrofracturing a bedrock well costs $2,000 to $7,000. Deepening an existing well costs $3,000 to $10,000. Drilling a new well typically costs $7,000 to $16,000. Confirming the diagnosis before proceeding is the single most important cost control measure.',
       },
     },
     {
@@ -96,7 +96,7 @@ const articleSchema = {
   description: 'The complete guide to a well running dry. Four distinct scenarios, specific diagnosis and fix for each, and when deepening vs. drilling new is right.',
   image: 'https://www.thewell.guide/well dry.png',
   datePublished: '2026-03-25',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
     name: 'The Well Guide',
@@ -281,7 +281,7 @@ export default function WellRunningDry() {
             <p className='text-slate-700 leading-relaxed text-sm mb-4'><em>Well rehabilitation:</em> Clogged screens, mineral buildup, and iron bacteria can reduce well yield dramatically. A licensed contractor can clean or redevelop the well using techniques including chemical treatment (acidizing), high-pressure jetting, or mechanical brushing. If the yield decline is from well fouling rather than true aquifer change, rehabilitation can restore flow.</p>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'><em>Hydrofracturing:</em> For wells drilled in bedrock, high-pressure water injection into the bore can open existing fractures in the rock and create pathways for water to enter the well. Success rates range from 60 to 90 percent. Cost is typically $2,000 to $7,000. It is significantly cheaper than drilling a new well and worth attempting for bedrock wells before committing to a new drill.</p>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'><em>Lowering the pump or deepening the well:</em> If the static water level is still present but lower than the pump can reach, lowering the pump is tried first. If the well is not deep enough to lower the pump sufficiently, deepening the borehole to reach a lower water-bearing formation is an option. Deepening costs $3,000 to $10,000 and is not guaranteed &mdash; deeper drilling in the same location does not always find water.</p>
-            <p className='text-slate-700 leading-relaxed text-sm mb-4'><em>New well:</em> When the existing well cannot be rehabilitated, deepened, or made to access water reliably, drilling a new well in a different location is the solution. Average cost is $5,000 to $15,000 depending on depth, geology, and region. A licensed well driller can advise on the most promising location based on local hydrogeology. The old well must be properly decommissioned according to state regulations.</p>
+            <p className='text-slate-700 leading-relaxed text-sm mb-4'><em>New well:</em> When the existing well cannot be rehabilitated, deepened, or made to access water reliably, drilling a new well in a different location is the solution. Average cost is $7,000 to $16,000 for a standard 100 to 200 foot well, more depending on depth, geology, and region. A licensed well driller can advise on the most promising location based on local hydrogeology. The old well must be properly decommissioned according to state regulations.</p>
             <p className='text-slate-700 leading-relaxed text-sm'>When yield loss is permanent and rehabilitation cannot restore production, drilling a new well or deepening the existing one becomes the necessary path. Use our <Link href='/cost-guides/well-drilling-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost calculator</Link> to estimate the new well project based on expected depth, geology, and your region.</p>
           </div>
         </div>
@@ -463,7 +463,7 @@ export default function WellRunningDry() {
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>How much does it cost to fix a dry well?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Cost depends entirely on the cause. Waiting for temporary drawdown to resolve costs nothing. Lowering the pump to reach a lower water table costs $300 to $800. Well rehabilitation (cleaning and redevelopment) costs $500 to $3,000. Hydrofracturing a bedrock well costs $2,000 to $7,000. Deepening an existing well costs $3,000 to $10,000. Drilling a new well costs $5,000 to $15,000. Confirming the diagnosis before proceeding is the single most important cost control measure.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Cost depends entirely on the cause. Waiting for temporary drawdown to resolve costs nothing. Lowering the pump to reach a lower water table costs $300 to $800. Well rehabilitation (cleaning and redevelopment) costs $500 to $3,000. Hydrofracturing a bedrock well costs $2,000 to $7,000. Deepening an existing well costs $3,000 to $10,000. Drilling a new well typically costs $7,000 to $16,000. Confirming the diagnosis before proceeding is the single most important cost control measure.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Can a dry well be fixed?</h3>

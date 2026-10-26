@@ -96,7 +96,7 @@ const articleSchema = {
   description: 'Well water vs. city water compared on cost, quality, control, maintenance, and reliability. The honest breakdown for homeowners on both systems.',
   image: 'https://www.thewell.guide/_well-water-vs-city-water.jpg',
   datePublished: '2026-03-27',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
     name: 'The Well Guide',
@@ -313,7 +313,7 @@ export default function WellWaterVsCityWater() {
           {/* Break-Even Callout */}
           <div className='rounded-lg p-5 mb-4' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
             <h3 className='text-lg font-bold text-slate-900 mb-3'>The Break-Even Calculation</h3>
-            <p className='text-slate-700 text-sm leading-relaxed mb-3'>Drilling a new well costs $5,500 to $20,000 all-in. At an annual savings of $1,000 to $1,500 per year compared to city water service, a well breaks even in <strong>4 to 15 years</strong> depending on drilling cost and local water rates. In high-rate cities or states where water costs exceed $100 per month, the break-even comes faster. In areas with low water rates, it takes longer.</p>
+            <p className='text-slate-700 text-sm leading-relaxed mb-3'>Drilling a new well typically costs $7,000 to $16,000 all-in for a standard 100 to 200 foot well, and more for deep or hard-rock wells. At an annual savings of $1,000 to $1,500 per year compared to city water service, a well breaks even in <strong>4 to 15 years</strong> depending on drilling cost and local water rates. In high-rate cities or states where water costs exceed $100 per month, the break-even comes faster. In areas with low water rates, it takes longer.</p>
             <p className='text-slate-700 text-sm leading-relaxed mb-3'>The break-even calculation improves over time because city water rates increase annually while well ownership costs are largely flat (with the exception of periodic pump and tank replacement).</p>
             <p className='text-slate-700 text-sm leading-relaxed mb-3'>For a household that plans to stay in a property for 10 or more years, well ownership is almost always less expensive than city water over that period.</p>
             <p className='text-slate-700 text-sm leading-relaxed'>For homeowners weighing well installation against municipal water connection, our <Link href='/cost-guides/well-drilling-cost-calculator' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost calculator</Link> gives a personalized estimate based on expected depth, geology, casing size, pump system, and region to help you compare against quoted municipal connection fees.</p>

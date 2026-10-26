@@ -97,7 +97,7 @@ const articleSchema = {
   description: 'Low well water pressure has six distinct causes — waterlogged pressure tank, failing pump, dropping water table, clogged well screen, faulty pressure switch, or clogged filters — and each requires a different fix.',
   image: 'https://www.thewell.guide/well%20pressure.jpg',
   datePublished: '2026-03-25',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
     name: 'The Well Guide',
@@ -365,7 +365,7 @@ export default function WellWaterPressureLow() {
               </div>
               <div className='bg-white border border-slate-200 rounded-lg p-5'>
                 <h4 className='font-bold text-slate-900 text-sm mb-2'>Deepen or redrill the well</h4>
-                <p className='text-slate-700 text-sm leading-relaxed'>For wells that have declined permanently due to aquifer changes, deepening to a lower aquifer or drilling a new well may be the only long-term solution. This is expensive ($5,000 to $15,000 or more) and should only be considered after confirming that lower aquifers exist and are accessible.</p>
+                <p className='text-slate-700 text-sm leading-relaxed'>For wells that have declined permanently due to aquifer changes, deepening to a lower aquifer or drilling a new well may be the only long-term solution. This is expensive ($7,000 to $16,000 or more for a new well) and should only be considered after confirming that lower aquifers exist and are accessible.</p>
               </div>
             </div>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'>Do not run the pump dry. If the well is running low, turn off the pump and wait for recovery rather than running it continuously. A pump running without water overheats and damages impellers within minutes.</p>

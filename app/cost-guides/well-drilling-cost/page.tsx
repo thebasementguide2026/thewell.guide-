@@ -19,74 +19,98 @@ export const metadata: Metadata = {
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'How much does it cost to drill a well?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Drilling a residential water well costs $5,500 to $15,000 for a complete system at average depth (100 to 200 feet) in average geology. The drilling itself costs $25 to $65 per foot nationally, but the total project also includes casing ($6 to $11 per foot for PVC), a submersible pump ($800 to $1,800), pressure tank ($600 to $1,500), electrical hookup ($1,000 to $3,000), permit ($100 to $500), and initial water test ($150 to $400). Always request a turnkey all-in quote rather than a per-foot drilling rate.',
-      },
+      "@type": "Question",
+      "name": "How much does it cost to drill a well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Drilling a residential water well costs $7,000 to $16,000 for a complete system at average depth (100 to 200 feet) in average geology, and about $9,000 to $13,000 for a typical 150-foot well. The drilling itself costs $25 to $65 per foot nationally, but the total project also includes casing ($6 to $11 per foot for PVC), a submersible pump ($800 to $1,800), pressure tank ($450 to $1,500), electrical hookup ($1,000 to $3,000), permit ($100 to $500), and initial water test ($150 to $400). Always request a turnkey all-in quote rather than a per-foot drilling rate, because those two numbers can differ by $5,000 to $10,000 on a typical project."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How deep does a residential well need to be?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Well depth is determined by where the water is on your specific property. Most residential wells in the United States are 100 to 300 feet deep. Areas with shallow water tables such as parts of the Southeast can reach water at 50 to 100 feet. Arid western states and New England bedrock areas regularly require 300 to 600 feet. Your contractor can access well log databases for your county to show what depth neighboring properties reached water.',
-      },
+      "@type": "Question",
+      "name": "How deep does a residential well need to be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Well depth is determined by where the water is on your specific property, you cannot choose it independently. Most residential wells in the United States are 100 to 300 feet deep. Areas with shallow water tables such as parts of the Southeast can reach water at 50 to 100 feet. Arid western states and New England bedrock areas regularly require 300 to 600 feet. Your contractor can access well log databases for your county to show what depth neighboring properties reached water, which is the best predictor of what your well will require."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What is included in a well drilling quote?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A drilling-only quote covers the borehole, casing, and grout seal — typically $25 to $65 per foot. A complete turnkey quote should also include the pump, pressure tank, electrical hookup, permit, and water quality test. Always ask what specifically is and is not included. The difference between a drilling-only quote and a turnkey quote for the same well can be $5,000 to $10,000.',
-      },
+      "@type": "Question",
+      "name": "What is included in a well drilling quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A well drilling quote can mean very different things from different contractors. A drilling-only quote covers the borehole, casing, and grout seal, typically $25 to $65 per foot. A complete or turnkey quote should also include the pump, pressure tank, electrical hookup to the well controls, permit, and water quality test. Always ask what specifically is and is not included. The difference between a drilling-only quote and a turnkey quote for the same well can be $5,000 to $10,000."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How long does it take to drill a well?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Drilling itself typically takes 1 to 3 days depending on depth and geology. The complete project including permit approval, drilling, pump installation, electrical hookup, and water testing runs 1 to 2 weeks from start to finish. Permits can add time in slower jurisdictions. Rocky geology slows daily footage and can extend the drilling phase.',
-      },
+      "@type": "Question",
+      "name": "How long does it take to drill a well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Drilling itself typically takes 1 to 3 days depending on depth and geology. The complete project including permit approval, drilling, pump installation, electrical hookup, and water testing runs 1 to 2 weeks from start to finish under normal circumstances. Permits can add time in jurisdictions with slower processing. Rocky geology slows daily footage and can extend the drilling phase."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I drill my own well?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Some states allow property owners to drill wells on their own land, but all states require permits, and most require the work to be done by a licensed contractor. The only genuinely DIY option is a driven point well in sandy soil with a very shallow water table — appropriate only for irrigation, not drinking water. For a residential drinking water well, use a licensed contractor.',
-      },
+      "@type": "Question",
+      "name": "Can I drill my own well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some states allow property owners to drill wells on their own land, but all states require permits, and most require the well to be drilled by a licensed contractor. Even in states that technically allow owner-drilling, the specialized equipment required makes true DIY impractical. The only genuinely DIY option is a driven point well (sand point) in sandy soil with a very shallow water table, using a kit that costs $300 to $500, appropriate only for irrigation or non-potable uses, not for drinking water. For a residential drinking water well, use a licensed contractor."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How much does it cost to drill a well in hard rock vs. soft soil?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Hard rock formations (granite, gneiss, basalt) cost $45 to $85 per foot to drill because they require specialized air rotary rigs and wear through drill bits quickly. Soft formations cost $15 to $35 per foot. A 200-foot well in soft soil at $25 per foot costs $5,000 in drilling. The same 200-foot well in granite at $65 per foot costs $13,000.',
-      },
+      "@type": "Question",
+      "name": "How much does it cost to drill a well in hard rock vs. soft soil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hard rock formations (granite, gneiss, basalt) cost $45 to $85 per foot to drill because they require specialized air rotary rigs, wear through expensive drill bits quickly, and progress slowly, sometimes only 20 to 30 feet per day versus 100 feet per day in soft soil. Soft formations (sand, gravel, unconsolidated sediment) cost $15 to $35 per foot. A 200-foot well in soft soil at $25 per foot costs $5,000 in drilling. The same 200-foot well in granite at $65 per foot costs $13,000. Your local contractor can tell you what geology to expect based on neighboring well logs."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How much does it cost to deepen an existing well?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Well deepening costs $3,000 to $10,000 depending on additional depth needed and geology. An alternative for low-yield bedrock wells is hydrofracturing, which costs $1,500 to $3,000 and achieves success in 70 to 90 percent of cases by opening fractures in the rock to increase water flow.',
-      },
+      "@type": "Question",
+      "name": "How much does it cost to deepen an existing well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Well deepening costs $3,000 to $10,000 depending on how much additional depth is needed and the geology. Deepening is not always possible, the existing casing diameter and condition must support it. An alternative for low-yield bedrock wells is hydrofracturing, which costs $1,500 to $3,000 and succeeds in an estimated 70 to 97 percent of cases by opening fractures in the rock to increase water flow into the well. See the well running dry guide for the full decision framework on when to deepen, hydrofracture, or drill a new well."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Does a well add value to a property?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A properly functioning private well typically adds $10,000 to $30,000 to property value in rural and semi-rural markets. A well documented with recent water test results and a recent professional inspection is a selling point. An undocumented or failing well is a liability that reduces value.',
-      },
+      "@type": "Question",
+      "name": "Does a well add value to a property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A properly functioning private well typically adds $10,000 to $30,000 to property value in rural and semi-rural markets where wells are the normal water source. Properties with wells are common in these markets and buyers expect them. A well that is documented with recent water test results and a recent professional inspection in good condition is a selling point, not a liability."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "How much does it cost to drill a 100 ft well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A complete 100-foot well typically costs $7,000 to $10,000, including casing, pump, pressure tank, electrical hookup, and permit. The drilling alone runs about $4,000 at the average rate of $40 per foot, or $2,500 to $6,500 depending on geology. Soft soil sits at the low end and hard rock at the high end."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to drill a 200, 300, or 500 foot well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A complete 200-foot well typically costs $11,000 to $16,000, a 300-foot well $16,000 to $22,000, and a 500-foot well $26,000 to $38,000. The drilling alone at the average $40 per foot runs about $8,000, $12,000, and $20,000 respectively. Casing, wire, and pipe add cost with every foot, which is why deeper wells cost disproportionately more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to dig a well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a home water supply, \"digging a well\" almost always means drilling one. Most drilled wells cost $7,000 to $16,000 for a complete system at 100 to 200 feet. Hand-dug and excavated wells are rare for new homes today, because shallow wells are more prone to contamination and running dry. See our dug well vs. drilled well guide."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
@@ -96,10 +120,10 @@ const articleSchema = {
   description: 'The complete well drilling cost guide for 2026. Per-foot rates, all-in system costs by depth, regional differences, and what to ask before you sign.',
   image: 'https://www.thewell.guide/well-drilling-cost.jpg',
   datePublished: '2026-03-27',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
-    name: 'The Well Guide',
+    name: 'The Well Guide Editorial Team',
     url: 'https://www.thewell.guide',
   },
   publisher: {
@@ -142,13 +166,13 @@ export default function WellDrillingCost() {
             <span style={{ color: '#5DCAA5' }}>What Homeowners Actually<br />Pay in 2026</span>
           </h1>
           <p className='text-lg text-white/70 max-w-2xl mb-10 font-medium leading-relaxed'>
-            Per-foot rates are only part of the picture. Most homeowners pay $5,500 to $12,000 all-in for a standard drilled well.
+            Per-foot rates are only part of the picture. Most homeowners pay $9,000 to $13,000 all-in for a typical 150-foot drilled well.
           </p>
           <div className='flex items-center space-x-4'>
             <div className='w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm' style={{ backgroundColor: '#1D9E75' }}>WG</div>
             <div>
-              <p className='text-white font-semibold'>The Well Guide</p>
-              <p className='text-white/50 text-sm'>Updated March 2026 &middot; 14 min read</p>
+              <p className='text-white font-semibold'>By The Well Guide Editorial Team</p>
+              <p className='text-white/50 text-sm'>Updated October 2026 &middot; 14 min read</p>
             </div>
           </div>
         </div>
@@ -165,7 +189,7 @@ export default function WellDrillingCost() {
         {/* TL;DR Box */}
         <div className='mb-12 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
           <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>Drilling a residential water well costs $25 to $65 per foot for the drilling itself, and $3,750 to $15,600 total for a complete system including casing, pump, pressure tank, electrical hookup, and permit &mdash; based on the national average depth of 150 feet. Most homeowners pay between $5,500 and $12,000 all-in for a standard drilled well. The number that matters is the all-in cost, not the per-foot drilling rate &mdash; those two numbers frequently look very different, which is where homeowners get surprised at closing.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>Drilling a residential water well costs $25 to $65 per foot for the drilling itself, depending on geology, or about $40 per foot on average. A complete working system, including casing, pump, pressure tank, electrical hookup, and permit, typically costs $9,000 to $13,000 for a 150-foot well, the national average depth, and $7,000 to $16,000 for a standard 100 to 200 foot well. Deep or hard-rock wells can reach $25,000 or more. The number that matters is the all-in cost, not the per-foot drilling rate. Those two numbers frequently look very different, which is where homeowners get surprised at closing.</p>
         </div>
 
         {/* Calculator callout */}
@@ -190,23 +214,23 @@ export default function WellDrillingCost() {
               <tbody>
                 <tr style={{ backgroundColor: '#E8F4FD' }}>
                   <td className='p-3 border border-slate-200 text-slate-700'>Shallow well (50 to 100 feet, soft soil)</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$3,000 to $7,500</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$5,500 to $10,000</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Standard residential well (100 to 200 feet)</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$5,500 to $12,000</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$7,000 to $16,000</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 border border-slate-200 text-slate-700'>Moderate-depth well (200 to 300 feet)</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$10,000 to $18,000</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$11,000 to $22,000</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Deep well (300 to 500 feet)</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$15,000 to $30,000</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$16,000 to $38,000</td>
                 </tr>
                 <tr style={{ backgroundColor: '#FAEEDA' }}>
                   <td className='p-3 border border-slate-200 text-slate-700'>Very deep or hard rock well (500+ feet)</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$25,000 to $50,000+</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$26,000 to $50,000+</td>
                 </tr>
               </tbody>
             </table>
@@ -218,12 +242,12 @@ export default function WellDrillingCost() {
         <div className='mb-12'>
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>How Well Drilling Is Priced</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Well drilling contractors price work in one of two ways and understanding the difference is the single most important thing you can do before getting quotes.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Per-foot pricing</strong> is the most common method. The contractor charges a rate per foot of drilling depth. National rates in 2026 run $25 to $65 per foot for a complete well installation, or $15 to $30 per foot for drilling only. A 150-foot well at $50 per foot costs $7,500 in drilling. A 300-foot well at the same rate costs $15,000.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Turnkey pricing</strong> is a single all-inclusive price for a working well system &mdash; drilling, casing, pump, pressure tank, electrical connection, permit, and initial water test. Turnkey quotes are easier to compare and have fewer surprises at the end of the project.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Per-foot pricing</strong> is the most common method. The contractor charges a rate per foot of drilling depth. Drilling alone typically runs $25 to $65 per foot depending on geology, or about $40 per foot on average. Some contractors quote a higher bundled per-foot rate that includes casing and other materials, so always ask what the rate covers. A 150-foot well at $50 per foot costs $7,500 in drilling. A 300-foot well at the same rate costs $15,000.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Turnkey pricing</strong> is a single all-inclusive price for a working well system, drilling, casing, pump, pressure tank, electrical connection, permit, and initial water test. Turnkey quotes are easier to compare and have fewer surprises at the end of the project.</p>
 
           {/* Critical issue callout */}
           <div className='rounded-lg p-5 mb-4 border-2' style={{ backgroundColor: '#FAEEDA', borderColor: '#854F0B' }}>
-            <p className='text-slate-700 text-sm leading-relaxed mb-3'><strong>The critical issue with per-foot quotes</strong> is that they rarely include everything. A quote of $40 per foot for a 200-foot well is $8,000. Add casing ($6 to $11 per foot for PVC over 200 feet = $1,200 to $2,200), a submersible pump ($800 to $1,800), pressure tank ($600 to $1,500), electrical hookup ($1,000 to $3,000), permit ($100 to $500), and water test ($150 to $400) and that $8,000 quote becomes $11,850 to $17,400 before you get water from a faucet.</p>
+            <p className='text-slate-700 text-sm leading-relaxed mb-3'><strong>The critical issue with per-foot quotes</strong> is that they rarely include everything. A quote of $40 per foot for a 200-foot well is $8,000. Add casing ($6 to $11 per foot for PVC over 200 feet = $1,200 to $2,200), a submersible pump ($800 to $1,800), pressure tank ($450 to $1,500), electrical hookup ($1,000 to $3,000), permit ($100 to $500), and water test ($150 to $400) and that $8,000 quote becomes $11,700 to $17,400 before you get water from a faucet.</p>
             <p className='text-slate-700 text-sm leading-relaxed'>Always request a turnkey quote showing every line item. When contractors provide only a per-foot rate, ask them to specify what is and is not included. Get that in writing before any work begins.</p>
           </div>
         </div>
@@ -280,20 +304,20 @@ export default function WellDrillingCost() {
               </tbody>
             </table>
           </div>
-          <p className='text-slate-700 text-sm leading-relaxed mt-4'>The fixed costs (pump, pressure tank, electrical) remain roughly the same regardless of depth. The variable costs (drilling footage, casing length, pump wire length, drop pipe length) increase linearly with depth. This is why deeper wells cost disproportionately more &mdash; every additional foot adds not just drilling cost but casing, wire, and pipe cost simultaneously.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>The fixed costs (pump, pressure tank, electrical) remain roughly the same regardless of depth. The variable costs (drilling footage, casing length, pump wire length, drop pipe length) increase linearly with depth. This is why deeper wells cost disproportionately more, every additional foot adds not just drilling cost but casing, wire, and pipe cost simultaneously.</p>
         </div>
 
         {/* What Determines Your Well Depth */}
         <div className='mb-12'>
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>What Determines Your Well Depth</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>You cannot choose your well depth the way you choose a countertop. Depth is determined by where the water is.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>The local water table</strong> is the most direct determinant. In areas with shallow water tables &mdash; portions of the Southeast, Mid-Atlantic coastal plain, and Midwest river valleys &mdash; wells may reach usable water at 50 to 100 feet. In the arid Southwest, Mountain West, and parts of New England with deep bedrock aquifers, wells of 300 to 600 feet are common. Your contractor can pull well log records from state databases showing what depth neighboring properties reached water.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>The local water table</strong> is the most direct determinant. In areas with shallow water tables, portions of the Southeast, Mid-Atlantic coastal plain, and Midwest river valleys, wells may reach usable water at 50 to 100 feet. In the arid Southwest, Mountain West, and parts of New England with deep bedrock aquifers, wells of 300 to 600 feet are common. Your contractor can pull well log records from state databases showing what depth neighboring properties reached water.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Aquifer type</strong> affects both depth and reliability. Shallow unconfined aquifers are closer to the surface but more vulnerable to drought and surface contamination. Deep confined aquifers require more drilling but produce more stable water supplies year-round. See the <Link href='/guides/complete-well-guide' className='font-semibold underline' style={{ color: '#1D9E75' }}>complete well guide</Link> for a full explanation of aquifer types and how they affect your well.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Required yield</strong> affects depth. The FHA minimum for a residential well is 3 gallons per minute. Most families of four want 5 GPM or more. If the first water-bearing zone the driller encounters produces only 1 GPM, the driller will typically continue deeper to find a more productive zone, adding cost.</p>
 
           {/* Dry hole risk callout */}
           <div className='rounded-lg p-5' style={{ backgroundColor: '#FAEEDA' }}>
-            <p className='text-slate-700 text-sm leading-relaxed'><strong>The dry hole risk</strong> is real. A driller charges per foot regardless of whether they find water. In some geologies, reaching water is nearly certain within a predictable depth range. In others &mdash; notably fractured granite in New England &mdash; neighboring properties can have very different depths and yields. Ask your driller what the dry hole risk looks like for your specific area and what happens financially if adequate water is not found.</p>
+            <p className='text-slate-700 text-sm leading-relaxed'><strong>The dry hole risk</strong> is real. A driller charges per foot regardless of whether they find water. In some geologies, reaching water is nearly certain within a predictable depth range. In others, notably fractured granite in New England, neighboring properties can have very different depths and yields. Ask your driller what the dry hole risk looks like for your specific area and what happens financially if adequate water is not found.</p>
           </div>
         </div>
 
@@ -339,7 +363,7 @@ export default function WellDrillingCost() {
               </tbody>
             </table>
           </div>
-          <p className='text-slate-700 text-sm leading-relaxed mt-4'>A 200-foot well in soft sandy soil at $25 per foot costs $5,000 in drilling. The same 200-foot well in granite at $65 per foot costs $13,000. The driller does not know with certainty what they will encounter below the first 20 feet. If the quote includes language about rate changes at certain depths or for certain formation types, read it carefully. Some contractors use tiered pricing &mdash; one rate for the first 100 feet, a higher rate beyond that.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>A 200-foot well in soft sandy soil at $25 per foot costs $5,000 in drilling. The same 200-foot well in granite at $65 per foot costs $13,000. The driller does not know with certainty what they will encounter below the first 20 feet. If the quote includes language about rate changes at certain depths or for certain formation types, read it carefully. Some contractors use tiered pricing, one rate for the first 100 feet, a higher rate beyond that.</p>
           <p className='text-slate-700 text-sm leading-relaxed mt-4'><strong>Air rotary vs. mud rotary drilling:</strong> The two main drilling methods have different cost profiles. Mud rotary drilling uses a drilling fluid to stabilize the borehole and works best in unconsolidated soils. Air rotary drilling uses compressed air and works best in hard rock. If your area has fractured bedrock, expect air rotary pricing. Ask the contractor which method they plan to use and why.</p>
         </div>
 
@@ -370,7 +394,7 @@ export default function WellDrillingCost() {
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Steel casing (if required)</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>$4,500 to $19,500</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$30 to $130/ft &mdash; bedrock wells only</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$30 to $130/ft, bedrock wells only</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 border border-slate-200 text-slate-700'>Well screen</td>
@@ -404,7 +428,7 @@ export default function WellDrillingCost() {
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 border border-slate-200 text-slate-700'>Pressure tank (20 to 44 gallon)</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$600 to $1,500</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$450 to $1,500</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>See <Link href='/cost-guides/pressure-tank-replacement-cost' className='font-semibold underline' style={{ color: '#1D9E75' }}>pressure tank cost guide</Link></td>
                 </tr>
                 <tr>
@@ -428,14 +452,14 @@ export default function WellDrillingCost() {
                   <td className='p-3 border border-slate-200 text-slate-700'>Required before first use</td>
                 </tr>
                 <tr style={{ backgroundColor: '#E1F5EE' }}>
-                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>Total complete system</td>
-                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>$10,550 to $31,400</td>
-                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>Wide range reflects depth, geology, location</td>
+                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>Total complete system (150 feet, PVC casing, $40/ft drilling)</td>
+                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>$10,400 to $17,400</td>
+                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>Steel casing, if required, adds $3,600 to $17,850</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className='text-slate-700 text-sm leading-relaxed mt-4'>Most homeowners at average depth (150 feet) in average geology land between $8,000 and $15,000 for a complete working system. Wells in hard rock, deep aquifer areas, or high-labor-cost regions should be budgeted at $15,000 to $25,000.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>Few projects hit the high end on every line, so most 150-foot wells land at $9,000 to $13,000. In soft soil, where drilling runs $15 to $35 per foot, expect the total to come in lower than this table shows. Wells in hard rock, deep aquifer areas, or high-labor-cost regions should be budgeted at $15,000 to $25,000.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Replacing an old well? Ask your driller to quote <Link href='/guides/well-abandonment' className='text-[#1D9E75] underline'>sealing the old one</Link> while the rig is on site.</p>
         </div>
 
@@ -532,7 +556,7 @@ export default function WellDrillingCost() {
             <li className='text-slate-700 text-sm leading-relaxed'>Initial flow rate documentation</li>
           </ul>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Often not included &mdash; ask specifically:</strong></p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Often not included, ask specifically:</strong></p>
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Electrical panel to well circuit:</strong> Many quotes include connecting the pump controls to a junction box near the well, but the 230V circuit from your main electrical panel to the well may be a separate electrician cost. This runs $500 to $2,500 depending on the distance from the panel to the well.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Water treatment equipment:</strong> No standard drilling quote includes water treatment. You will not know what treatment is needed until after the water quality test. Budget $500 to $5,000 separately for any treatment equipment. See the <Link href='/guides/well-water-treatment-options' className='font-semibold underline' style={{ color: '#1D9E75' }}>well water treatment options guide</Link> for what systems cost.</p>
@@ -557,7 +581,7 @@ export default function WellDrillingCost() {
         {/* What Drives Cost Down */}
         <div className='mb-12'>
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>What Drives Cost Down</h2>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Soft, shallow geology.</strong> In areas with shallow water tables and soft soil &mdash; much of the Southeast and parts of the Midwest &mdash; well drilling is significantly faster and cheaper per foot.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Soft, shallow geology.</strong> In areas with shallow water tables and soft soil, much of the Southeast and parts of the Midwest, well drilling is significantly faster and cheaper per foot.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Off-peak scheduling.</strong> Late fall and winter are slower periods for most well drillers in northern states. Some contractors offer 10 to 15 percent better pricing during their slow season. In areas where summer drought increases demand, spring and fall may be cheaper than July and August.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Bundling with neighboring properties.</strong> If your property is in a rural subdivision and multiple neighbors are drilling wells at the same time, some contractors offer volume pricing when a rig is already mobilized in an area. This is uncommon but worth exploring if the timing works.</p>
           <p className='text-slate-700 text-sm leading-relaxed'><strong>Existing access and cleared land.</strong> A well site that is clear, flat, and accessible from the road with no obstacles reduces mobilization and setup time.</p>
@@ -626,12 +650,12 @@ export default function WellDrillingCost() {
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Pump replacement (Year 10 to 15)</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Once in 20 years</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$1,000 to $2,500</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$1,500 to $4,000</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 border border-slate-200 text-slate-700'>Pressure tank replacement (Year 10 to 15)</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Once in 20 years</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$600 to $1,500</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$450 to $1,500</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Annual water testing</td>
@@ -646,12 +670,12 @@ export default function WellDrillingCost() {
                 <tr style={{ backgroundColor: '#E1F5EE' }}>
                   <td className='p-3 border border-slate-200 font-bold text-slate-900'>Total 20-year cost</td>
                   <td className='p-3 border border-slate-200 font-bold text-slate-900'></td>
-                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>$14,200 to $42,000</td>
+                  <td className='p-3 border border-slate-200 font-bold text-slate-900'>$14,550 to $43,500</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className='text-slate-700 text-sm leading-relaxed mt-4'>For comparison, the average American household pays $600 to $900 per year for municipal water and sewer service &mdash; $12,000 to $18,000 over 20 years, at rates that have increased roughly 3 to 4 percent annually in most cities. Well ownership costs over 20 years are comparable or lower for most households, with the significant difference that the majority of the well cost front-loads in Year 1 while municipal costs are distributed monthly.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mt-4'>For comparison, the average American household pays $600 to $900 per year for municipal water and sewer service, $12,000 to $18,000 over 20 years, at rates that have increased roughly 3 to 4 percent annually in most cities. Well ownership costs over 20 years are comparable or lower for most households, with the significant difference that the majority of the well cost front-loads in Year 1 while municipal costs are distributed monthly.</p>
           <p className='text-slate-700 text-sm leading-relaxed mt-4'>A properly functioning private well also adds $10,000 to $30,000 to property value in most rural and semi-rural markets, according to real estate professionals familiar with well-served properties.</p>
           <p className='text-slate-700 text-sm leading-relaxed mt-4'>For new well construction projects, the pump installation portion of the total cost can be estimated using our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump cost calculator</Link>, which accounts for pump type, well depth, and regional pricing.</p>
         </div>
@@ -685,15 +709,15 @@ export default function WellDrillingCost() {
           <div className='space-y-6'>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>How much does it cost to drill a well?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Drilling a residential water well costs $5,500 to $15,000 for a complete system at average depth (100 to 200 feet) in average geology. The drilling itself costs $25 to $65 per foot nationally, but the total project also includes casing ($6 to $11 per foot for PVC), a submersible pump ($800 to $1,800), pressure tank ($600 to $1,500), electrical hookup ($1,000 to $3,000), permit ($100 to $500), and initial water test ($150 to $400). Always request a turnkey all-in quote rather than a per-foot drilling rate, because those two numbers can differ by $5,000 to $10,000 on a typical project.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Drilling a residential water well costs $7,000 to $16,000 for a complete system at average depth (100 to 200 feet) in average geology, and about $9,000 to $13,000 for a typical 150-foot well. The drilling itself costs $25 to $65 per foot nationally, but the total project also includes casing ($6 to $11 per foot for PVC), a submersible pump ($800 to $1,800), pressure tank ($450 to $1,500), electrical hookup ($1,000 to $3,000), permit ($100 to $500), and initial water test ($150 to $400). Always request a turnkey all-in quote rather than a per-foot drilling rate, because those two numbers can differ by $5,000 to $10,000 on a typical project.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>How deep does a residential well need to be?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Well depth is determined by where the water is on your specific property &mdash; you cannot choose it independently. Most residential wells in the United States are 100 to 300 feet deep. Areas with shallow water tables such as parts of the Southeast can reach water at 50 to 100 feet. Arid western states and New England bedrock areas regularly require 300 to 600 feet. Your contractor can access well log databases for your county to show what depth neighboring properties reached water, which is the best predictor of what your well will require.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Well depth is determined by where the water is on your specific property, you cannot choose it independently. Most residential wells in the United States are 100 to 300 feet deep. Areas with shallow water tables such as parts of the Southeast can reach water at 50 to 100 feet. Arid western states and New England bedrock areas regularly require 300 to 600 feet. Your contractor can access well log databases for your county to show what depth neighboring properties reached water, which is the best predictor of what your well will require.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>What is included in a well drilling quote?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>A well drilling quote can mean very different things from different contractors. A drilling-only quote covers the borehole, casing, and grout seal &mdash; typically $25 to $65 per foot. A complete or turnkey quote should also include the pump, pressure tank, electrical hookup to the well controls, permit, and water quality test. Always ask what specifically is and is not included. The difference between a drilling-only quote and a turnkey quote for the same well can be $5,000 to $10,000.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>A well drilling quote can mean very different things from different contractors. A drilling-only quote covers the borehole, casing, and grout seal, typically $25 to $65 per foot. A complete or turnkey quote should also include the pump, pressure tank, electrical hookup to the well controls, permit, and water quality test. Always ask what specifically is and is not included. The difference between a drilling-only quote and a turnkey quote for the same well can be $5,000 to $10,000.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>How long does it take to drill a well?</h3>
@@ -701,21 +725,23 @@ export default function WellDrillingCost() {
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>Can I drill my own well?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Some states allow property owners to drill wells on their own land, but all states require permits, and most require the well to be drilled by a licensed contractor. Even in states that technically allow owner-drilling, the specialized equipment required makes true DIY impractical. The only genuinely DIY option is a driven point well (sand point) in sandy soil with a very shallow water table, using a kit that costs $300 to $500 &mdash; appropriate only for irrigation or non-potable uses, not for drinking water. For a residential drinking water well, use a licensed contractor.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Some states allow property owners to drill wells on their own land, but all states require permits, and most require the well to be drilled by a licensed contractor. Even in states that technically allow owner-drilling, the specialized equipment required makes true DIY impractical. The only genuinely DIY option is a driven point well (sand point) in sandy soil with a very shallow water table, using a kit that costs $300 to $500, appropriate only for irrigation or non-potable uses, not for drinking water. For a residential drinking water well, use a licensed contractor.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>How much does it cost to drill a well in hard rock vs. soft soil?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Hard rock formations (granite, gneiss, basalt) cost $45 to $85 per foot to drill because they require specialized air rotary rigs, wear through expensive drill bits quickly, and progress slowly &mdash; sometimes only 20 to 30 feet per day versus 100 feet per day in soft soil. Soft formations (sand, gravel, unconsolidated sediment) cost $15 to $35 per foot. A 200-foot well in soft soil at $25 per foot costs $5,000 in drilling. The same 200-foot well in granite at $65 per foot costs $13,000. Your local contractor can tell you what geology to expect based on neighboring well logs.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Hard rock formations (granite, gneiss, basalt) cost $45 to $85 per foot to drill because they require specialized air rotary rigs, wear through expensive drill bits quickly, and progress slowly, sometimes only 20 to 30 feet per day versus 100 feet per day in soft soil. Soft formations (sand, gravel, unconsolidated sediment) cost $15 to $35 per foot. A 200-foot well in soft soil at $25 per foot costs $5,000 in drilling. The same 200-foot well in granite at $65 per foot costs $13,000. Your local contractor can tell you what geology to expect based on neighboring well logs.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>How much does it cost to deepen an existing well?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Well deepening costs $3,000 to $10,000 depending on how much additional depth is needed and the geology. Deepening is not always possible &mdash; the existing casing diameter and condition must support it. An alternative for low-yield bedrock wells is hydrofracturing, which costs $1,500 to $3,000 and achieves success in 70 to 90 percent of cases by opening fractures in the rock to increase water flow into the well. See the <Link href='/problems/well-running-dry' className='font-semibold underline' style={{ color: '#1D9E75' }}>well running dry guide</Link> for the full decision framework on when to deepen, hydrofracture, or drill a new well.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Well deepening costs $3,000 to $10,000 depending on how much additional depth is needed and the geology. Deepening is not always possible, the existing casing diameter and condition must support it. An alternative for low-yield bedrock wells is hydrofracturing, which costs $1,500 to $3,000 and succeeds in an estimated 70 to 97 percent of cases by opening fractures in the rock to increase water flow into the well. See the <Link href='/problems/well-running-dry' className='font-semibold underline' style={{ color: '#1D9E75' }}>well running dry guide</Link> for the full decision framework on when to deepen, hydrofracture, or drill a new well.</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>Does a well add value to a property?</h3>
               <p className='text-slate-700 text-sm leading-relaxed'>A properly functioning private well typically adds $10,000 to $30,000 to property value in rural and semi-rural markets where wells are the normal water source. Properties with wells are common in these markets and buyers expect them. A well that is documented with recent water test results and a recent professional inspection in good condition is a selling point, not a liability.</p>
             </div>
-          </div>
+          <div><h3 className='font-bold text-slate-900 mb-2'>How much does it cost to drill a 100 ft well?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">A complete 100-foot well typically costs $7,000 to $10,000, including casing, pump, pressure tank, electrical hookup, and permit. The drilling alone runs about $4,000 at the average rate of $40 per foot, or $2,500 to $6,500 depending on geology. Soft soil sits at the low end and hard rock at the high end.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 mb-2'>How much does it cost to drill a 200, 300, or 500 foot well?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">A complete 200-foot well typically costs $11,000 to $16,000, a 300-foot well $16,000 to $22,000, and a 500-foot well $26,000 to $38,000. The drilling alone at the average $40 per foot runs about $8,000, $12,000, and $20,000 respectively. Casing, wire, and pipe add cost with every foot, which is why deeper wells cost disproportionately more.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 mb-2'>How much does it cost to dig a well?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">For a home water supply, \"digging a well\" almost always means drilling one. Most drilled wells cost $7,000 to $16,000 for a complete system at 100 to 200 feet. Hand-dug and excavated wells are rare for new homes today, because shallow wells are more prone to contamination and running dry. See our <a href=\"/guides/dug-well-vs-drilled-well\" class=\"text-[#1D9E75] underline hover:text-[#0F6E56]\">dug well vs. drilled well guide</a>.</p>\n" }} /></div></div>
         </div>
 
         {/* Glossary */}
@@ -791,7 +817,7 @@ export default function WellDrillingCost() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E8F4FD', color: '#0D3D30' }}>GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>How to Test Your Well Water</span>
             </Link>
-          </div>
+          <Link href='/cost-guides/well-drilling-cost-calculator' className='block bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow'><p className='font-bold text-slate-900 text-sm'>Well Drilling Cost Calculator</p></Link><Link href='/cost-guides/well-pump-replacement-cost' className='block bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow'><p className='font-bold text-slate-900 text-sm'>Well Pump Replacement Cost</p></Link><Link href='/guides/dug-well-vs-drilled-well' className='block bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow'><p className='font-bold text-slate-900 text-sm'>Dug Well vs. Drilled Well</p></Link></div>
         </div>
 
         {/* Lead Form */}

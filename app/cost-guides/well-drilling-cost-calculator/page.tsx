@@ -7,7 +7,7 @@ import WellDrillingCostCalculator from './Calculator'
 import CtaLink from './CtaLink'
 
 const PAGE_URL = 'https://www.thewell.guide/cost-guides/well-drilling-cost-calculator'
-const LAST_UPDATED = 'May 2026'
+const LAST_UPDATED = 'October 2026'
 
 export const metadata: Metadata = {
   title: 'Well Drilling Cost Calculator (2026): Estimate New Water Well Cost | The Well Guide',
@@ -88,8 +88,8 @@ const articleSchema = {
   url: PAGE_URL,
   mainEntityOfPage: PAGE_URL,
   datePublished: '2026-05-08',
-  dateModified: '2026-05-08',
-  author: { '@type': 'Organization', name: 'The Well Guide Team' },
+  dateModified: '2026-10-26',
+  author: { '@type': 'Organization', name: 'The Well Guide Editorial Team', url: 'https://www.thewell.guide' },
   publisher: {
     '@type': 'Organization',
     name: 'The Well Guide',
@@ -152,7 +152,7 @@ export default function WellDrillingCostCalculatorPage() {
               <div className='mb-5 rounded-xl border-l-4 p-5 bg-white shadow-sm' style={{ borderLeftColor: '#1D9E75' }}>
                 <p className='text-xs font-bold uppercase tracking-[0.2em] mb-2' style={{ color: '#0F6E56' }}>TL;DR</p>
                 <p className='text-slate-700 text-sm leading-relaxed'>
-                  Most residential well drilling projects in 2026 land between $5,500 and $18,000 fully equipped, with deep or hard-rock wells reaching $25,000 or more. Depth, geology, and whether you include a pump and pressure system drive most of the spread. This calculator estimates your specific range based on depth, geology, casing size, pump system, trenching distance, and region. Use the result as a planning anchor before requesting two to four written quotes from licensed local well drilling contractors.
+                  Most residential well drilling projects in 2026 land between $7,000 and $22,000 fully equipped for wells up to 300 feet, with deep or hard-rock wells reaching $25,000 or more. Depth, geology, and whether you include a pump and pressure system drive most of the spread. This calculator estimates your specific range based on depth, geology, casing size, pump system, trenching distance, and region. Use the result as a planning anchor before requesting two to four written quotes from licensed local well drilling contractors.
                 </p>
               </div>
 
@@ -192,7 +192,7 @@ export default function WellDrillingCostCalculatorPage() {
             <div className='mb-10 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
               <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
               <p className='text-slate-700 text-sm leading-relaxed'>
-                Most residential well drilling projects in 2026 land between $5,500 and $18,000 fully equipped, with deep or hard-rock wells reaching $25,000 or more. Depth, geology, and whether you include a pump and pressure system drive most of the spread. Use the calculator to your right (or above on mobile) for a personalized range, then compare it against two to four written contractor quotes. For the full breakdown by component, see our <Link href='/cost-guides/well-drilling-cost' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost guide</Link>.
+                Most residential well drilling projects in 2026 land between $7,000 and $22,000 fully equipped for wells up to 300 feet, with deep or hard-rock wells reaching $25,000 or more. Depth, geology, and whether you include a pump and pressure system drive most of the spread. Use the calculator to your right (or above on mobile) for a personalized range, then compare it against two to four written contractor quotes. For the full breakdown by component, see our <Link href='/cost-guides/well-drilling-cost' className='underline font-semibold' style={{ color: '#0F6E56' }}>well drilling cost guide</Link>.
               </p>
             </div>
 
@@ -209,7 +209,7 @@ export default function WellDrillingCostCalculatorPage() {
               </div>
               <h2 className='text-2xl md:text-3xl font-bold text-slate-900 mb-4'>What does it really cost to drill a well in 2026?</h2>
               <p className='text-slate-700 leading-relaxed mb-4'>
-                Most residential water wells in 2026 cost between $5,500 and $18,000 fully equipped. Drilling itself is priced per foot, and contractors then add casing, the pump and pressure tank, trenching from the well to the house, electrical hookup, permits, and inspections.
+                Most residential water wells in 2026 cost between $7,000 and $22,000 fully equipped for depths up to 300 feet, and about $9,000 to $13,000 for a typical 150-foot well. Drilling itself is priced per foot, and contractors then add casing, the pump and pressure tank, trenching from the well to the house, electrical hookup, permits, and inspections.
               </p>
               <div className='overflow-x-auto rounded-xl border border-[#C8DDD7]'>
                 <table className='w-full text-sm'>
@@ -224,22 +224,22 @@ export default function WellDrillingCostCalculatorPage() {
                     <tr className='border-b border-slate-100'>
                       <td className='px-4 py-3'>Shallow well (easier soil)</td>
                       <td className='px-4 py-3 whitespace-nowrap'>50 to 100 ft</td>
-                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$3,000 to $7,500</td>
+                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$5,500 to $10,000</td>
                     </tr>
                     <tr className='border-b border-slate-100 bg-slate-50/50'>
                       <td className='px-4 py-3'>Standard residential well</td>
                       <td className='px-4 py-3 whitespace-nowrap'>100 to 200 ft</td>
-                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$5,500 to $12,000</td>
+                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$7,000 to $16,000</td>
                     </tr>
                     <tr className='border-b border-slate-100'>
                       <td className='px-4 py-3'>Moderate-depth well</td>
                       <td className='px-4 py-3 whitespace-nowrap'>200 to 300 ft</td>
-                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$10,000 to $18,000</td>
+                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$11,000 to $22,000</td>
                     </tr>
                     <tr>
                       <td className='px-4 py-3'>Deep well (hard rock)</td>
                       <td className='px-4 py-3 whitespace-nowrap'>300 to 500+ ft</td>
-                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$15,000 to $30,000+</td>
+                      <td className='px-4 py-3 font-semibold whitespace-nowrap'>$16,000 to $38,000+</td>
                     </tr>
                   </tbody>
                 </table>

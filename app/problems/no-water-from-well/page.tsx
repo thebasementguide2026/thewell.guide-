@@ -520,7 +520,7 @@ export default function NoWaterFromWell() {
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Deepen the existing well</strong> by drilling further through the bottom of the borehole. Cost varies significantly by geology and depth required.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm leading-relaxed'><strong>Drill a new well.</strong> If the existing well location has reached its productive limit, a new well at a better location or deeper depth may be the only permanent solution. Most homeowners pay $5,500 to $12,000 all-in for a standard drilled well. See our <Link href='/cost-guides/well-drilling-cost' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>well drilling cost guide</Link>.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'><strong>Drill a new well.</strong> If the existing well location has reached its productive limit, a new well at a better location or deeper depth may be the only permanent solution. Most homeowners pay $7,000 to $16,000 all-in for a standard 100 to 200 foot drilled well. See our <Link href='/cost-guides/well-drilling-cost' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>well drilling cost guide</Link>.</p>
             </div>
           </div>
         </div>
