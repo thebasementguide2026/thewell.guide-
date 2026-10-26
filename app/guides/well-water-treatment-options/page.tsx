@@ -95,7 +95,7 @@ const articleSchema = {
   headline: 'Well Water Treatment Options: Match the Right System to Your Contaminant',
   description: 'Every well water treatment technology explained and matched to your specific contaminants — sediment, carbon, UV, softeners, RO, and oxidizing filters.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
-  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
+  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://www.thewell.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/well-water-treatment-options',
   dateModified: '2026-03-25',
 }

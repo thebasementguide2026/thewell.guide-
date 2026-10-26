@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/cost-guides/well-water-testing-cost`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/how-well-pump-works`, lastModified: '2026-10-22T18:51:39.073Z', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/well-maintenance-checklist`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/problems/no-water-from-well`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/problems/no-water-from-well`, lastModified: '2026-10-26', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/frozen-well-pipes`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/well-pump-running-constantly`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/guides/well-water-contaminants`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

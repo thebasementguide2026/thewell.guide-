@@ -95,7 +95,7 @@ const articleSchema = {
   headline: 'Hard Water in Wells: What It Is, What It Costs You, and How to Fix It',
   description: 'The complete guide to hard water in private wells. What hardness levels mean, how to test, the real appliance cost, and the right treatment sequence.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
-  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
+  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://www.thewell.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/hard-water-well',
   dateModified: '2026-03-25',
 }

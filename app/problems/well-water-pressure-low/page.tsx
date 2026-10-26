@@ -101,12 +101,12 @@ const articleSchema = {
   author: {
     '@type': 'Organization',
     name: 'The Well Guide',
-    url: 'https://well.guide',
+    url: 'https://www.thewell.guide',
   },
   publisher: {
     '@type': 'Organization',
     name: 'The Well Guide',
-    url: 'https://well.guide',
+    url: 'https://www.thewell.guide',
   },
   mainEntityOfPage: 'https://www.thewell.guide/problems/well-water-pressure-low',
 }

@@ -25,7 +25,7 @@ const articleSchema = {
   headline: 'The Complete Guide to Private Well Water Systems (2026)',
   description: 'The definitive guide to private well water systems for homeowners. How wells work, all 12 components, water quality by region, annual maintenance schedule, 20-year cost table, seasonal care, and links to every deep-dive guide on well.guide.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
-  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
+  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://www.thewell.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/complete-well-guide',
   dateModified: '2026-03-25',
 }

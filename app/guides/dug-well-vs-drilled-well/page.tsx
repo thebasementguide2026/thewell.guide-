@@ -95,7 +95,7 @@ const articleSchema = {
   headline: 'Dug Well vs. Drilled Well: The Complete Comparison for Homeowners',
   description: 'The complete comparison of dug wells and drilled wells covering depth, contamination risk, drought vulnerability, and the homebuyer\'s evaluation checklist.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
-  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
+  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://www.thewell.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/dug-well-vs-drilled-well',
   dateModified: '2026-03-25',
 }

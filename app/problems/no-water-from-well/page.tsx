@@ -5,10 +5,10 @@ import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
-  title: 'No Water from Well: A Step-by-Step Diagnosis Guide | The Well Guide',
+  title: 'Suddenly No Water From Your Well? What to Check First | The Well Guide',
   description: 'Turned on the tap and got nothing? This guide walks you through every cause of no water from a well in order of likelihood, from a tripped breaker you can fix in 30 seconds to a failed pump that needs a contractor. Do these checks before you call anyone.',
   openGraph: {
-    title: 'No Water from Well: A Step-by-Step Diagnosis Guide',
+    title: 'Suddenly No Water From Your Well? What to Check First | The Well Guide',
     description: 'Turned on the tap and got nothing? This guide walks through every cause of no water from a well in order of likelihood, from a tripped breaker to a failed pump.',
     url: 'https://www.thewell.guide/problems/no-water-from-well',
     siteName: 'The Well Guide',
@@ -19,93 +19,125 @@ export const metadata: Metadata = {
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'Why does my well have no water?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The most common causes in order of frequency are a tripped circuit breaker, a failed pressure switch, a failed pump motor or start capacitor, a well running dry from seasonal low water tables or drought, a frozen pressure switch sensing tube in winter, and a failed check valve. Start by checking the breaker, then the pressure switch contacts, before assuming the pump has failed. Many no-water situations are resolved by a $25 pressure switch replacement or a simple breaker reset.',
-      },
+      "@type": "Question",
+      "name": "Why does my well have no water?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common causes in order of frequency are a tripped circuit breaker, a failed pressure switch, a failed pump motor or start capacitor, a well running dry from seasonal low water tables or drought, a frozen pressure switch sensing tube in winter, and a failed check valve. Start by checking the breaker, then the pressure switch contacts, before assuming the pump has failed. Many no-water situations are resolved by a $25 pressure switch replacement or a simple breaker reset."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What do I do if I have no water from my well?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "First, check your circuit breaker panel for a tripped double-pole breaker labeled 'well pump.' Reset it firmly (push to OFF then to ON). If water returns, you may be done. If not, check the pressure switch contacts for burning or corrosion, check the pressure gauge reading, and listen for whether the pump is running. If the pump runs but delivers no water, turn it off immediately to prevent dry-run damage and call a contractor.",
-      },
+      "@type": "Question",
+      "name": "What do I do if I have no water from my well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First, check your circuit breaker panel for a tripped double-pole breaker labeled \"well pump.\" Reset it firmly (push to OFF then to ON). If water returns, you may be done. If not, check the pressure switch contacts for burning or corrosion, check the pressure gauge reading, and listen for whether the pump is running. If the pump runs but delivers no water, turn it off immediately to prevent dry-run damage and call a contractor."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How long does it take for a well to recover after running dry?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A well that ran dry from brief overuse in an unconfined aquifer may recover in 1 to 4 hours after the pump is turned off. A well depleted by extended drought may take weeks to months to recover fully. Shallow, unconfined aquifer wells recover faster than deep confined aquifer wells. If your well recovers after an hour of rest but continues to struggle under normal use, you have a yield limitation that needs professional assessment.',
-      },
+      "@type": "Question",
+      "name": "How long does it take for a well to recover after running dry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends entirely on the aquifer type and local recharge conditions. A well that ran dry from brief overuse in an unconfined aquifer may recover in 1 to 4 hours after the pump is turned off. A well depleted by extended drought may take weeks to months to recover fully. The USGS documents that shallow, unconfined aquifer wells recover faster than deep confined aquifer wells after drought. If your well recovers after an hour of rest but continues to struggle under normal use, you have a yield limitation that needs professional assessment."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can a tripped breaker cause no water from a well?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. A tripped double-pole circuit breaker is one of the most common causes of sudden complete water loss from a well. The breaker protects the 240-volt circuit powering the pump. When it trips, the pump receives no power and no water is delivered. Check the breaker panel first, before any other diagnosis. A breaker that trips repeatedly indicates a pump or wiring problem requiring professional attention.',
-      },
+      "@type": "Question",
+      "name": "Can a tripped breaker cause no water from a well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A tripped double-pole circuit breaker is one of the most common causes of sudden complete water loss from a well. The breaker protects the 240-volt circuit powering the pump. When it trips, the pump receives no power and no water is delivered. Check the breaker panel first, before any other diagnosis. A single trip that resets cleanly is usually a fluke. A breaker that trips repeatedly indicates a pump or wiring problem requiring professional attention."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Why is my well pump not turning on?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The most common reasons: no power (tripped breaker or disconnected shutoff switch), a failed pressure switch not sending the start signal, a frozen pressure switch sensing tube in winter, a burned start capacitor on a three-wire pump, or a failed pump motor. Check the breaker first, then open the pressure switch with the power off and examine the contacts. On three-wire systems, check the control box for a burned capacitor before concluding the pump has failed.',
-      },
+      "@type": "Question",
+      "name": "Why is my well pump not turning on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most common reasons a well pump will not turn on are: no power reaching the pump (tripped breaker or disconnected well shutoff switch), a failed pressure switch that is not sending the start signal, a frozen pressure switch sensing tube in winter, a burned start capacitor on a three-wire pump, or a failed pump motor. Check the breaker first, then open the pressure switch with the power off and examine the contacts. On three-wire systems, check the control box for a burned capacitor before concluding the pump itself has failed."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Is it safe to drink water from a well after it has run dry?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Test before drinking after any well has run dry. When a well runs dry, the pump draws from very near the bottom, which may disturb sediment and introduce bacteria. After the well recovers, flush the system thoroughly, then test for total coliform bacteria and nitrates before resuming use for drinking and cooking. Use bottled water in the interim.',
-      },
+      "@type": "Question",
+      "name": "Is it safe to drink water from a well after it has run dry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test before drinking after any well has run dry. When a well runs dry, the pump draws from very near the bottom of the well, which may disturb sediment and introduce bacteria. After the well recovers, flush the system thoroughly (run water until clear), then test for total coliform bacteria and nitrates before resuming use for drinking and cooking. Use bottled water in the interim."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How do I know if my well pump has failed or if the well is just dry?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A dry well typically shows a progression: sputtering and air bubbles, then intermittent flow, then nothing. A failed pump stops more abruptly, often with the system pressurized normally right before failure. The clearest diagnostic: turn off the pump, wait two hours, restore power. If water returns even weakly, the aquifer was temporarily depleted and the pump is likely fine. If nothing returns despite all electrical components working correctly, the pump has likely failed.',
-      },
+      "@type": "Question",
+      "name": "How do I know if my well pump has failed or if the well is just dry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Listen and observe carefully. A dry well typically shows a progression: first sputtering and air bubbles in the water, then intermittent flow, then nothing. A failed pump stops more abruptly, often with the system pressurized normally right before failure. The clearest diagnostic: turn off the pump, wait two hours, restore power. If water returns (even weakly), the aquifer was temporarily depleted and the pump is likely fine. If nothing returns despite all electrical components working correctly, the pump has likely failed."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What causes a well to suddenly have no water?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sudden complete loss of water from a well is most commonly caused by a tripped circuit breaker, a failed pressure switch, or a pump motor failure. Less common causes include a frozen pressure switch sensing tube in winter, a sudden drop in the water table from drought, a cracked drop pipe, or a short circuit in the pump wiring. Check the breaker first, then the pressure switch, then the control box for three-wire pumps, then call a contractor.',
-      },
+      "@type": "Question",
+      "name": "What causes a well to suddenly have no water?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sudden complete loss of water from a well is most commonly caused by a tripped circuit breaker, a failed pressure switch, or a pump motor failure. Less common causes include a frozen pressure switch sensing tube (in winter), a sudden drop in the water table from drought or nearby heavy pumping, a cracked drop pipe, or a short circuit in the pump wiring. The diagnostic sequence is the same regardless: check breaker, check pressure switch, check control box (for three-wire pumps), then call a contractor if those components are functioning normally."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "Why is my well pump running but no water is coming out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Turn the pump off at the breaker first. Running without water destroys a submersible pump within minutes and damages a jet pump's seal. The most common causes are a well that has dropped below the pump intake, a jet pump that lost its prime, a cracked drop pipe or loose coupling in the well, or worn pump impellers. If water sputtered or had air in it before it stopped, the well is probably low. Wait 1 to 2 hours and try again with minimal use. If you have a jet pump, reprime it. If neither works, call a well contractor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my drilled well have no water?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Drilled wells are deep, so they rarely go dry overnight. When a drilled well suddenly has no water, the cause is usually electrical or mechanical: a tripped breaker, a failed pressure switch, a bad control box capacitor, a failed pump, or a broken drop pipe. Drought can lower the water level in a drilled well, but it usually happens gradually, with sputtering or air in the water first. Shallow and dug wells are much more likely to run low, especially in late summer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I reset my well pump?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start at the breaker panel: push the well pump breaker firmly to OFF, then ON. Next, check the pressure switch for a reset lever on the side. If it has one, lift it and hold it until the gauge climbs past 20 to 30 PSI, then let go. If you have a constant-pressure controller, check it for a fault light and follow the reset steps on its label. If the pump still won't start, or the breaker trips again right away, stop and call a well contractor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I have no water after a power outage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pump can't run without power, so you'll have no water during the outage beyond what's left in the pressure tank. If the power is back and the water isn't, the outage may have tripped the pump breaker, set off the low-pressure cutoff on the pressure switch, or faulted a constant-pressure controller. In cold weather, a long outage can also freeze the pipes. Check the breaker, then the reset lever, then the controller, in that order."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'No Water from Well: A Step-by-Step Diagnosis Guide',
+  headline: 'Suddenly No Water From Your Well? What to Check First',
   description: 'When a well has no water, start at the breaker panel. This guide walks through every cause of well water loss in order of likelihood, from a tripped breaker to a failed pump, with specific diagnostic steps for each.',
   image: 'https://www.thewell.guide/nowaterinwell.jpg',
   datePublished: '2026-03-25',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
-    name: 'The Well Guide',
-    url: 'https://well.guide',
+    name: 'The Well Guide Editorial Team',
+    url: 'https://www.thewell.guide',
   },
   publisher: {
     '@type': 'Organization',
     name: 'The Well Guide',
-    url: 'https://well.guide',
+    url: 'https://www.thewell.guide',
   },
   mainEntityOfPage: 'https://www.thewell.guide/problems/no-water-from-well',
 }
@@ -147,8 +179,8 @@ export default function NoWaterFromWell() {
           <div className='flex items-center space-x-4'>
             <div className='w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm' style={{ backgroundColor: '#1D9E75' }}>WG</div>
             <div>
-              <p className='text-white font-semibold'>The Well Guide</p>
-              <p className='text-white/50 text-sm'>Updated Mar 2026 &middot; 14 min read</p>
+              <p className='text-white font-semibold'>By The Well Guide Editorial Team</p>
+              <p className='text-white/50 text-sm'>Updated October 2026 &middot; 14 min read</p>
             </div>
           </div>
         </div>
@@ -165,13 +197,13 @@ export default function NoWaterFromWell() {
         {/* TL;DR Box */}
         <div className='mb-12 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
           <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>When a well-fed home suddenly has no water, go to the breaker panel first. A tripped double-pole circuit breaker is the single most common cause of complete water loss and takes 30 seconds to fix. If the breaker is fine, check the pressure switch contacts (2 minutes) and the pressure tank bladder (2 minutes). These three checks cost nothing and resolve the majority of no-water calls without a contractor. If all three check out, the problem is the pump itself, a frozen component, the well running dry, or a failed check valve — each with specific actions described below. Do not call anyone and do not pay an emergency rate until you have done these checks. If you hear the pump running but no water is coming, turn the pump off at the breaker immediately — running a submersible pump without water destroys it within minutes.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>When a well-fed home suddenly has no water, go to the breaker panel first. A tripped double-pole circuit breaker is the single most common cause of complete water loss and takes 30 seconds to fix. If the breaker is fine, check the pressure switch contacts (2 minutes) and the pressure tank bladder (2 minutes). These three checks cost nothing and resolve the majority of no-water calls without a contractor. If all three check out, the problem is the pump itself, a frozen component, the well running dry, or a failed check valve, each with specific actions described below. Do not call anyone and do not pay an emergency rate until you have done these checks. If the power just came back on, or the water ran out while you were using a lot of it, check whether your pressure switch has a reset lever on the side. Many do, and they won't restart the pump until you lift it. If you hear the pump running but no water is coming, turn the pump off at the breaker immediately, running a submersible pump without water destroys it within minutes.</p>
         </div>
 
         {/* Intro */}
         <div className='mb-12'>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'>No water at the tap is one of the most alarming things that can happen in a home. The instinct is to call a contractor immediately. That instinct is often wrong and always expensive if you have not done five minutes of self-diagnosis first. Many no-water situations are caused by a tripped breaker, a bumped shutoff switch, a stuck pressure switch, or a temporarily overtaxed well that just needs an hour of rest. None of these require a contractor.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'>The causes that do require professional help — a failed pump, a cracked drop pipe, a permanently dry well — cannot be reached without first ruling out the simpler causes anyway. So the diagnostic sequence below is the right path regardless of the eventual outcome. Work through it in order.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'>The causes that do require professional help, a failed pump, a cracked drop pipe, a permanently dry well, cannot be reached without first ruling out the simpler causes anyway. So the diagnostic sequence below is the right path regardless of the eventual outcome. Work through it in order.</p>
         </div>
 
         {/* All Causes at a Glance Table */}
@@ -195,49 +227,49 @@ export default function NoWaterFromWell() {
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Tripped circuit breaker</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>No pump sound, gauge zero, breaker in middle position</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Yes — reset once</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>Yes, reset once</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Check first, takes 30 seconds</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Failed pressure switch</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>No pump start, contacts burned or corroded inside switch</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Yes — $25 replacement</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>Yes, $25 replacement</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Check second, takes 10 minutes</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Frozen sensing tube</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>No water in winter, pump silent, small tube near switch is cold</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Yes — hair dryer</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>Yes, hair dryer</td>
                   <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#FEF3C7' }}>Immediate in freezing weather</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Frozen supply pipe</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>No water in winter, pump may run, no flow at fixtures</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Partial — gentle heat only</td>
-                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#FEF3C7' }}>Immediate — do not run pump</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>Partial, gentle heat only</td>
+                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#FEF3C7' }}>Immediate, do not run pump</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Well running dry</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Sputtering before loss, drought or heavy use, late summer</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>Partial — turn off pump and wait</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>Partial, turn off pump and wait</td>
                   <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#FEE2E2' }}>Turn off pump immediately</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Failed pump motor</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Breaker trips repeatedly, hum but no start, pump over 12 years old</td>
-                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#F3F4F6' }}>No — contractor required</td>
+                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#F3F4F6' }}>No, contractor required</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Call contractor</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Failed check valve</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Pressure drops quickly after pump shuts off</td>
-                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#F3F4F6' }}>No — contractor required</td>
+                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#F3F4F6' }}>No, contractor required</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Non-emergency, address soon</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Cracked drop pipe or wiring</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Pump runs, no pressure builds, no dry-well symptoms</td>
-                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#F3F4F6' }}>No — contractor required</td>
+                  <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#F3F4F6' }}>No, contractor required</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Call contractor</td>
                 </tr>
               </tbody>
@@ -315,25 +347,25 @@ export default function NoWaterFromWell() {
                   <tr>
                     <td className='p-3 border border-slate-200 text-slate-700'>Zero</td>
                     <td className='p-3 border border-slate-200 text-slate-700'>Running</td>
-                    <td className='p-3 border border-slate-200 text-slate-700'>Pump running but not delivering water — dry well or failed pump</td>
-                    <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#FEE2E2' }}>Cause 4 and Cause 5 — turn off pump</td>
+                    <td className='p-3 border border-slate-200 text-slate-700'>Pump running but not delivering water, dry well or failed pump</td>
+                    <td className='p-3 border border-slate-200 text-slate-700' style={{ backgroundColor: '#FEE2E2' }}>Cause 4 and Cause 5, turn off pump</td>
                   </tr>
                   <tr>
                     <td className='p-3 border border-slate-200 text-slate-700'>Normal (30–60 PSI)</td>
                     <td className='p-3 border border-slate-200 text-slate-700'>Running</td>
-                    <td className='p-3 border border-slate-200 text-slate-700'>Blockage between tank and fixtures — not a well problem</td>
+                    <td className='p-3 border border-slate-200 text-slate-700'>Blockage between tank and fixtures, not a well problem</td>
                     <td className='p-3 border border-slate-200 text-slate-700'>Check shutoff valves and sediment filters</td>
                   </tr>
                   <tr>
                     <td className='p-3 border border-slate-200 text-slate-700'>Normal (30–60 PSI)</td>
                     <td className='p-3 border border-slate-200 text-slate-700'>Silent</td>
-                    <td className='p-3 border border-slate-200 text-slate-700'>System still pressurized — you may have water, check again</td>
+                    <td className='p-3 border border-slate-200 text-slate-700'>System still pressurized, you may have water, check again</td>
                     <td className='p-3 border border-slate-200 text-slate-700'>Open a faucet and wait</td>
                   </tr>
                   <tr>
                     <td className='p-3 border border-slate-200 text-slate-700'>Stuck, does not move</td>
                     <td className='p-3 border border-slate-200 text-slate-700'>Any</td>
-                    <td className='p-3 border border-slate-200 text-slate-700'>Gauge may have failed — proceed to Check 3 regardless</td>
+                    <td className='p-3 border border-slate-200 text-slate-700'>Gauge may have failed, proceed to Check 3 regardless</td>
                     <td className='p-3 border border-slate-200 text-slate-700'>Check 3</td>
                   </tr>
                 </tbody>
@@ -342,7 +374,7 @@ export default function NoWaterFromWell() {
 
             <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Gauge reads zero and pump is not running:</strong> No power is reaching the pump, or the pressure switch is not sending the start signal. Go to Check 3.</p>
             <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Gauge reads zero and you can hear the pump running:</strong> The pump is running but not delivering water. This is serious. Turn off the pump at the breaker immediately to prevent dry-run damage, then see Cause 4 and Cause 5 below.</p>
-            <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Gauge reads a normal pressure (30 to 60 PSI) but no water flows at fixtures:</strong> The blockage is between the pressure tank and the fixtures — a shutoff valve accidentally closed, a frozen pipe between the tank and the house, or a completely clogged sediment filter. These are plumbing issues, not well issues.</p>
+            <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Gauge reads a normal pressure (30 to 60 PSI) but no water flows at fixtures:</strong> The blockage is between the pressure tank and the fixtures, a shutoff valve accidentally closed, a frozen pipe between the tank and the house, or a completely clogged sediment filter. These are plumbing issues, not well issues.</p>
             <p className='text-slate-700 leading-relaxed text-sm'><strong>Gauge needle is stuck and does not move:</strong> The gauge itself may have failed. This is less informative but does not change the diagnostic sequence. Proceed to Check 3.</p>
           </div>
 
@@ -367,6 +399,7 @@ export default function NoWaterFromWell() {
           </div>
         </div>
 
+<section data-no-water-outage className='mb-16'><div dangerouslySetInnerHTML={{ __html: "" }} /></section>
         {/* Cause 1: Tripped Breaker */}
         <div className='mb-16'>
           <div className='flex items-center space-x-3 mb-4'>
@@ -377,7 +410,7 @@ export default function NoWaterFromWell() {
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Who it affects:</strong> Everyone. No exceptions.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>Why it happens:</strong> Submersible pumps draw high starting current every time they start. Over years of cycling, this strains the breaker. Breakers also trip when the pump motor draws excess current due to a tight impeller, low voltage, or a partially failed motor winding. A single trip that resets successfully is usually a fluke. A breaker that trips repeatedly means something is drawing too much current.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>What to check:</strong> Reset once as described in Check 1. If it holds, run water normally for 10 minutes and observe. If it trips during use, have a contractor check the pump{`'`}s amp draw. Normal amp draw is printed on the pump motor nameplate. If the pump is drawing more than rated amps, the motor is failing.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'><strong>Cost to fix:</strong> Nothing if it was a fluke trip. Breaker replacement: $15 to $40 for the part, simple electrical work. Motor replacement: $400 to $2,500 for the full pump replacement if the motor has failed.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'><strong>Cost to fix:</strong> Nothing if it was a fluke trip. Breaker replacement: $15 to $40 for the part, simple electrical work. Motor replacement: <Link href='/cost-guides/well-pump-replacement-cost' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>$1,500 to $4,000 installed for most submersible pumps, or $800 to $1,800 for a shallow well jet pump</Link>.</p>
           <p className='text-slate-700 leading-relaxed text-sm mt-4'>If the power is out, see our guide to <Link href='/guides/generator-for-well-pump' className='text-[#1D9E75] underline'>sizing a generator for your well pump</Link>.</p>
         </div>
 
@@ -432,7 +465,7 @@ export default function NoWaterFromWell() {
             </div>
           </div>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>What you can check yourself:</strong> On three-wire systems, open the control box (the gray or beige box mounted above ground near the pressure tank). Look for a bulging, burned, or visibly failed start capacitor. Replace it with an exact match. This is a $30 to $75 fix that does not require pulling the pump.</p>
-          <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>What requires a contractor:</strong> Any pump problem that is not the control box components requires pulling the pump from the well. This requires a cable or tripod rig to safely extract the pump and drop pipe from potentially hundreds of feet down. This is not DIY work. Average pump replacement cost: $400 to $2,500 depending on depth and pump size.</p>
+          <p className='text-slate-700 leading-relaxed text-sm mb-4'><strong>What requires a contractor:</strong> Any pump problem that is not the control box components requires pulling the pump from the well. This requires a cable or tripod rig to safely extract the pump and drop pipe from potentially hundreds of feet down. This is not DIY work. Average pump replacement cost: $1,500 to $4,000 installed for most submersible pumps, or $800 to $1,800 for a shallow well jet pump.</p>
           <p className='text-slate-700 leading-relaxed text-sm'>If pump failure is confirmed as the cause, our <Link href='/cost-guides/well-pump-replacement-cost-calculator' className='font-semibold underline' style={{ color: '#1D9E75' }}>well pump cost calculator</Link> gives you a replacement cost estimate based on your specific pump type, well depth, and regional pricing.</p>
         </div>
 
@@ -477,7 +510,7 @@ export default function NoWaterFromWell() {
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Deepen the existing well</strong> by drilling further through the bottom of the borehole. Cost varies significantly by geology and depth required.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-4'>
-              <p className='text-slate-700 text-sm leading-relaxed'><strong>Drill a new well.</strong> If the existing well location has reached its productive limit, a new well at a better location or deeper depth may be the only permanent solution. Cost: $6,000 to $16,000 depending on depth and location.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'><strong>Drill a new well.</strong> If the existing well location has reached its productive limit, a new well at a better location or deeper depth may be the only permanent solution. Most homeowners pay $5,500 to $12,000 all-in for a standard drilled well. See our <Link href='/cost-guides/well-drilling-cost' className='text-[#1D9E75] underline hover:text-[#0F6E56]'>well drilling cost guide</Link>.</p>
             </div>
           </div>
         </div>
@@ -510,6 +543,7 @@ export default function NoWaterFromWell() {
           <p className='text-slate-700 leading-relaxed text-sm'><strong>Fix:</strong> Drop pipe failure and wiring failure both require pulling the pump. Contractor work. A contractor doing a pump service call will inspect the drop pipe and wiring before concluding the pump has failed.</p>
         </div>
 
+<section data-no-water-prime className='mb-16'><div dangerouslySetInnerHTML={{ __html: "" }} /></section>
         {/* The No-Water Decision Tree */}
         <div className='mb-16'>
           <div className='flex items-center space-x-3 mb-4'>
@@ -521,11 +555,11 @@ export default function NoWaterFromWell() {
           <div className='space-y-4'>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>No sound from system, gauge reads zero, power is on</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Check the breaker first. If the breaker is fine, check the pressure switch contacts. If contacts are burned, replace the switch. If contacts are clean, check for a frozen sensing tube in winter. If none of the above, the pump wiring or motor has failed — call a contractor.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Check the breaker first. If the breaker is fine, check the pressure switch contacts. If contacts are burned, replace the switch. If contacts are clean, check for a frozen sensing tube in winter. If none of the above, the pump wiring or motor has failed, call a contractor.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Pump runs, gauge reads zero, no water delivered</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>The pump is running but not moving water. Possible causes: dry well (water table below intake), failed pump impellers, cracked drop pipe. Turn off the pump immediately to prevent dry-run damage. Call a contractor.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>The pump is running but not moving water. Possible causes: dry well (water table below intake), failed pump impellers, cracked drop pipe. Turn off the pump immediately to prevent dry-run damage. Call a contractor. If you have a jet pump above ground, it may have lost its prime. See the jet pump section above.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Pump runs, gauge builds pressure briefly, pressure then drops quickly</h3>
@@ -546,7 +580,7 @@ export default function NoWaterFromWell() {
           </div>
         </div>
 
-        {/* When to Call a Contractor — DIY vs Contractor Table */}
+        {/* When to Call a Contractor, DIY vs Contractor Table */}
         <div className='mb-16'>
           <div className='flex items-center space-x-3 mb-4'>
             <span className='font-bold tracking-[0.3em] text-xs uppercase' style={{ color: '#0F6E56' }}>Action</span>
@@ -564,23 +598,23 @@ export default function NoWaterFromWell() {
               <tbody>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>The breaker tripped once and resets cleanly</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY — done</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY, done</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>The pressure switch contacts are burned</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY — replace the switch ($20–$50)</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY, replace the switch ($20–$50)</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>The control box capacitor on a three-wire pump has failed</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY — replace capacitor ($30–$75)</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY, replace capacitor ($30–$75)</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>The pressure switch sensing tube is frozen</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY — hair dryer fix</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY, hair dryer fix</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>You suspect the well ran dry</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY — rest the well first before calling</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold' style={{ color: '#0F6E56' }}>DIY, rest the well first before calling</td>
                 </tr>
                 <tr style={{ backgroundColor: '#FEF3C7' }}>
                   <td className='p-3 border border-slate-200 text-slate-700'>The breaker trips immediately and repeatedly</td>
@@ -604,15 +638,15 @@ export default function NoWaterFromWell() {
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>The well appears to have a yield limitation</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold text-slate-500'>Call contractor — no emergency</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold text-slate-500'>Call contractor, no emergency</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>The check valve appears to have failed</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold text-slate-500'>Call contractor — no emergency</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold text-slate-500'>Call contractor, no emergency</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>The pump is more than 12 years old with intermittent failures</td>
-                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold text-slate-500'>Call contractor — no emergency</td>
+                  <td className='p-3 border border-slate-200 text-slate-700 font-semibold text-slate-500'>Call contractor, no emergency</td>
                 </tr>
               </tbody>
             </table>
@@ -656,7 +690,7 @@ export default function NoWaterFromWell() {
           <p className='text-slate-700 leading-relaxed text-sm mb-4'>If the pump motor is confirmed failed, they will pull the pump. This requires a cable puller or tripod, is physical work, and typically takes 2 to 4 hours for a standard residential well. They will inspect the drop pipe and wiring as they pull.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'>They will quote you pump replacement on the spot once they can see the pump specifications. Get the pump brand, model, and horsepower confirmed in writing before you agree to replacement. The replacement pump should match the original specifications unless the contractor recommends otherwise with a clear explanation.</p>
           <p className='text-slate-700 leading-relaxed text-sm mb-4'>After installation they will run the system through several pressure cycles to confirm proper operation and measure the pump output in gallons per minute to confirm adequate yield.</p>
-          <p className='text-slate-700 leading-relaxed text-sm'><strong>Average cost:</strong> $400 to $2,500 for a complete pump replacement depending on depth, pump size, and labor rates in your region. Emergency or weekend rates add $150 to $300 to the call.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'><strong>Average cost:</strong> $1,500 to $4,000 installed for most submersible pumps, or $800 to $1,800 for a shallow well jet pump. Emergency or weekend rates add $150 to $300 to the call.</p>
         </div>
 
         {/* FAQ Section */}
@@ -724,7 +758,10 @@ export default function NoWaterFromWell() {
               <div className='px-4 pb-4 text-sm text-slate-700 leading-relaxed'>Sudden complete loss of water from a well is most commonly caused by a tripped circuit breaker, a failed pressure switch, or a pump motor failure. Less common causes include a frozen pressure switch sensing tube (in winter), a sudden drop in the water table from drought or nearby heavy pumping, a cracked drop pipe, or a short circuit in the pump wiring. The diagnostic sequence is the same regardless: check breaker, check pressure switch, check control box (for three-wire pumps), then call a contractor if those components are functioning normally.</div>
             </details>
           </div>
-        </div>
+        <details className='group bg-white border border-slate-200 rounded-lg'><summary className='cursor-pointer p-4 font-semibold text-sm text-slate-900 flex justify-between items-center'>Why is my well pump running but no water is coming out?<span className='text-slate-400 group-open:rotate-45 transition-transform text-lg'>+</span></summary><div className='px-4 pb-4 text-sm text-slate-700 leading-relaxed'>Turn the pump off at the breaker first. Running without water destroys a submersible pump within minutes and damages a jet pump's seal. The most common causes are a well that has dropped below the pump intake, a jet pump that lost its prime, a cracked drop pipe or loose coupling in the well, or worn pump impellers. If water sputtered or had air in it before it stopped, the well is probably low. Wait 1 to 2 hours and try again with minimal use. If you have a jet pump, reprime it. If neither works, call a well contractor.</div></details>
+<details className='group bg-white border border-slate-200 rounded-lg'><summary className='cursor-pointer p-4 font-semibold text-sm text-slate-900 flex justify-between items-center'>Why does my drilled well have no water?<span className='text-slate-400 group-open:rotate-45 transition-transform text-lg'>+</span></summary><div className='px-4 pb-4 text-sm text-slate-700 leading-relaxed'>Drilled wells are deep, so they rarely go dry overnight. When a drilled well suddenly has no water, the cause is usually electrical or mechanical: a tripped breaker, a failed pressure switch, a bad control box capacitor, a failed pump, or a broken drop pipe. Drought can lower the water level in a drilled well, but it usually happens gradually, with sputtering or air in the water first. Shallow and dug wells are much more likely to run low, especially in late summer.</div></details>
+<details className='group bg-white border border-slate-200 rounded-lg'><summary className='cursor-pointer p-4 font-semibold text-sm text-slate-900 flex justify-between items-center'>How do I reset my well pump?<span className='text-slate-400 group-open:rotate-45 transition-transform text-lg'>+</span></summary><div className='px-4 pb-4 text-sm text-slate-700 leading-relaxed'>Start at the breaker panel: push the well pump breaker firmly to OFF, then ON. Next, check the pressure switch for a reset lever on the side. If it has one, lift it and hold it until the gauge climbs past 20 to 30 PSI, then let go. If you have a constant-pressure controller, check it for a fault light and follow the reset steps on its label. If the pump still won't start, or the breaker trips again right away, stop and call a well contractor.</div></details>
+<details className='group bg-white border border-slate-200 rounded-lg'><summary className='cursor-pointer p-4 font-semibold text-sm text-slate-900 flex justify-between items-center'>Why do I have no water after a power outage?<span className='text-slate-400 group-open:rotate-45 transition-transform text-lg'>+</span></summary><div className='px-4 pb-4 text-sm text-slate-700 leading-relaxed'>The pump can't run without power, so you'll have no water during the outage beyond what's left in the pressure tank. If the power is back and the water isn't, the outage may have tripped the pump breaker, set off the low-pressure cutoff on the pressure switch, or faulted a constant-pressure controller. In cold weather, a long outage can also freeze the pipes. Check the breaker, then the reset lever, then the controller, in that order.</div></details></div>
 
         {/* Glossary */}
         <div className='mb-16'>
@@ -801,7 +838,7 @@ export default function NoWaterFromWell() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}>GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>The Complete Guide to Private Well Water Systems</span>
             </Link>
-          </div>
+          <Link href='/problems/how-to-prime-a-well-pump' className='block bg-white rounded-lg border border-slate-200 p-5 hover:border-emerald-300 transition-colors'><p className='font-bold text-slate-900'>How to Prime a Well Pump</p></Link><Link href='/problems/frozen-well-pipes' className='block bg-white rounded-lg border border-slate-200 p-5 hover:border-emerald-300 transition-colors'><p className='font-bold text-slate-900'>Frozen Well Pipes</p></Link><Link href='/guides/generator-for-well-pump' className='block bg-white rounded-lg border border-slate-200 p-5 hover:border-emerald-300 transition-colors'><p className='font-bold text-slate-900'>Generator for Well Pump</p></Link><Link href='/problems/well-pump-failing' className='block bg-white rounded-lg border border-slate-200 p-5 hover:border-emerald-300 transition-colors'><p className='font-bold text-slate-900'>Signs Your Well Pump Is Failing</p></Link><Link href='/guides/well-pressure-switch' className='block bg-white rounded-lg border border-slate-200 p-5 hover:border-emerald-300 transition-colors'><p className='font-bold text-slate-900'>Well Pressure Switch</p></Link></div>
         </div>
 
         {/* Lead Form */}

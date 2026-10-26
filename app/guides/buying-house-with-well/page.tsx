@@ -96,7 +96,7 @@ const articleSchema = {
   headline: 'Buying a House With a Well: The Complete Homebuyer\'s Due Diligence Guide',
   description: 'Everything a homebuyer needs before purchasing a house with a well. Inspection checklist, required water tests, loan requirements, and walk-away conditions.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
-  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
+  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://www.thewell.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/guides/buying-house-with-well',
   dateModified: '2026-03-25',
 }

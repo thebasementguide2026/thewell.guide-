@@ -95,7 +95,7 @@ const articleSchema = {
   headline: 'Whole House Water Filter Cost: What Well Owners Actually Pay in 2026',
   description: 'The complete cost guide to whole house water filtration for well water — equipment costs by system type, installation costs, annual maintenance, cost by contaminant problem, and the 10-year ownership picture.',
   author: { '@type': 'Organization', name: 'The Well Guide' },
-  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://well.guide' },
+  publisher: { '@type': 'Organization', name: 'The Well Guide', url: 'https://www.thewell.guide' },
   mainEntityOfPage: 'https://www.thewell.guide/cost-guides/whole-house-water-filter-cost',
   dateModified: '2026-03-25',
 }
