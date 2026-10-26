@@ -16,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/problems/frozen-well-pipes',
     '/guides/generator-for-well-pump',
     '/guides/well-pressure-switch',
-    '/problems/no-water-from-well',
     '/problems/well-pump-short-cycling',
     '/problems/well-pump-running-constantly',
     '/guides/well-pressure-tank-guide',
