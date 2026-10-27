@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Water Testing Cost: What You\'ll Pay in 2026 | The Well Guide',
-  description: 'Well water testing costs range from free to $500 or more depending on what you test for and where you get it done. Most homeowners spend $50 to $200 for annual testing. This guide breaks down every cost by contaminant type, explains how to find free testing programs in your state, and covers what mortgage lenders require.',
+  description: "Well water testing costs $20 to $100 for an annual bacteria and nitrate test, $150 to $300 for a baseline panel, and $300 to $600 for PFAS. How to find free county testing and what lenders require.",
   openGraph: {
     title: 'Well Water Testing Cost: What You\'ll Pay in 2026',
-    description: 'Well water testing costs range from free to $500 depending on what you test for and where you get it done. Most homeowners spend $50 to $200 for annual testing.',
+    description: "Well water testing costs $20 to $100 for an annual bacteria and nitrate test, $150 to $300 for a baseline panel, and $300 to $600 for PFAS. How to find free county testing and what lenders require.",
     url: 'https://www.thewell.guide/cost-guides/well-water-testing-cost',
     siteName: 'The Well Guide',
     type: 'article',
@@ -19,74 +19,98 @@ export const metadata: Metadata = {
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'How much does it cost to test well water?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Annual routine testing costs $20 to $100 for most households, with many county health departments offering free or subsidized basic bacteria and nitrate testing. A comprehensive baseline test when you first own a well costs $150 to $300. PFAS testing costs $150 to $300 separately. A full comprehensive panel runs $300 to $500. Call your county health department before paying commercial rates.',
-      },
+      "@type": "Question",
+      "name": "How much does it cost to test well water?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Annual routine testing costs $20 to $100 for most households, with many county health departments offering basic bacteria and nitrate testing for free or at very low cost. A comprehensive baseline test when you first own a well costs $150 to $300 through a certified mail-in lab. PFAS testing costs $300 to $600 separately at a certified lab. A comprehensive panel without PFAS runs $300 to $500. Call your county health department before paying commercial rates: many offer free or subsidized basic testing that most well owners do not know about."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Is there free well water testing available?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, in many areas. County health departments in most states offer free or subsidized basic testing (bacteria and nitrates) for private well owners. Penn State Extension offers free testing for Pennsylvania residents through a CDC-funded program. Minnesota offers free nitrate testing in high-risk counties. New York offers free PFAS testing in affected areas. The EPA Drinking Water Hotline (800-426-4791) can identify free programs in your state. Always call your county health department first.',
-      },
+      "@type": "Question",
+      "name": "Is there free well water testing available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in many areas. County health departments in most states offer free or subsidized basic testing (bacteria and nitrates) for private well owners. Penn State Extension offers free testing for Pennsylvania residents through a CDC-funded program. Minnesota offers free nitrate testing in high-risk counties. New York offers free PFAS testing in affected areas. Maine offers free arsenic testing for low-income residents. The EPA's Drinking Water Hotline (800-426-4791) can identify free programs in your state. Always call your county health department first before paying for testing."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How much does well water testing cost for a home sale?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Testing for an FHA, VA, or USDA loan typically costs $100 to $175 for the minimum required panel (bacteria, nitrates, nitrites, lead, arsenic) through a certified lab with results on official letterhead. Conventional loans vary by lender and typically require at least bacteria and nitrates, costing $50 to $100. New homeowners should conduct a full baseline test beyond what the lender required within the first year of occupancy.',
-      },
+      "@type": "Question",
+      "name": "How much does well water testing cost for a home sale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A lender-required water test typically costs $100 to $175 through a certified lab with results on official letterhead. VA requires one for every home with a private well, FHA requires one in certain cases, and the test list follows local health standards, usually including bacteria and nitrates and often lead and arsenic. Conventional loans vary by lender and typically require at minimum bacteria and nitrates, costing $50 to $100. An upgraded comprehensive test that goes beyond lender minimums adds $50 to $100 and is recommended for buyers who want a full picture of their water quality beyond what the lender requires. In New Jersey, the state-required home sale test averages $1,200 to $1,500."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What is the cheapest way to test well water?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The cheapest valid option is your county health department, which offers certified bacteria and nitrate testing for free or $20 to $50 in most states. State university extension labs (Penn State, University of Massachusetts, Cornell Cooperative Extension) offer certified testing below commercial rates for state residents. Home test strips are cheaper but cannot detect bacteria, PFAS, arsenic, or lead reliably and are not accepted by health authorities.',
-      },
+      "@type": "Question",
+      "name": "What is the cheapest way to test well water?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cheapest valid option is your county health department, which offers certified bacteria and nitrate testing for free or at $20 to $50 in most states. For more comprehensive testing, state university extension labs (Penn State, University of Massachusetts, Cornell Cooperative Extension, and similar) offer certified testing at below-commercial rates for state residents. Home test strips are cheaper still but are not reliable for health-critical decisions: they cannot detect bacteria, PFAS, arsenic, or lead at relevant concentrations."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How much does PFAS testing for a well cost?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'PFAS testing costs $150 to $300 for a panel covering 40 or more PFAS compounds by EPA Method 533 or 537.1. This is separate from standard well water panels because it requires specialized certified labs. Some states (New York, Maine, Michigan) offer free PFAS testing for well owners near contaminated sites. Check your state department of health website before paying for commercial testing.',
-      },
+      "@type": "Question",
+      "name": "How much does PFAS testing for a well cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PFAS testing for a private well typically costs $300 to $600 per sample at a state-certified lab using EPA Method 533 or 537.1. This testing is separate from standard well water panels because it requires specialized certified labs and analytical methods. Some states (New York, Maine, Michigan) offer free PFAS testing for well owners near contaminated sites. Search your state's department of health website for PFAS well testing programs before paying for commercial testing."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Does well water testing cost differ by state?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, significantly. States with strong county health department programs (many Midwest and Mid-Atlantic states) often have free or very low-cost basic testing. Western states typically rely more on private certified labs where individual tests run $30 to $100 each. States with known contamination issues may have state-funded programs covering arsenic, PFAS, or nitrates that do not exist elsewhere.',
-      },
+      "@type": "Question",
+      "name": "Does well water testing cost differ by state?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, significantly. States with strong county health department programs (many Midwest and Mid-Atlantic states) often have free or very low-cost basic testing available. Western states with fewer county health infrastructure resources typically rely more on private certified labs, where individual test prices run $30 to $100 each. Regional contamination issues also affect testing recommendations: states with known arsenic geology or PFAS contamination near military bases may have state-funded programs that do not exist elsewhere. New Jersey is the outlier, because its required home sale test covers far more than a standard panel and averages $1,200 to $1,500."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How much does annual well water testing cost over time?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A realistic annual budget is $75 to $150 per year when using county health programs for routine annual testing and commercial labs for periodic comprehensive panels every three to five years. The first year typically costs more ($150 to $300) for a comprehensive baseline. Subsequent years cost $20 to $100 for annual routine testing. Targeted testing after flooding or repairs adds $50 to $150 when needed.',
-      },
+      "@type": "Question",
+      "name": "How much does annual well water testing cost over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A realistic annual budget for responsible well ownership is $75 to $150 per year when using county health programs for routine annual testing and commercial labs for periodic comprehensive panels every three to five years. The first year typically costs more ($150 to $300) for the initial comprehensive baseline. Subsequent years cost less ($20 to $100) for annual routine testing. Targeted testing after events (flooding, nearby contamination, system repairs) adds $50 to $150 when needed."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I test my own well water at home with DIY kits?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Home test strips work for monitoring pH, hardness, and iron between annual lab tests but are not reliable substitutes for certified laboratory testing for health decisions. They cannot reliably detect bacteria at safe or unsafe levels, cannot detect PFAS, arsenic, or lead at health-relevant concentrations, and are not accepted by health departments or mortgage lenders as certification of safe water.',
-      },
+      "@type": "Question",
+      "name": "Can I test my own well water at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Home test strips and DIY kits provide useful screening for some parameters but are not reliable substitutes for certified laboratory testing for health-critical decisions. Home strips work reasonably well for pH, hardness, chlorine, and iron as monitoring tools between annual lab tests. They cannot reliably detect bacteria at safe or unsafe levels, cannot detect PFAS, arsenic, or lead at health-relevant concentrations, and are not accepted by health departments or mortgage lenders as certification of safe water. Use certified lab testing for any decision that affects your family's health."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "How much does a coliform bacteria test cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A total coliform and E. coli test usually costs $15 to $40 at a county health department or state lab, and somewhat more at a private certified lab. The two are almost always run together as one test. The lab gives you a sterile bottle, and the sample has to reach the lab within about 24 hours, so drop it off in person if you can. If total coliform comes back positive, shock chlorinate the well and retest. See how to shock chlorinate a well. A positive E. coli result means don't drink the water until the well is treated and a retest comes back clean."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does well water testing cost in New Jersey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a home sale, New Jersey's Private Well Testing Act requires a full test that NJDEP estimates at $1,200 to $1,500 on average, because it covers bacteria, nitrates, metals, gross alpha, VOCs, PFAS, and county-specific contaminants like mercury or uranium. A NJDEP-certified lab must collect the sample, and the buyer and seller negotiate who pays. For routine testing when you're not selling, a basic bacteria and nitrate test from a certified lab costs far less, usually under $100."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I get my well water tested?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with your county health department. Many test private wells for bacteria and nitrates for free or at a low fee, and the ones that don't can point you to a certified lab nearby. Your state's drinking water lab certification office keeps a list of certified labs, and many state university extension programs run their own labs. For broader panels, mail-in certified labs like Tap Score and National Testing Laboratories ship you the kit and bottles. Whatever you choose, use a state-certified lab if you need results for a lender, a sale, or a health decision."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
@@ -96,10 +120,10 @@ const articleSchema = {
   description: 'Well water testing costs range from free to $500 depending on what you test for and where you get it done. Most homeowners spend $50 to $200 for annual testing. This guide breaks down every cost by contaminant type, explains free testing programs by state, and covers mortgage requirements.',
   image: 'https://www.thewell.guide/watertestingcost.jpg',
   datePublished: '2026-03-25',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-27',
   author: {
     '@type': 'Organization',
-    name: 'The Well Guide',
+    name: 'The Well Guide Editorial Team',
     url: 'https://www.thewell.guide',
   },
   publisher: {
@@ -147,8 +171,8 @@ export default function WellWaterTestingCost() {
           <div className='flex items-center space-x-4'>
             <div className='w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm' style={{ backgroundColor: '#1D9E75' }}>WG</div>
             <div>
-              <p className='text-white font-semibold'>The Well Guide</p>
-              <p className='text-white/50 text-sm'>Updated March 2026 &middot; 13 min read</p>
+              <p className='text-white font-semibold'>By The Well Guide Editorial Team</p>
+              <p className='text-white/50 text-sm'>Updated October 2026 &middot; 13 min read</p>
             </div>
           </div>
         </div>
@@ -165,12 +189,12 @@ export default function WellWaterTestingCost() {
         {/* TL;DR Box */}
         <div className='mb-12 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
           <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>Most well owners pay $0 to $50 for annual bacteria and nitrate testing through their county health department — the free option most people do not know exists. Commercial certified lab annual panels run $50 to $150. Comprehensive testing covering metals, PFAS, and organic compounds runs $200 to $500. A baseline comprehensive test when you first move into a home with a well typically costs $150 to $300. Before spending anything on testing, call your county health department first — many offer certified basic testing at no charge or well below commercial rates.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>Most well owners pay $20 to $100 for an annual bacteria and nitrate test, and many county health departments do it for free or close to it. A certified lab panel for a home purchase runs $100 to $200. A baseline test when you move into a home with a well runs $150 to $300. A comprehensive panel for metals and organic compounds runs $300 to $500, and certified PFAS testing adds $300 to $600. In New Jersey, the state-required test for a home sale averages $1,200 to $1,500. Call your county health department before you pay anyone: many offer certified basic testing at no charge or well below commercial rates.</p>
         </div>
 
         {/* Intro */}
         <div className='mb-12'>
-          <p className='text-slate-700 leading-relaxed text-sm'>Most of the variation in well water testing costs comes from one factor: what you are actually testing for. Basic bacteria and nitrates can cost $20 at a county health lab. Testing for PFAS alone can cost $150 to $300 because it requires specialized certified labs and methods that most routine testing facilities do not offer. Testing for everything simultaneously can reach $500 or more. Understanding which tests you actually need — based on your location, well conditions, and household situation — prevents overpaying for tests that add no useful information for your specific well.</p>
+          <p className='text-slate-700 leading-relaxed text-sm'>Most of the variation in well water testing costs comes from one factor: what you are actually testing for. Basic bacteria and nitrates can cost $20 at a county health lab. Testing for PFAS alone can cost $300 to $600 because it requires specialized certified labs and methods that most routine testing facilities do not offer. Testing for everything at once can reach $600 or more. Understanding which tests you actually need, based on your location, well conditions, and household situation, prevents overpaying for tests that add no useful information for your specific well.</p>
         </div>
 
         {/* Start Here: Free and Low-Cost Testing */}
@@ -262,8 +286,8 @@ export default function WellWaterTestingCost() {
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700 font-bold'>New Jersey</td>
-                  <td className='p-3 text-slate-700'>Seller-required comprehensive testing at sale; labs certified by NJ DEP</td>
-                  <td className='p-3 text-slate-700'>NJ DEP private well testing resources</td>
+                  <td className='p-3 text-slate-700'>Full water test required for every home sale (Private Well Testing Act). NJDEP estimates $1,200 to $1,500.</td>
+                  <td className='p-3 text-slate-700'>NJDEP-certified lab, which collects the sample.</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700 font-bold'>North Carolina</td>
@@ -304,105 +328,105 @@ export default function WellWaterTestingCost() {
                   <td className='p-3 text-slate-700'>Total coliform bacteria</td>
                   <td className='p-3 text-slate-700'>Contamination pathway indicator</td>
                   <td className='p-3 text-slate-700'>$15 to $40</td>
-                  <td className='p-3 text-slate-700'>Low — simple culture media</td>
+                  <td className='p-3 text-slate-700'>Low: simple culture media</td>
                   <td className='p-3 text-slate-700'>Annual</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700'>E. coli</td>
                   <td className='p-3 text-slate-700'>Fecal contamination</td>
                   <td className='p-3 text-slate-700'>$15 to $40 (usually bundled with coliform)</td>
-                  <td className='p-3 text-slate-700'>Low — culture-based</td>
+                  <td className='p-3 text-slate-700'>Low: culture-based</td>
                   <td className='p-3 text-slate-700'>Annual</td>
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700'>Nitrates</td>
                   <td className='p-3 text-slate-700'>Agricultural and septic contamination</td>
                   <td className='p-3 text-slate-700'>$10 to $30</td>
-                  <td className='p-3 text-slate-700'>Low — colorimetric method</td>
+                  <td className='p-3 text-slate-700'>Low: colorimetric method</td>
                   <td className='p-3 text-slate-700'>Annual</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700'>pH</td>
                   <td className='p-3 text-slate-700'>Corrosiveness, pipe protection</td>
                   <td className='p-3 text-slate-700'>$10 to $20</td>
-                  <td className='p-3 text-slate-700'>Low — electrode measurement</td>
+                  <td className='p-3 text-slate-700'>Low: electrode measurement</td>
                   <td className='p-3 text-slate-700'>Annual</td>
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700'>Total dissolved solids (TDS)</td>
                   <td className='p-3 text-slate-700'>General mineral load</td>
                   <td className='p-3 text-slate-700'>$10 to $20</td>
-                  <td className='p-3 text-slate-700'>Low — gravimetric or conductivity</td>
+                  <td className='p-3 text-slate-700'>Low: gravimetric or conductivity</td>
                   <td className='p-3 text-slate-700'>Annual</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700'>Hardness</td>
                   <td className='p-3 text-slate-700'>Calcium and magnesium, scale formation</td>
                   <td className='p-3 text-slate-700'>$10 to $20</td>
-                  <td className='p-3 text-slate-700'>Low — titration</td>
+                  <td className='p-3 text-slate-700'>Low: titration</td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years</td>
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700'>Iron</td>
                   <td className='p-3 text-slate-700'>Staining, metallic taste</td>
                   <td className='p-3 text-slate-700'>$10 to $25</td>
-                  <td className='p-3 text-slate-700'>Low — colorimetric</td>
+                  <td className='p-3 text-slate-700'>Low: colorimetric</td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700'>Manganese</td>
                   <td className='p-3 text-slate-700'>Staining, neurological concern</td>
                   <td className='p-3 text-slate-700'>$10 to $25</td>
-                  <td className='p-3 text-slate-700'>Low — colorimetric</td>
+                  <td className='p-3 text-slate-700'>Low: colorimetric</td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years</td>
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700'>Arsenic</td>
                   <td className='p-3 text-slate-700'>Natural carcinogen in certain geology</td>
                   <td className='p-3 text-slate-700'>$20 to $50</td>
-                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate — ICP-MS required</span></td>
+                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate: ICP-MS required</span></td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700'>Lead</td>
                   <td className='p-3 text-slate-700'>Pipe leaching, health concern</td>
                   <td className='p-3 text-slate-700'>$20 to $50</td>
-                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate — ICP-MS required</span></td>
+                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate: ICP-MS required</span></td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years</td>
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700'>Radon</td>
                   <td className='p-3 text-slate-700'>Radioactive gas from uranium geology</td>
                   <td className='p-3 text-slate-700'>$25 to $109</td>
-                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate — liquid scintillation</span></td>
+                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate: liquid scintillation</span></td>
                   <td className='p-3 text-slate-700'>Every 5 years</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700'>Volatile organic compounds (VOCs)</td>
                   <td className='p-3 text-slate-700'>Industrial solvents, fuels</td>
                   <td className='p-3 text-slate-700'>$100 to $250</td>
-                  <td className='p-3' style={{ backgroundColor: '#FEF3C7' }}><span className='text-slate-700 font-medium'>High — GC-MS with purge and trap</span></td>
+                  <td className='p-3' style={{ backgroundColor: '#FEF3C7' }}><span className='text-slate-700 font-medium'>High: GC-MS with purge and trap</span></td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years or if near risk sources</td>
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700'>Pesticides and herbicides</td>
                   <td className='p-3 text-slate-700'>Agricultural runoff</td>
                   <td className='p-3 text-slate-700'>$100 to $200</td>
-                  <td className='p-3' style={{ backgroundColor: '#FEF3C7' }}><span className='text-slate-700 font-medium'>High — GC-MS or LC-MS</span></td>
+                  <td className='p-3' style={{ backgroundColor: '#FEF3C7' }}><span className='text-slate-700 font-medium'>High: GC-MS or LC-MS</span></td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years or if near farmland</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 text-slate-700'>PFAS</td>
                   <td className='p-3 text-slate-700'>Industrial {`"`}forever chemicals{`"`}</td>
-                  <td className='p-3 text-slate-700'>$150 to $300</td>
-                  <td className='p-3' style={{ backgroundColor: '#FEF3C7' }}><span className='text-slate-700 font-medium'>High — LC-MS/MS, specialized EPA method</span></td>
+                  <td className='p-3 text-slate-700'>$300 to $600</td>
+                  <td className='p-3' style={{ backgroundColor: '#FEF3C7' }}><span className='text-slate-700 font-medium'>High: LC-MS/MS, specialized EPA method</span></td>
                   <td className='p-3 text-slate-700'>Baseline plus annually if near risk sources</td>
                 </tr>
                 <tr className='bg-white'>
                   <td className='p-3 text-slate-700'>Comprehensive metals panel</td>
                   <td className='p-3 text-slate-700'>20+ metals including arsenic, lead, mercury</td>
                   <td className='p-3 text-slate-700'>$50 to $150</td>
-                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate — ICP-MS multi-element scan</span></td>
+                  <td className='p-3' style={{ backgroundColor: '#FFFDE7' }}><span className='text-slate-700'>Moderate: ICP-MS multi-element scan</span></td>
                   <td className='p-3 text-slate-700'>Every 3 to 5 years</td>
                 </tr>
               </tbody>
@@ -453,24 +477,31 @@ export default function WellWaterTestingCost() {
             <div>
               <h3 className='text-lg font-bold text-slate-900 mb-3'>PFAS Testing</h3>
               <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>What you need:</strong> Testing by EPA Method 533 or EPA Method 537.1 at a lab specifically certified for these methods. Standard lab panels do not include PFAS.</p>
-              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>Typical cost:</strong> $150 to $300 for a dedicated PFAS test covering 40 or more PFAS compounds. Some state programs (New York, Maine, Michigan) offer free PFAS testing for well owners in affected regions.</p>
+              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>Typical cost:</strong> $300 to $600 for a dedicated PFAS test at a state-certified lab. Many labs also bill the required field blank as a separate sample, so ask whether it{`'`}s included in the quote. Some state programs (New York, Maine, Michigan) offer free PFAS testing for well owners in affected regions.</p>
               <p className='text-slate-700 leading-relaxed text-sm'><strong>Who needs it:</strong> Well owners within 10 miles of a military installation, airport, industrial facility, or area where firefighting foam has been used. Well owners near agricultural land where biosolids (sewage sludge) have been applied. Anyone who wants a complete baseline.</p>
             </div>
 
             {/* Real Estate Transaction */}
             <div>
               <h3 className='text-lg font-bold text-slate-900 mb-3'>Real Estate Transaction Testing</h3>
-              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>What you need:</strong> Depends on loan type. FHA, VA, and USDA loans require bacteria (total coliform and E. coli), nitrates, nitrites, lead, and arsenic at minimum. Conventional loans typically require at least bacteria and nitrates, but the specific lender determines the requirements.</p>
+              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>What you need:</strong> It depends on the loan. VA loans require a water test for every home with a private well, collected by a third party with no stake in the sale and meeting local health standards, or EPA standards where there are none. FHA loans require a water test in certain cases, including new construction, a well within 100 feet of a septic system, nearby contamination sources, or a problem flagged by the appraiser. The required tests follow local and state health standards, so the list varies, but bacteria and nitrates are almost always on it, and lead and arsenic are common. USDA loans commonly require water testing for rural properties. Conventional loans vary by lender. Ask your lender for the exact test list before you order anything.</p>
               <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>Typical cost:</strong> $100 to $200 for the minimum required panel. Tap Score{`'`}s Certified Home Loan Water Test is designed specifically for FHA, VA, and USDA requirements and includes results on certified laboratory letterhead with EPA ID number. An upgraded version adds 40+ additional contaminants for about $60 more.</p>
-              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>Important for buyers:</strong> Real estate transaction water tests are a snapshot in time. A test that passes on the day it is collected tells you nothing about seasonal variation, conditions after heavy rain, or long-term contaminant trends. Passing the minimum required lender test does not mean the water is comprehensively safe. New homeowners should conduct a full baseline test beyond what the lender required within the first year of occupancy.</p>
-              <p className='text-slate-700 leading-relaxed text-sm'><strong>Who pays:</strong> In most states, this is negotiated as part of the real estate transaction. Sellers commonly pay for pre-listing testing. Buyers typically pay for testing conducted as part of due diligence. New Jersey law requires the seller to pay for testing before the sale of any property served by a private well.</p>
+              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>Important for buyers:</strong> Real estate transaction water tests are a snapshot in time. A test that passes on the day it is collected tells you nothing about seasonal variation, conditions after heavy rain, or long-term contaminant trends. Passing the minimum required lender test does not mean the water is comprehensively safe. New homeowners should conduct a full baseline test beyond what the lender required within the first year of occupancy. For the well itself, budget for a separate <Link href='/cost-guides/well-inspection-cost' className='font-semibold underline' style={{ color: '#1D9E75' }}>well inspection</Link>.</p>
+              <p className='text-slate-700 leading-relaxed text-sm'><strong>Who pays:</strong> In most states, this is negotiated as part of the real estate transaction. Sellers commonly pay for pre-listing testing. Buyers typically pay for testing conducted as part of due diligence. New Jersey requires a full water test before closing on any home with a private well, but the law leaves it to the buyer and seller to negotiate who pays. See the New Jersey section below.</p>
+            </div>
+
+<div>
+              <h3 className='text-lg font-bold text-slate-900 mb-3'>New Jersey Home Sale Testing (Private Well Testing Act)</h3>
+              <p className='text-slate-700 leading-relaxed text-sm mb-3'>New Jersey{`'`}s Private Well Testing Act requires a full water test before closing on any home served by a private well, and landlords must test every five years. It{`'`}s a much bigger test than a lender panel, and it costs more: NJDEP estimates the average lab price at $1,200 to $1,500, and some labs offer flat packages of about $1,000 to $1,200 that include the sampler.</p>
+              <p className='text-slate-700 leading-relaxed text-sm mb-3'>The test covers total coliform (with E. coli if coliform is present), nitrates, pH, iron, manganese, lead, arsenic, gross alpha, volatile organic compounds, three synthetic organic compounds, and PFAS, plus mercury or uranium depending on the county. A NJDEP-certified lab, or someone it authorizes, has to collect the sample. You can{`'`}t collect it yourself.</p>
+              <p className='text-slate-700 leading-relaxed text-sm'>The law doesn{`'`}t say who pays. The buyer and seller negotiate it in the contract, and both have to review the results before closing. If the test finds a problem, the results are what you use to negotiate treatment or a price reduction.</p>
             </div>
 
             {/* Comprehensive Full Panel */}
             <div>
               <h3 className='text-lg font-bold text-slate-900 mb-3'>Comprehensive Full Panel</h3>
-              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>What you need:</strong> Everything — bacteria, nitrates, metals, VOCs, pesticides, PFAS, radon, and any regional contaminants.</p>
-              <p className='text-slate-700 leading-relaxed text-sm'><strong>Typical cost:</strong> $300 to $500 for a comprehensive panel through a mail-in certified lab service. Some labs offer panels covering 100 or more analytes for $400 to $700. A full comprehensive test should not cost more than $500 for a residential well in normal circumstances.</p>
+              <p className='text-slate-700 leading-relaxed text-sm mb-3'><strong>What you need:</strong> Everything: bacteria, nitrates, metals, VOCs, pesticides, PFAS, radon, and any regional contaminants.</p>
+              <p className='text-slate-700 leading-relaxed text-sm'><strong>Typical cost:</strong> $300 to $500 for a comprehensive panel without PFAS through a mail-in certified lab service. Some labs offer panels covering 100 or more analytes for $400 to $700. Adding certified PFAS testing usually brings the total to $600 or more.</p>
             </div>
           </div>
         </div>
@@ -537,15 +568,15 @@ export default function WellWaterTestingCost() {
           <div className='space-y-6'>
             <div>
               <h3 className='text-lg font-bold text-slate-900 mb-3'>County Health Department Labs</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>The most underused option. Most county health departments have a relationship with a state lab of hygiene or operate their own certified water testing facility. They provide sample containers, collection instructions specific to their lab{`'`}s requirements, and results that are accepted by local health authorities. Basic bacteria and nitrate testing is often free or at very low cost. The limitation is that they typically handle only the most common tests — comprehensive metals or PFAS testing usually requires a commercial lab.</p>
+              <p className='text-slate-700 leading-relaxed text-sm'>The most underused option. Most county health departments have a relationship with a state lab of hygiene or operate their own certified water testing facility. They provide sample containers, collection instructions specific to their lab{`'`}s requirements, and results that are accepted by local health authorities. Basic bacteria and nitrate testing is often free or at very low cost. The limitation is that they typically handle only the most common tests: comprehensive metals or PFAS testing usually requires a commercial lab.</p>
             </div>
             <div>
               <h3 className='text-lg font-bold text-slate-900 mb-3'>Mail-In Certified Lab Services</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>The most convenient option for comprehensive testing. Tap Score (SimpleLab) is the most widely recommended by independent reviewers, endorsed by the Water Systems Council, and recommended by the New York Times Wirecutter for well water testing. Their well water packages include prepaid shipping, all collection materials, certified laboratory analysis, and plain-English reports with treatment recommendations. Turnaround is 5 to 10 business days after the lab receives the sample. The limitation for bacteria testing is that samples must arrive at the lab within 24 hours — overnight shipping is required, which the higher-tier packages include.</p>
+              <p className='text-slate-700 leading-relaxed text-sm'>The most convenient option for comprehensive testing. Tap Score (SimpleLab) is the most widely recommended by independent reviewers, endorsed by the Water Systems Council, and recommended by the New York Times Wirecutter for well water testing. Their well water packages include prepaid shipping, all collection materials, certified laboratory analysis, and plain-English reports with treatment recommendations. Turnaround is 5 to 10 business days after the lab receives the sample. The limitation for bacteria testing is that samples must arrive at the lab within 24 hours: overnight shipping is required, which the higher-tier packages include.</p>
             </div>
             <div>
               <h3 className='text-lg font-bold text-slate-900 mb-3'>Local Certified Private Labs</h3>
-              <p className='text-slate-700 leading-relaxed text-sm'>Best for situations requiring fast turnaround or in-person sample delivery (important for bacteria testing in rural areas where overnight shipping transit times are uncertain). Laboratory prices vary significantly by region. The same test that costs $30 at a Midwest county lab may cost $80 at a private certified lab in a coastal metro area. Always ask for an itemized quote rather than a single package price — bundled tests frequently include parameters you do not need.</p>
+              <p className='text-slate-700 leading-relaxed text-sm'>Best for situations requiring fast turnaround or in-person sample delivery (important for bacteria testing in rural areas where overnight shipping transit times are uncertain). Laboratory prices vary significantly by region. The same test that costs $30 at a Midwest county lab may cost $80 at a private certified lab in a coastal metro area. Always ask for an itemized quote rather than a single package price: bundled tests frequently include parameters you do not need.</p>
             </div>
           </div>
         </div>
@@ -574,7 +605,7 @@ export default function WellWaterTestingCost() {
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>As needed (PFAS, VOCs, radon)</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>$150 to $300 per test, conducted once as a baseline and annually if near contamination sources.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>$25 to $250 per test for radon or VOCs, and $300 to $600 for PFAS. Test once as a baseline, then annually if you{`'`}re near a contamination source.</p>
             </div>
           </div>
 
@@ -601,7 +632,7 @@ export default function WellWaterTestingCost() {
           <h3 className='text-lg font-bold text-slate-900 mb-4'>Upgrade your test if any of these apply to your well:</h3>
           <div className='space-y-4'>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
-              <p className='text-slate-700 text-sm leading-relaxed'><strong>Within 10 miles of a military base, airport, industrial facility, or firefighting foam area:</strong> Test for PFAS by EPA Method 533 or 537.1 at a specialized certified lab ($150 to $300).</p>
+              <p className='text-slate-700 text-sm leading-relaxed'><strong>Within 10 miles of a military base, airport, industrial facility, or firefighting foam area:</strong> Test for PFAS by EPA Method 533 or 537.1 at a specialized certified lab ($300 to $600).</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Near agricultural land, a golf course, or an orchard:</strong> Test for nitrates more frequently and add a pesticide panel every three years ($100 to $200).</p>
@@ -616,7 +647,7 @@ export default function WellWaterTestingCost() {
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Pregnant, have an infant under six months, or immunocompromised household members:</strong> Test for bacteria and nitrates twice per year rather than annually.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
-              <p className='text-slate-700 text-sm leading-relaxed'><strong>Water has changed in taste, smell, color, or clarity:</strong> Test immediately — do not wait for the annual cycle.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'><strong>Water has changed in taste, smell, color, or clarity:</strong> Test immediately: do not wait for the annual cycle.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <p className='text-slate-700 text-sm leading-relaxed'><strong>Never tested the well:</strong> Start with a comprehensive $150 to $300 baseline, not an annual basic test. A comprehensive panel establishes your starting point and prevents years of testing that misses what is actually in your water.</p>
@@ -673,7 +704,7 @@ export default function WellWaterTestingCost() {
             <details className='bg-white border border-slate-200 rounded-lg'>
               <summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>How much does it cost to test well water?</summary>
               <div className='px-5 pb-5'>
-                <p className='text-slate-700 text-sm leading-relaxed'>Annual routine testing costs $20 to $100 for most households, with many county health departments offering basic bacteria and nitrate testing for free or at very low cost. A comprehensive baseline test when you first own a well costs $150 to $300 through a certified mail-in lab. PFAS testing costs $150 to $300 separately at a specialized certified lab. A full comprehensive panel covering all common contaminants runs $300 to $500. Call your county health department before paying commercial rates — many offer free or subsidized basic testing that most well owners do not know about.</p>
+                <p className='text-slate-700 text-sm leading-relaxed'>Annual routine testing costs $20 to $100 for most households, with many county health departments offering basic bacteria and nitrate testing for free or at very low cost. A comprehensive baseline test when you first own a well costs $150 to $300 through a certified mail-in lab. PFAS testing costs $300 to $600 separately at a certified lab. A comprehensive panel without PFAS runs $300 to $500. Call your county health department before paying commercial rates: many offer free or subsidized basic testing that most well owners do not know about.</p>
               </div>
             </details>
             <details className='bg-white border border-slate-200 rounded-lg'>
@@ -685,25 +716,25 @@ export default function WellWaterTestingCost() {
             <details className='bg-white border border-slate-200 rounded-lg'>
               <summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>How much does well water testing cost for a home sale?</summary>
               <div className='px-5 pb-5'>
-                <p className='text-slate-700 text-sm leading-relaxed'>Testing for an FHA, VA, or USDA loan typically costs $100 to $175 for the minimum required panel (bacteria, nitrates, nitrites, lead, arsenic) through a certified lab with results on official letterhead. Conventional loans vary by lender and typically require at minimum bacteria and nitrates, costing $50 to $100. An upgraded comprehensive test that goes beyond lender minimums adds $50 to $100 and is recommended for buyers who want a full picture of their water quality beyond what the lender requires.</p>
+                <p className='text-slate-700 text-sm leading-relaxed'>A lender-required water test typically costs $100 to $175 through a certified lab with results on official letterhead. VA requires one for every home with a private well, FHA requires one in certain cases, and the test list follows local health standards, usually including bacteria and nitrates and often lead and arsenic. Conventional loans vary by lender and typically require at minimum bacteria and nitrates, costing $50 to $100. An upgraded comprehensive test that goes beyond lender minimums adds $50 to $100 and is recommended for buyers who want a full picture of their water quality beyond what the lender requires. In New Jersey, the state-required home sale test averages $1,200 to $1,500.</p>
               </div>
             </details>
             <details className='bg-white border border-slate-200 rounded-lg'>
               <summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>What is the cheapest way to test well water?</summary>
               <div className='px-5 pb-5'>
-                <p className='text-slate-700 text-sm leading-relaxed'>The cheapest valid option is your county health department, which offers certified bacteria and nitrate testing for free or at $20 to $50 in most states. For more comprehensive testing, state university extension labs (Penn State, University of Massachusetts, Cornell Cooperative Extension, and similar) offer certified testing at below-commercial rates for state residents. Home test strips are cheaper still but are not reliable for health-critical decisions — they cannot detect bacteria, PFAS, arsenic, or lead at relevant concentrations.</p>
+                <p className='text-slate-700 text-sm leading-relaxed'>The cheapest valid option is your county health department, which offers certified bacteria and nitrate testing for free or at $20 to $50 in most states. For more comprehensive testing, state university extension labs (Penn State, University of Massachusetts, Cornell Cooperative Extension, and similar) offer certified testing at below-commercial rates for state residents. Home test strips are cheaper still but are not reliable for health-critical decisions: they cannot detect bacteria, PFAS, arsenic, or lead at relevant concentrations.</p>
               </div>
             </details>
             <details className='bg-white border border-slate-200 rounded-lg'>
               <summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>How much does PFAS testing for a well cost?</summary>
               <div className='px-5 pb-5'>
-                <p className='text-slate-700 text-sm leading-relaxed'>PFAS testing for a private well costs $150 to $300 for a panel covering 40 or more PFAS compounds by EPA Method 533 or 537.1. This testing is separate from standard well water panels because it requires specialized certified labs and analytical methods. Some states (New York, Maine, Michigan) offer free PFAS testing for well owners near contaminated sites. Search your state{`'`}s department of health website for PFAS well testing programs before paying for commercial testing.</p>
+                <p className='text-slate-700 text-sm leading-relaxed'>PFAS testing for a private well typically costs $300 to $600 per sample at a state-certified lab using EPA Method 533 or 537.1. This testing is separate from standard well water panels because it requires specialized certified labs and analytical methods. Some states (New York, Maine, Michigan) offer free PFAS testing for well owners near contaminated sites. Search your state{`'`}s department of health website for PFAS well testing programs before paying for commercial testing.</p>
               </div>
             </details>
             <details className='bg-white border border-slate-200 rounded-lg'>
               <summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>Does well water testing cost differ by state?</summary>
               <div className='px-5 pb-5'>
-                <p className='text-slate-700 text-sm leading-relaxed'>Yes, significantly. States with strong county health department programs (many Midwest and Mid-Atlantic states) often have free or very low-cost basic testing available. Western states with fewer county health infrastructure resources typically rely more on private certified labs, where individual test prices run $30 to $100 each. Regional contamination issues also affect testing recommendations — states with known arsenic geology or PFAS contamination near military bases may have state-funded programs that do not exist elsewhere.</p>
+                <p className='text-slate-700 text-sm leading-relaxed'>Yes, significantly. States with strong county health department programs (many Midwest and Mid-Atlantic states) often have free or very low-cost basic testing available. Western states with fewer county health infrastructure resources typically rely more on private certified labs, where individual test prices run $30 to $100 each. Regional contamination issues also affect testing recommendations: states with known arsenic geology or PFAS contamination near military bases may have state-funded programs that do not exist elsewhere. New Jersey is the outlier, because its required home sale test covers far more than a standard panel and averages $1,200 to $1,500.</p>
               </div>
             </details>
             <details className='bg-white border border-slate-200 rounded-lg'>
@@ -718,7 +749,9 @@ export default function WellWaterTestingCost() {
                 <p className='text-slate-700 text-sm leading-relaxed'>Home test strips and DIY kits provide useful screening for some parameters but are not reliable substitutes for certified laboratory testing for health-critical decisions. Home strips work reasonably well for pH, hardness, chlorine, and iron as monitoring tools between annual lab tests. They cannot reliably detect bacteria at safe or unsafe levels, cannot detect PFAS, arsenic, or lead at health-relevant concentrations, and are not accepted by health departments or mortgage lenders as certification of safe water. Use certified lab testing for any decision that affects your family{`'`}s health.</p>
               </div>
             </details>
-          </div>
+          <details className='bg-white border border-slate-200 rounded-lg'><summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>How much does a coliform bacteria test cost?</summary><div className='px-5 pb-5'><p className='text-slate-700 text-sm leading-relaxed'>A total coliform and E. coli test usually costs $15 to $40 at a county health department or state lab, and somewhat more at a private certified lab. The two are almost always run together as one test. The lab gives you a sterile bottle, and the sample has to reach the lab within about 24 hours, so drop it off in person if you can. If total coliform comes back positive, shock chlorinate the well and retest. See <Link href='/guides/how-to-shock-chlorinate-well' className='font-semibold underline' style={{ color: '#1D9E75' }}>how to shock chlorinate a well</Link>. A positive E. coli result means don{`'`}t drink the water until the well is treated and a retest comes back clean.</p></div></details>
+<details className='bg-white border border-slate-200 rounded-lg'><summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>How much does well water testing cost in New Jersey?</summary><div className='px-5 pb-5'><p className='text-slate-700 text-sm leading-relaxed'>For a home sale, New Jersey{`'`}s Private Well Testing Act requires a full test that NJDEP estimates at $1,200 to $1,500 on average, because it covers bacteria, nitrates, metals, gross alpha, VOCs, PFAS, and county-specific contaminants like mercury or uranium. A NJDEP-certified lab must collect the sample, and the buyer and seller negotiate who pays. For routine testing when you{`'`}re not selling, a basic bacteria and nitrate test from a certified lab costs far less, usually under $100.</p></div></details>
+<details className='bg-white border border-slate-200 rounded-lg'><summary className='cursor-pointer p-5 font-bold text-slate-900 text-sm'>Where can I get my well water tested?</summary><div className='px-5 pb-5'><p className='text-slate-700 text-sm leading-relaxed'>Start with your county health department. Many test private wells for bacteria and nitrates for free or at a low fee, and the ones that don{`'`}t can point you to a certified lab nearby. Your state{`'`}s drinking water lab certification office keeps a list of certified labs, and many state university extension programs run their own labs. For broader panels, mail-in certified labs like Tap Score and National Testing Laboratories ship you the kit and bottles. Whatever you choose, use a state-certified lab if you need results for a lender, a sale, or a health decision.</p></div></details></div>
         </div>
 
         {/* Glossary */}
@@ -740,7 +773,7 @@ export default function WellWaterTestingCost() {
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>FHA Minimum Property Requirements</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Federal Housing Administration loan requirements for water quality when a property is served by a private well. The minimum required tests are total coliform bacteria, E. coli, nitrates, nitrites, lead, and arsenic. Results must be provided on certified laboratory letterhead with an EPA laboratory identification number. VA and USDA loans have the same requirements.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>The requirements a property must meet to qualify for an FHA-insured mortgage. For private wells, FHA requires the water to meet local health standards, or EPA standards where there are none, and requires a <Link href='/cost-guides/well-inspection-cost' className='font-semibold underline' style={{ color: '#1D9E75' }}>water test</Link> collected by a disinterested third party in certain cases, such as new construction, a well within 100 feet of a septic system, or a problem flagged by the appraiser. VA loans require a water test for every private well. The specific tests depend on local and state standards, so check with your lender.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>National Testing Laboratories (NTL)</h3>
@@ -765,6 +798,9 @@ export default function WellWaterTestingCost() {
           </div>
           <h2 className='text-2xl font-bold text-slate-900 mb-6'>Related Guides</h2>
           <div className='grid md:grid-cols-2 gap-3'>
+            <Link href='/guides/arsenic-in-well-water' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'><span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}><span>GUIDE</span></span><span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Arsenic in Well Water</span></Link>
+            <Link href='/guides/how-to-shock-chlorinate-well' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'><span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}><span>GUIDE</span></span><span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>How to Shock Chlorinate a Well</span></Link>
+            <Link href='/cost-guides/well-inspection-cost' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'><span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}><span>GUIDE</span></span><span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Well Inspection Cost</span></Link>
             <Link href='/guides/how-to-test-well-water' className='flex items-center gap-3 bg-white p-4 rounded-lg border border-slate-200 hover:shadow-md transition-shadow group'>
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#E1F5EE', color: '#0F6E56' }}>GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>How to Test Your Well Water</span>
