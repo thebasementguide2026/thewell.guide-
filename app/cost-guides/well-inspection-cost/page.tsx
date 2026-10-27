@@ -20,74 +20,98 @@ export const metadata: Metadata = {
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'How much does a well inspection cost?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A standard well inspection costs $250 to $550 for most residential properties in 2026. Adding basic water testing brings the total to $350 to $550. A comprehensive inspection with a full water quality panel costs $500 to $800. A combined well and septic inspection costs $400 to $900 when booked with the same company on the same visit.',
-      },
+      "@type": "Question",
+      "name": "How much does a well inspection cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most well inspections cost $250 to $550. A standard inspection with a flow test and pressure system check runs $250 to $400. Adding basic bacteria and nitrate testing brings it to $350 to $550, which is what most homebuyers should budget. A comprehensive inspection with a full water quality panel costs $500 to $800, and a combined well and septic inspection costs $600 to $1,200 when booked with the same company on the same visit. The biggest cost variable is how much water testing is included."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Is a well inspection required when buying a home?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'FHA and VA loans require a well inspection that meets minimum flow rate and water quality standards before closing. USDA loans typically require well inspections for rural properties. Conventional loans do not universally require well inspections but many lenders in rural markets require them. Even when not required by a lender, a well inspection before purchasing a home with a private well is strongly recommended. The cost of fixing a failed well after closing ($1,500 to $15,000) far exceeds the cost of the inspection ($250 to $550).',
-      },
+      "@type": "Question",
+      "name": "Is a well inspection required when buying a home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VA loans require a water test for homes with a private well, and FHA loans require one in certain cases, such as new construction or a well within 100 feet of a septic system. Neither program requires a full well inspection on its own, but many lenders in rural markets do, and some states require testing when a property changes hands. Even when not required by a lender, a well inspection before purchasing a home with a private well is one of the most important steps a buyer can take. The cost of fixing a failed well after closing ($1,500 to $16,000 or more) far exceeds the cost of the inspection ($250 to $550)."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What does a well inspection include?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A standard well inspection includes a visual assessment of the wellhead and casing, flow rate testing to measure water production under load, pressure system evaluation including the pressure tank and switch, electrical component checks, and a written report of findings. Water quality laboratory testing is typically an add-on. A basic panel testing for bacteria and nitrates costs $50 to $150 extra. A comprehensive panel including heavy metals, VOCs, and other contaminants costs $200 to $400 extra.',
-      },
+      "@type": "Question",
+      "name": "What does a well inspection include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard well inspection includes a visual assessment of the wellhead and casing, flow rate testing to measure water production under load, pressure system evaluation including the pressure tank and switch, electrical component checks, and a written report of findings. Water quality laboratory testing is typically an add-on. A basic panel testing for bacteria and nitrates costs $50 to $150 extra. A comprehensive panel including heavy metals, VOCs, and other contaminants costs $200 to $400 extra."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How long does a well inspection take?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A standard well inspection takes 1 to 3 hours on site depending on well type, depth, and the number of tests performed. Water quality results from a certified lab typically take 3 to 7 business days after the sample is submitted. Plan for at least a week between scheduling the inspection and receiving complete results including water testing.',
-      },
+      "@type": "Question",
+      "name": "How long does a well inspection take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard well inspection takes 1 to 3 hours on site depending on well type, depth, and the number of tests performed. Water quality results from a certified lab typically take 3 to 7 business days after the sample is submitted. Plan for at least a week between scheduling the inspection and receiving complete results including water testing."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can a regular home inspector inspect a well?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A standard home inspector is not trained or equipped to perform a thorough well inspection. Home inspectors assess visible components and may note obvious wellhead issues but do not perform flow rate testing, pump performance evaluation, or water quality laboratory testing. If a home inspection report simply notes "well present" without specific well system testing, you have not had a well inspection. Hire a licensed water systems professional or licensed well contractor for a dedicated well inspection.',
-      },
+      "@type": "Question",
+      "name": "Can a regular home inspector inspect a well?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard home inspector is not trained or equipped to perform a thorough well inspection. Home inspectors assess visible components and may note obvious wellhead issues but do not perform flow rate testing, pump performance evaluation, or water quality laboratory testing. If a home inspection report simply notes \"well present\" without specific well system testing, you have not had a well inspection. Hire a licensed water systems professional or licensed well contractor for a dedicated well inspection."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How often should a well be inspected?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The EPA and most state health departments recommend annual professional inspection of private wells. At minimum, wells should be inspected every 3 to 5 years and any time there is a change in water quality, after flooding or nearby construction, after any work is performed on the well system, and when purchasing a property with a private well. Annual inspections cost $150 to $300 and are the most cost-effective way to prevent expensive emergency repairs.',
-      },
+      "@type": "Question",
+      "name": "How often should a well be inspected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The EPA and most state health departments recommend annual professional inspection of private wells. At minimum, wells should be inspected every 3 to 5 years and any time there is a change in water quality (taste, odor, color), after flooding or nearby construction, after any work is performed on the well system, and when purchasing a property with a private well. Annual inspections cost $150 to $300 and are the most cost-effective way to prevent expensive emergency repairs."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What happens if a well fails inspection?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A well that fails inspection on flow rate, water quality, or structural grounds can be negotiated as a repair or credit item in a real estate transaction. The seller may be required to remediate contamination, replace a failing pump, or address structural issues before closing. For severe problems such as a failed casing, inadequate yield, or contamination that cannot be cost-effectively remediated, buyers may have grounds to renegotiate price or walk away from the transaction.',
-      },
+      "@type": "Question",
+      "name": "What happens if a well fails inspection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A well that fails inspection on flow rate, water quality, or structural grounds can be negotiated as a repair or credit item in a real estate transaction. The seller may be required to remediate contamination, replace a failing pump, or address structural issues before closing. For severe problems such as a failed casing, inadequate yield, or contamination that cannot be cost-effectively remediated, buyers may have grounds to renegotiate price or walk away from the transaction. See our buying a house with a well guide for how to handle well problems discovered during the inspection period."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Who performs well inspections?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Well inspections should be performed by a licensed water well system professional or licensed well contractor. Licensing requirements vary by state but most states require certification for anyone performing well inspections or water testing. Ask for the inspector\'s license number and verify it with your state licensing board. The National Ground Water Association maintains a directory of certified professionals at ngwa.org.',
-      },
+      "@type": "Question",
+      "name": "Who performs well inspections?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Well inspections should be performed by a licensed water well system professional or licensed well contractor. Licensing requirements vary by state but most states require certification for anyone performing well inspections or water testing. Some states allow licensed home inspectors to perform basic well inspections. Ask for the inspector's license number and verify it with your state licensing board. The National Ground Water Association maintains a directory of certified professionals at ngwa.org."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "How much does a well and septic inspection cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A combined well and septic inspection typically costs $600 to $1,200 when one company does both on the same visit. That usually includes the full septic inspection plus a well inspection with basic water testing. Booking both together usually costs less than scheduling them separately, because you pay one trip charge. If the well and the septic system are within 100 feet of each other, test for bacteria and nitrates no matter what. See our septic inspection cost guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a well flow test cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A well flow or yield test typically costs $200 to $600, depending on how long the well is pumped and whether water sampling is included. The test pumps the well for 2 to 4 hours or more, measures how many gallons per minute it sustains, and tracks how quickly the water level recovers afterward. A basic flow check is often part of a standard inspection. A longer yield test is worth adding if the well is shallow or old, if the seller reports past dry spells, or if your lender or county requires one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays for a well inspection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The buyer usually pays, the same as a home inspection, because it's part of the buyer's due diligence. Some states and counties require testing when a property changes hands, and in some cases the seller provides recent results. Buyers can also negotiate for the seller to pay or to credit the cost at closing. If the inspection finds problems, use the report to negotiate repairs or a price reduction."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
@@ -96,6 +120,8 @@ const articleSchema = {
   headline: 'Well Inspection Cost 2026: What You\'ll Actually Pay',
   description: 'Well inspection costs $250 to $550 for most homes in 2026. Covers what is included, cost by inspection type, water testing add-ons, and when your lender requires one.',
   url: 'https://www.thewell.guide/cost-guides/well-inspection-cost',
+  author: { '@type': 'Organization', name: 'The Well Guide Editorial Team', url: 'https://www.thewell.guide' },
+  dateModified: '2026-10-27',
   publisher: {
     '@type': 'Organization',
     name: 'The Well Guide',
@@ -135,8 +161,8 @@ export default function WellInspectionCost() {
           <div className='flex items-center space-x-4'>
             <div className='w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm' style={{ backgroundColor: '#1D9E75' }}>WG</div>
             <div>
-              <p className='text-white font-semibold'>The Well Guide</p>
-              <p className='text-white/50 text-sm'>Updated April 2026 &middot; 11 min read</p>
+              <p className='text-white font-semibold'>By The Well Guide Editorial Team</p>
+              <p className='text-white/50 text-sm'>Updated October 2026 &middot; 11 min read</p>
             </div>
           </div>
         </div>
@@ -153,7 +179,7 @@ export default function WellInspectionCost() {
         {/* TL;DR Box */}
         <div className='mb-12 rounded-lg p-5' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
           <p className='font-semibold text-sm mb-2' style={{ color: '#0F6E56' }}>Quick answer:</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>A standard well inspection costs $250 to $550 for most residential wells in 2026. Add water testing and the total runs $350 to $800. A combined well and septic inspection costs $400 to $900. The biggest cost variable is how much water testing is included. A basic visual inspection with flow rate testing costs $150 to $300, while a comprehensive inspection with full lab water testing costs $400 to $800. FHA and VA loans require a well inspection before closing. Even if your lender does not require one, skipping a well inspection when buying a home with a well is one of the most expensive mistakes a homebuyer makes.</p>
+          <div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">A well inspection costs $250 to $550 for most residential wells in 2026. A standard inspection with a flow test and pressure system check runs $250 to $400. Add basic bacteria and nitrate lab testing, which most homebuyers need, and the total is $350 to $550. A comprehensive inspection with a full water panel runs $500 to $800, and a combined well and septic inspection runs $600 to $1,200. VA loans require a water test before closing, and FHA loans require one in certain cases. Neither requires a full well inspection, but many rural lenders do. Even when nobody requires it, skipping a well inspection when buying a home with a well is one of the most expensive mistakes a homebuyer makes.</p>\n" }} />
         </div>
 
         {/* Intro */}
@@ -169,7 +195,7 @@ export default function WellInspectionCost() {
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>The Pre-Purchase Rule</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Before getting into costs, establish this principle: <strong>The Pre-Purchase Rule:</strong> if you are buying a home with a private well, a professional well inspection is not optional. It is the single most important inspection on the property.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>A standard home inspector is not trained or equipped to assess a well system. They look at visible components and note obvious problems. They do not pull pump performance data, test flow rate under load, check water quality at a certified lab, or evaluate the condition of a submersible pump that is 200 feet underground. That requires a licensed well contractor or water systems professional with specific equipment.</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>The cost of fixing a contaminated well, replacing a failed pump, or drilling a new well after closing ranges from $1,500 to $15,000 or more. A well inspection costs $250 to $550. The math is straightforward.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>The cost of fixing a contaminated well, replacing a failed pump, or drilling a new well after closing ranges from $1,500 for a pump to $16,000 or more for <Link href='/cost-guides/well-drilling-cost' className='font-semibold underline' style={{ color: '#1D9E75' }}>a new well</Link>. A well inspection costs $250 to $550. The math is straightforward.</p>
         </div>
 
         {/* What a Well Inspection Includes */}
@@ -184,7 +210,7 @@ export default function WellInspectionCost() {
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Visual inspection of the wellhead:</strong> The inspector examines the well casing above ground for damage, corrosion, or improper sealing. The well cap should be intact with no cracks or gaps. The area around the wellhead should slope away from the casing and be free of contamination sources. The casing itself should be above grade with no signs of surface water intrusion.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Pressure system evaluation:</strong> The pressure tank, pressure switch, and associated plumbing are checked for proper operation. The inspector tests the pump cycling behavior, including how often it starts and stops, how quickly pressure builds and drops, to identify waterlogged tanks, failing pressure switches, or pumps that are short cycling or running continuously.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Flow rate testing:</strong> The inspector runs water at multiple fixtures simultaneously and measures the gallons per minute the well delivers under load. Most households require a minimum of 3 to 5 GPM for adequate function. FHA and VA loan programs require a minimum flow rate of 3 to 5 GPM depending on the number of bedrooms. A well that cannot meet minimum flow rate may require pump replacement, well rehabilitation, or in worst cases, a new well.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Flow rate testing:</strong> The inspector runs water at multiple fixtures simultaneously and measures the gallons per minute the well delivers under load. A common guideline is at least 3 to 5 GPM for a typical home, and some states, counties, and lenders set their own minimum. A well that cannot meet minimum flow rate may require pump replacement, well rehabilitation, or in worst cases, a new well.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Electrical components:</strong> The pump circuit, pressure switch wiring, and control box are checked for proper function, correct amperage draw, and any signs of electrical problems that could indicate a pump running in distress.</p>
           <p className='text-slate-700 text-sm leading-relaxed'><strong>Water quality testing:</strong> This is where inspection costs vary most significantly. Basic inspections include a visual assessment of water color, odor, and clarity. Comprehensive inspections include laboratory water testing for bacteria, nitrates, and other contaminants. Lab results typically take 3 to 7 business days and are the only reliable way to know whether the water is safe to drink.</p>
         </div>
@@ -225,7 +251,7 @@ export default function WellInspectionCost() {
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>Well and septic combined</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>Standard well inspection plus septic inspection in same visit</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>$400 to $900</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>$600 to $1,200</td>
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 border border-slate-200 text-slate-700'>Camera inspection (borehole)</td>
@@ -242,7 +268,7 @@ export default function WellInspectionCost() {
         <div className='mb-12'>
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>Water Testing Add-Ons: What Is Worth Paying For</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Water testing is sold in panels, which are groups of tests run together at a certified lab. The price increases with the number and complexity of tests included. Here is what to know about each tier:</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Basic bacteria and nitrate panel ($50 to $150 added to inspection):</strong> The minimum test for any well used for drinking water. Total coliform and E. coli confirm whether pathogenic bacteria are present. Nitrates indicate potential contamination from agricultural runoff or septic systems. Required by FHA and VA loan programs. Worth paying for on any inspection.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Basic bacteria and nitrate panel ($50 to $150 added to inspection):</strong> The minimum test for any well used for drinking water. Total coliform and E. coli confirm whether pathogenic bacteria are present. Nitrates indicate potential contamination from agricultural runoff or septic systems. Required for VA loans, and for FHA loans whenever a water test is required. Worth paying for on any inspection.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Standard water quality panel ($100 to $250 added to inspection):</strong> Adds heavy metals (arsenic, lead, iron, manganese), pH, hardness, and turbidity to the basic panel. Recommended for any well being purchased as a primary residence, particularly in areas with known agricultural activity, older homes with galvanized plumbing, or regions with naturally occurring arsenic in groundwater.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Comprehensive panel ($200 to $400 added to inspection):</strong> Adds volatile organic compounds (VOCs), pesticides, radon, and a broader suite of metals. Appropriate for wells near industrial sites, agricultural areas with pesticide use, or properties with a history of unknown contamination. Also appropriate for wells that have not been tested in more than five years.</p>
           <p className='text-slate-700 text-sm leading-relaxed'><strong>What to test for in your specific area:</strong> Contaminants vary by region. Arsenic is a concern in parts of New England, the Southwest, and the upper Midwest. Radon is elevated in granite-heavy regions. Nitrate contamination is most common in agricultural areas. Your local health department or county extension office can tell you which contaminants are most common in your area. See our <Link href='/guides/how-to-test-well-water' className='font-semibold underline' style={{ color: '#1D9E75' }}>well water testing guide</Link> for a complete breakdown of contaminants by region and what each test result means.</p>
@@ -262,7 +288,7 @@ export default function WellInspectionCost() {
         {/* When a Well Inspection Is Required vs Recommended */}
         <div className='mb-12'>
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>When a Well Inspection Is Required vs Recommended</h2>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Required by lender:</strong> FHA loans require a well inspection that meets minimum standards including flow rate (minimum 3 to 5 GPM depending on bedroom count), bacteria and nitrate testing with results below EPA maximum contaminant levels, and a wellhead that meets minimum distance requirements from septic components. VA loans have similar requirements. USDA loans typically require well inspections for rural properties. Conventional loans do not universally require well inspections but many lenders in rural markets require them as a condition of financing.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Required by lender:</strong> VA loans require a water test for any home with a private well, collected by a third party who has no stake in the sale and meeting local health standards, or EPA standards where there are none. VA does not require a separate well inspection. FHA loans require a water test in certain cases, including new construction, a well within 100 feet of a septic system, nearby contamination sources such as farms or landfills, or an appraiser who flags a problem. The sample must also be collected by a disinterested third party. USDA loans commonly require water testing for rural properties. Conventional loans don't universally require well testing, but many lenders in rural markets require an inspection, a water test, or both. Ask your lender exactly what they need before you schedule anything.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Required by state or local regulation:</strong> Some states require a well inspection at the time of property transfer. Check with your real estate attorney or local health department to confirm whether your state has mandatory well inspection requirements at closing.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-2'><strong>Strongly recommended regardless of requirement:</strong></p>
           <ul className='list-disc pl-6 text-slate-700 text-sm space-y-1 mb-4'>
@@ -356,11 +382,11 @@ export default function WellInspectionCost() {
           <div className='space-y-6'>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>How much does a well inspection cost?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>A standard well inspection costs $250 to $550 for most residential properties in 2026. Adding basic water testing (bacteria and nitrates) brings the total to $350 to $550. A comprehensive inspection with a full water quality panel costs $500 to $800. A combined well and septic inspection costs $400 to $900 when booked with the same company on the same visit. The biggest cost variable is how much water testing is included.</p>
+              <div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">Most well inspections cost $250 to $550. A standard inspection with a flow test and pressure system check runs $250 to $400. Adding basic bacteria and nitrate testing brings it to $350 to $550, which is what most homebuyers should budget. A comprehensive inspection with a full water quality panel costs $500 to $800, and a combined well and septic inspection costs $600 to $1,200 when booked with the same company on the same visit. The biggest cost variable is how much water testing is included.</p>\n" }} />
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Is a well inspection required when buying a home?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>FHA and VA loans require a well inspection that meets minimum flow rate and water quality standards before closing. USDA loans typically require well inspections for rural properties. Conventional loans do not universally require well inspections but many lenders in rural markets require them. Even when not required by a lender, a well inspection before purchasing a home with a private well is one of the most important steps a buyer can take. The cost of fixing a failed well after closing ($1,500 to $15,000) far exceeds the cost of the inspection ($250 to $550).</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>VA loans require a water test for homes with a private well, and FHA loans require one in certain cases, such as new construction or a well within 100 feet of a septic system. Neither program requires a full well inspection on its own, but many lenders in rural markets do, and some states require testing when a property changes hands. Even when not required by a lender, a well inspection before purchasing a home with a private well is one of the most important steps a buyer can take. The cost of fixing a failed well after closing ($1,500 to $16,000 or more) far exceeds the cost of the inspection ($250 to $550).</p>
             </div>
             <div>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>What does a well inspection include?</h3>
@@ -386,7 +412,9 @@ export default function WellInspectionCost() {
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Who performs well inspections?</h3>
               <p className='text-slate-700 text-sm leading-relaxed'>Well inspections should be performed by a licensed water well system professional or licensed well contractor. Licensing requirements vary by state but most states require certification for anyone performing well inspections or water testing. Some states allow licensed home inspectors to perform basic well inspections. Ask for the inspector{`'`}s license number and verify it with your state licensing board. The National Ground Water Association maintains a directory of certified professionals at ngwa.org.</p>
             </div>
-          </div>
+          <div><h3 className='font-bold text-slate-900 text-sm mb-2'>How much does a well and septic inspection cost?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">A combined well and septic inspection typically costs $600 to $1,200 when one company does both on the same visit. That usually includes the full septic inspection plus a well inspection with basic water testing. Booking both together usually costs less than scheduling them separately, because you pay one trip charge. If the well and the septic system are within 100 feet of each other, test for bacteria and nitrates no matter what. See our <a href=\"https://theseptic.guide/cost-guides/septic-inspection-cost\" class=\"font-semibold underline\" style=\"color:#1D9E75\">septic inspection cost guide</a>.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 text-sm mb-2'>How much does a well flow test cost?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">A well flow or yield test typically costs $200 to $600, depending on how long the well is pumped and whether water sampling is included. The test pumps the well for 2 to 4 hours or more, measures how many gallons per minute it sustains, and tracks how quickly the water level recovers afterward. A basic flow check is often part of a standard inspection. A longer yield test is worth adding if the well is shallow or old, if the seller reports past dry spells, or if your lender or county requires one.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 text-sm mb-2'>Who pays for a well inspection?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">The buyer usually pays, the same as a home inspection, because it's part of the buyer's due diligence. Some states and counties require testing when a property changes hands, and in some cases the seller provides recent results. Buyers can also negotiate for the seller to pay or to credit the cost at closing. If the inspection finds problems, use the report to negotiate repairs or a price reduction.</p>\n" }} /></div></div>
         </div>
 
         {/* Related Guides */}
@@ -417,7 +445,7 @@ export default function WellInspectionCost() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FFF8E1', color: '#F57F17' }}>COST GUIDE</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Pressure Tank Replacement Cost</span>
             </Link>
-          </div>
+          <Link href='/cost-guides/well-drilling-cost' className='block p-4 bg-white border border-slate-200 rounded-lg'><p className='text-sm font-semibold text-slate-900'>Well Drilling Cost</p></Link><Link href='https://theseptic.guide/cost-guides/septic-inspection-cost' className='block p-4 bg-white border border-slate-200 rounded-lg'><p className='text-sm font-semibold text-slate-900'>Septic Inspection Cost</p></Link><Link href='/reviews/best-well-water-test-kits' className='block p-4 bg-white border border-slate-200 rounded-lg'><p className='text-sm font-semibold text-slate-900'>Best Well Water Test Kits</p></Link></div>
         </div>
 
         {/* Glossary */}
@@ -430,15 +458,15 @@ export default function WellInspectionCost() {
           <div className='space-y-4'>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Flow Rate</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>The volume of water a well can produce measured in gallons per minute (GPM). Flow rate is tested by running water at multiple fixtures simultaneously and measuring output over a set period. FHA and VA loan programs require a minimum flow rate of 3 to 5 GPM depending on bedroom count. A well with inadequate flow rate cannot reliably meet household water demand during peak use periods.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>The volume of water a well can produce measured in gallons per minute (GPM). Flow rate is tested by running water at multiple fixtures simultaneously and measuring output over a set period. A common guideline is at least 3 to 5 GPM for a typical home, though states, counties, and lenders may set their own minimum. A well with inadequate flow rate cannot reliably meet household water demand during peak use periods.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Coliform Bacteria</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>A group of bacteria used as indicators of water contamination. Total coliform bacteria indicate that the water may have been exposed to contamination. E. coli, a specific type of coliform bacteria, indicates fecal contamination and poses direct health risks. Both are tested in basic well water panels and must be absent for FHA and VA loan approval.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>A group of bacteria used as indicators of water contamination. Total coliform bacteria indicate that the water may have been exposed to contamination. E. coli, a specific type of coliform bacteria, indicates fecal contamination and poses direct health risks. Both are tested in basic well water panels and must be absent to pass a lender-required water test.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Nitrates</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>A chemical compound found naturally in soil and water that becomes elevated near agricultural land, septic systems, and fertilizer application areas. High nitrate levels in drinking water pose serious health risks, particularly for infants. The EPA maximum contaminant level for nitrates is 10 mg/L. Required testing for FHA and VA loans.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>A chemical compound found naturally in soil and water that becomes elevated near agricultural land, septic systems, and fertilizer application areas. High nitrate levels in drinking water pose serious health risks, particularly for infants. The EPA maximum contaminant level for nitrates is 10 mg/L. Commonly included in lender-required water tests.</p>
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Wellhead</h3>
@@ -458,7 +486,7 @@ export default function WellInspectionCost() {
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>FHA Minimum Property Standards</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>The requirements set by the Federal Housing Administration that a private well must meet for a home to qualify for an FHA-insured mortgage. These include a minimum flow rate of 3 to 5 GPM depending on bedroom count, water test results below EPA maximum contaminant levels for bacteria and nitrates, and wellhead distance requirements from septic system components. VA loans have similar minimum property requirements. Non-compliance can delay or prevent closing on a financed purchase.</p>
+              <div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">The requirements a property must meet to qualify for an FHA-insured mortgage. For private wells, FHA requires the water to meet local health standards, or EPA standards where there are none, and requires a water test collected by a disinterested third party in certain cases, such as new construction, a well within 100 feet of a septic system, or a problem flagged by the appraiser. FHA also sets well-to-septic distance rules, and for existing homes it accepts the local distance requirements when water test results are acceptable. VA loans require a water test for every private well.</p>\n" }} />
             </div>
             <div className='bg-white border border-slate-200 rounded-lg p-5'>
               <h3 className='font-bold text-slate-900 text-sm mb-2'>Water Well Contractor</h3>
