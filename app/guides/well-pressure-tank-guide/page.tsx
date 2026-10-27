@@ -6,10 +6,10 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Well Pressure Tank: The Complete Guide for Private Well Owners | The Well Guide',
-  description: 'Everything a private well owner needs to know about pressure tanks — how they work, sizing formula, best brands, maintenance, and when to replace.',
+  description: 'Everything a private well owner needs to know about pressure tanks: how they work, the right pressure settings, how to size one, the best brands, maintenance, and when to replace.',
   openGraph: {
     title: 'Well Pressure Tank: The Complete Guide for Private Well Owners',
-    description: 'Everything a private well owner needs to know about pressure tanks — how they work, sizing formula, best brands, maintenance, and when to replace.',
+    description: 'Everything a private well owner needs to know about pressure tanks: how they work, the right pressure settings, how to size one, the best brands, maintenance, and when to replace.',
     url: 'https://www.thewell.guide/guides/well-pressure-tank-guide',
     siteName: 'The Well Guide',
     type: 'article',
@@ -19,87 +19,111 @@ export const metadata: Metadata = {
 }
 
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      '@type': 'Question',
-      name: 'What does a well pressure tank do?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A pressure tank stores water under compressed air pressure so your pump does not have to start every time you open a faucet or flush a toilet. It maintains steady water pressure at every fixture, protects the pump from the wear of rapid cycling by providing a rest period between pump cycles, and absorbs pressure surges that would otherwise cause water hammer. A well system without a functioning pressure tank would cycle the pump hundreds of times per day, destroying it within months.',
-      },
+      "@type": "Question",
+      "name": "What does a well pressure tank do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A pressure tank stores water under compressed air pressure so your pump does not have to start every time you open a faucet or flush a toilet. It maintains steady water pressure at every fixture, protects the pump from the wear of rapid cycling by providing a rest period between pump cycles, and absorbs pressure surges that would otherwise cause water hammer. A well system without a functioning pressure tank would cycle the pump hundreds of times per day, destroying it within months."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How long does a well pressure tank last?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A quality bladder tank from a reputable manufacturer (Amtrol Well-X-Trol or Flexcon) lasts 10 to 15 years under normal conditions, with some premium tanks reaching 15 to 20 years. Budget tanks typically last 5 to 8 years. Water chemistry significantly affects lifespan: acidic water, high chlorine, elevated manganese, and hydrogen peroxide treatment all accelerate rubber bladder degradation.',
-      },
+      "@type": "Question",
+      "name": "How long does a well pressure tank last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A quality tank from a reputable manufacturer (Amtrol Well-X-Trol or Flexcon) lasts 10 to 15 years under normal conditions, with some premium tanks reaching 15 to 20 years. Budget tanks typically last 5 to 8 years. Water chemistry significantly affects lifespan: acidic water (pH below 6.5), high chlorine concentration, elevated manganese, and water treated with hydrogen peroxide for iron removal all accelerate rubber bladder degradation. Consistent short cycling also shortens bladder life through repeated pressure spikes and mechanical stress on the rubber membrane."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What size well pressure tank do I need?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Required drawdown equals pump GPM multiplied by 1 minute minimum runtime. Required tank volume equals required drawdown divided by 0.28 for 30/50 pressure settings or 0.25 for 40/60 settings. A 10 GPM pump at 30/50 settings needs 10 gallons drawdown, requiring a minimum 36-gallon tank. In practice, buying the next standard size up is always recommended. Most 3 to 4 bedroom homes with 8 to 12 GPM pumps do well with a 44 to 86-gallon tank.',
-      },
+      "@type": "Question",
+      "name": "What size well pressure tank do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Required drawdown (gallons) equals pump GPM multiplied by 1 minute minimum runtime. Required tank volume equals required drawdown divided by 0.28 (for 30/50 settings) or 0.26 (for 40/60 settings). A 10 GPM pump at 30/50 settings needs 10 gallons drawdown, which requires a minimum 36-gallon tank (10 / 0.28). In practice, buying the next size up is always recommended. Most 3 to 4 bedroom homes with 8 to 12 GPM pumps do well with a 44 to 86-gallon tank."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What is the correct pre-charge pressure for a well pressure tank?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Pre-charge should always be 2 PSI below the pump\'s cut-in pressure, measured with the tank completely empty and pump off. For a 30/50 pressure switch, the correct pre-charge is 28 PSI. For a 40/60 switch, 38 PSI. Tanks ship pre-charged at 38 PSI regardless of system settings - verify and adjust during installation and annually thereafter.',
-      },
+      "@type": "Question",
+      "name": "What is the correct pre-charge pressure for a well pressure tank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pre-charge should always be set to 2 PSI below the pump's cut-in pressure, measured with the tank completely empty of water and the pump off. For a 30/50 pressure switch, the correct pre-charge is 28 PSI. For a 40/60 switch, 38 PSI. For a 20/40 switch, 18 PSI. Tanks ship from the factory pre-charged at 38 PSI regardless of system settings. Verify and adjust to your system's correct setting during installation and annually thereafter."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'How do I know if my pressure tank bladder has failed?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Three tests confirm failure. Press the Schrader valve center pin on top of the tank with the pump off - if water sprays out instead of air, the bladder has failed. Tap the tank from top to bottom - a healthy tank sounds hollow at the top, a failed tank sounds uniformly solid throughout. Try to rock the tank when drained - a waterlogged tank feels abnormally heavy. Any of these tests confirming failure means the tank needs replacement.',
-      },
+      "@type": "Question",
+      "name": "How do I know if my pressure tank bladder has failed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three tests confirm bladder failure. First: press the Schrader valve center pin on top of the tank with the pump off. If water sprays out instead of air, the bladder has failed. Second: tap the tank from top to bottom with a knuckle. A healthy tank sounds hollow at the top and solid at the bottom. A waterlogged tank sounds uniformly solid throughout. Third: try to rock the tank when drained. A waterlogged tank feels abnormally heavy and barely moves. Any of these tests confirming failure means the tank needs replacement."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Can I replace just the bladder, or do I need a whole new tank?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'On many quality bladder tanks (particularly Amtrol Well-X-Trol models), the bladder can be replaced separately if the shell is in good condition and the tank is less than 10 years old, saving $400 to $700 compared to full replacement. On diaphragm tanks including most Water Worker models, and on galvanized tanks, the membrane is not replaceable and the entire tank must be replaced.',
-      },
+      "@type": "Question",
+      "name": "Can I replace just the bladder, or do I need a whole new tank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only on tanks built for it. Some bladder tanks have a replaceable bladder, and replacing it can make sense if the tank shell and fittings are in good condition and the tank is less than 10 years old. Most residential tanks, including diaphragm tanks like Amtrol Well-X-Trol and most Water Worker models, have a membrane that isn't replaceable, so the whole tank gets replaced. Galvanized tanks have no membrane at all. Check your model's documentation, and compare the bladder kit and labor cost with a new tank before deciding."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'What is the difference between a bladder tank and a diaphragm tank?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'A bladder tank uses a balloon-shaped rubber membrane inside the tank that expands to fill the tank interior as water enters. A diaphragm tank uses a flat rubber membrane permanently bonded around the tank\'s circumference that flexes up and down. Bladder tanks generally offer slightly higher drawdown efficiency and many models allow bladder replacement. For most residential well applications, either type performs well.',
-      },
+      "@type": "Question",
+      "name": "What is the difference between a bladder tank and a diaphragm tank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A bladder tank uses a balloon-shaped rubber membrane inside the tank that expands to fill the tank interior as water enters. A diaphragm tank uses a flat rubber membrane permanently bonded around the tank's circumference that flexes up and down. Bladder tanks generally offer slightly higher drawdown efficiency and many models allow bladder replacement. Diaphragm tanks are often more compact and the flat membrane operates in a consistent, repeatable motion some manufacturers believe produces less localized stress. For most residential well applications, either type performs well. Amtrol Well-X-Trol uses a diaphragm design."
+      }
     },
     {
-      '@type': 'Question',
-      name: 'Does pressure tank size affect water pressure?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Tank size does not affect operating pressure, which is set by the pressure switch cut-in and cut-out settings. What tank size affects is pressure stability during use. A larger tank provides more stored drawdown water so pressure drops more slowly as you use water. A small tank empties quickly, causing pressure to drop noticeably during a long shower, then spike back up when the pump restarts. If your pressure feels inconsistent despite a correctly functioning pump, an undersized tank is often the cause.',
-      },
+      "@type": "Question",
+      "name": "Does pressure tank size affect water pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tank size does not affect the operating pressure of your water. Operating pressure is set by the pressure switch cut-in and cut-out settings. What tank size does affect is how stable pressure feels during use. A larger tank provides more stored drawdown water, so pressure drops more slowly as you use water. A small tank empties quickly, causing pressure to drop noticeably during sustained use like a long shower, then spike back up when the pump restarts. If your pressure feels inconsistent despite a correctly functioning pump, an undersized tank is often the cause."
+      }
     },
-  ],
+    {
+      "@type": "Question",
+      "name": "What should my well pressure tank gauge read?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With the system running, the gauge should move between your pressure switch's cut-in and cut-out settings: 30 to 50 PSI on a 30/50 system, or 40 to 60 PSI on a 40/60 system. It climbs while the pump runs, holds steady at the top when nothing is in use, and drops as you use water. That's different from the tank's air pre-charge, which you check with the tank empty and the pump off, and which should be 2 PSI below cut-in: 28 PSI for 30/50 or 38 PSI for 40/60."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much water does a well pressure tank hold?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only about 25 to 30 percent of the tank's rated size comes out as usable water between pump cycles. That amount is called drawdown, and the rest of the tank is the compressed air cushion. At 30/50 settings, a 20-gallon tank delivers about 6 gallons, a 32-gallon tank about 9, a 44-gallon tank about 13, and an 86-gallon tank about 25. At 40/60 settings, each delivers slightly less. The manufacturer's spec sheet lists exact drawdown for your model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size pressure tank do I need for a 3-bedroom house?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Size the tank to the pump, not the house. A typical 3-bedroom home has a pump around 10 GPM, which needs at least 10 gallons of drawdown. That's a 44-gallon tank at minimum, and an 86-gallon tank if you want the pump to run longer and cycle less. Check your pump's flow rate first: a bigger pump needs a bigger tank, whatever the size of the house."
+      }
+    }
+  ]
 }
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Well Pressure Tank: The Complete Guide for Private Well Owners',
-  description: 'Everything a private well owner needs to know about pressure tanks — how they work, sizing formula, best brands, maintenance, and when to replace.',
+  description: 'Everything a private well owner needs to know about pressure tanks: how they work, the right pressure settings, how to size one, the best brands, maintenance, and when to replace.',
   image: 'https://www.thewell.guide/pressureguide.jpg',
   datePublished: '2026-03-26',
-  dateModified: '2026-03-25',
+  dateModified: '2026-10-26',
   author: {
     '@type': 'Organization',
-    name: 'The Well Guide',
+    name: 'The Well Guide Editorial Team',
     url: 'https://www.thewell.guide',
   },
   publisher: {
@@ -142,6 +166,7 @@ export default function WellPressureTankGuide() {
           Well Pressure Tank: The Complete Guide for Private Well Owners
         </h1>
 
+<div className='flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500 mb-6'><span>By The Well Guide Editorial Team</span><span>Updated October 2026</span></div>
         {/* Hero Image */}
         <div className='rounded-xl overflow-hidden mb-8'>
           <Image
@@ -158,7 +183,7 @@ export default function WellPressureTankGuide() {
         <div className='rounded-lg p-5 mb-10' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
           <p className='font-bold text-slate-900 mb-2'>Quick Answer</p>
           <p className='text-slate-700 text-sm leading-relaxed'>
-            A well pressure tank stores water under compressed air pressure so your pump does not have to start every time you open a faucet. Without it, the pump would cycle hundreds of times per day and fail within months. Every residential well system has one. The tank does three jobs: protects the pump from rapid cycling, maintains steady water pressure at every fixture, and absorbs pressure surges that would otherwise hammer your pipes and appliances. Most modern tanks use a rubber bladder or diaphragm to separate water from air and last 10 to 15 years. When the bladder fails, the tank waterloggs, your pump begins <Link href='/problems/well-pump-short-cycling' className='font-semibold underline' style={{ color: '#1D9E75' }}>short cycling</Link>, and both need replacement. This guide covers everything: how tanks work, the three types, how to size one correctly, the best brands, the annual maintenance tasks you can do yourself, and how to know when the tank is failing before it takes the pump with it.
+            A well pressure tank stores water under compressed air pressure so your pump does not have to start every time you open a faucet. Set the tank's air pre-charge 2 PSI below your pump's cut-in pressure, measured with the tank empty: 28 PSI on a 30/50 system and 38 PSI on a 40/60 system. While the system runs, the gauge should move between those two numbers, for example 30 to 50 PSI. Without it, the pump would cycle hundreds of times per day and fail within months. Every residential well system has one. The tank does three jobs: protects the pump from rapid cycling, maintains steady water pressure at every fixture, and absorbs pressure surges that would otherwise hammer your pipes and appliances. Most modern tanks use a rubber bladder or diaphragm to separate water from air and last 10 to 15 years. When the bladder fails, the tank waterloggs, your pump begins <Link href='/problems/well-pump-short-cycling' className='font-semibold underline' style={{ color: '#1D9E75' }}>short cycling</Link>, and both need replacement. This guide covers everything: how tanks work, the three types, how to size one correctly, the best brands, the annual maintenance tasks you can do yourself, and how to know when the tank is failing before it takes the pump with it.
           </p>
         </div>
 
@@ -167,7 +192,7 @@ export default function WellPressureTankGuide() {
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>Why Your Pressure Tank Is the Most Overlooked Component in Your Well System</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Most well owners think about their pump. They think about their well depth. When something goes wrong, they call a contractor and describe symptoms at the faucet. The pressure tank sits quietly in the utility room or well house, doing its job invisibly, and receives almost no attention until it fails.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>This is a problem because the pressure tank is the component that determines how long the pump lasts. Every time your pump starts, it draws 5 to 7 times its normal running current in a startup surge that generates heat in the motor windings. Your pump is designed for short cycles followed by rest periods that allow that heat to dissipate. A properly sized pressure tank ensures those rest periods are long enough. An undersized, failing, or absent pressure tank removes those rest periods entirely.</p>
-          <p className='text-slate-700 text-sm leading-relaxed'>The numbers are stark. A pump that would normally last 12 to 15 years under correct cycling can fail within 1 to 3 years under sustained short cycling from a waterlogged tank. The tank costs $300 to $800 to replace. The pump costs $1,000 to $2,500. This is why understanding, maintaining, and sizing your pressure tank correctly is the single highest-leverage thing you can do to protect your well investment.</p>
+          <p className='text-slate-700 text-sm leading-relaxed'>The numbers are stark. A pump that would normally last 12 to 15 years under correct cycling can fail within 1 to 3 years under sustained short cycling from a waterlogged tank. A <Link href='/cost-guides/pressure-tank-replacement-cost' className='font-semibold underline' style={{ color: '#1D9E75' }}>tank replacement</Link> typically costs $450 to $1,500 installed. A <Link href='/cost-guides/well-pump-replacement-cost' className='font-semibold underline' style={{ color: '#1D9E75' }}>pump replacement</Link> typically costs $1,500 to $4,000. This is why understanding, maintaining, and sizing your pressure tank correctly is the single highest-leverage thing you can do to protect your well investment.</p>
         </div>
 
         {/* How a Well Pressure Tank Works */}
@@ -175,7 +200,7 @@ export default function WellPressureTankGuide() {
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>How a Well Pressure Tank Works: The Full Pressure Cycle</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Understanding the pressure cycle makes every other topic in this guide easier to follow. Here is what happens inside your system from the moment you open a faucet to the moment the pump shuts off.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>State 1: Tank charged, pump off.</strong> The pressure tank holds water under compressed air pressure at the cut-out setpoint &mdash; typically 50 PSI (for a 30/50 system) or 60 PSI (for a 40/60 system). The compressed air inside the tank is pushing against the rubber bladder or diaphragm, which is pushing against the water side. The pump is off. You could open every faucet in the house and the water would flow from the tank with no pump running at all.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>State 1: Tank charged, pump off.</strong> The pressure tank holds water under compressed air pressure at the cut-out setpoint, typically 50 PSI (for a 30/50 system) or 60 PSI (for a 40/60 system). The compressed air inside the tank is pushing against the rubber bladder or diaphragm, which is pushing against the water side. The pump is off. You could open every faucet in the house and the water would flow from the tank with no pump running at all.</p>
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>State 2: Demand begins.</strong> You open a faucet. Water flows from the tank to the faucet. As water leaves the tank, the air cushion expands, and pressure in the system drops. This is the drawdown phase. The gauge on your tank drops from 50 toward 30 PSI (on a 30/50 system). You have usable water pressure the entire time because the compressed air continues pushing water out.</p>
 
@@ -185,7 +210,7 @@ export default function WellPressureTankGuide() {
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>State 5: Cut-out reached.</strong> When pressure reaches cut-out, the pressure switch opens its contacts and the pump stops. The tank is fully charged again. State 1 resumes.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'>The key principle is Boyle&apos;s Law: pressure and volume are inversely related. As the air cushion compresses (volume decreases), pressure increases. As it expands (volume increases), pressure decreases. The rubber bladder or diaphragm keeps the air and water from mixing, because if they mixed, air would be absorbed into the water over time and the air cushion would disappear &mdash; which is exactly what happens when the bladder fails.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'>The key principle is Boyle&apos;s Law: pressure and volume are inversely related. As the air cushion compresses (volume decreases), pressure increases. As it expands (volume increases), pressure decreases. The rubber bladder or diaphragm keeps the air and water from mixing, because if they mixed, air would be absorbed into the water over time and the air cushion would disappear, which is exactly what happens when the bladder fails.</p>
 
           <p className='text-slate-700 text-sm leading-relaxed'><strong>What the pressure gauge shows you:</strong> In a healthy system, the gauge should climb steadily from cut-in to cut-out while the pump runs, hold steady at cut-out when the pump is off and no water is being used, and drop smoothly from cut-out toward cut-in as you use water. A gauge that oscillates rapidly (pump on, off, on, off within seconds) indicates <Link href='/problems/well-pump-short-cycling' className='font-semibold underline' style={{ color: '#1D9E75' }}>short cycling</Link>. A gauge that never rises to cut-out indicates the pump cannot build enough pressure. A gauge that holds at cut-out but the <Link href='/problems/well-pump-running-constantly' className='font-semibold underline' style={{ color: '#1D9E75' }}>pump keeps running</Link> indicates a stuck pressure switch.</p>
         </div>
@@ -199,7 +224,7 @@ export default function WellPressureTankGuide() {
           <h3 className='text-xl font-bold text-slate-900 mb-3'>Type 1: Bladder Tanks (Most Common for Residential Wells)</h3>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>A bladder tank contains a balloon-shaped rubber bladder inside the tank shell. The bladder is attached at the bottom, where the water connection enters. Water fills the inside of the bladder. Air fills the space between the bladder and the tank shell. When water enters, the bladder expands, compressing the surrounding air. When water leaves, the bladder contracts.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>The bladder tank&apos;s key advantage is that the bladder fully expands to fill the tank interior during the water fill phase, giving it the highest drawdown efficiency of any tank type. A quality bladder tank provides drawdown equal to approximately 30 percent of its total volume at 30/50 pressure settings.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'>Many bladder tanks have a replaceable bladder accessed through a large flange at the top of the tank. If the bladder fails but the tank shell and fittings are in good condition, replacing just the bladder is sometimes practical and can save $400 to $700 compared to full tank replacement. Amtrol Well-X-Trol tanks are particularly known for bladder replaceability.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'>Many bladder tanks have a replaceable bladder accessed through a large flange at the top of the tank. If the bladder fails but the tank shell and fittings are in good condition, replacing just the bladder is sometimes practical and can save several hundred dollars compared to full tank replacement. Replaceable bladders are less common on residential tanks, so check the model's documentation before counting on one.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>How to identify it:</strong> Bladder tanks have a Schrader valve (tire-type air valve) at the top for pre-charge testing, and a single plumbing connection at the bottom. They stand vertically or horizontally and look like a capsule or cylinder.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Pre-charge location:</strong> Air charge is in the space between the bladder exterior and the tank shell. Test it at the Schrader valve on top with the tank completely empty of water and pump off.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-6'><strong>Failure mode:</strong> The bladder tears, develops pinholes from flex fatigue, or separates at its fittings. Water invades the air side. The tank fills completely with water. Schrader valve test shows water instead of air. Tank feels uniformly heavy. Short cycling results.</p>
@@ -207,11 +232,11 @@ export default function WellPressureTankGuide() {
           {/* Type 2: Diaphragm */}
           <h3 className='text-xl font-bold text-slate-900 mb-3'>Type 2: Diaphragm Tanks</h3>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>A diaphragm tank uses a flat rubber membrane permanently attached around the circumference of the tank&apos;s interior, dividing it into an upper air chamber and a lower water chamber. Unlike the balloon-shaped bladder, the diaphragm is a fixed flat membrane that flexes up and down as the water level changes.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'>The diaphragm design is often described as more mechanically reliable because the membrane operates in a consistent flat-to-dome flexing motion rather than expanding and contracting in all directions like a bladder. However, the diaphragm is not replaceable on most residential models &mdash; it is permanently bonded to the tank shell. If the diaphragm fails, the entire tank is replaced.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'>The diaphragm design is often described as more mechanically reliable because the membrane operates in a consistent flat-to-dome flexing motion rather than expanding and contracting in all directions like a bladder. However, the diaphragm is not replaceable on most residential models, it is permanently bonded to the tank shell. If the diaphragm fails, the entire tank is replaced.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Drawdown efficiency for diaphragm tanks is approximately 25 to 40 percent of total tank volume, slightly lower than bladder tanks, because the flat diaphragm cannot deflect as far into the air chamber as a fully inflated bladder can.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Water Worker (made by Amtrol) is the most recognized residential diaphragm tank brand. Their tanks use a heavy-duty butyl rubber diaphragm rated to NSF/ANSI 61 and FDA requirements for potable water contact.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>How to identify it:</strong> Diaphragm tanks look very similar to bladder tanks from the outside. They have a Schrader valve at the top and a single plumbing connection at the bottom. Many diaphragm tanks lack any external label distinguishing them from bladder tanks. Check the product literature or look for models marketed specifically as &ldquo;diaphragm&rdquo; design.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Pre-charge location:</strong> Air charge is in the upper chamber above the diaphragm. Test the same way as a bladder tank &mdash; Schrader valve at top with tank fully drained and pump off.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Pre-charge location:</strong> Air charge is in the upper chamber above the diaphragm. Test the same way as a bladder tank, Schrader valve at top with tank fully drained and pump off.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-6'><strong>Failure mode:</strong> The diaphragm tears or separates from the tank wall. Water and air mix. Same symptoms as bladder failure: short cycling, water from Schrader valve.</p>
 
           {/* Type 3: Galvanized */}
@@ -237,13 +262,12 @@ export default function WellPressureTankGuide() {
 
           <h3 className='text-lg font-bold text-slate-900 mb-3'>Step 2: Calculate Required Drawdown</h3>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Required drawdown = pump GPM multiplied by minimum runtime in minutes.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'>For pumps delivering 10 GPM or less: use 1 minute minimum runtime. For pumps delivering 10 to 20 GPM: use 1.5 minutes minimum runtime. For pumps delivering over 20 GPM: use 2 minutes minimum runtime and consider a two-tank system.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-6'>Example with 12 GPM pump at 40/60 pressure: 12 GPM x 1.5 minutes = 18 gallons required drawdown.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-6'>Use 1 minute as the minimum runtime for any pump. Longer is better: sizing for 1.5 to 2 minutes gives the pump more rest between cycles. Example: a 12 GPM pump needs at least 12 GPM x 1 minute = 12 gallons of drawdown.</p>
 
           <h3 className='text-lg font-bold text-slate-900 mb-3'>Step 3: Convert Drawdown to Tank Volume</h3>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Drawdown is only about 25 to 30 percent of a tank&apos;s total volume at standard residential pressure settings. This comes directly from Boyle&apos;s Law applied to the air compression ratios at 30/50 or 40/60 pressure settings.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>At 30/50 PSI settings: drawdown factor is approximately 0.28 to 0.32 of total volume. At 40/60 PSI settings: drawdown factor is approximately 0.25 to 0.28 of total volume.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-6'>To find required tank volume: divide required drawdown by 0.28 (using the midpoint of the 30/50 factor, which is conservative). Example continued: 18 gallons required drawdown / 0.28 = 64 gallons minimum tank volume. The next standard size up would be an 85-gallon tank.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-6'>To find required tank volume: divide required drawdown by 0.28 (using the midpoint of the 30/50 factor, which is conservative). Example continued: 12 gallons required drawdown / 0.28 = 43 gallons minimum tank volume. The next standard size up is a 44-gallon tank. Sizing for 1.5 minutes of runtime (18 gallons of drawdown) points to an 85-gallon tank.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-6'><strong>Important note on pressure settings and drawdown:</strong> Higher pressure settings reduce the amount of drawdown a given tank can provide. A 44-gallon tank at 30/50 settings provides about 13 gallons of drawdown. The same tank at 40/60 settings provides about 11 gallons. If you upgrade your pressure switch settings to increase household pressure, you may need to also upgrade to a larger tank to maintain the same drawdown.</p>
 
           {/* Sizing Quick Reference Table */}
@@ -291,13 +315,13 @@ export default function WellPressureTankGuide() {
                 </tr>
                 <tr className='bg-slate-50'>
                   <td className='p-3 border border-slate-200 text-slate-700'>13 to 16 GPM</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>15 to 18 gallons</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>13 to 16 gallons</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>30/50</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>62 to 85-gallon tank</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>62-gallon tank</td>
                 </tr>
                 <tr>
                   <td className='p-3 border border-slate-200 text-slate-700'>17 to 20 GPM</td>
-                  <td className='p-3 border border-slate-200 text-slate-700'>20 gallons</td>
+                  <td className='p-3 border border-slate-200 text-slate-700'>17 to 20 gallons</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>30/50</td>
                   <td className='p-3 border border-slate-200 text-slate-700'>85-gallon tank</td>
                 </tr>
@@ -311,7 +335,7 @@ export default function WellPressureTankGuide() {
             </table>
           </div>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-6'><strong>The &ldquo;bigger is better&rdquo; principle:</strong> There is no operational penalty for an oversized pressure tank. A larger tank means fewer pump cycles per day, longer pump runtimes with better heat dissipation, and more stored water during power outages or pump failures. An 86-gallon tank typically costs $100 to $150 more than a 44-gallon tank. If that extra cost prevents even one pump replacement (saving $1,000 to $2,500), it pays for itself many times over.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-6'><strong>The &ldquo;bigger is better&rdquo; principle:</strong> There is no operational penalty for an oversized pressure tank. A larger tank means fewer pump cycles per day, longer pump runtimes with better heat dissipation, and more stored water during power outages or pump failures. An 86-gallon tank typically costs $100 to $150 more than a 44-gallon tank. If that extra cost prevents even one pump replacement (saving $1,500 to $4,000), it pays for itself many times over.</p>
 
           {/* Worked Example Callout Box */}
           <div className='rounded-lg p-6 mb-6' style={{ backgroundColor: '#E1F5EE', borderLeft: '4px solid #1D9E75' }}>
@@ -324,9 +348,9 @@ export default function WellPressureTankGuide() {
 
             <p className='text-slate-700 text-sm leading-relaxed mb-3'><strong>3. Convert to tank volume.</strong> At 40/60 pressure settings, drawdown factor = 0.26 (slightly lower than 30/50 due to higher operating pressure). Required tank volume = 10 gallons / 0.26 = 38 gallons minimum. The next standard size up from 38 gallons is a 44-gallon tank.</p>
 
-            <p className='text-slate-700 text-sm leading-relaxed mb-3'><strong>4. Apply the &ldquo;bigger is better&rdquo; adjustment.</strong> The family had a 20-gallon tank that was almost certainly undersized for a 10 GPM pump (it provided only about 5 gallons of drawdown, meaning the pump ran for only 30 seconds per cycle instead of 60). At replacement time, the right choice is to upsize. An 86-gallon tank provides about 22 gallons of drawdown at 40/60 settings, giving the pump 2+ minutes per cycle and cutting daily cycle count nearly in half compared to the 44-gallon option. The 86-gallon tank costs approximately $80 to $120 more than the 44-gallon. Given the pump has another 7 to 10 years of service life, this is the correct choice.</p>
+            <p className='text-slate-700 text-sm leading-relaxed mb-3'><strong>4. Apply the &ldquo;bigger is better&rdquo; adjustment.</strong> The family had a 20-gallon tank that was almost certainly undersized for a 10 GPM pump (it provided only about 5 gallons of drawdown, meaning the pump ran for only 30 seconds per cycle instead of 60). At replacement time, the right choice is to upsize. An 86-gallon tank provides about 22 gallons of drawdown at 40/60 settings, giving the pump 2+ minutes per cycle and cutting daily cycle count nearly in half compared to the 44-gallon option. The 86-gallon tank typically costs about $100 to $150 more than the 44-gallon. Given the pump has another 7 to 10 years of service life, this is the correct choice.</p>
 
-            <p className='text-slate-700 text-sm leading-relaxed mb-3'><strong>5. Verify the pre-charge.</strong> New 86-gallon tank. Pressure switch is 40/60. Pre-charge must be set to 38 PSI (40 PSI cut-in minus 2). The tank ships at 38 PSI, which happens to be correct for this system &mdash; but verify with a gauge before installation because factory pre-charge can vary.</p>
+            <p className='text-slate-700 text-sm leading-relaxed mb-3'><strong>5. Verify the pre-charge.</strong> New 86-gallon tank. Pressure switch is 40/60. Pre-charge must be set to 38 PSI (40 PSI cut-in minus 2). The tank ships at 38 PSI, which happens to be correct for this system, but verify with a gauge before installation because factory pre-charge can vary.</p>
 
             <p className='text-slate-700 text-sm leading-relaxed'><strong>Result:</strong> Replace the undersized 20-gallon with an 86-gallon bladder tank (Amtrol WX-350 or Flexcon WR-86 or equivalent), pre-charge set to 38 PSI, installed at the same plumbing connection.</p>
           </div>
@@ -346,7 +370,7 @@ export default function WellPressureTankGuide() {
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Factory pre-charge (PSI):</strong> The air pressure at which the tank left the factory. Almost always 38 PSI regardless of manufacturer. This is why you must verify and adjust pre-charge at installation for systems running 30/50 or 20/40 settings.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Model number:</strong> Cross-reference this against the manufacturer&apos;s specification sheet to find the actual drawdown at your pressure settings. Amtrol, Flexcon, and Water Worker all publish drawdown tables for every model at 30/50 and 40/60 settings. A 44-gallon tank provides different drawdown at 30/50 versus 40/60. The label does not tell you this &mdash; the spec sheet does.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Model number:</strong> Cross-reference this against the manufacturer&apos;s specification sheet to find the actual drawdown at your pressure settings. Amtrol, Flexcon, and Water Worker all publish drawdown tables for every model at 30/50 and 40/60 settings. A 44-gallon tank provides different drawdown at 30/50 versus 40/60. The label does not tell you this, the spec sheet does.</p>
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>NSF/ANSI 61 certification:</strong> Indicates the internal components are certified safe for contact with potable water. Any pressure tank used for household drinking water should carry this certification. It should appear on the label.</p>
 
@@ -360,7 +384,7 @@ export default function WellPressureTankGuide() {
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>The Pre-Charge Setting: The Single Most Important Maintenance Task</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Pre-charge is the air pressure inside the tank when it is completely empty of water. It is the foundation of every other aspect of tank performance.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-6'><strong>Why it matters so much:</strong> If pre-charge is too low relative to cut-in pressure, the tank&apos;s effective drawdown is reduced even if the bladder is intact. The pump cycles more than it should. If pre-charge is set higher than cut-in pressure, the system experiences a momentary pressure drop to zero before the pump starts &mdash; a dead zone where you temporarily have no water even though the pump is about to start. This is why the 2-PSI-below-cut-in rule is not arbitrary.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-6'><strong>Why it matters so much:</strong> If pre-charge is too low relative to cut-in pressure, the tank&apos;s effective drawdown is reduced even if the bladder is intact. The pump cycles more than it should. If pre-charge is set higher than cut-in pressure, the system experiences a momentary pressure drop to zero before the pump starts, a dead zone where you temporarily have no water even though the pump is about to start. This is why the 2-PSI-below-cut-in rule is not arbitrary.</p>
 
           {/* Pre-charge by Switch Setting Table */}
           <h3 className='text-lg font-bold text-slate-900 mb-3'>The correct pre-charge for every common pressure switch setting:</h3>
@@ -402,7 +426,7 @@ export default function WellPressureTankGuide() {
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>The most common mistake:</strong> Checking pre-charge with water still in the tank. Water in the tank creates back-pressure that makes the pre-charge gauge read higher than it actually is. This gives a false &ldquo;correct&rdquo; reading when the actual pre-charge may be significantly low. Always drain the tank completely first.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>The pressure switch differential and its effect on drawdown:</strong> The differential is the gap between cut-in and cut-out pressure. Standard residential setting is 20 PSI (30/50 or 40/60). This differential is not arbitrary. Widening the differential (for example, to 30 PSI by setting a 30/60 switch) increases drawdown for a given tank because the air cushion expands further before the pump restarts. The Driller&apos;s published tables show that widening from 30/50 to 30/60 can increase drawdown by 20 to 30 percent on the same tank. However, check with your tank manufacturer before exceeding 20 PSI differential &mdash; over-expanding the water chamber can stress the bladder and reduce its service life.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>The pressure switch differential and its effect on drawdown:</strong> The differential is the gap between cut-in and cut-out pressure. Standard residential setting is 20 PSI (30/50 or 40/60). This differential is not arbitrary. Widening the differential (for example, to 30 PSI by setting a 30/60 switch) increases drawdown for a given tank because the air cushion expands further before the pump restarts. The Driller&apos;s published tables show that widening from 30/50 to 30/60 can increase drawdown by 20 to 30 percent on the same tank. However, check with your tank manufacturer before exceeding 20 PSI differential, over-expanding the water chamber can stress the bladder and reduce its service life.</p>
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Narrowing the differential (for example, a 40/50 setting with only 10 PSI gap) reduces drawdown dramatically and causes the pump to cycle frequently even with a correctly sized tank. A differential narrower than 20 PSI is almost never appropriate for residential well systems.</p>
 
@@ -417,13 +441,13 @@ export default function WellPressureTankGuide() {
           <p className='text-slate-700 text-sm leading-relaxed mb-6'>Residential pressure tanks range from excellent to disposable. Brand choice matters considerably more than most homeowners realize because all tanks look similar from the outside.</p>
 
           <h3 className='text-lg font-bold text-slate-900 mb-2'>Tier 1: Amtrol Well-X-Trol</h3>
-          <p className='text-slate-700 text-sm leading-relaxed mb-6'>Amtrol invented the modern pre-pressurized captive-air well tank in 1946. The Well-X-Trol line has been the contractor standard for nearly 80 years. Key specifications: deep-drawn seamless steel shell rated to 150 PSI working pressure, heavy-duty butyl diaphragm, patented Turbulator water circulation device that prevents stagnation, antimicrobial interior liner that neutralizes bacteria on contact, welded stainless steel air stem (no thread seal to fail), and a 7-year limited warranty (the longest in the residential segment). Well-X-Trol bladders are notably thicker and more durable than most competitors, typically lasting 2 to 3 years longer in independent contractor comparisons. Premium pricing: approximately 20 to 30 percent more than comparable Flexcon or Water Worker models.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-6'>Amtrol's Well-X-Trol line has been the contractor standard for decades. Key specifications: deep-drawn seamless steel shell rated to 150 PSI working pressure, heavy-duty butyl diaphragm, patented Turbulator water circulation device that prevents stagnation, antimicrobial interior liner that neutralizes bacteria on contact, welded stainless steel air stem (no thread seal to fail), and a 7-year limited warranty (the longest in the residential segment). The heavy-duty butyl diaphragm is the main reason contractors trust the line. Premium pricing: approximately 20 to 30 percent more than comparable Flexcon or Water Worker models.</p>
 
           <h3 className='text-lg font-bold text-slate-900 mb-2'>Tier 1: Flexcon WR Series</h3>
           <p className='text-slate-700 text-sm leading-relaxed mb-6'>Flexcon is the primary competitor to Amtrol in the professional contractor market. Flexcon uses computer-aided design (CAD) technology to engineer a controlled-action diaphragm system that flexes uniformly rather than developing stress concentrations at fixed points. All Flexcon tanks undergo seam-weld testing, high-pressure testing, and helium leak testing before leaving the factory. The WR series is designed specifically for well water applications and includes a 5-year warranty. Drawdown performance is comparable to Well-X-Trol. Pricing is typically 10 to 20 percent lower than Amtrol.</p>
 
           <h3 className='text-lg font-bold text-slate-900 mb-2'>Tier 2: Water Worker</h3>
-          <p className='text-slate-700 text-sm leading-relaxed mb-6'>Water Worker is manufactured by Amtrol (same factory, same parent company) and is sold primarily through home improvement retailers at a lower price point than the Well-X-Trol line. Construction is similar but with a thinner diaphragm and slightly lower working pressure rating. The 5-year warranty (versus 7 years for Well-X-Trol) reflects this difference. For most residential applications in areas with normal water chemistry, Water Worker tanks perform well for their price point. The caveat is that some inconsistency in factory pre-charge has been reported &mdash; always verify pre-charge with a gauge before installation.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-6'>Water Worker is manufactured by Amtrol (same factory, same parent company) and is sold primarily through home improvement retailers at a lower price point than the Well-X-Trol line. Construction is similar but with a thinner diaphragm and slightly lower working pressure rating. The 5-year warranty (versus 7 years for Well-X-Trol) reflects this difference. For most residential applications in areas with normal water chemistry, Water Worker tanks perform well for their price point. The caveat is that some inconsistency in factory pre-charge has been reported, always verify pre-charge with a gauge before installation.</p>
 
           <h3 className='text-lg font-bold text-slate-900 mb-2'>Tier 2: Goulds V-Series</h3>
           <p className='text-slate-700 text-sm leading-relaxed mb-6'>Goulds (owned by Xylem) produces the V-Series pressure tanks specifically designed to pair with Goulds pump systems. These are quality contractor-grade tanks with good performance and a 5-year warranty. Recommended if your well system uses a Goulds pump and you want matched components from the same manufacturer.</p>
@@ -439,7 +463,7 @@ export default function WellPressureTankGuide() {
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>Annual Maintenance: What You Can Do Yourself</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Pressure tank maintenance takes about 15 minutes per year. Most of it requires no tools beyond a tire pressure gauge. Doing these tasks annually extends tank life and catches problems before they become emergencies.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-6'>The EPA&apos;s private wells program at <a href='https://www.epa.gov/privatewells' target='_blank' rel='noopener noreferrer' className='font-semibold underline' style={{ color: '#1D9E75' }}>epa.gov/privatewells</a> recommends annual professional well system inspections. The tasks below are the homeowner&apos;s contribution to that annual maintenance cycle &mdash; they take 15 minutes and cost nothing beyond a $5 tire gauge.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-6'>The EPA&apos;s private wells program at <a href='https://www.epa.gov/privatewells' target='_blank' rel='noopener noreferrer' className='font-semibold underline' style={{ color: '#1D9E75' }}>epa.gov/privatewells</a> recommends annual professional well system inspections. The tasks below are the homeowner&apos;s contribution to that annual maintenance cycle, they take 15 minutes and cost nothing beyond a $5 tire gauge.</p>
 
           <h3 className='text-lg font-bold text-slate-900 mb-3'>Task 1: Annual pre-charge check (10 minutes)</h3>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>As described above: pump off, tank fully drained, check Schrader valve with tire gauge. Verify reading matches correct pre-charge for your pressure switch setting (always 2 PSI below cut-in). Add or release air as needed. Record the date and reading.</p>
@@ -461,13 +485,13 @@ export default function WellPressureTankGuide() {
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>Signs Your Pressure Tank Is Failing</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>Pressure tank failure is rarely sudden. In most cases, symptoms develop gradually over weeks or months. The earlier you catch them, the more likely you are to replace the tank before it damages the pump.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Increasing pump cycle frequency.</strong> If you notice the pump clicking on more often than it used to &mdash; especially for small demands like flushing a toilet or running water briefly &mdash; the tank&apos;s effective drawdown is shrinking. This can indicate a slowly failing bladder or a leaking pre-charge. Check the pre-charge first. If it is correct, the bladder is losing its separation and water is mixing with the air side.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Increasing pump cycle frequency.</strong> If you notice the pump clicking on more often than it used to, especially for small demands like flushing a toilet or running water briefly, the tank&apos;s effective drawdown is shrinking. This can indicate a slowly failing bladder or a leaking pre-charge. Check the pre-charge first. If it is correct, the bladder is losing its separation and water is mixing with the air side.</p>
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Water from the Schrader valve.</strong> Press the center pin of the Schrader valve on top of the tank with the pump off. Air should come out. If water sprays out, the bladder has failed and the tank is waterlogged. This is the single most definitive test for bladder failure.</p>
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>The tank sounds solid when tapped.</strong> A healthy tank sounds hollow in the upper half (compressed air) and solid in the lower half (water). A tank that sounds uniformly solid from top to bottom is completely waterlogged. The air cushion is gone. The pump is cycling on every demand.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Pressure fluctuations during use.</strong> If water pressure surges and drops noticeably during a shower or while filling a sink, the tank may be losing its buffering capacity. This is different from the normal slight pressure variation during a pump cycle &mdash; it is a more dramatic fluctuation that feels like someone is turning the water on and off.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Pressure fluctuations during use.</strong> If water pressure surges and drops noticeably during a shower or while filling a sink, the tank may be losing its buffering capacity. This is different from the normal slight pressure variation during a pump cycle, it is a more dramatic fluctuation that feels like someone is turning the water on and off.</p>
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Visible exterior rust or weeping at fittings.</strong> Structural corrosion on the tank shell or active leaking at the plumbing connection means the tank is near end of life even if the bladder still works. Do not wait for a bladder failure to replace a structurally compromised tank.</p>
 
@@ -480,7 +504,7 @@ export default function WellPressureTankGuide() {
 
           <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Replace the bladder only if:</strong> The tank is a bladder-type model with a replaceable bladder (check manufacturer documentation). The tank shell has no corrosion, no weeping at fittings, and no visible damage. The tank is less than 10 years old. A replacement bladder for your model is available. Bladder replacement typically saves $400 to $700 compared to full tank replacement and takes a qualified person about an hour.</p>
 
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Replace the entire tank if:</strong> The diaphragm has failed (not replaceable on most models). The tank shell has structural corrosion. The tank is over 12 to 15 years old. The Schrader valve stem is corroded into the shell and cannot be replaced. The tank was undersized originally &mdash; replacement is the opportunity to upsize. The cost difference between a bladder replacement and a new tank is less than $200 (which is common for smaller tanks).</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'><strong>Replace the entire tank if:</strong> The diaphragm has failed (not replaceable on most models). The tank shell has structural corrosion. The tank is over 12 to 15 years old. The Schrader valve stem is corroded into the shell and cannot be replaced. The tank was undersized originally, replacement is the opportunity to upsize. The cost difference between a bladder replacement and a new tank is less than $200 (which is common for smaller tanks).</p>
 
           <p className='text-slate-700 text-sm leading-relaxed'><strong>Never repair a galvanized tank.</strong> If you still have a galvanized (air-over-water) tank and it has failed, replace it with a modern captive-air tank. The labor cost to troubleshoot and repair an aging galvanized system almost always exceeds the cost of a new bladder or diaphragm tank, and the new tank will perform dramatically better with virtually no maintenance.</p>
         </div>
@@ -511,7 +535,7 @@ export default function WellPressureTankGuide() {
           <h2 className='text-2xl font-bold text-slate-900 mb-4'>Pressure Tank for Low-Yield Wells: Special Considerations</h2>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>A well that produces less than 2 to 3 gallons per minute cannot sustain continuous pump operation during periods of moderate household demand. This creates a specific pressure tank challenge: you cannot simply size the tank for the pump&apos;s output and call it done, because the pump may draw the well down faster than the aquifer can recharge.</p>
           <p className='text-slate-700 text-sm leading-relaxed mb-4'>For low-yield wells, the solution is a two-component system: a larger-than-normal pressure tank (86 gallons or more) that provides extended storage, combined with a pump cycle controller that limits pump runtime to prevent well drawdown. The pressure tank acts as both a hydraulic buffer and a short-term water reservoir that sustains the household while the well recharges between pump cycles.</p>
-          <p className='text-slate-700 text-sm leading-relaxed mb-4'>Some low-yield systems use a submersible storage cistern &mdash; a large buried tank that the well pump fills slowly, with a separate booster pump drawing from the cistern to supply the house. This eliminates the cycle concerns entirely by decoupling the well&apos;s recharge rate from the household&apos;s demand pattern.</p>
+          <p className='text-slate-700 text-sm leading-relaxed mb-4'>Some low-yield systems use a submersible storage cistern, a large buried tank that the well pump fills slowly, with a separate booster pump drawing from the cistern to supply the house. This eliminates the cycle concerns entirely by decoupling the well&apos;s recharge rate from the household&apos;s demand pattern.</p>
           <p className='text-slate-700 text-sm leading-relaxed'>If your well yield is below 2 GPM and you are experiencing consistent <Link href='/problems/well-water-pressure-low' className='font-semibold underline' style={{ color: '#1D9E75' }}>pressure loss</Link> during morning demand peaks, talk to a well contractor specifically about low-yield well solutions rather than simply replacing or upsizing the pressure tank.</p>
         </div>
 
@@ -527,12 +551,12 @@ export default function WellPressureTankGuide() {
 
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>How long does a well pressure tank last?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>A quality bladder tank from a reputable manufacturer (Amtrol Well-X-Trol or Flexcon) lasts 10 to 15 years under normal conditions, with some premium tanks reaching 15 to 20 years. Budget tanks typically last 5 to 8 years. Water chemistry significantly affects lifespan: acidic water (pH below 6.5), high chlorine concentration, elevated manganese, and water treated with hydrogen peroxide for iron removal all accelerate rubber bladder degradation. Consistent short cycling also shortens bladder life through repeated pressure spikes and mechanical stress on the rubber membrane.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>A quality tank from a reputable manufacturer (Amtrol Well-X-Trol or Flexcon) lasts 10 to 15 years under normal conditions, with some premium tanks reaching 15 to 20 years. Budget tanks typically last 5 to 8 years. Water chemistry significantly affects lifespan: acidic water (pH below 6.5), high chlorine concentration, elevated manganese, and water treated with hydrogen peroxide for iron removal all accelerate rubber bladder degradation. Consistent short cycling also shortens bladder life through repeated pressure spikes and mechanical stress on the rubber membrane.</p>
             </div>
 
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>What size well pressure tank do I need?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>Required drawdown (gallons) equals pump GPM multiplied by 1 minute minimum runtime. Required tank volume equals required drawdown divided by 0.28 (for 30/50 settings) or 0.25 (for 40/60 settings). A 10 GPM pump at 30/50 settings needs 10 gallons drawdown, which requires a minimum 36-gallon tank (10 / 0.28). In practice, buying the next size up is always recommended. Most 3 to 4 bedroom homes with 8 to 12 GPM pumps do well with a 44 to 86-gallon tank.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Required drawdown (gallons) equals pump GPM multiplied by 1 minute minimum runtime. Required tank volume equals required drawdown divided by 0.28 (for 30/50 settings) or 0.26 (for 40/60 settings). A 10 GPM pump at 30/50 settings needs 10 gallons drawdown, which requires a minimum 36-gallon tank (10 / 0.28). In practice, buying the next size up is always recommended. Most 3 to 4 bedroom homes with 8 to 12 GPM pumps do well with a 44 to 86-gallon tank.</p>
             </div>
 
             <div>
@@ -547,19 +571,21 @@ export default function WellPressureTankGuide() {
 
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>Can I replace just the bladder, or do I need a whole new tank?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>On many quality bladder tanks (particularly Amtrol Well-X-Trol models), the bladder can be replaced separately if the tank shell and fittings are in good condition and the tank is less than 10 years old. Bladder replacement saves $400 to $700 compared to full tank replacement. On diaphragm tanks (including most Water Worker models) and on galvanized tanks, the membrane is not replaceable and the entire tank must be replaced. Check your model&apos;s documentation to determine replaceability.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>Only on tanks built for it. Some bladder tanks have a replaceable bladder, and replacing it can make sense if the tank shell and fittings are in good condition and the tank is less than 10 years old. Most residential tanks, including diaphragm tanks like Amtrol Well-X-Trol and most Water Worker models, have a membrane that isn't replaceable, so the whole tank gets replaced. Galvanized tanks have no membrane at all. Check your model's documentation, and compare the bladder kit and labor cost with a new tank before deciding.</p>
             </div>
 
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>What is the difference between a bladder tank and a diaphragm tank?</h3>
-              <p className='text-slate-700 text-sm leading-relaxed'>A bladder tank uses a balloon-shaped rubber membrane inside the tank that expands to fill the tank interior as water enters. A diaphragm tank uses a flat rubber membrane permanently bonded around the tank&apos;s circumference that flexes up and down. Bladder tanks generally offer slightly higher drawdown efficiency and many models allow bladder replacement. Diaphragm tanks are often more compact and the flat membrane operates in a consistent, repeatable motion some manufacturers believe produces less localized stress. For most residential well applications, either type performs well. Amtrol Well-X-Trol uses a diaphragm design; Flexcon WR uses a bladder design.</p>
+              <p className='text-slate-700 text-sm leading-relaxed'>A bladder tank uses a balloon-shaped rubber membrane inside the tank that expands to fill the tank interior as water enters. A diaphragm tank uses a flat rubber membrane permanently bonded around the tank&apos;s circumference that flexes up and down. Bladder tanks generally offer slightly higher drawdown efficiency and many models allow bladder replacement. Diaphragm tanks are often more compact and the flat membrane operates in a consistent, repeatable motion some manufacturers believe produces less localized stress. For most residential well applications, either type performs well. Amtrol Well-X-Trol uses a diaphragm design.</p>
             </div>
 
             <div>
               <h3 className='font-bold text-slate-900 mb-2'>Does pressure tank size affect water pressure?</h3>
               <p className='text-slate-700 text-sm leading-relaxed'>Tank size does not affect the operating pressure of your water. Operating pressure is set by the pressure switch cut-in and cut-out settings. What tank size does affect is how stable pressure feels during use. A larger tank provides more stored drawdown water, so pressure drops more slowly as you use water. A small tank empties quickly, causing pressure to drop noticeably during sustained use like a long shower, then spike back up when the pump restarts. If your pressure feels inconsistent despite a correctly functioning pump, an undersized tank is often the cause.</p>
             </div>
-          </div>
+          <div><h3 className='font-bold text-slate-900 mb-2'>What should my well pressure tank gauge read?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">With the system running, the gauge should move between your pressure switch's cut-in and cut-out settings: 30 to 50 PSI on a 30/50 system, or 40 to 60 PSI on a 40/60 system. It climbs while the pump runs, holds steady at the top when nothing is in use, and drops as you use water. That's different from the tank's air pre-charge, which you check with the tank empty and the pump off, and which should be 2 PSI below cut-in: 28 PSI for 30/50 or 38 PSI for 40/60.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 mb-2'>How much water does a well pressure tank hold?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">Only about 25 to 30 percent of the tank's rated size comes out as usable water between pump cycles. That amount is called drawdown, and the rest of the tank is the compressed air cushion. At 30/50 settings, a 20-gallon tank delivers about 6 gallons, a 32-gallon tank about 9, a 44-gallon tank about 13, and an 86-gallon tank about 25. At 40/60 settings, each delivers slightly less. The manufacturer's spec sheet lists exact drawdown for your model.</p>\n" }} /></div>
+<div><h3 className='font-bold text-slate-900 mb-2'>What size pressure tank do I need for a 3-bedroom house?</h3><div dangerouslySetInnerHTML={{ __html: "<p class=\"text-slate-700 text-sm leading-relaxed\">Size the tank to the pump, not the house. A typical 3-bedroom home has a pump around 10 GPM, which needs at least 10 gallons of drawdown. That's a 44-gallon tank at minimum, and an 86-gallon tank if you want the pump to run longer and cycle less. Check your pump's flow rate first: a bigger pump needs a bigger tank, whatever the size of the house.</p>\n" }} /></div></div>
         </div>
 
         {/* Glossary */}
@@ -636,7 +662,7 @@ export default function WellPressureTankGuide() {
               <span className='inline-block px-2.5 py-1 text-xs font-semibold rounded-md flex-shrink-0' style={{ backgroundColor: '#FCEBEB', color: '#A32D2D' }}>PROBLEM</span>
               <span className='text-sm font-bold text-slate-900 group-hover:text-[#1D9E75]'>Well Water Pressure Low</span>
             </Link>
-          </div>
+          <Link href='/cost-guides/well-pump-replacement-cost' className='block p-4 bg-slate-50 rounded-lg border border-slate-200 hover:border-emerald-300'><span className='font-semibold text-slate-900'>Well Pump Replacement Cost</span></Link><Link href='/guides/well-pressure-switch' className='block p-4 bg-slate-50 rounded-lg border border-slate-200 hover:border-emerald-300'><span className='font-semibold text-slate-900'>Well Pressure Switch</span></Link><Link href='/problems/air-in-well-water-lines' className='block p-4 bg-slate-50 rounded-lg border border-slate-200 hover:border-emerald-300'><span className='font-semibold text-slate-900'>Air in Well Water Lines</span></Link></div>
         </div>
 
         {/* Lead Form */}

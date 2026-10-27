@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/guides/well-pressure-switch',
     '/problems/well-pump-short-cycling',
     '/problems/well-pump-running-constantly',
-    '/guides/well-pressure-tank-guide',
   ])
 
   const existingPages: MetadataRoute.Sitemap = [
@@ -41,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/guides/iron-in-well-water`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/reviews/best-well-water-test-kits`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/well-pump-short-cycling`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/guides/well-pressure-tank-guide`, lastModified: '2026-10-22', changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/guides/well-pressure-tank-guide`, lastModified: '2026-10-26', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/well-running-dry`, lastModified: '2026-10-26', changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/problems/well-water-tastes-bad`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/cost-guides/pressure-tank-replacement-cost`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
